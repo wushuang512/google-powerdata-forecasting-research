@@ -70,8 +70,8 @@
     },
     {
       "path": "docs/DATA_SOURCES.md",
-      "bytes": 2102,
-      "sha256": "7b0f57c247d746febaeeec23e74bd4d9c55f3458f36086599878d142299216ab",
+      "bytes": 2627,
+      "sha256": "ab50a67f55a8b94b27991d2146893b0f9abd70f11ee6767eca53007e74a7f0eb",
       "kind": "publication_documentation"
     },
     {
@@ -89,7 +89,7 @@
     {
       "path": "docs/PUBLICATION_CHECKS.json",
       "bytes": 1251,
-      "sha256": "e3058845219189b864d275aca5f5dbb770ef693299314e770e2ef480bc2570a8",
+      "sha256": "25b95b04405de9cb5ce07b21bff091a7f1269892d0504fbb07a04863e22011e1",
       "kind": "publication_documentation"
     },
     {
@@ -7242,6 +7242,24 @@
       "publication_bytes_changed": true
     },
     {
+      "path": "nlr-hpc-pue/code/audit_nlr_pue.py",
+      "bytes": 12036,
+      "sha256": "3bf0864d60bb21cd4957a846b473b18a1f2a04e5c204a17048bdca133a7ffde9",
+      "kind": "research_source",
+      "source_relative": "nlr-hpc-pue/code/audit_nlr_pue.py",
+      "original_sha256": "3bf0864d60bb21cd4957a846b473b18a1f2a04e5c204a17048bdca133a7ffde9",
+      "publication_bytes_changed": false
+    },
+    {
+      "path": "nlr-hpc-pue/code/download_nlr_pue.py",
+      "bytes": 6455,
+      "sha256": "a5f7e01bcb0c666b3893c11fb15b4c809b099e5249575c6d1776206e801948f5",
+      "kind": "research_source",
+      "source_relative": "nlr-hpc-pue/code/download_nlr_pue.py",
+      "original_sha256": "a5f7e01bcb0c666b3893c11fb15b4c809b099e5249575c6d1776206e801948f5",
+      "publication_bytes_changed": false
+    },
+    {
       "path": "NLR严格协议重跑评估简报.md",
       "bytes": 9018,
       "sha256": "a1a36a326035e49e7f924d0438a3eb58fc2b3f50947f368885c8f7996c00808f",
@@ -7279,8 +7297,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3941,
-      "sha256": "14352f7e86b7a088642a48b32e4151c61e462978f319d0dde68fd2fd736f8757",
+      "bytes": 4017,
+      "sha256": "eaf65eda80912007b1ed29c3230b7948134cc094a33cdd178c8d0bb5e157b8c2",
       "kind": "publication_documentation"
     },
     {

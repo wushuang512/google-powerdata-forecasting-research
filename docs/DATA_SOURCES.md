@@ -22,3 +22,13 @@ Google质量标记按官方分析示例解释：`bad_* = true`为异常。目标
 NLR严格实验的目标及历史目标不填充，仅历史协变量最多前向填充4格。未来只允许已知日历，不使用真实未来天气或分项负荷。不同阶段标签、缺测覆盖和测试窗口有变化，分数不能跨协议直接混排。
 
 Google数据按CC BY 4.0来源说明署名。NLR按其官方DOE/NREL/ALLIANCE数据使用声明处理，不将它误标为CC BY。具体说明见对应官方页面。
+
+NLR官方获取及质量审计源码位于`nlr-hpc-pue/code/`。按需手动执行以下命令，数据会写到指定本地研究目录，仍被Git忽略；本次发布未运行下载：
+
+```console
+python nlr-hpc-pue/code/download_nlr_pue.py <本地研究根目录> --phase metadata
+python nlr-hpc-pue/code/download_nlr_pue.py <本地研究根目录> --phase data
+python nlr-hpc-pue/code/audit_nlr_pue.py <本地研究根目录>
+```
+
+原始文件审计需要NumPy及PyArrow；模型评估依赖另按各轮环境准备。

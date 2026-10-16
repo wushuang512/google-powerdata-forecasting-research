@@ -45,6 +45,7 @@ python scripts/review_results.py
 ## 目录
 
 ```text
+nlr-hpc-pue/code/                NLR官方下载与原始文件质量审计
 experiment/                     研究源码、各轮协议、选择及聚合指标
   code/                         初始功率模型、预处理和统一评分
   round2/ ... round48/           后续结构、微调、HDSF及校正探索

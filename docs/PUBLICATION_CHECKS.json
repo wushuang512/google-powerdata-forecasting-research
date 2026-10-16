@@ -1,7 +1,7 @@
 {
-  "checked_utc": "2026-10-16T08:53:52.399389+00:00",
+  "checked_utc": "2026-10-16T08:58:23.458299+00:00",
   "scope": "Publication snapshot only; no model training or new scoring performed.",
-  "python_sources_syntax_checked": 355,
+  "python_sources_syntax_checked": 357,
   "python_syntax_errors": 0,
   "aggregate_csv_tables_inspected": 156,
   "raw_data_and_point_level_exports_included": false,
