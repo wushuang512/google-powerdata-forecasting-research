@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-10-06T08:31:44.855201+00:00",
+  "horizons": {
+    "1": {
+      "candidate": {
+        "id": "lgb_regression_l1_leaf15_debit0",
+        "model": "lgb_regression_l1_leaf15",
+        "debit": 0.0
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.1,
+      "development_supported": false
+    },
+    "7": {
+      "candidate": {
+        "id": "lgb_regression_l1_leaf15_debit0",
+        "model": "lgb_regression_l1_leaf15",
+        "debit": 0.0
+      },
+      "chosen_alpha": 0.1,
+      "diagnostic_alpha": 0.1,
+      "development_supported": true
+    }
+  },
+  "protocol_sha256": "314e3a5badfa107046e99870133948257fed8e3c8e7873440d113cf3f56a13ad",
+  "dev_summary_sha256": "8a350042737b1bef87070e928caeb6f6c8295db210e944af88fb3d5b44280d04",
+  "dev_predictions_sha256": "c7965c36631d29b2b00711fb4fea4fa928c298bbd80e4202b163f6a0cf9c4775",
+  "dev_heads_sha256": "1c3d4360c03653d27b9b70c27d780e00d4d0a60ab330eaaa821a7e1d6c0871a2",
+  "independent_confirmation": false
+}

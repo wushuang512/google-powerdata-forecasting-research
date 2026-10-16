@@ -1,0 +1,148 @@
+{
+  "round": 47,
+  "created_utc": "2026-10-12T06:06:13.069708+00:00",
+  "dataset": "OriginalGooglePowerData2019 only",
+  "hypotheses": "Separate fine-tuned neural deltas from fresh local-refit deltas; adapt daily level and within-day shape separately. Prior TESTobservations motivate hypothesis, never choose newparameters on TEST.",
+  "training_script_sha256": "9820006c8a7c33d57f8c5d04c80b5fd21b9347541ed92c9671c168439ad93cc3",
+  "analysis_script_sha256": "6648f993bd12b6965e93ec1e30199c88c9336e08ec892366c0f1081b6fb1ea4e",
+  "round46_selection_sha256": "2b1df2e69d86920c71c7ff591c5e46fe6423c22e10aac19134e58fb91749183e",
+  "bindings": {
+    "experiment\\round44\\results\\selection.json": "e7c1429c22fac5452e90e331c92070258018d9bad4cf4570660f52b4e29519cc",
+    "experiment\\round44\\results\\predictions.npz": "6b6b37c4f74b301e77c04e8b052de8fdb38a4d0ef6010714273f0a4383ee6534",
+    "experiment\\round44\\results\\source_dataset.joblib": "4bca57b8c47b4ae4e8cae2ec272219cfb6983dcc4b173ccacf1a9bef1fa09743",
+    "experiment\\round46\\results\\selection.json": "2b1df2e69d86920c71c7ff591c5e46fe6423c22e10aac19134e58fb91749183e",
+    "experiment\\round46\\results\\summary.json": "fe613486e695fe4c3e3f89c2a222d88fb5fcee7c48bfc91184dddc75be6f9576",
+    "experiment\\round46\\code\\hdsf_foundation_adapters.py": "3a2d4d6e4d4bdaa2a9b1b9005a76f5106cb9b2ddf8cc88e038e565a6136368c1",
+    "experiment\\round46\\code\\hdsf_foundation_stage.py": "347e4f205116d66a69498f607560f6c6544f277d45914b18095061aef6737cf0",
+    "experiment\\round46\\code\\hdsf_foundation_fusion.py": "55bafe417d410cea13c0b8a87aa865286c6709c1c41c70598936eebe5d5d0209",
+    "experiment\\round29\\code\\aligned_metrics.py": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+    "experiment\\code\\common.py": "6569f5e40ea884081fedf64b335dd7e3b790d19a0c4d4baa2b8285e5cb014a91",
+    "experiment\\round46\\results\\chronos2_dev_original_control.npz": "08054505495d22fe2453aeec6ec188ae114559c7b3270ad568339230711901af",
+    "experiment\\round46\\results\\chronos2_dev_tail_s80.npz": "4c70388f8815a4e43733b698ca5dbdce8b721b3c3a4389cc563b4a335be7cc95",
+    "experiment\\round46\\results\\chronos2_test_original_control.npz": "b2ef032032e3945c2912b92250ed96e5e6b1979ac8a10f4122d94e922849c4b0",
+    "experiment\\round46\\results\\chronos2_test_tail_s80.npz": "7bf0c26b5686d4a777c320c28eca9009363f9b0c0038fa49b371a56b4182ecfe",
+    "experiment\\round46\\results\\tirex2_dev_original_control.npz": "848f5baae63cd347bd6bc42e8a113efce9d45930f7ee2a1d35a27672c86a868f",
+    "experiment\\round46\\results\\tirex2_dev_head_s80.npz": "f9d7921dce8a0c85d814c094c14aa8412e02d4ab1896a147b875db316754a3d8",
+    "experiment\\round46\\results\\tirex2_test_original_control.npz": "69f7aa595245ad827cd59ffd4c5f4955dea656d37a70e0f6f55297c4d14971be",
+    "experiment\\round46\\results\\tirex2_test_head_s80.npz": "1f7505a885fa8c069ee2e8976a6f6a942dc04dad9babe5b1835713e2b097825f",
+    "experiment\\round46\\results\\timesfm25_dev_original_control.npz": "e10430149c5757171c8bbc35d0700d0b2c1e81ca4e6ca3a0f526a35c55a4808c",
+    "experiment\\round46\\results\\timesfm25_dev_head_s80.npz": "9d97b566cc2bc65b9192777c38bedc64c01af114deac72f91b520296dcfb6aec",
+    "experiment\\round46\\results\\timesfm25_test_original_control.npz": "fd579ce6391fded71875bed8205c7332a8743fe6bbb5456b3d8fc9dbdeb2bcce",
+    "experiment\\round46\\results\\timesfm25_test_head_s80.npz": "1421b4e358816e388fb5fb696de5ed785b3588ab423e2b59780850f4a64a5212",
+    "experiment\\round46\\results\\timesfm3_dev_original_control.npz": "963fdc2e0b954cbf85772e65002b472787c4a2ab08465798c8c41cf4d94fe600",
+    "experiment\\round46\\results\\timesfm3_dev_tail_s40.npz": "9c61c581e092274ea12fdb37ea046e67b0056033833ca2ba4b150a716a6c5e92",
+    "experiment\\round46\\results\\timesfm3_test_original_control.npz": "fc6bfba67f574299d3b36a960e70dc485e93c6afd252a23b195d872082aa3652",
+    "experiment\\round46\\results\\timesfm3_test_tail_s40.npz": "c8fcefa8d912b0dbf7208a934ae48c60cadff7089f30a5b468d93eea3accda79",
+    "experiment\\round46\\results\\toto2_dev_original_control.npz": "942712c04b3b89a16baaa296a5cdabb389d9c5c965ae238eaae6bb86ce5d9d48",
+    "experiment\\round46\\results\\toto2_dev_tail_s40.npz": "7301de5e37ffd6e702649e9aece3c4f2cda0203bbabbdaa06c4dda552ba798e8",
+    "experiment\\round46\\results\\toto2_test_original_control.npz": "5c063852d00a73e4427b00582d765d3aeef694d5a96d45b484f9b0e7aa6dbb2d",
+    "experiment\\round46\\results\\toto2_test_tail_s40.npz": "b2460fd14fde7b3c719babf5d6bee547e90e417bc3b6c7aca4413f5677161761",
+    "experiment\\round46\\results\\patchtst_dev_original_control.npz": "79e853542715e77de532a63d2fcd85c0437e98ab3a6678a82934ae023822bf66",
+    "experiment\\round46\\results\\patchtst_dev_tail_s40.npz": "48c4d0097b0da2dc001947a4a340c86a92c5469677d24c2809851ccd8723a913",
+    "experiment\\round46\\results\\patchtst_test_original_control.npz": "8453e3533482fb6be8177dd9f454e1f2740a5820861f09cc75e96767c4316ab9",
+    "experiment\\round46\\results\\patchtst_test_tail_s40.npz": "3ddf4dbe816b4b4be16c4421eb0e0146a425b3ccc504d1231ad8c11d4ab68323"
+  },
+  "new_families": [
+    "chronos2",
+    "patchtst"
+  ],
+  "new_recipes": [
+    "curve",
+    "structure"
+  ],
+  "steps": 160,
+  "lr": 1.5e-06,
+  "scope": "Output head plus actual final encoder block, AdamW.01/normclip1/batch2; restart originalcheckpoint separately at cutoff14/22.",
+  "loss_recipes": {
+    "curve": {
+      "daily": 0.1,
+      "peak": 0.025,
+      "shape": 0.0,
+      "slope": 0.05
+    },
+    "structure": {
+      "daily": 0.25,
+      "peak": 0.05,
+      "shape": 0.5,
+      "slope": 0.1
+    }
+  },
+  "common_loss": "curveL1 +.05pinball +.15teacherpointMSE +.05relativeparameterprox +.1bounds; truefuture is losstarget only.",
+  "training_horizons": {
+    "chronos2": [
+      96
+    ],
+    "patchtst": [
+      96,
+      672
+    ]
+  },
+  "seed": 20261012,
+  "training_context_days": [
+    3,
+    7,
+    14
+  ],
+  "training_cutoff_DEV": 14,
+  "training_cutoff_final": 22,
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "early_selection_dates": "D15–D18; H1 hasD15/D17",
+  "late_validation_dates": "D19–D22; H1 hasD19/D21",
+  "routes_H1": [
+    "r46_neural_only",
+    "chronos2_curve_weighted",
+    "chronos2_structure_weighted",
+    "patchtst_curve_direct",
+    "patchtst_structure_direct"
+  ],
+  "routes_H7": [
+    "r46_neural_only",
+    "patchtst_curve_weighted",
+    "patchtst_structure_weighted",
+    "patchtst_curve_direct",
+    "patchtst_structure_direct"
+  ],
+  "coefficient_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "projection": "Point=originalHDSF + levelalpha*daymean(delta) + shapealpha*(delta-daymean(delta)). Allmeans useforecast values only. Bounded0/1projection preserves requested forecastdailymeans, notphysical energy conservation.",
+  "local_members": "Keep exactoriginal local members andHDSFweights; do not silently replace with R46freshlocal fits.",
+  "early_choice": "Filter dailyWAPE≤original+.002pp andpeakMAPE≤original+.1pp. MinimumcurveWAPE, preferlevel0/smallercoefficients within.0025pp. Freeze one nonzero diagnostic even if noearlyimprovement.",
+  "late_upgrade_gate": "Same fixed candidate; mean pairedunique-date curve gain>max(.005pp,SE), positive majority dates; late/fullDEVcurve nonworse,daily≤+.002pp,peak≤+.1pp. Otherwise retainoriginal HDSF.",
+  "no_TEST_parameter_selection": true,
+  "old_HDSF_design_used_whole_DEV": true,
+  "historical_test_informed_design": true,
+  "independent_confirmation": false,
+  "new_Word": false,
+  "device": "CUDA,onefamilyjob atatime,existing researchenvironment",
+  "retrospective_ablation": "After newselection freezes, oldR46 per-family/neural-only/local-only substitutions; fixeddiagnostics only.",
+  "metrics": "Unchanged9.28 macroPDU curveWAPE/equal57 andcomplete96pointdaily; allpreviouspoint/peak/error/hit/bias/domain/empirical80intervaldefinitions.",
+  "source_license": "Original licensesretained; no newdata orweightsdownload; TimesFM3 remains noncommercialresearch."
+}

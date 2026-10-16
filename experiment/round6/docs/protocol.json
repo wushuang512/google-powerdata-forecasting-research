@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-10-01T01:33:09.657477+00:00",
+  "registry": {
+    "ridge_control_10000": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 10000
+    },
+    "ridge_control_100000": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 100000
+    },
+    "ridge_control_1000000": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 1000000
+    },
+    "ridge_resource_10000": {
+      "kind": "ridge",
+      "resource": true,
+      "alpha": 10000
+    },
+    "ridge_resource_100000": {
+      "kind": "ridge",
+      "resource": true,
+      "alpha": 100000
+    },
+    "ridge_resource_1000000": {
+      "kind": "ridge",
+      "resource": true,
+      "alpha": 1000000
+    },
+    "trees_resource_7": {
+      "kind": "trees",
+      "resource": true,
+      "leaf": 7
+    },
+    "trees_resource_15": {
+      "kind": "trees",
+      "resource": true,
+      "leaf": 15
+    }
+  },
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "development_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "final_training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "selection": "First 4 development days choose family/config; last 4 choose alpha by paired-cell one-standard-error rule, favor alpha 0; test labels are not loaded before hash is frozen",
+  "resource": "Complete official machine_events, causal state only; no actual task usage or resource future",
+  "comparison": "Resource models are controlled against identical regularization without resources; partial usage sample not a modeling input",
+  "independent_test": false
+}

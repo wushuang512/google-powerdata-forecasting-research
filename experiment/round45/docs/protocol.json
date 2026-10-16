@@ -1,0 +1,233 @@
+{
+  "round": 45,
+  "created_utc": "2026-10-12T03:24:56.975318+00:00",
+  "identity": {
+    "script": "d5064ba08acc1ea147c10fdd4d8df8955ebd4bca430586b2303f7baa4b0c6e49",
+    "data": "4bca57b8c47b4ae4e8cae2ec272219cfb6983dcc4b173ccacf1a9bef1fa09743",
+    "members": "6b6b37c4f74b301e77c04e8b052de8fdb38a4d0ef6010714273f0a4383ee6534",
+    "original_selection": "e7c1429c22fac5452e90e331c92070258018d9bad4cf4570660f52b4e29519cc",
+    "metrics": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+    "common": "6569f5e40ea884081fedf64b335dd7e3b790d19a0c4d4baa2b8285e5cb014a91",
+    "original_source": {
+      "power_forecast\\__init__.py": "91e18378a4359ab250f4dae00365084c1328f801dce63183492657019eea8fa7",
+      "power_forecast\\__main__.py": "c13eb66970ae37b8b044f428b309e67868814b90a8bb408806f3316ce4dfbc5b",
+      "power_forecast\\attainment_experiment.py": "340a15d8aa6389ea5e7fa1302c4061a58117fac1330c87416cabe1807edc5ac2",
+      "power_forecast\\attainment_features.py": "1ea940d374da85c72838502bdbcc20cf2b626a7b64a030524b026da726c9ff2a",
+      "power_forecast\\attainment_fusion.py": "fd36a1c21fea4454052b1c4e80eab4ad3a9b55c6217bc6e477cdb1b01de87fde",
+      "power_forecast\\attainment_local.py": "3a2e285e614fd2355c204f5d43d00dedff13f6166250d58da1fdccc786829942",
+      "power_forecast\\attainment_members.py": "467e7d64075a3492627ac33db06d0b8f07e84acfd270deff9e4c54c36393a040",
+      "power_forecast\\causal_feedback.py": "85972f7c4f66dfb2b5036c553542f8c633497f7ad39a9a44651216cb01bc1d2e",
+      "power_forecast\\cli.py": "669f06683bc085a323d97f8cd6b5727e781cceb34dd26879b91f80311bd1ecb6",
+      "power_forecast\\compact_experiment.py": "370ba47ae226cf827f4fbad5b2b58e7c647887681aae514686d9eb57bb6a80db",
+      "power_forecast\\config.py": "0bed8d8750b8dd58d4198509871fb2737d907058e9d539b090246b75181dd459",
+      "power_forecast\\data.py": "016acc1eac95e0b84d923cb84eb404115530db7310f15ed5d23ad42119a86e3c",
+      "power_forecast\\diagnostics.py": "9ca50b3161513955949abbf4dbb3cb50b120679211125647bbc819e30916517f",
+      "power_forecast\\dlinear.py": "d081a7e148996b2ec79ecb6b1c15e67ae0480c37b5359b0067fbba3f341757d1",
+      "power_forecast\\evaluation.py": "0a4dce0c5fd243061ffefe84e7674b3c0ce924f576a74b6602d486d85bba6420",
+      "power_forecast\\experiments.py": "47c5f267f5e44f1f78891b99f6ad2c38b0bafc8d2552d6b4f9e2039198061cc9",
+      "power_forecast\\features.py": "b072c2a948499401b3914ed8d02ed338d0b85ed15f1452e880bc5a67fd9926fb",
+      "power_forecast\\foundation.py": "0a819516b91f74360fb641c810352b7bc410a05525d63bf3138113ad32e4ae37",
+      "power_forecast\\hdsf_experiment.py": "48194ef41f589f1d53947daeee2506dd90732e87aae3ba7e2c498961b49db08b",
+      "power_forecast\\hdsf_patchtst.py": "c96f65fad0a724e71e6b3e1043fc60d1ef4c32f6c41e683a1632ce80d39929ee",
+      "power_forecast\\level_shape_fusion.py": "87187c93f3825fee52014d4877eadeb01707b1c0ad76fac4ed9fcf68bff87fed",
+      "power_forecast\\models.py": "59e980a1368d5ec406c6ab3eb62c3f965cdb7b578ee2715fe05c84598175fda8",
+      "power_forecast\\multiscale.py": "4c19e9c5edc2155b7016af3e374451e7316d970a74b1290dfa8e3db32257267c",
+      "power_forecast\\multiscale_experiment.py": "523ea68bdec59cd34981b05eeaab6c83516fc865136eaea396c5ee7f6d7def36",
+      "power_forecast\\new_foundation.py": "ec619e6e7128f07d877a8643a2f3379e4f2b6ff66d15dd916195c7314a977e99",
+      "power_forecast\\normalized_linear.py": "2888b7034f55135afe030929b6c68006b8c5eab8028844d5f28d87ce17a8507e",
+      "power_forecast\\optimized_fusion.py": "63c5cc869f18d7c05028e217c02f1352e6e4578266d32687027fc6af0e5b1a95",
+      "power_forecast\\pipeline.py": "34dddf13da80851608b843d60b43191302648235ee62aeccb504f041492a9ef5",
+      "power_forecast\\prediction_cache.py": "8fa3ab11a87047feb286fbdc2c22a906113c07e1dca69f42d84abba30fc47a36",
+      "power_forecast\\research_experiment.py": "dab343276d7fee734394bc3f77d4ad2e9a0a92f51d3d5c8823dd05b9e6d56fb6",
+      "power_forecast\\residual_boost.py": "4f32163d304c08ccffd304dab42e1f2ad50f384df849a7daadd9609639796364",
+      "power_forecast\\resolution_forecast.py": "2fbf294d7368660d97e14381772d5070989eb03a32c51285bdfff4e2fee7b03b",
+      "power_forecast\\resolution_fusion.py": "3a775d78242783311897f35790b3e48e6ab6bb383c6e6b907a401c067bd665c3",
+      "power_forecast\\resolution_research.py": "fbff591689df2abb8c1079671af29d82e8387bea384c48535b9688d77daf1e84",
+      "power_forecast\\robust_stacking.py": "eae7d174c92525493ad434096f1f5a4a8d7a03a72a75f2dce1e7c84cbc6a243e",
+      "power_forecast\\shape_hybrid.py": "74b21d308267d2b1ab52226e1031214f953468aee4e1a057212e0e57f4651848",
+      "power_forecast\\short_horizon_fusion.py": "b7d8fef5eec0f666cfa3b6ee7f16e5805a73cd7eba3d40625e3d0c25b0d8fb97",
+      "power_forecast\\spatial_shrinkage.py": "ca8c49b07dd3fc7bbc992007a6b5a57d5beafc5cca85e0ce7f415b5422bf76b0",
+      "power_forecast\\structural_linear.py": "1834453fcf4ee01280562ec667ce671cd521a77dd0638765f8ecd608591b32f3",
+      "power_forecast\\tiny_mixer.py": "8cfd55879eb397bd1e86a1e747aed41f4898148398bf1cdd4d426c1e4d561f00",
+      "power_forecast\\usc_experiment.py": "a70a6c619b910f9ba3dc5440c57ec43b6925975441c09b9aa77c4bb4b040ef4b",
+      "power_forecast\\usc_timesfm.py": "231848bf98814ead2b61738e4451d073babfc0adf5599e202f0cbf4f2974d894"
+    }
+  },
+  "dataset": "Google PowerData2019 only,57series,31days,96slots/day",
+  "excluded_data": [
+    "NLR HPC PUE",
+    "Google ClusterData CPU/memory traces"
+  ],
+  "foundation_members_frozen": true,
+  "new_weight_downloads": false,
+  "local_configs": {
+    "dropD1": {
+      "kind": "local24",
+      "seeds": [
+        101,
+        202,
+        303,
+        404
+      ],
+      "params": {}
+    },
+    "regularized": {
+      "kind": "local24",
+      "seeds": [
+        101,
+        202,
+        303,
+        404
+      ],
+      "params": {
+        "num_leaves": 7,
+        "n_estimators": 250,
+        "min_child_samples": 100,
+        "reg_lambda": 5.0,
+        "max_depth": 4
+      }
+    },
+    "direct7": {
+      "kind": "direct",
+      "seeds": [
+        101,
+        202
+      ],
+      "params": {
+        "num_leaves": 15,
+        "n_estimators": 250,
+        "min_child_samples": 100,
+        "reg_lambda": 5.0,
+        "max_depth": 5
+      }
+    }
+  },
+  "dev_cutoff": 14,
+  "final_cutoff": 22,
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "bottom_stage": "Three actual local refits. Select family using chronological-date fusion validation under original12h geometry; no TEST scores.",
+  "fusion_stage": "16 width/overlap/shrink configurations for the DEV-selected member bank; original foundation pool retained. Full-member simplex, macro-normalized weighted absolute loss, no intercept.",
+  "layouts": [
+    {
+      "hours": 3,
+      "overlap": false,
+      "shrink": 0.0
+    },
+    {
+      "hours": 3,
+      "overlap": false,
+      "shrink": 0.5
+    },
+    {
+      "hours": 3,
+      "overlap": true,
+      "shrink": 0.0
+    },
+    {
+      "hours": 3,
+      "overlap": true,
+      "shrink": 0.5
+    },
+    {
+      "hours": 6,
+      "overlap": false,
+      "shrink": 0.0
+    },
+    {
+      "hours": 6,
+      "overlap": false,
+      "shrink": 0.5
+    },
+    {
+      "hours": 6,
+      "overlap": true,
+      "shrink": 0.0
+    },
+    {
+      "hours": 6,
+      "overlap": true,
+      "shrink": 0.5
+    },
+    {
+      "hours": 12,
+      "overlap": false,
+      "shrink": 0.0
+    },
+    {
+      "hours": 12,
+      "overlap": false,
+      "shrink": 0.5
+    },
+    {
+      "hours": 12,
+      "overlap": true,
+      "shrink": 0.0
+    },
+    {
+      "hours": 12,
+      "overlap": true,
+      "shrink": 0.5
+    },
+    {
+      "hours": 24,
+      "overlap": false,
+      "shrink": 0.0
+    },
+    {
+      "hours": 24,
+      "overlap": false,
+      "shrink": 0.5
+    },
+    {
+      "hours": 24,
+      "overlap": true,
+      "shrink": 0.0
+    },
+    {
+      "hours": 24,
+      "overlap": true,
+      "shrink": 0.5
+    }
+  ],
+  "optimizer_iterations": 15,
+  "optimizer_max_points": 12000,
+  "fusion_objective": "Each PDU total absolute truth denominator uses FIT labels only; duplicate calendar-date forecasts downweighted. Window taper multiplies FIT loss. Final headline is unchanged9.28 macro WAPE.",
+  "shrink": "0 or50% convex shrink of window weights toward full-horizon weights; overlap uses strictly positive cosine taper normalized to partition-of-unity.",
+  "cv24": "D15 fit→D17 validate; D15/17→D19; D15/17/19→D21; original member training stopsD14.",
+  "cv7": "FIT targetdates≤D18→D19;≤D19→D20;≤D20→D21;≤D21→D22, for both DEV origins. Targetdate purged, not leave-one-overlapping-origin.",
+  "unsupported_window": "Use global simplex if earlier FIT dates contain no samples of a lead window; exposes scarcity of late-horizon validation support.",
+  "bottom_comparison7": "Direct7 is an added local expert alongside original local7; corrected one-day models are recursive7day diagnostics, never read future measured data.",
+  "selection": "Choose best chronological CV WAPE, then lower dimensional layout within.005pp. For adoption require mean paired gain>max(.005pp,paired one-standard-error), positive majority folds, fullDEV curve anddaily WAPE nonworse, peak increase≤.10pp. Otherwise retain originalHDSF. Best DEV candidate remains frozen diagnostic even if gatefails.",
+  "test_policy": "Freeze selection and SHA before any new final fit/test. Score selected candidate, original baseline and predeclared three12h bottom controls only; no TEST reranking.",
+  "intervals": "Same perPDUDEV residual10/90 empirical80% and prior clipped0/1 interval metrics, no TEST calibration.",
+  "causal_checks": "Training arrays and predictions unchanged after future-poison; uncached full-round first-seed training repeat of DEV-selected family and positive-control training-label change.",
+  "historical_test_informed_design": true,
+  "independent_confirmation": false,
+  "device": "LightGBM CPU4threads; no large foundation model loaded. GPU foundation refit not claimed.",
+  "no_new_word_report": true
+}

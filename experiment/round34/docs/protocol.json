@@ -1,0 +1,95 @@
+{
+  "created_utc": "2026-10-07T01:43:10.748387+00:00",
+  "configs": [
+    {
+      "id": "history_mean0_max",
+      "head": "history",
+      "mean_strength": 0,
+      "anchor": "max"
+    },
+    {
+      "id": "history_mean0_risk",
+      "head": "history",
+      "mean_strength": 0,
+      "anchor": "risk"
+    },
+    {
+      "id": "hgb_absolute_mean0_max",
+      "head": "hgb_absolute",
+      "mean_strength": 0,
+      "anchor": "max"
+    },
+    {
+      "id": "hgb_absolute_mean0_risk",
+      "head": "hgb_absolute",
+      "mean_strength": 0,
+      "anchor": "risk"
+    },
+    {
+      "id": "hgb_absolute_mean0.1_max",
+      "head": "hgb_absolute",
+      "mean_strength": 0.1,
+      "anchor": "max"
+    },
+    {
+      "id": "hgb_absolute_mean0.1_risk",
+      "head": "hgb_absolute",
+      "mean_strength": 0.1,
+      "anchor": "risk"
+    },
+    {
+      "id": "hgb_squared_mean0.1_max",
+      "head": "hgb_squared",
+      "mean_strength": 0.1,
+      "anchor": "max"
+    },
+    {
+      "id": "hgb_squared_mean0.1_risk",
+      "head": "hgb_squared",
+      "mean_strength": 0.1,
+      "anchor": "risk"
+    }
+  ],
+  "primary": [
+    "curve WAPE",
+    "daily mean WAPE",
+    "daily maximum MAPE"
+  ],
+  "secondary": "MAE RMSE P95 hit2/5 a5/other52 bias peak-time dailyMAE/RMSE same formulas; minor bounds as R31/32",
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "fit_cutoffs": [
+    14,
+    22
+  ],
+  "training": "two HGB7leaf60tree losses absolute/squared; separate mean/max heads normalized delta fromlastday; complete training labels; inverse repeated-target-date weights; no TEST fitting",
+  "features": "own seven-day daily means/maxima/std andtrends, observedcell peers, knownlead/calendar; no futuretruth orfuturevalidmask",
+  "reconstruction": "past7days +-two15min slots residual uncertainty; max orminimum empirical expectedL1+normalizedMSE anchor; common standardizedshift CDFwaterfill enforces learnedmean/max bounded0..1; predictedconstraints notphysicalenergy",
+  "selection": "originalDEV control envelope; primary nonworse than current inaggregate and>=one improves; allsecondary microbounds pass; prefer mostprimaryleaders thenminworstprimaryregret/minmeanratio. None retainscurrent. Onlyone DEV selected orDEV diagnostic perhorizon tested; no TEST grid.",
+  "scope": "all 57, onlypowerhistory; TEST alreadyviewed exploratory; independent confirmation missing",
+  "metric_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da"
+}

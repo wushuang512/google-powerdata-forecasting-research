@@ -1,0 +1,398 @@
+{
+  "created_utc": "2026-10-05T11:09:19.198083+00:00",
+  "script_sha256": "1430e621d99c60a0353c26b680939f1b2fea78827b2ad53e4c6ab01753a893e7",
+  "model_name": "Known-horizon Chronos-2 TiRex-2 TimesFM3 routing with Ridge calibration and optional zero-centered Fourier residual gate",
+  "configs": [
+    {
+      "id": "prior",
+      "kind": "prior"
+    },
+    {
+      "id": "legacy_ridge100_mean_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_agree0",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 0.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_agree1",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 0.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_shape_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_shape_agree0",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 0.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_shape_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_shape_agree1",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 0.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_peak_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_peak_agree0",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 1.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_peak_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_peak_agree1",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 1.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_shape_peak_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_shape_peak_agree0",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 1.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge100_mean_shape_peak_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge100_mean_shape_peak_agree1",
+        "ridge": 100,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 1.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_agree0",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 0.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_agree1",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 0.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_shape_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_shape_agree0",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 0.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_shape_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_shape_agree1",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 0.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_peak_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_peak_agree0",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 1.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_peak_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_peak_agree1",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 0.0,
+        "peak": 1.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_shape_peak_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_shape_peak_agree0",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 1.0,
+        "gate": false
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_shape_peak_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_shape_peak_agree1",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 1.0,
+        "gate": true
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_shape_history50_agree0",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_shape_history50_agree0",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 0.5,
+        "gate": false,
+        "history_peak": true
+      }
+    },
+    {
+      "id": "legacy_ridge1000_mean_shape_history50_agree1",
+      "kind": "legacy",
+      "legacy": {
+        "id": "ridge1000_mean_shape_history50_agree1",
+        "ridge": 1000,
+        "mean": 1.0,
+        "shape": 1.0,
+        "peak": 0.5,
+        "gate": true,
+        "history_peak": true
+      }
+    },
+    {
+      "id": "zero_centered_a1000_shape0_agree0",
+      "kind": "zero_centered",
+      "ridge": 1000,
+      "shape": 0.0,
+      "gate": false
+    },
+    {
+      "id": "zero_centered_a1000_shape0_agree1",
+      "kind": "zero_centered",
+      "ridge": 1000,
+      "shape": 0.0,
+      "gate": true
+    },
+    {
+      "id": "zero_centered_a1000_shape1_agree0",
+      "kind": "zero_centered",
+      "ridge": 1000,
+      "shape": 1.0,
+      "gate": false
+    },
+    {
+      "id": "zero_centered_a1000_shape1_agree1",
+      "kind": "zero_centered",
+      "ridge": 1000,
+      "shape": 1.0,
+      "gate": true
+    },
+    {
+      "id": "zero_centered_a10000_shape0_agree0",
+      "kind": "zero_centered",
+      "ridge": 10000,
+      "shape": 0.0,
+      "gate": false
+    },
+    {
+      "id": "zero_centered_a10000_shape0_agree1",
+      "kind": "zero_centered",
+      "ridge": 10000,
+      "shape": 0.0,
+      "gate": true
+    },
+    {
+      "id": "zero_centered_a10000_shape1_agree0",
+      "kind": "zero_centered",
+      "ridge": 10000,
+      "shape": 1.0,
+      "gate": false
+    },
+    {
+      "id": "zero_centered_a10000_shape1_agree1",
+      "kind": "zero_centered",
+      "ridge": 10000,
+      "shape": 1.0,
+      "gate": true
+    },
+    {
+      "id": "zero_centered_a100000_shape0_agree0",
+      "kind": "zero_centered",
+      "ridge": 100000,
+      "shape": 0.0,
+      "gate": false
+    },
+    {
+      "id": "zero_centered_a100000_shape0_agree1",
+      "kind": "zero_centered",
+      "ridge": 100000,
+      "shape": 0.0,
+      "gate": true
+    },
+    {
+      "id": "zero_centered_a100000_shape1_agree0",
+      "kind": "zero_centered",
+      "ridge": 100000,
+      "shape": 1.0,
+      "gate": false
+    },
+    {
+      "id": "zero_centered_a100000_shape1_agree1",
+      "kind": "zero_centered",
+      "ridge": 100000,
+      "shape": 1.0,
+      "gate": true
+    }
+  ],
+  "metrics": [
+    "wape",
+    "mae",
+    "rmse",
+    "daily_wape",
+    "peak_mape",
+    "p95_ape",
+    "peak_time_mae_minutes",
+    "absolute_bias_percent",
+    "cella5_wape",
+    "other52_wape"
+  ],
+  "alphas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "new_downloads": false,
+  "route": "Known H=1 uses original round8b; known H=7 uses native TimesFM3 uni21 plus only DEV-selected seven-day residual. This is one routing procedure with two branches, not one identical neural network. Routing never inspects future truth.",
+  "training": "Reuse audited native672 forecasts origins7..21. DEV fitting only target dates<14; final only target dates<22, inverse repeated-target-date weights. Existing full-intercept heads reused under same cutoffs; twelve new zero-intercept Ridge configurations fit only native seven-day residuals.",
+  "family_selection": "DEV origin14 full7days, fixed candidate blend .25. Prefer nonprior candidates satisfying primary WAPE and daily WAPE<=prior+.001pp, RMSE/P95<=1.005prior, peak<=1.02prior, then most metric-best-control leads and smallest equally normalized primary loss. If none, take minimum-primary-loss nonprior as rejected diagnostic, not adoption.",
+  "weight_selection": "DEV origin15 and aggregate origins14/15, both overlapping. For the single family, evaluate common seven-day strengths0/.1/.25/.5/1. Require primary no regression beyond .001pp separately at both origins, RMSE/P95/peak guards, primary improvement>=.001pp on at least one aggregate metric, and aggregate leading metric count>=prior. Select most leads then minimum primary loss, choose smaller weight within one paired-date SE of minimum among same-leading-count eligible strengths. Otherwise keep0. Dates overlap; this is stability screening, not independent confirmation.",
+  "frozen_diagnostic": "Always freeze best nonprior family before TEST; diagnostic weight equals selected weight if positive else .25. Only this one diagnostic and frozen selected scheme are TEST-scored. Never reselect after TEST.",
+  "development7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "primary_metrics": [
+    "wape",
+    "daily_wape"
+  ],
+  "ranking": "All ten metrics separately, combined with unchanged24 branch. TEST rank controls include original18 plus both frozen prior round15/16 diagnostic candidates. Best count is descriptive, not significance.",
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "overlapping_seven_windows": true,
+  "base7_previously_test_identified": true,
+  "resource_policy": {
+    "admission_physical_gib": 3,
+    "admission_commit_gib": 6,
+    "runtime_physical_gib": 1.5,
+    "runtime_commit_gib": 2
+  },
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round17/code/multihorizon_residual_experiment.py": "cfe2bc8f273aeb3be14a6841afbf8e8c0f3c59d37f8d85e953ebbbc61ac7dac7",
+    "round16/code/joint_local_experiment.py": "c632f67ecb16b6aebf9f0d5d178e66f3456f97e39887423de5e132ad31bca4bf",
+    "round17/results/native_train7.npz": "b2e2fe65bc24f5ae1552ea443e69cfc9fa716f168a383771ea207b9ab392d625",
+    "round17/results/native_train7_verification.json": "c9bebf3af8e3252705edd5af5830423ba19199ba6c96a3bf751aca4dc0318901",
+    "round17/results/independent_verification.json": "e281fa87eab17740b865d660e7506fadf1cdc7b4b09075841aef53f624b6e5bf",
+    "round17/models/dev_heads.pkl": "d3a5d3ed1a516309de252fd76eb49f99fd107493983db13a8ee70e87a67d69ca",
+    "round17/models/final_heads.pkl": "50c69ca7a034d9f29cea2f103d1eb6a847f7fae7d5d7fe4d69158de0775144d3",
+    "round11/results/dev_predictions.npz": "13182e2d8ef25cdc9251ac00f4b09dd2a2cce4db8d4a866f73c44779d67c41a2",
+    "round8b/results/test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round8b/results/component_deployment_origin31.npz": "a5ffac4d572ddbae563d3a74899bff71897bbbba791b6dded0b926545d8f74ec",
+    "round8b/results/selected_deployment_origin31_1day.csv": "d4c52c132bb9516aed6dcafb38a760fc61be84a3f29424176451abed13600389",
+    "round15/results/tf3_dev7.npz": "4a4ee003a0346a5c8327f744ba21f72ba1f31a47b85797d3ec9f843202ed74ca",
+    "round15/results/tf3_dev7_verification.json": "80e34b11f1e21460292544c64d26ec1dceaf940fd669b1f484915d9e74b1079f",
+    "results/dev7.npz": "a4a74809a3a85a4df020e2b42bdbedad63e348da97880a6a92b9544375d66f12",
+    "seven_day_completion_20261005/results/test7_predictions.npz": "bbb1f9bb9824d85358a9daff5929ff883adfa5ebc6d952a8f6fb9593b18a398e",
+    "model_comparison_20261005/results/task_revision/summary.json": "e2fc1e243fa0dd17957bc676a32073569e5e19498da6b97445f0a691f1d5e1fa",
+    "round15/results/test_predictions.npz": "5fffcabf82b678670787d72a84e1c59ea46001cdd5ceb2a7fad2f5e0a9406921",
+    "round16/results/test_predictions.npz": "2bde1214c110015cf3818f632d48fe4cd43fd3c4ee65051b31b99feeca13a3e8",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/code/timesfm3_run.py": "49b2adff5ce9f59e3393162e52e05bf16d4ad3271a76c4113f2b80c371a277bc",
+    "models/timesfm3-base/config.json": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+    "models/timesfm3-base/model.safetensors": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da"
+  }
+}

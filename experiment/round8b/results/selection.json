@@ -1,0 +1,37 @@
+{
+  "frozen_at": "2026-10-01T06:20:06.456764+00:00",
+  "config": "best_tail_lr1e6_teacher01_s100",
+  "chosen": {
+    "alpha": 0.5,
+    "wape": 2.3869265001147206,
+    "paired_cell_se": 0.0002462750237043198
+  },
+  "validation": [
+    {
+      "alpha": 0,
+      "wape": 2.387413261769499,
+      "paired_cell_se": 0.0
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.3873149824805875,
+      "paired_cell_se": 4.9156990005797944e-05
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.3871684153383113,
+      "paired_cell_se": 0.00012302418128872327
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.3869265001147206,
+      "paired_cell_se": 0.0002462750237043198
+    },
+    {
+      "alpha": 1,
+      "wape": 2.3864499729997877,
+      "paired_cell_se": 0.0004939955801417599
+    }
+  ],
+  "protocol_sha256": "10a92449f3c90e5b860d2fb5b7df7e0ab4626b6965ec0ccffc897fd204e98395"
+}

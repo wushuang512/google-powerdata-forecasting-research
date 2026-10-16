@@ -1,0 +1,130 @@
+{
+  "created_utc": "2026-10-03T08:01:02.491612+00:00",
+  "method": "shallow nonlinear residual replacement inside fixed round8b",
+  "candidates": {
+    "l1_leaves7": {
+      "objective": "regression_l1",
+      "num_leaves": 7
+    },
+    "l1_leaves15": {
+      "objective": "regression_l1",
+      "num_leaves": 15
+    },
+    "l2_leaves7": {
+      "objective": "regression",
+      "num_leaves": 7
+    },
+    "l2_leaves15": {
+      "objective": "regression",
+      "num_leaves": 15
+    }
+  },
+  "fixed_parameters": {
+    "n_estimators": 80,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "min_child_samples": 1024,
+    "reg_lambda": 100,
+    "n_jobs": 2,
+    "verbosity": -1,
+    "random_state": 20261003,
+    "deterministic": true,
+    "force_col_wise": true,
+    "max_bin": 63
+  },
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "development_family_origins": [
+    14,
+    15,
+    16,
+    17
+  ],
+  "development_weight_origins": [
+    18,
+    19,
+    20,
+    21
+  ],
+  "final_training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "feature_source": "exact existing historical Ridge features; no new future covariates",
+  "target": "(observed power minus fixed backbone ensemble) / past7-day mean",
+  "sample_weight": "past7 mean / training valid target sum per domain",
+  "correction": "clip(best + alpha * 0.5 * clip(tree_residual - fixed_ridge_residual, +/-0.02*past7mean),0,1)",
+  "ridge_control": "existing frozen round5 dev/final pickle, independently regressed against saved predictions",
+  "alphas": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1
+  ],
+  "selection": "early4 choose family by all57 macro WAPE; late4 one standard error rule with max(paired date SE, paired cell SE), favor alpha0/smaller; freeze before TEST",
+  "large_gain_rule": ">=5 percent relative WAPE reduction and positive paired-day bootstrap lower bound; exploratory only",
+  "training_days_short": true,
+  "development_reused": true,
+  "test_reused": true,
+  "independent_confirmation": false,
+  "model_downloads": 0,
+  "foundation_weights_changed": false,
+  "script_sha256": "5588b80cfa8e9925bc294767092aea68f90f58e13b937561e1b46533f0863e9c",
+  "input_fingerprints": {
+    "results\\data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "code\\common.py": "6569f5e40ea884081fedf64b335dd7e3b790d19a0c4d4baa2b8285e5cb014a91",
+    "round5\\code\\calibration.py": "b951063c6d47e1ba07c52e6ea46a8c8565a22f4ada8455b807aaa5ed617bd1e0",
+    "round8b\\results\\selection.json": "f713ae2932f05c17419c12f06770f3ed12ba3f9b18701ec35369581e286e66ad",
+    "round8b\\results\\selection.sha256": "b3cc08399b4eca980595751969302c7343d48139a87e260f0b8ada4f85bf9c46",
+    "round8b\\results\\dev_predictions.npz": "784b52d4a6cbc75554d91570e9168a8a8d4220d04bfceeea698af9c980941b01",
+    "round8b\\results\\test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round8b\\results\\selected_deployment_origin31_1day.csv": "d4c52c132bb9516aed6dcafb38a760fc61be84a3f29424176451abed13600389",
+    "round5\\results\\calibration_dev.npz": "4f560eafeaf660299ccb07a3738c99985c007b0b14c528703ead5f354edb08c8",
+    "round5\\results\\test_candidates.npz": "207de26568973609ac1e095e9207557088bf6d1e8b8fee2b4e4965ca5bb87589",
+    "round5\\models\\residual_ridge100000_dev.pkl": "ebb229f6284afad36945242cb7779da86ce2f8466bb79e680b882415aa6589d6",
+    "round5\\models\\residual_ridge100000_final.pkl": "0e48d933c82ab15e98fa942f08e25d92de3c95aebe664ee1f7fa4a9ef7e389d4",
+    "round4\\results\\deployment_origin31_1day.npz": "933b64a9e16becbb8e9dacc313310baf0c0be0c95788ac59ec8fec0b50c1da02",
+    "round5\\results\\selected_deployment_origin31_1day.csv": "424f9d0bbc3b26d979a2a37e76f4642d6b789a88821e986b6c3a63e6029e4f69",
+    "round3\\results\\tf3_train.npz": "e35828d79c40b34a58f659bf5b1b88bdeb9a1b1bab0af67b45369ed9bf9ee5b6",
+    "round3\\results\\chronos_train.npz": "16e68de6dc5ede413a92cdbd95fc952b4ed1d90f7beef0d26672e0447a69e225",
+    "round3\\results\\tirex_train.npz": "e4714f440ab339b19d966491ef8901ab3f5dc0c5bb810c3d20f633e26ed59f5c",
+    "round3\\results\\tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3\\results\\chronos_dev.npz": "6fe9f89e78a27295a623efe04608843838053ad94a9b0d39f1878d4bd721ffb7",
+    "round3\\results\\tirex_dev.npz": "016b70218bbff4c06fa881a410e310af7f6db4f89ececed75b18f44f95354fc4",
+    "round3\\results\\tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+    "round3\\results\\chronos_test.npz": "67950b374eac052f0012734142364bb27878d6120311b4dd6a6f8c4a92ee499b",
+    "round3\\results\\tirex_test.npz": "31aec1d4dec23c7983f853cd34b39a2760aef54360a9360ec53a3891ca9be2c6"
+  }
+}

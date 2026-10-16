@@ -1,0 +1,43 @@
+{
+  "configurations": {
+    "head_uni": {
+      "scope": "head",
+      "kind": "uni",
+      "lr": 1e-05,
+      "anchor": 0.5,
+      "physical": 0
+    },
+    "head_cov": {
+      "scope": "head",
+      "kind": "cov",
+      "lr": 1e-05,
+      "anchor": 0.5,
+      "physical": 0.1
+    },
+    "tail_cov": {
+      "scope": "tail",
+      "kind": "cov",
+      "lr": 1e-06,
+      "anchor": 0.5,
+      "physical": 0.1
+    },
+    "full_cov": {
+      "scope": "all",
+      "kind": "cov",
+      "lr": 5e-07,
+      "anchor": 0.5,
+      "physical": 0.1
+    }
+  },
+  "checkpoints": [
+    50,
+    150,
+    300
+  ],
+  "cutoff": 14,
+  "target": "Direct masked point WAPE surrogate, teacher anchoring, production auxiliary and ordering penalties",
+  "inference": "Median only; no calibrated uncertainty claim",
+  "selection": "first four development days choose checkpoint, later four check before test",
+  "test_used_for_tuning": false,
+  "already_examined_month": true
+}

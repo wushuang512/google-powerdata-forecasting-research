@@ -1,0 +1,349 @@
+{
+  "horizon1": {
+    "lora_uni_lr3e5_s300": {
+      "wape": 2.4852777073477275,
+      "mae": 0.017514345254316364,
+      "p95_ape": 7.443447229656942,
+      "daily_wape": 1.606845381567359,
+      "peak_mape": 1.8069137585793476,
+      "peak_time_mae_minutes": 317.10526315789474,
+      "valid_points": 49243
+    },
+    "full_cov_lr1e6_s300": {
+      "wape": 2.4659952756740524,
+      "mae": 0.017363343903505333,
+      "p95_ape": 7.341156339504405,
+      "daily_wape": 1.5890199084732533,
+      "peak_mape": 1.7911471176049785,
+      "peak_time_mae_minutes": 310.17543859649123,
+      "valid_points": 49243
+    },
+    "zero_cellprod": {
+      "wape": 2.466039526607209,
+      "mae": 0.01738073768787376,
+      "p95_ape": 7.2786598086072765,
+      "daily_wape": 1.595185493860335,
+      "peak_mape": 2.0620099029257672,
+      "peak_time_mae_minutes": 317.3391812865497,
+      "valid_points": 49243
+    },
+    "full_parts_lr1e6_s300": {
+      "wape": 2.4727177649426455,
+      "mae": 0.01741618340626544,
+      "p95_ape": 7.3271182273917805,
+      "daily_wape": 1.5930751118606943,
+      "peak_mape": 1.8575707527339131,
+      "peak_time_mae_minutes": 301.8421052631579,
+      "valid_points": 49243
+    },
+    "history13": {
+      "wape": 3.0457713257685417,
+      "mae": 0.021484998778949188,
+      "p95_ape": 9.070748799819484,
+      "daily_wape": 1.7886157895635546,
+      "peak_mape": 1.5918420498880819,
+      "peak_time_mae_minutes": 348.0409356725146,
+      "valid_points": 49243
+    },
+    "zero_uni": {
+      "wape": 2.4989755825724598,
+      "mae": 0.017611468358686672,
+      "p95_ape": 7.499849296981411,
+      "daily_wape": 1.6370152246477467,
+      "peak_mape": 2.0092706415295027,
+      "peak_time_mae_minutes": 323.2456140350877,
+      "valid_points": 49243
+    },
+    "zero_cov": {
+      "wape": 2.467589419054638,
+      "mae": 0.0173883515185727,
+      "p95_ape": 7.329168241923564,
+      "daily_wape": 1.5985829193653371,
+      "peak_mape": 1.976827766294866,
+      "peak_time_mae_minutes": 305.46783625730995,
+      "valid_points": 49243
+    },
+    "tirex_uni": {
+      "wape": 2.4338746695155207,
+      "mae": 0.01717412943289335,
+      "p95_ape": 6.9903311070822465,
+      "daily_wape": 1.5468450737370851,
+      "peak_mape": 2.192259163186061,
+      "peak_time_mae_minutes": 305.6140350877193,
+      "valid_points": 49243
+    },
+    "tirex_calendar": {
+      "wape": 2.437381499222019,
+      "mae": 0.017189842573268773,
+      "p95_ape": 6.938779899493331,
+      "daily_wape": 1.560692765627025,
+      "peak_mape": 2.185949024080372,
+      "peak_time_mae_minutes": 314.53216374269005,
+      "valid_points": 49243
+    },
+    "old_equal_mix": {
+      "wape": 2.4164518683035925,
+      "mae": 0.017038453199300366,
+      "p95_ape": 7.015695624116007,
+      "daily_wape": 1.523814580862698,
+      "peak_mape": 2.118536787370166,
+      "peak_time_mae_minutes": 311.3157894736842,
+      "valid_points": 49243
+    },
+    "new_curve": {
+      "wape": 2.4462972558711265,
+      "mae": 0.017232567461422276,
+      "p95_ape": 7.251958411913415,
+      "daily_wape": 1.564992490209176,
+      "peak_mape": 1.985092667031279,
+      "peak_time_mae_minutes": 306.5497076023392,
+      "valid_points": 49243
+    },
+    "new_peak": {
+      "wape": 2.460332066079252,
+      "mae": 0.01733147674529435,
+      "p95_ape": 7.288644979092689,
+      "daily_wape": 1.564997734630434,
+      "peak_mape": 1.613799981813387,
+      "peak_time_mae_minutes": 306.5497076023392,
+      "valid_points": 49243
+    },
+    "last": {
+      "wape": 3.199450324772723,
+      "mae": 0.02256746474964293,
+      "p95_ape": 9.62724750948339,
+      "daily_wape": 1.786164865601407,
+      "peak_mape": 1.068242856335437,
+      "peak_time_mae_minutes": 344.56140350877195,
+      "valid_points": 49243
+    },
+    "week": {
+      "wape": 4.073904881630609,
+      "mae": 0.02858289841534161,
+      "p95_ape": 11.249880838894185,
+      "daily_wape": 3.0712732159496205,
+      "peak_mape": 1.5820349149902102,
+      "peak_time_mae_minutes": 322.10526315789474,
+      "valid_points": 49243
+    },
+    "mean3": {
+      "wape": 3.022838989780414,
+      "mae": 0.021329612556324987,
+      "p95_ape": 8.693260427620062,
+      "daily_wape": 2.047868553706841,
+      "peak_mape": 1.4758339958775963,
+      "peak_time_mae_minutes": 303.187134502924,
+      "valid_points": 49243
+    },
+    "round1_primary": {
+      "wape": 2.5065450906053055,
+      "mae": 0.017665119797132523,
+      "p95_ape": 7.2891442741005275,
+      "daily_wape": 1.5545370783485932,
+      "peak_mape": 1.599469701407945,
+      "peak_time_mae_minutes": 309.7076023391813,
+      "valid_points": 49243
+    }
+  },
+  "comparison": {
+    "old_equal_mix": {
+      "difference_pp": -0.029845387567533764,
+      "relative_reduction_percent": -1.2350913320067884,
+      "domains_won": 19,
+      "days_won": 3,
+      "cells_won": 3,
+      "day_block_95": [
+        -0.07462146145156244,
+        0.0332356633512472
+      ],
+      "day_and_cell_95": [
+        -0.12038072237997692,
+        0.07833066525537123
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "round1_primary": {
+      "difference_pp": 0.06024783473417914,
+      "relative_reduction_percent": 2.4036206234626283,
+      "domains_won": 43,
+      "days_won": 7,
+      "cells_won": 7,
+      "day_block_95": [
+        0.040454691790563886,
+        0.10172250862456803
+      ],
+      "day_and_cell_95": [
+        -0.016669310136198354,
+        0.15391905796951047
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "last": {
+      "difference_pp": 0.7531530689015966,
+      "relative_reduction_percent": 23.54007696478606,
+      "domains_won": 57,
+      "days_won": 9,
+      "cells_won": 10,
+      "day_block_95": [
+        0.6594061918436815,
+        0.8825076131686639
+      ],
+      "day_and_cell_95": [
+        0.440220951047821,
+        1.1604283329906453
+      ],
+      "bootstrap_replicates": 5000
+    }
+  },
+  "horizon7": {
+    "lora_uni_lr3e5_s300": {
+      "wape": 3.0466667596507677,
+      "mae": 0.021384040733032864,
+      "p95_ape": 8.785782533622248,
+      "daily_wape": 2.3175238921085106,
+      "peak_mape": 1.6809287683838294,
+      "peak_time_mae_minutes": 313.43358395989975,
+      "valid_points": 114902
+    },
+    "full_cov_lr1e6_s300": {
+      "wape": 2.9711219202566634,
+      "mae": 0.020851119559299486,
+      "p95_ape": 8.67150776644264,
+      "daily_wape": 2.2402808750092973,
+      "peak_mape": 1.6316892562581078,
+      "peak_time_mae_minutes": 317.88220551378447,
+      "valid_points": 114902
+    },
+    "zero_cellprod": {
+      "wape": 2.9034249606651783,
+      "mae": 0.02034650207781722,
+      "p95_ape": 8.507054507837507,
+      "daily_wape": 2.0887855128029016,
+      "peak_mape": 1.830352168504538,
+      "peak_time_mae_minutes": 328.796992481203,
+      "valid_points": 114902
+    },
+    "full_parts_lr1e6_s300": {
+      "wape": 2.967159142951029,
+      "mae": 0.020815446474129924,
+      "p95_ape": 8.63614869657714,
+      "daily_wape": 2.2306598829514095,
+      "peak_mape": 1.7270586223712037,
+      "peak_time_mae_minutes": 305.90225563909775,
+      "valid_points": 114902
+    },
+    "history13": {
+      "wape": 3.447739617654369,
+      "mae": 0.024103446236681526,
+      "p95_ape": 10.062675673333379,
+      "daily_wape": 2.3891908055287785,
+      "peak_mape": 1.3631549817175896,
+      "peak_time_mae_minutes": 330.4636591478697,
+      "valid_points": 114902
+    },
+    "zero_uni": {
+      "wape": 3.258548917333363,
+      "mae": 0.02292435377187487,
+      "p95_ape": 9.718415354228075,
+      "daily_wape": 2.612840362764149,
+      "peak_mape": 1.889388363880641,
+      "peak_time_mae_minutes": 330.07518796992485,
+      "valid_points": 114902
+    },
+    "zero_cov": {
+      "wape": 3.0643296121010226,
+      "mae": 0.021495432323716663,
+      "p95_ape": 9.075649971858466,
+      "daily_wape": 2.342741382745166,
+      "peak_mape": 1.763186162277389,
+      "peak_time_mae_minutes": 323.30827067669173,
+      "valid_points": 114902
+    },
+    "tirex_uni": {
+      "wape": 2.880262516799108,
+      "mae": 0.020164834465055678,
+      "p95_ape": 8.155914152307071,
+      "daily_wape": 2.121549266277639,
+      "peak_mape": 2.0690424673891523,
+      "peak_time_mae_minutes": 313.1829573934837,
+      "valid_points": 114902
+    },
+    "tirex_calendar": {
+      "wape": 2.9186152227654,
+      "mae": 0.020396432564380212,
+      "p95_ape": 8.28224273557957,
+      "daily_wape": 2.0889115251140375,
+      "peak_mape": 2.246172801594413,
+      "peak_time_mae_minutes": 313.35839598997495,
+      "valid_points": 114902
+    },
+    "old_equal_mix": {
+      "wape": 2.984437543740136,
+      "mae": 0.020939349418630494,
+      "p95_ape": 8.541093420122772,
+      "daily_wape": 2.288536757698596,
+      "peak_mape": 1.9359126182506685,
+      "peak_time_mae_minutes": 320.68922305764414,
+      "valid_points": 114902
+    },
+    "new_curve": {
+      "wape": 2.9104102160567153,
+      "mae": 0.020408287418110054,
+      "p95_ape": 8.494494938414165,
+      "daily_wape": 2.15227036443259,
+      "peak_mape": 1.7644073380019432,
+      "peak_time_mae_minutes": 321.8671679197995,
+      "valid_points": 114902
+    },
+    "new_peak": {
+      "wape": 2.932139988170035,
+      "mae": 0.020558625329114205,
+      "p95_ape": 8.569466862654716,
+      "daily_wape": 2.1522679016756947,
+      "peak_mape": 1.3620893821085749,
+      "peak_time_mae_minutes": 321.8671679197995,
+      "valid_points": 114902
+    },
+    "last": {
+      "wape": 3.653813144246707,
+      "mae": 0.025531801013037203,
+      "p95_ape": 10.672595886603677,
+      "daily_wape": 2.3886206407341226,
+      "peak_mape": 1.3767845293048717,
+      "peak_time_mae_minutes": 325.17543859649123,
+      "valid_points": 114902
+    },
+    "week": {
+      "wape": 4.082191055697398,
+      "mae": 0.028590952869981957,
+      "p95_ape": 11.170651277823582,
+      "daily_wape": 3.1035498330071722,
+      "peak_mape": 1.6082907842513132,
+      "peak_time_mae_minutes": 327.468671679198,
+      "valid_points": 114902
+    },
+    "mean3": {
+      "wape": 3.2119187773783344,
+      "mae": 0.022438381306582038,
+      "p95_ape": 8.885402667173777,
+      "daily_wape": 2.257474476938631,
+      "peak_mape": 1.3035514400009485,
+      "peak_time_mae_minutes": 312.4185463659148,
+      "valid_points": 114902
+    },
+    "round1_primary": {
+      "wape": 2.9450946786532572,
+      "mae": 0.02064678508346444,
+      "p95_ape": 8.541712222277352,
+      "daily_wape": 2.199702271552555,
+      "peak_mape": 1.7784244643828064,
+      "peak_time_mae_minutes": 313.95989974937345,
+      "valid_points": 114902
+    }
+  },
+  "goal_achieved_exploratory": false,
+  "old_report_wape": 2.416,
+  "improvement_vs_old_report_percent": -1.2540254913545748,
+  "independent_confirmation": false,
+  "seven_day_weights": "Transferred unchanged from 24h development; no 7day retuning"
+}

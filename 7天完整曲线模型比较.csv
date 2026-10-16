@@ -1,0 +1,19 @@
+模型完整名称,评估状态,7天672点曲线WAPE百分比,曲线MAE利用率,7天峰值MAPE百分比,P95点APE百分比,原预测保存位置,原预测数组键
+TiRex-2 零样本单变量预测,已评估 672点预测,2.880262516799108,0.020164834465055678,2.0690424673891523,8.155914152307071,round2/results/test7_predictions.npz,tirex_uni
+Chronos-2 25%＋TiRex-2 25%＋TimesFM3 50% 固定权重预测,已评估 672点预测,2.90318967282479,0.020348372392025832,1.9481764472099965,8.244735858778435,round4/results/test7.npz,best_mix
+Chronos-2三分支微调与分量约束＋TiRex-2日历分支 开发期加权预测 加3点平滑,已评估 672点预测,2.9104102160567153,0.020408287418110054,1.7644073380019432,8.494494938414165,round2/results/test7_predictions.npz,new_curve
+Chronos-2三分支微调与分量约束＋TiRex-2日历分支 开发期加权预测 加3点平滑及前日峰值校正,已评估 672点预测,2.932139988170035,0.020558625329114205,1.3620893821085749,8.569466862654716,round2/results/test7_predictions.npz,new_peak
+TimesFM3 14天历史同集群联合目标与production功率代理协变量预测,已评估 672点预测,2.9138021399629306,0.020419830950057092,1.9981211334619127,8.282792228591136,round4/results/test7.npz,tf3_cellprod
+Chronos-2 LoRA与协变量及分量约束预测＋Patch Transformer＋历史曲线 开发期加权预测,已评估 672点预测,2.9450946786532572,0.02064678508346444,1.7784244643828064,8.541712222277352,results/test7_predictions.npz,ensemble7
+Chronos-2 50%＋TiRex-2 50% 等权预测,已评估 672点预测,2.984437543740136,0.020939349418630494,1.9359126182506685,8.541093420122772,round2/results/test7_predictions.npz,old_equal_mix
+LightGBM回归 15叶节点 200棵树 无production协变量,已评估 672点预测,3.1160852600516287,0.0218997081649051,2.493950676541914,8.118724834407097,results/test7_predictions.npz,lgb_p0_l15_n200
+Ridge回归 正则参数alpha 1000,已评估 672点预测,3.133678156399846,0.021959316270015013,2.7277429714919794,7.901626822537436,results/test7_predictions.npz,ridge_1000
+Chronos-2 零样本单变量预测,已评估 672点预测,3.258548917333363,0.02292435377187487,1.889388363880641,9.718415354228075,round2/results/test7_predictions.npz,zero_uni
+Chronos-2 历史production功率代理协变量预测,已评估 672点预测,3.0643296121010226,0.021495432323716663,1.763186162277389,9.075649971858466,round2/results/test7_predictions.npz,zero_cov
+前一天同刻曲线重复基线,已评估 672点预测,3.653813144246707,0.025531801013037203,1.3767845293048717,10.672595886603677,results/test7_predictions.npz,last
+上周同刻基线,已评估 672点预测,4.082191055697398,0.028590952869981957,1.6082907842513132,11.170651277823582,results/test7_predictions.npz,week
+Chronos-2＋TiRex-2＋TimesFM3 三模型固定权重预测 加 Ridge残差校准 七天固定起报逐日校准迁移版,已评估 固定起报校准迁移版,2.8637481499234445,0.020080826506618972,1.9343542283763095,8.117804368519689,seven_day_completion_20261005/results/test7_predictions.npz,r5_transfer7
+Chronos-2＋TiRex-2＋TimesFM3 三模型固定权重预测 加 Ridge残差校准与TimesFM3末层微调 七天固定起报逐日校准迁移版,已评估 固定起报校准迁移版,2.8636847993636634,0.020080697319495,1.9320405690884186,8.117578285224614,seven_day_completion_20261005/results/test7_predictions.npz,best_transfer7
+Chronos-2＋TiRex-2＋TimesFM3 加 Ridge残差与前日偏差校准的开发期加权预测 七天固定起报逐日残差校准迁移版,已评估 固定起报校准迁移版,2.8688650480230224,0.020116992859622814,1.948540583933568,8.12888882483561,seven_day_completion_20261005/results/test7_predictions.npz,r3_transfer7
+TimesFM3 21天历史单变量预测 直接672点预测,已评估 672点预测,2.7797074655345204,0.01940535446053212,2.027968858260533,7.729685953987539,seven_day_completion_20261005/results/test7_predictions.npz,tf3_uni21_7
+TimesFM 2.5 14天历史单变量预测 启用force_flip_invariance 直接672点预测,已评估 672点预测,2.9612092810357176,0.02072116130657634,2.430277646399487,8.421655090055673,seven_day_completion_20261005/results/test7_predictions.npz,tf25_7

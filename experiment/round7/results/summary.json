@@ -1,0 +1,153 @@
+{
+  "scores": {
+    "ridge_control_1000000": {
+      "wape": 2.3667744627803184,
+      "mae": 0.01667875708542992,
+      "p95_ape": 6.992378261836,
+      "daily_wape": 1.4790862605760973,
+      "peak_mape": 1.8449616232696697,
+      "peak_time_mae_minutes": 293.80116959064327,
+      "valid_points": 49243
+    },
+    "ridge_control_10000": {
+      "wape": 2.466813726680874,
+      "mae": 0.017374561285151965,
+      "p95_ape": 6.8985682799922925,
+      "daily_wape": 1.5239931003069136,
+      "peak_mape": 1.9892212785785803,
+      "peak_time_mae_minutes": 287.22222222222223,
+      "valid_points": 49243
+    },
+    "ridge_resource_10000": {
+      "wape": 2.4730356810103356,
+      "mae": 0.017419666175880276,
+      "p95_ape": 6.903776066099351,
+      "daily_wape": 1.5293055503144573,
+      "peak_mape": 1.9961621893603891,
+      "peak_time_mae_minutes": 288.0701754385965,
+      "valid_points": 49243
+    },
+    "ridge_control_100000": {
+      "wape": 2.3824661494427364,
+      "mae": 0.01678259616641018,
+      "p95_ape": 6.89609130075779,
+      "daily_wape": 1.4734827132668256,
+      "peak_mape": 1.9290854298086437,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "valid_points": 49243
+    },
+    "ridge_resource_100000": {
+      "wape": 2.3831050240642755,
+      "mae": 0.01678702329948186,
+      "p95_ape": 6.88951677430421,
+      "daily_wape": 1.4725598829817537,
+      "peak_mape": 1.9289226231194432,
+      "peak_time_mae_minutes": 286.4035087719298,
+      "valid_points": 49243
+    },
+    "ridge_resource_1000000": {
+      "wape": 2.368340647936469,
+      "mae": 0.016689626277387088,
+      "p95_ape": 6.990478421854696,
+      "daily_wape": 1.4780911165813657,
+      "peak_mape": 1.848446696921791,
+      "peak_time_mae_minutes": 292.1929824561403,
+      "valid_points": 49243
+    },
+    "prior": {
+      "wape": 2.3741796532432278,
+      "mae": 0.016730435480927352,
+      "p95_ape": 6.902170206350111,
+      "daily_wape": 1.483987837721912,
+      "peak_mape": 2.0020417186502386,
+      "peak_time_mae_minutes": 285.1169590643275,
+      "valid_points": 49243
+    },
+    "selected": {
+      "wape": 2.3741796532432278,
+      "mae": 0.016730435480927352,
+      "p95_ape": 6.902170206350111,
+      "daily_wape": 1.483987837721912,
+      "peak_mape": 2.0020417186502386,
+      "peak_time_mae_minutes": 285.1169590643275,
+      "valid_points": 49243
+    }
+  },
+  "selected": {
+    "created_utc": "2026-10-01T01:38:27.215295+00:00",
+    "chosen_config": "ridge_control_1000000",
+    "config": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 1000000
+    },
+    "chosen": {
+      "alpha": 0,
+      "wape": 2.387413261769499,
+      "paired_cell_se": 0.0
+    },
+    "validation": [
+      {
+        "alpha": 0,
+        "wape": 2.387413261769499,
+        "paired_cell_se": 0.0
+      },
+      {
+        "alpha": 0.1,
+        "wape": 2.3857214796868984,
+        "paired_cell_se": 0.002338151970535874
+      },
+      {
+        "alpha": 0.25,
+        "wape": 2.3837687984262055,
+        "paired_cell_se": 0.005983567554563937
+      },
+      {
+        "alpha": 0.5,
+        "wape": 2.3818345791915085,
+        "paired_cell_se": 0.012233191962146102
+      },
+      {
+        "alpha": 1,
+        "wape": 2.3829687186457913,
+        "paired_cell_se": 0.02567044579188473
+      }
+    ],
+    "protocol_sha256": "4978446817de0b177fe4044a4e4f38329361dcfb76a2aa9a6f81ed8abe28bdb0"
+  },
+  "comparison_vs_round5": {
+    "difference_pp": 0.0,
+    "relative_reduction_percent": 0.0,
+    "domains_won": 0,
+    "days_won": 0,
+    "cells_won": 0,
+    "day_block_95": [
+      0.0,
+      0.0
+    ],
+    "day_and_cell_95": [
+      0.0,
+      0.0
+    ],
+    "bootstrap_replicates": 5000
+  },
+  "resource_gain_controlled": {
+    "10000": -0.00622195432946171,
+    "100000": -0.0006388746215391095,
+    "1000000": -0.0015661851561503681
+  },
+  "causality_checks": {
+    "features_causal_origin14": true,
+    "features_causal_origin22": true,
+    "features_causal_origin26": true,
+    "features_causal_origin30": true,
+    "selection_hash": true
+  },
+  "all_passed": true,
+  "actual_task_usage_used": true,
+  "full_download": false,
+  "large_improvement": false,
+  "independent_confirmation": false,
+  "actual_task_usage_scope": "Partial job-window sample, cell a only; not total workload",
+  "group_definition": "control = resources alone; resource = resources plus partial CPU/memory"
+}

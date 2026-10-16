@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-06T07:22:35.739611+00:00",
+  "script_sha256": "a7e9587bd5884e06ea8cf20e011849d782b787888b4e268b653c008782aa4818",
+  "metrics_script_sha256": "0cf7c46bb4b8dbeeb6e8e1e75d9c14070048e7dba200c3733d2e2d1801fa994a",
+  "configs": [
+    {
+      "id": "prior",
+      "gate": "all",
+      "centering": "global"
+    },
+    {
+      "id": "all_global",
+      "gate": "all",
+      "centering": "global"
+    },
+    {
+      "id": "all_cell",
+      "gate": "all",
+      "centering": "cell"
+    },
+    {
+      "id": "cv002_010_global",
+      "gate": "cv002_010",
+      "centering": "global"
+    },
+    {
+      "id": "cv002_010_cell",
+      "gate": "cv002_010",
+      "centering": "cell"
+    },
+    {
+      "id": "cv005_020_global",
+      "gate": "cv005_020",
+      "centering": "global"
+    },
+    {
+      "id": "cv005_020_cell",
+      "gate": "cv005_020",
+      "centering": "cell"
+    },
+    {
+      "id": "hold_a5_global",
+      "gate": "hold_a5",
+      "centering": "global"
+    },
+    {
+      "id": "hold_a5_cell",
+      "gate": "hold_a5",
+      "centering": "cell"
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "motivation": "R23 DEV7 curve and hit thresholds improve but late P95 and a5 guard fail. Prospectively evaluate whether history-volatility gate and cell consistency reduce unstable corrections; no test-selected domain/date routing.",
+  "gate": "Observed past7day coefficient of variation only: soft ramps.002..010 or.005..020, no PDU-specific thresholds. hold_a5 is a predeclared known-source branch because DEV a5 regression and distinct complete CPU/resource mapping; never chosen by TEST group scores.",
+  "projection": "Gate multiplies joint residual, then scalar total correction weighted by same gate within global/cell group. Inactive domains exactly retain prior. Conserves normalized forecast total, not physical energy.",
+  "selection": "Unchanged R20 eight-core guard, earlyDEV24 orDEV7 firstorigin choose one family, laterDEV24 orDEV7 second plus aggregates choose0/.1/.25/.5/1, oneSE shrink, else0. One frozen diagnostic fixed.25 or selected positive. No TEST rank reselection.",
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round23/code/joint_point_peak_experiment.py": "c9203d734f7ae49964ec76c2ea26db89d7d0d1c93b8e1681d511e1ed5a1b5443",
+    "round23/results/dev_predictions.npz": "99968b74dbd999192c55bf44d4ea874305aa6cf364825217d6a71698f2f9adf4",
+    "round23/results/test_predictions.npz": "4413579a53a924e1a94d380aca80ca0bac309eadac041e33d88a9a762daeab00",
+    "round23/results/dev_summary.json": "baba29833edc9c79ea8635e6ec9e5506353cd8ed9e1827648122390fb6c0338a",
+    "round23/results/selection.json": "72310f95b2e1838b7f982835a57dd56bc2e56e7e5c8c2c1d7310dd24a06c26cb",
+    "round9/results/selected_intervals_test.npz": "b86c3120a876293f6bfb8fa61a92ef239de8c51866fc9d23aff2300d578aa4d1"
+  },
+  "resource_policy": {
+    "admission_physical_gib": 2.125,
+    "admission_commit_gib": 6,
+    "job_commit_hard_cap_bytes": 536870912,
+    "runtime_physical_floor_gib": 1.5,
+    "runtime_commit_floor_gib": 2
+  }
+}

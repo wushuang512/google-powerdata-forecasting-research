@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-10-06T07:18:28.069792+00:00",
+  "horizons": {
+    "1": {
+      "candidate": {
+        "id": "joint_point0_peak50",
+        "point": 0.0,
+        "peak": 0.5
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.25,
+      "development_supported": false
+    },
+    "7": {
+      "candidate": {
+        "id": "joint_point10_peak50",
+        "point": 0.1,
+        "peak": 0.5
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.25,
+      "development_supported": false
+    }
+  },
+  "protocol_sha256": "c2d635bd8d410ce7f472a9b25f3d85e2a8914eddebc49d279ca37918e2af882a",
+  "dev_summary_sha256": "baba29833edc9c79ea8635e6ec9e5506353cd8ed9e1827648122390fb6c0338a",
+  "dev_predictions_sha256": "99968b74dbd999192c55bf44d4ea874305aa6cf364825217d6a71698f2f9adf4",
+  "interval_radius_sha256": "c20047869d1f9d811c0e521c753a65619fa49861eff32e2263088ff2bd370749",
+  "independent_confirmation": false
+}

@@ -1,0 +1,117 @@
+{
+  "development_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "train_cutoffs": [
+    14,
+    22
+  ],
+  "configurations": {
+    "lora_uni_lr1e5_s300": {
+      "mode": "lora",
+      "kind": "uni",
+      "lr": 1e-05,
+      "steps": 300,
+      "context": 1344
+    },
+    "lora_uni_lr3e5_s300": {
+      "mode": "lora",
+      "kind": "uni",
+      "lr": 3e-05,
+      "steps": 300,
+      "context": 1344
+    },
+    "lora_cov_lr1e5_s300": {
+      "mode": "lora",
+      "kind": "cov",
+      "lr": 1e-05,
+      "steps": 300,
+      "context": 1344
+    },
+    "lora_cov_lr3e5_s300": {
+      "mode": "lora",
+      "kind": "cov",
+      "lr": 3e-05,
+      "steps": 300,
+      "context": 1344
+    },
+    "lora_cov_lr1e4_s100": {
+      "mode": "lora",
+      "kind": "cov",
+      "lr": 0.0001,
+      "steps": 100,
+      "context": 672
+    },
+    "lora_cell_lr3e5_s300": {
+      "mode": "lora",
+      "kind": "cell",
+      "lr": 3e-05,
+      "steps": 300,
+      "context": 672,
+      "batch": 16
+    },
+    "full_uni_lr1e6_s100": {
+      "mode": "full",
+      "kind": "uni",
+      "lr": 1e-06,
+      "steps": 100,
+      "context": 1344
+    },
+    "full_uni_lr3e6_s100": {
+      "mode": "full",
+      "kind": "uni",
+      "lr": 3e-06,
+      "steps": 100,
+      "context": 1344
+    },
+    "full_uni_lr1e6_s300": {
+      "mode": "full",
+      "kind": "uni",
+      "lr": 1e-06,
+      "steps": 300,
+      "context": 1344
+    },
+    "full_cov_lr1e6_s100": {
+      "mode": "full",
+      "kind": "cov",
+      "lr": 1e-06,
+      "steps": 100,
+      "context": 1344
+    },
+    "full_cov_lr3e6_s100": {
+      "mode": "full",
+      "kind": "cov",
+      "lr": 3e-06,
+      "steps": 100,
+      "context": 1344
+    },
+    "full_cov_lr1e6_s300": {
+      "mode": "full",
+      "kind": "cov",
+      "lr": 1e-06,
+      "steps": 300,
+      "context": 1344
+    }
+  },
+  "goal": "At least 5 percent relative WAPE reduction versus reproduced old equal-weight Chronos2+TiRex2, plus paired day/domain checks",
+  "selection": "development-only selection, two consecutive four-day blocks, regularization towards the strong reproduced baseline",
+  "limitation": "Round two is adaptive research on an already examined month, not independent confirmation"
+}

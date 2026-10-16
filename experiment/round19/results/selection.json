@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-10-05T11:38:58.597442+00:00",
+  "candidate": {
+    "id": "global_peak0",
+    "neutrality": "global",
+    "peak": false
+  },
+  "chosen_alpha": 0.25,
+  "diagnostic_alpha": 0.25,
+  "development_supported": true,
+  "protocol_sha256": "a8cfb6b474e04e75375c7a50e28f534a5ad6a143e7528310fac5feb76663b657",
+  "dev_summary_sha256": "98f59478ee9e1574aee6f40dda9631c9f719bea7df634331a69fd999cf374675",
+  "dev_predictions_sha256": "5ff9b2e23fa3cdea47e7db572f39e026b52ae8ec0e1ac1a9c401d2da587a09e4",
+  "independent_confirmation": false
+}

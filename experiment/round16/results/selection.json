@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-10-05T08:42:54.185679+00:00",
+  "candidate": {
+    "id": "history_peak_shape25",
+    "mean": 0.0,
+    "peak": 0.5,
+    "alpha": 100,
+    "peak_kind": "history",
+    "shape": 0.25
+  },
+  "chosen_alpha": 0.0,
+  "all_metric_dev_eligible": false,
+  "protocol_sha256": "a9696103ccb6f2bafda3ea14823b728b132b8b48acb266358d95fffe774ec493",
+  "dev_predictions_sha256": "cc1b12a981cbd70807de27a75b8f5759af3f19e54decf5865d4cfaeed098d1e0",
+  "dev_summary_sha256": "2227519abc13a9f014a87301de3fcc9af92b07426dee2f19656f4e82590c75aa",
+  "independent_confirmation": false
+}

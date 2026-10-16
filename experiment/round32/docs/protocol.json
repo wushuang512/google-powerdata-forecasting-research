@@ -1,0 +1,77 @@
+{
+  "created_utc": "2026-10-07T01:14:19.485388+00:00",
+  "phase": "registered before R32 DEV",
+  "metric_version_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+  "source_reference_sha256": "d66bd7282c9b21000140d7fb9a4c01622fcd0f67463d19333c5705d3998b1736",
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "training_dev_exclusive_end": 14,
+  "training_final_exclusive_end": 22,
+  "models": {
+    "1": [
+      "TTMhead sparse peak strength.05",
+      ".10",
+      ".25",
+      ".40"
+    ],
+    "7": [
+      "TTMhead zero-mean shape strength.05",
+      ".15",
+      ".25",
+      ".35"
+    ]
+  },
+  "decoder": "one direct672 output; first96 and seven96-point means derive from same curve",
+  "features": "causal power histories only; factor/standardization fit on first14 days for DEV and22 for final, supervised labels no later than cutoff; no true future CPU",
+  "selection": "same14 tradeoff bounds and>=2 categories; min eligible cost. Within0.0001 cost choose smallerstrength. None=>current prior. Only selected or DEV-best diagnostic scores on TEST; no TEST weight grid.",
+  "primary_metrics": [
+    "wape24",
+    "peak_mape24",
+    "wape7",
+    "daily_wape7"
+  ],
+  "test": "score only after selection.json frozen SHA; all preregistered family scores are descriptive diagnostics; selected best is DEV choice or original controls",
+  "uncertainty": "single repeatedly inspected May2019 month exploratory;7day origins overlap; no independent confirmation or universal gain guarantee",
+  "existing_frozen_selections_unchanged": true,
+  "new_downloads": 0,
+  "new_gradient_training": false,
+  "input_weights": "R30 train14 for DEV and22 for TEST/deploy. R26 prior curves. Expert identity and reconstruction selected by original DEV origins only; source TEST has been viewed in previous rounds, exploratory.",
+  "minor_tradeoffs": {
+    "wape_pp": 0.005,
+    "daily_wape_pp": 0.005,
+    "peak_mape_pp": 0.005,
+    "p95_pp": 0.01,
+    "hit2_5_drop_pp": 0.05,
+    "mae_rmse_relative": 0.002,
+    "daily_mae_rmse_relative": 0.005,
+    "groups_bias_pp": 0.005,
+    "peak_timing_minutes": 5
+  },
+  "reconstruction": "Same mathematical family as R31; four pre-registered strengths each horizon, no new training or downloads.",
+  "prior": "R8b24 and DEV-selectedR31 7day shape10. Compare candidate shapes constructed from originalR26; no TEST choice.",
+  "expert": "head only, fixed by prior R31 DEV shape selection; no choosing all based on its known TEST peak rank"
+}

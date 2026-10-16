@@ -1,0 +1,85 @@
+{
+  "scores": {
+    "prior": {
+      "wape": 2.3741796532432278,
+      "mae": 0.016730435480927352,
+      "p95_ape": 6.902170206350111,
+      "daily_wape": 1.483987837721912,
+      "peak_mape": 2.0020417186502386,
+      "peak_time_mae_minutes": 285.1169590643275,
+      "valid_points": 49243
+    },
+    "finetuned": {
+      "wape": 2.377110590487197,
+      "mae": 0.016750464885467845,
+      "p95_ape": 6.892027948401724,
+      "daily_wape": 1.487201375687396,
+      "peak_mape": 1.9829119495840763,
+      "peak_time_mae_minutes": 284.32748538011697,
+      "valid_points": 49243
+    },
+    "selected": {
+      "wape": 2.3741796532432278,
+      "mae": 0.016730435480927352,
+      "p95_ape": 6.902170206350111,
+      "daily_wape": 1.483987837721912,
+      "peak_mape": 2.0020417186502386,
+      "peak_time_mae_minutes": 285.1169590643275,
+      "valid_points": 49243
+    }
+  },
+  "selection": {
+    "frozen_at": "2026-10-01T05:59:58.507314+00:00",
+    "config": "lr1e4_anchor50_s25",
+    "chosen": {
+      "alpha": 0,
+      "wape": 2.387413261769499,
+      "paired_cell_se": 0.0
+    },
+    "validation": [
+      {
+        "alpha": 0,
+        "wape": 2.387413261769499,
+        "paired_cell_se": 0.0
+      },
+      {
+        "alpha": 0.1,
+        "wape": 2.3878700224548695,
+        "paired_cell_se": 0.000612769650581467
+      },
+      {
+        "alpha": 0.25,
+        "wape": 2.3886496006373816,
+        "paired_cell_se": 0.0015350038436460864
+      },
+      {
+        "alpha": 0.5,
+        "wape": 2.390284618335297,
+        "paired_cell_se": 0.0031093239010382976
+      },
+      {
+        "alpha": 1,
+        "wape": 2.3945570394710307,
+        "paired_cell_se": 0.006351139520859343
+      }
+    ],
+    "protocol_sha256": "c5ce5e93a9417edcbf1b2954f3b9067030fe03dea1323587544a24537bb4f487"
+  },
+  "comparison_vs_previous": {
+    "difference_pp": 0.0,
+    "relative_reduction_percent": 0.0,
+    "domains_won": 0,
+    "days_won": 0,
+    "cells_won": 0,
+    "day_block_95": [
+      0.0,
+      0.0
+    ],
+    "day_and_cell_95": [
+      0.0,
+      0.0
+    ],
+    "bootstrap_replicates": 5000
+  },
+  "independent_confirmation": false
+}

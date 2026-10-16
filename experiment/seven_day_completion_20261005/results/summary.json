@@ -1,0 +1,62 @@
+{
+  "scores": {
+    "r5_transfer7": {
+      "wape": 2.8637481499234445,
+      "mae": 0.020080826506618972,
+      "p95_ape": 8.117804368519689,
+      "daily_wape": 2.1184455828923068,
+      "peak_mape": 1.9343542283763095,
+      "peak_time_mae_minutes": 315.5388471177945,
+      "valid_points": 114902
+    },
+    "best_transfer7": {
+      "wape": 2.8636847993636634,
+      "mae": 0.020080697319495,
+      "p95_ape": 8.117578285224614,
+      "daily_wape": 2.1184191936076027,
+      "peak_mape": 1.9320405690884186,
+      "peak_time_mae_minutes": 315.38847117794484,
+      "valid_points": 114902
+    },
+    "r3_transfer7": {
+      "wape": 2.8688650480230224,
+      "mae": 0.020116992859622814,
+      "p95_ape": 8.12888882483561,
+      "daily_wape": 2.1379617403059212,
+      "peak_mape": 1.948540583933568,
+      "peak_time_mae_minutes": 318.75939849624064,
+      "valid_points": 114902
+    },
+    "tf3_uni21_7": {
+      "wape": 2.7797074655345204,
+      "mae": 0.01940535446053212,
+      "p95_ape": 7.729685953987539,
+      "daily_wape": 2.00147685008163,
+      "peak_mape": 2.027968858260533,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "valid_points": 114902
+    },
+    "tf25_7": {
+      "wape": 2.9612092810357176,
+      "mae": 0.02072116130657634,
+      "p95_ape": 8.421655090055673,
+      "daily_wape": 2.195510503754976,
+      "peak_mape": 2.430277646399487,
+      "peak_time_mae_minutes": 318.89724310776944,
+      "valid_points": 114902
+    }
+  },
+  "protocol_sha256": "b9c2a2634db6e7b5ecc0bebda192242646859bd4efe242fe3968934fed4a2239",
+  "fixed_weights": true,
+  "new_fit": false,
+  "future_truth_in_features": false,
+  "feature_future_perturbation_passed": true,
+  "residual_control_max_abs": 0.0,
+  "adapter_methods": [
+    "r5_transfer7",
+    "best_transfer7",
+    "r3_transfer7"
+  ],
+  "independent_confirmation": false,
+  "overlapping_windows": true
+}

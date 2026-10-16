@@ -1,0 +1,521 @@
+{
+  "created_utc": "2026-10-07T08:02:31.459419+00:00",
+  "protocol_sha256": "518bff3db453c53ec0e1c1f0f15f2fc5f602cad436623ee800cb7f868f79bf69",
+  "native_dev_sha256": "dd87f3284c98672ba73fce40b437f012bcf2ece00da314414f952438ae7feb1c",
+  "dev_predictions_sha256": "059923400ccfc1c5853cdc0826db164434e668b8b60ffa2f4cf777f204944feb",
+  "no_test_used": true,
+  "horizons": {
+    "1": {
+      "family": {
+        "id": "r4_cell_rank8_anchor0_25",
+        "rate": 4,
+        "group": "cell",
+        "context_days": 14,
+        "variant": "rank8_anchor0_25"
+      },
+      "selected": null,
+      "diagnostic": {
+        "alpha": 0.1,
+        "total": "global_daily",
+        "key": "a0.1_global_daily",
+        "eligible": false,
+        "primary_cost": 1.0119238542071203,
+        "primary_nonworse": false,
+        "secondary_small": false,
+        "peak_close": true,
+        "full_dev_nonworse": false
+      },
+      "retain_prior": true,
+      "family_ranking": [
+        {
+          "family": {
+            "id": "r4_cell_rank8_anchor0_25",
+            "rate": 4,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 0.9771870668066732
+        },
+        {
+          "family": {
+            "id": "r4_cell_rank4_anchor1",
+            "rate": 4,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 0.9817219009619391
+        },
+        {
+          "family": {
+            "id": "r4_cell_base",
+            "rate": 4,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9835428046243454
+        },
+        {
+          "family": {
+            "id": "r4_uni_rank8_anchor0_25",
+            "rate": 4,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 0.9921815718931436
+        },
+        {
+          "family": {
+            "id": "r4_uni_base",
+            "rate": 4,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "base"
+          },
+          "early_cost": 0.9959180955780152
+        },
+        {
+          "family": {
+            "id": "r4_uni_rank4_anchor1",
+            "rate": 4,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 0.9965652409221543
+        },
+        {
+          "family": {
+            "id": "r12_cell_base",
+            "rate": 12,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9992440124902148
+        },
+        {
+          "family": {
+            "id": "r12_cell_rank4_anchor1",
+            "rate": 12,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 1.0045099969072901
+        },
+        {
+          "family": {
+            "id": "r12_cell_rank8_anchor0_25",
+            "rate": 12,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 1.0106351840908672
+        },
+        {
+          "family": {
+            "id": "r12_uni_rank8_anchor0_25",
+            "rate": 12,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 1.043051900322256
+        },
+        {
+          "family": {
+            "id": "r12_uni_base",
+            "rate": 12,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "base"
+          },
+          "early_cost": 1.0434647488969027
+        },
+        {
+          "family": {
+            "id": "r12_uni_rank4_anchor1",
+            "rate": 12,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 1.0454054555423549
+        }
+      ],
+      "weight_ranking": [
+        {
+          "alpha": 0,
+          "total": "global_daily",
+          "key": "a0_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0,
+          "total": "none",
+          "key": "a0_none",
+          "eligible": false,
+          "primary_cost": 1.000000000000018,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.1,
+          "total": "global_daily",
+          "key": "a0.1_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0119238542071203,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.1,
+          "total": "none",
+          "key": "a0.1_none",
+          "eligible": false,
+          "primary_cost": 1.0129632942086049,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.25,
+          "total": "global_daily",
+          "key": "a0.25_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0329998795249085,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.25,
+          "total": "none",
+          "key": "a0.25_none",
+          "eligible": false,
+          "primary_cost": 1.0364130394705078,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.5,
+          "total": "global_daily",
+          "key": "a0.5_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0752111693626734,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.5,
+          "total": "none",
+          "key": "a0.5_none",
+          "eligible": false,
+          "primary_cost": 1.0855787719333814,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "global_daily",
+          "key": "a1_global_daily",
+          "eligible": false,
+          "primary_cost": 1.1835739780737529,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "none",
+          "key": "a1_none",
+          "eligible": false,
+          "primary_cost": 1.2143220852527878,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        }
+      ]
+    },
+    "7": {
+      "family": {
+        "id": "r4_cell_base",
+        "rate": 4,
+        "group": "cell",
+        "context_days": 14,
+        "variant": "base"
+      },
+      "selected": null,
+      "diagnostic": {
+        "alpha": 0.1,
+        "total": "global_daily",
+        "key": "a0.1_global_daily",
+        "eligible": false,
+        "primary_cost": 0.9977559169549817,
+        "primary_nonworse": true,
+        "secondary_small": false,
+        "peak_close": true,
+        "full_dev_nonworse": true
+      },
+      "retain_prior": true,
+      "family_ranking": [
+        {
+          "family": {
+            "id": "r4_cell_base",
+            "rate": 4,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9905263851024761
+        },
+        {
+          "family": {
+            "id": "r4_cell_rank4_anchor1",
+            "rate": 4,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 0.9906029410958284
+        },
+        {
+          "family": {
+            "id": "r4_cell_rank8_anchor0_25",
+            "rate": 4,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 0.9929579965402032
+        },
+        {
+          "family": {
+            "id": "r4_uni_base",
+            "rate": 4,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "base"
+          },
+          "early_cost": 0.9953152900294244
+        },
+        {
+          "family": {
+            "id": "r4_uni_rank4_anchor1",
+            "rate": 4,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 0.9956907381646478
+        },
+        {
+          "family": {
+            "id": "r12_cell_base",
+            "rate": 12,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9999174881509119
+        },
+        {
+          "family": {
+            "id": "r12_cell_rank8_anchor0_25",
+            "rate": 12,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 1.0000179353500644
+        },
+        {
+          "family": {
+            "id": "r4_uni_rank8_anchor0_25",
+            "rate": 4,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 1.0002170519605358
+        },
+        {
+          "family": {
+            "id": "r12_cell_rank4_anchor1",
+            "rate": 12,
+            "group": "cell",
+            "context_days": 14,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 1.0012530018583723
+        },
+        {
+          "family": {
+            "id": "r12_uni_rank8_anchor0_25",
+            "rate": 12,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank8_anchor0_25"
+          },
+          "early_cost": 1.045830518127933
+        },
+        {
+          "family": {
+            "id": "r12_uni_rank4_anchor1",
+            "rate": 12,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "rank4_anchor1"
+          },
+          "early_cost": 1.0474496897978158
+        },
+        {
+          "family": {
+            "id": "r12_uni_base",
+            "rate": 12,
+            "group": "uni",
+            "context_days": 7,
+            "variant": "base"
+          },
+          "early_cost": 1.0510871831648372
+        }
+      ],
+      "weight_ranking": [
+        {
+          "alpha": 0.1,
+          "total": "global_daily",
+          "key": "a0.1_global_daily",
+          "eligible": false,
+          "primary_cost": 0.9977559169549817,
+          "primary_nonworse": true,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.25,
+          "total": "global_daily",
+          "key": "a0.25_global_daily",
+          "eligible": false,
+          "primary_cost": 0.9977742620041592,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.1,
+          "total": "none",
+          "key": "a0.1_none",
+          "eligible": false,
+          "primary_cost": 0.9983046164622891,
+          "primary_nonworse": true,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.25,
+          "total": "none",
+          "key": "a0.25_none",
+          "eligible": false,
+          "primary_cost": 0.999288219626219,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0,
+          "total": "global_daily",
+          "key": "a0_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0,
+          "total": "none",
+          "key": "a0_none",
+          "eligible": false,
+          "primary_cost": 1.0000000000000029,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.5,
+          "total": "global_daily",
+          "key": "a0.5_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0044630571462776,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.5,
+          "total": "none",
+          "key": "a0.5_none",
+          "eligible": false,
+          "primary_cost": 1.0077820475100134,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "global_daily",
+          "key": "a1_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0395459658405333,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "none",
+          "key": "a1_none",
+          "eligible": false,
+          "primary_cost": 1.046557279838443,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        }
+      ]
+    }
+  }
+}

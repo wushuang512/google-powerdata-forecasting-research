@@ -1,0 +1,102 @@
+{
+  "created_utc": "2026-10-01T07:59:32.158555+00:00",
+  "registry": {
+    "global_penalty0.1": {
+      "scope": "global",
+      "penalty": 0.1
+    },
+    "global_penalty1.0": {
+      "scope": "global",
+      "penalty": 1.0
+    },
+    "global_penalty10.0": {
+      "scope": "global",
+      "penalty": 10.0
+    },
+    "regime_penalty0.1": {
+      "scope": "regime",
+      "penalty": 0.1
+    },
+    "regime_penalty1.0": {
+      "scope": "regime",
+      "penalty": 1.0
+    },
+    "regime_penalty10.0": {
+      "scope": "regime",
+      "penalty": 10.0
+    }
+  },
+  "checkpoints": [
+    100,
+    300,
+    600
+  ],
+  "train_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "dev_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "final_train_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "feature_names": [
+    "last_level_change",
+    "mean3_level_change",
+    "recent_volatility",
+    "proxy_availability7",
+    "hour_sin",
+    "hour_cos",
+    "chronos_deviation",
+    "tirex_deviation",
+    "timesfm_deviation"
+  ],
+  "parameters": "3 global biases or 30 shared regime parameters; no site-specific learned parameters",
+  "bounds": "softmax nonnegative weights sum one; logits update bounded by +/-0.5; power [0,1]",
+  "initialization": "Exactly zero correction to frozen round8b accepted forecast",
+  "objective": "Macro-normalized smooth absolute power loss plus weight and coefficient shrinkage",
+  "selection": "First four dev days choose checkpoint; last four choose shrinkage alpha by the larger paired-cell/day one-SE rule, preferring alpha zero. Freeze hashes before new test scoring.",
+  "development_reused": true,
+  "test_reused_in_previous_rounds": true,
+  "independent_confirmation": false,
+  "complete_cpu_input": false,
+  "external_license": "TimesFM3 Non-Commercial v1.0; research use only"
+}

@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-10-06T07:13:41.212250+00:00",
+  "horizons": {
+    "1": {
+      "candidate": {
+        "id": "hgb_absolute_error_leaves7_global",
+        "model": "hgb_absolute_error_leaves7",
+        "neutrality": "global"
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.25,
+      "development_supported": false
+    },
+    "7": {
+      "candidate": {
+        "id": "hgb_absolute_error_leaves7_global",
+        "model": "hgb_absolute_error_leaves7",
+        "neutrality": "global"
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.25,
+      "development_supported": false
+    }
+  },
+  "protocol_sha256": "68e602c09d3d62e31e7c0c87c7e1d02504f1d935c00154235a8ced043c26b2c9",
+  "dev_predictions_sha256": "557dd5af6a99a0c725d1f6f2d54dfe7c6bdb71279feed1a4fa6bdcbb8ba2c8ec",
+  "dev_summary_sha256": "dc572dc10b4f85026878322afd8f374e3c6f9d65da9aa169c60d133d3af2d791",
+  "dev_heads_sha256": "8e218e2847020510d721797b039c7ffa9a8ee86681aad0f57f0a878f0ed3bde7",
+  "interval_radius_sha256": "c20047869d1f9d811c0e521c753a65619fa49861eff32e2263088ff2bd370749",
+  "independent_confirmation": false
+}

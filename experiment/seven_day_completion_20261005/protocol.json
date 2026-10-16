@@ -1,0 +1,72 @@
+{
+  "frozen_utc": "2026-10-05T07:54:08.398323+00:00",
+  "origins": [
+    22,
+    23,
+    24
+  ],
+  "horizon": 672,
+  "no_refit": true,
+  "no_test_selection": true,
+  "new_downloads": false,
+  "inherited_weights": {
+    "round3": "frozen selection.json weights, components below 1e-12 are numerical zero",
+    "round5_alpha": 0.5,
+    "round8b_alpha": 0.5,
+    "round8b_component_delta": 0.5
+  },
+  "scope": "Complete missing seven-day tasks for existing frozen models; report transferred residual inference as adapted version, not a new trained seven-day model",
+  "method": "TimesFM3 uni21 and fine-tuned cellprod14, Chronos2 mirror14 and TimesFM2.5 context1344 flip1 predict672 directly. R5 and R3 residual regressors are applied separately to each forecast day using the same fixed-origin observed power/proxy/error history, day-specific base forecast and known future weekday for R3; never append observed future power or workload. Weights and calibration coefficients unchanged.",
+  "future_observation_policy": "No features use days >= origin. Saved historical forecast bank entries k<origin only. Day templates use original last known day and week, not simulated truths.",
+  "controls": "Each heavy model first reproduces frozen 96-point origin22 cache; max absolute difference <=1e-5 normalized utilization. R5 residual extraction must reproduce all saved24 forecasts <=1e-10; future perturbation must leave feature arrays identical.",
+  "candidate_ids": [
+    "r5_transfer7",
+    "best_transfer7",
+    "r3_transfer7",
+    "tf3_uni21_7",
+    "tf25_7"
+  ],
+  "missing_tasks_not_to_be_filled_with_24h_scores": true,
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round2/results/test7_predictions.npz": "5546cb6b7f177af2d17bff2dfd83d5ae4b1b82159b3d657239acd8640d95e1ea",
+    "round4/results/test7.npz": "275d824653a2394ac24dff169db5667de9eb22e1d8b654187c9caf00b116131f",
+    "round3/results/selection.json": "faa34b05e3217e4fcbe7719658c97c07f67613b4aac1242a4ec9a5cc964a0731",
+    "round4/results/selection.json": "0c947e76918c2ec4ad10f9ad95105d953ec4527bb211a23ac84932896f996d47",
+    "round5/results/selection.json": "939b883a1023a9e6fbd31a358570d7da5d698b34e0b09d6b1dfb5abf52f6ad89",
+    "round8b/results/selection.json": "f713ae2932f05c17419c12f06770f3ed12ba3f9b18701ec35369581e286e66ad",
+    "round3/models/ridge100000_final.pkl": "a89fe5d0b62c0a138425702fd58626a2d9385a129527191c4d94674579aa6680",
+    "round5/models/residual_ridge100000_final.pkl": "0e48d933c82ab15e98fa942f08e25d92de3c95aebe664ee1f7fa4a9ef7e389d4",
+    "round8b/models/best_tail_lr1e6_teacher01_s100_final.pt": "207cf9f46b338488fc29e1bbede10fd205fd45b558c833b816c5eb99e2911721",
+    "round3/code/residual.py": "c46da37feed4ef03b5fba94e1fc0c14e153cf899319fd4a86d95d0084c98fe2f",
+    "round5/code/calibration.py": "b951063c6d47e1ba07c52e6ea46a8c8565a22f4ada8455b807aaa5ed617bd1e0",
+    "code/classical.py": "a9a23d846f95e8f116cc1002ad246469bf0b1eb44a94deecc96cbb4fbc61cb09",
+    "round3/results/chronos_train.npz": "16e68de6dc5ede413a92cdbd95fc952b4ed1d90f7beef0d26672e0447a69e225",
+    "round3/results/tirex_train.npz": "e4714f440ab339b19d966491ef8901ab3f5dc0c5bb810c3d20f633e26ed59f5c",
+    "round3/results/tf3_train.npz": "e35828d79c40b34a58f659bf5b1b88bdeb9a1b1bab0af67b45369ed9bf9ee5b6",
+    "round3/results/chronos_dev.npz": "6fe9f89e78a27295a623efe04608843838053ad94a9b0d39f1878d4bd721ffb7",
+    "round3/results/tirex_dev.npz": "016b70218bbff4c06fa881a410e310af7f6db4f89ececed75b18f44f95354fc4",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/results/chronos_test.npz": "67950b374eac052f0012734142364bb27878d6120311b4dd6a6f8c4a92ee499b",
+    "round3/results/tirex_test.npz": "31aec1d4dec23c7983f853cd34b39a2760aef54360a9360ec53a3891ca9be2c6",
+    "round3/results/tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+    "round3/results/residual_test.npz": "6a91a545fffd7edc8f7545d11e42691c3d68bafef678801cb900876c9ed55c50",
+    "round5/results/test_predictions.npz": "612b710f4f09582341a7a828c2899595a79dbb308801cb79e626d8e4883f7bb4",
+    "round8b/results/test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round3/code/timesfm3_run.py": "49b2adff5ce9f59e3393162e52e05bf16d4ad3271a76c4113f2b80c371a277bc",
+    "round2/code/round2_lib.py": "d3121f61157aa80968b0bb1d34b42b861cf70664dacfc6b3f9a0f5760c633738",
+    "round3/code/multiscale.py": "f0e18d48d95c0b945fabd17edd0f522585212006606b82dc29ff283ba8e22f66",
+    "models/timesfm3-base/model.safetensors": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+    "models/timesfm25-base/model.safetensors": "2f776efe6245e42b24bc4153ffdf61810140210e4bd3b01fb21f7aa779ab6ce8",
+    "models/chronos2-base/model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42"
+  },
+  "source_digest": "484e5a05a0ae56b7edf3740366eaee066dbdd61fb322b646728a274a7fad835c",
+  "independent_confirmation": false,
+  "overlapping_windows": true,
+  "resource_policy": {
+    "admission_physical_gib": 3,
+    "admission_commit_gib": 6,
+    "runtime_physical_gib": 1.5,
+    "runtime_commit_gib": 2
+  }
+}

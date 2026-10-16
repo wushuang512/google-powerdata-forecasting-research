@@ -1,0 +1,263 @@
+{
+  "frozen_at_utc": "2026-10-03T06:57:22.845193+00:00",
+  "protocol_sha256": "cca0f818cccc608ddd2b2dde74d6d293fbeaa8f1e70136ed2f8b30eb094047f2",
+  "source_fingerprints": {
+    "protocol_sha256": "cca0f818cccc608ddd2b2dde74d6d293fbeaa8f1e70136ed2f8b30eb094047f2",
+    "script_sha256": "fd0e90d490ab947dc155aff95e7e646dc9c95f86f3c2404fa6423dfd549cbfeb",
+    "power_sha256": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "usage_sha256": "35aedc6efdb65e65f36adf357a10ca5709d165b6cf2ef5f9bae9a470e32e6d0e",
+    "resource_sha256": "c4fce92d020e220d6adfd7af34d2bf98f1e776749d41859822da36b51de5bc63",
+    "audit_sha256": "3c9a558fd9055821e785aeea0040cf60ae9a87edba62c52e87c9eab114970768",
+    "prior_artifact_sha256": {
+      "round8b/results/selection.json": "f713ae2932f05c17419c12f06770f3ed12ba3f9b18701ec35369581e286e66ad",
+      "round8b/results/selection.sha256": "b3cc08399b4eca980595751969302c7343d48139a87e260f0b8ada4f85bf9c46",
+      "round8b/results/dev_predictions.npz": "784b52d4a6cbc75554d91570e9168a8a8d4220d04bfceeea698af9c980941b01",
+      "round8b/results/test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+      "round8b/results/selected_deployment_origin31_1day.csv": "d4c52c132bb9516aed6dcafb38a760fc61be84a3f29424176451abed13600389",
+      "round5/results/calibration_dev.npz": "4f560eafeaf660299ccb07a3738c99985c007b0b14c528703ead5f354edb08c8",
+      "round3/results/chronos_dev.npz": "6fe9f89e78a27295a623efe04608843838053ad94a9b0d39f1878d4bd721ffb7",
+      "round3/results/tirex_dev.npz": "016b70218bbff4c06fa881a410e310af7f6db4f89ececed75b18f44f95354fc4",
+      "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+      "round3/results/tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+      "round2/results/development.npz": "a0a546ef0abe44576230beb7d1307b78a3195f827288f36dda5a1e03bfe68c73",
+      "round2/results/final_chronos24.npz": "141ea7078619ba965b82782b657f821a6fac67dceb96f448e83327c939f8609e"
+    }
+  },
+  "candidate": "chronos_usage_resource",
+  "chosen": {
+    "alpha": 0,
+    "primary_wape": 2.2724004313584287,
+    "scores": {
+      "all57": {
+        "wape": 2.3869265001147206,
+        "mae": 0.016583372502070443,
+        "p95_ape": 6.688135406654406,
+        "daily_wape": 1.7231026986323938,
+        "peak_mape": 2.4313351699284893,
+        "valid_points": 21885
+      },
+      "cella5": {
+        "wape": 2.2724004313584287,
+        "mae": 0.016249807963265077,
+        "p95_ape": 6.190477586023162,
+        "daily_wape": 1.6991749407477754,
+        "peak_mape": 1.227146681751494,
+        "valid_points": 1920
+      }
+    },
+    "paired_day_se": 0.0,
+    "paired_day_improvement_pp": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "early_development": [
+    {
+      "candidate": "timesfm_usage",
+      "scores": {
+        "all57": {
+          "wape": 2.687599490550916,
+          "mae": 0.01826865138437801,
+          "p95_ape": 8.086959318946407,
+          "daily_wape": 1.585785693852906,
+          "peak_mape": 2.611339526693296,
+          "valid_points": 21884
+        },
+        "cella5": {
+          "wape": 1.8939245426235871,
+          "mae": 0.013756469022968591,
+          "p95_ape": 5.5417607938703775,
+          "daily_wape": 0.5865853322221675,
+          "peak_mape": 1.560676883018291,
+          "valid_points": 1920
+        }
+      }
+    },
+    {
+      "candidate": "timesfm_usage_resource",
+      "scores": {
+        "all57": {
+          "wape": 2.6853492458716905,
+          "mae": 0.018252322323084602,
+          "p95_ape": 8.100738226446072,
+          "daily_wape": 1.5906927997920475,
+          "peak_mape": 2.596966277584272,
+          "valid_points": 21884
+        },
+        "cella5": {
+          "wape": 1.8682717532804118,
+          "mae": 0.01357035174310144,
+          "p95_ape": 5.727015615874218,
+          "daily_wape": 0.6425263399283775,
+          "peak_mape": 1.3968218431754165,
+          "valid_points": 1920
+        }
+      }
+    },
+    {
+      "candidate": "chronos_usage",
+      "scores": {
+        "all57": {
+          "wape": 2.684825537769324,
+          "mae": 0.018248460699190644,
+          "p95_ape": 8.075378082435916,
+          "daily_wape": 1.589870046373222,
+          "peak_mape": 2.615208108553104,
+          "valid_points": 21884
+        },
+        "cella5": {
+          "wape": 1.862301480913441,
+          "mae": 0.01352633727576009,
+          "p95_ape": 5.047740171451561,
+          "daily_wape": 0.633146950953772,
+          "peak_mape": 1.6047787162200948,
+          "valid_points": 1920
+        }
+      }
+    },
+    {
+      "candidate": "chronos_usage_resource",
+      "scores": {
+        "all57": {
+          "wape": 2.6837634588141848,
+          "mae": 0.018240640913472297,
+          "p95_ape": 8.058317496282982,
+          "daily_wape": 1.596752974757953,
+          "peak_mape": 2.6084563273979025,
+          "valid_points": 21884
+        },
+        "cella5": {
+          "wape": 1.8501937808248505,
+          "mae": 0.013437208009791196,
+          "p95_ape": 5.106088100746552,
+          "daily_wape": 0.7116123345397014,
+          "peak_mape": 1.527808411050806,
+          "valid_points": 1920
+        }
+      }
+    }
+  ],
+  "late_development": [
+    {
+      "alpha": 0,
+      "primary_wape": 2.2724004313584287,
+      "scores": {
+        "all57": {
+          "wape": 2.3869265001147206,
+          "mae": 0.016583372502070443,
+          "p95_ape": 6.688135406654406,
+          "daily_wape": 1.7231026986323938,
+          "peak_mape": 2.4313351699284893,
+          "valid_points": 21885
+        },
+        "cella5": {
+          "wape": 2.2724004313584287,
+          "mae": 0.016249807963265077,
+          "p95_ape": 6.190477586023162,
+          "daily_wape": 1.6991749407477754,
+          "peak_mape": 1.227146681751494,
+          "valid_points": 1920
+        }
+      },
+      "paired_day_se": 0.0,
+      "paired_day_improvement_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "primary_wape": 2.2717965482492204,
+      "scores": {
+        "all57": {
+          "wape": 2.3868735279121585,
+          "mae": 0.016582974126395044,
+          "p95_ape": 6.688135406654406,
+          "daily_wape": 1.721531403575591,
+          "peak_mape": 2.4313785126472585,
+          "valid_points": 21885
+        },
+        "cella5": {
+          "wape": 2.2717965482492204,
+          "mae": 0.016245267103027546,
+          "p95_ape": 6.170546629013084,
+          "daily_wape": 1.6812621771002256,
+          "peak_mape": 1.2276407887454654,
+          "valid_points": 1920
+        }
+      },
+      "paired_day_se": 0.019794032655410278,
+      "paired_day_improvement_pp": [
+        0.0022148759234750237,
+        -0.04764778249985522,
+        -0.0004885241040001542,
+        0.04928506617409516
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "primary_wape": 2.2738835514959397,
+      "scores": {
+        "all57": {
+          "wape": 2.387056598372397,
+          "mae": 0.016584260577867688,
+          "p95_ape": 6.68677331622454,
+          "daily_wape": 1.719960108518789,
+          "peak_mape": 2.431443445184464,
+          "valid_points": 21885
+        },
+        "cella5": {
+          "wape": 2.2738835514959397,
+          "mae": 0.016259930639735267,
+          "p95_ape": 6.185106879455572,
+          "daily_wape": 1.6633494134526798,
+          "peak_mape": 1.228381019669608,
+          "valid_points": 1920
+        }
+      },
+      "paired_day_se": 0.0381144298339673,
+      "paired_day_improvement_pp": [
+        0.0038441995684710406,
+        -0.0954812073459729,
+        -0.0035099057541834178,
+        0.09106548950818719
+      ]
+    },
+    {
+      "alpha": 1,
+      "primary_wape": 2.285433356664244,
+      "scores": {
+        "all57": {
+          "wape": 2.3880697391766343,
+          "mae": 0.016591468950961315,
+          "p95_ape": 6.68677331622454,
+          "daily_wape": 1.7168175184051844,
+          "peak_mape": 2.4308045037859096,
+          "valid_points": 21885
+        },
+        "cella5": {
+          "wape": 2.285433356664244,
+          "mae": 0.01634209482991963,
+          "p95_ape": 6.209292276172182,
+          "daily_wape": 1.6275238861575851,
+          "peak_mape": 1.2210970877260843,
+          "valid_points": 1920
+        }
+      },
+      "paired_day_se": 0.07082538106210197,
+      "paired_day_improvement_pp": [
+        0.003825768121307682,
+        -0.191894738067312,
+        -0.014579640989153564,
+        0.1540592538763498
+      ]
+    }
+  ],
+  "test_scored_before_freeze": false,
+  "independent_confirmation": false,
+  "retained_previous_best": true
+}

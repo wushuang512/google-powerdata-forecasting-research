@@ -1,0 +1,154 @@
+{
+  "created_utc": "2026-10-06T07:12:43.000233+00:00",
+  "script_sha256": "8c662fa4a293010bb08426df42f807b6612b494bc940147fa493f79290b2e70a",
+  "metrics_script_sha256": "0cf7c46bb4b8dbeeb6e8e1e75d9c14070048e7dba200c3733d2e2d1801fa994a",
+  "models": [
+    {
+      "id": "hgb_absolute_error_leaves7",
+      "loss": "absolute_error",
+      "leaves": 7,
+      "iterations": 60,
+      "l2": 10
+    },
+    {
+      "id": "hgb_absolute_error_leaves15",
+      "loss": "absolute_error",
+      "leaves": 15,
+      "iterations": 80,
+      "l2": 100
+    },
+    {
+      "id": "hgb_absolute_error_leaves31",
+      "loss": "absolute_error",
+      "leaves": 31,
+      "iterations": 80,
+      "l2": 100
+    },
+    {
+      "id": "hgb_squared_error_leaves7",
+      "loss": "squared_error",
+      "leaves": 7,
+      "iterations": 60,
+      "l2": 10
+    },
+    {
+      "id": "hgb_squared_error_leaves15",
+      "loss": "squared_error",
+      "leaves": 15,
+      "iterations": 80,
+      "l2": 100
+    },
+    {
+      "id": "hgb_squared_error_leaves31",
+      "loss": "squared_error",
+      "leaves": 31,
+      "iterations": 80,
+      "l2": 100
+    }
+  ],
+  "configs": [
+    {
+      "id": "prior",
+      "model": null,
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_absolute_error_leaves7_global",
+      "model": "hgb_absolute_error_leaves7",
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_absolute_error_leaves7_daily_global",
+      "model": "hgb_absolute_error_leaves7",
+      "neutrality": "daily_global"
+    },
+    {
+      "id": "hgb_absolute_error_leaves15_global",
+      "model": "hgb_absolute_error_leaves15",
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_absolute_error_leaves15_daily_global",
+      "model": "hgb_absolute_error_leaves15",
+      "neutrality": "daily_global"
+    },
+    {
+      "id": "hgb_absolute_error_leaves31_global",
+      "model": "hgb_absolute_error_leaves31",
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_absolute_error_leaves31_daily_global",
+      "model": "hgb_absolute_error_leaves31",
+      "neutrality": "daily_global"
+    },
+    {
+      "id": "hgb_squared_error_leaves7_global",
+      "model": "hgb_squared_error_leaves7",
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_squared_error_leaves7_daily_global",
+      "model": "hgb_squared_error_leaves7",
+      "neutrality": "daily_global"
+    },
+    {
+      "id": "hgb_squared_error_leaves15_global",
+      "model": "hgb_squared_error_leaves15",
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_squared_error_leaves15_daily_global",
+      "model": "hgb_squared_error_leaves15",
+      "neutrality": "daily_global"
+    },
+    {
+      "id": "hgb_squared_error_leaves31_global",
+      "model": "hgb_squared_error_leaves31",
+      "neutrality": "global"
+    },
+    {
+      "id": "hgb_squared_error_leaves31_daily_global",
+      "model": "hgb_squared_error_leaves31",
+      "neutrality": "daily_global"
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "reference_document_sha256": "d66bd7282c9b21000140d7fb9a4c01622fcd0f67463d19333c5705d3998b1736",
+  "training": "New point residual heads train from audited native TimesFM3 direct672 origins7..21. DEV only label dates<14; final<22. Fixed stride6 rotated by known origin/horizon, inverse repeated target-date weighting, no PDU identifier feature, no future workload. Small tree models, no backbone reload.",
+  "features": "Native prediction and its adjacent predicted slots, past last-day and7day same-slot power, past daily statistics, known Fourier clock/weekday/horizon/cell. Targets residual/observed past7day mean, corrected residual clipped +/-5%historical mean.",
+  "application": "Current R8b24 or R19 seven-day prior plus learned native residual; this delta-transfer is a modeling hypothesis, not an in-sample refined-prior error fit. Global or per-future-day forecast-total projection on normalized outputs, not energy conservation.",
+  "selection": "Per known horizon separately: early DEV24 origins14..17 or DEV7 origin14 choose one family using unchanged R20 eight-metric cost and strict no-core-regression guard. Then later DEV24 or DEV7 origin15 plus aggregates choose strengths0/.05/.1/.25/.5 with same guards; at least.0001pp curve or peak improvement. One-SE shrink. Otherwise0. One diagnostic25% or positive selected strength frozen before TEST; never select based on TEST.",
+  "test_seen_before": true,
+  "independent_confirmation": false,
+  "resource_policy": {
+    "cache_only_admission_physical_gib": 2.125,
+    "admission_commit_gib": 6,
+    "owned_job_commit_hard_cap_bytes": 536870912,
+    "runtime_physical_floor_gib": 1.5,
+    "runtime_commit_floor_gib": 2
+  },
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round17/results/native_train7.npz": "b2e2fe65bc24f5ae1552ea443e69cfc9fa716f168a383771ea207b9ab392d625",
+    "round17/results/native_train7_verification.json": "c9bebf3af8e3252705edd5af5830423ba19199ba6c96a3bf751aca4dc0318901",
+    "round20/code/learned_peak_experiment.py": "0a5ae206b8d9af740fc9d22e6ada12ab272be0b0c280cb8a122a79d2b8c9898c",
+    "round19/results/dev_predictions.npz": "5ff9b2e23fa3cdea47e7db572f39e026b52ae8ec0e1ac1a9c401d2da587a09e4",
+    "round19/results/test_predictions.npz": "387f1a2dad08eee1de70e21a1620b482838751e800f2a0f8bc71485da31ac4de",
+    "round18/results/dev_predictions.npz": "b064e00c885f4ef9a6b524c5b6231a7ea168d002a503ef4f530af6b759f39b27",
+    "round18/results/test_predictions.npz": "49b491ce59af299e6a2a81ce8dc8213a2ca9d16dd8d0f9e5d6124e43e7023e95",
+    "round11/results/dev_predictions.npz": "13182e2d8ef25cdc9251ac00f4b09dd2a2cce4db8d4a866f73c44779d67c41a2",
+    "round8b/results/test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/results/tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+    "round9/results/selected_intervals_test.npz": "b86c3120a876293f6bfb8fa61a92ef239de8c51866fc9d23aff2300d578aa4d1",
+    "round21/results/dev_summary.json": "05cb37bf4ea5b9557ce0a1c8b9fe13ceffaee7445e063201d1496e5a6aa6c07b",
+    "round21/results/selection.json": "347cbe5e83d2fae00a3997f0295262e7a40cb20e9a870330a76717eca91ea673"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "created_utc": "2026-10-06T07:18:06.266522+00:00",
+  "script_sha256": "c9203d734f7ae49964ec76c2ea26db89d7d0d1c93b8e1681d511e1ed5a1b5443",
+  "metrics_script_sha256": "0cf7c46bb4b8dbeeb6e8e1e75d9c14070048e7dba200c3733d2e2d1801fa994a",
+  "configs": [
+    {
+      "id": "prior",
+      "point": 0.0,
+      "peak": 0.0
+    },
+    {
+      "id": "joint_point0_peak10",
+      "point": 0.0,
+      "peak": 0.1
+    },
+    {
+      "id": "joint_point0_peak25",
+      "point": 0.0,
+      "peak": 0.25
+    },
+    {
+      "id": "joint_point0_peak50",
+      "point": 0.0,
+      "peak": 0.5
+    },
+    {
+      "id": "joint_point5_peak0",
+      "point": 0.05,
+      "peak": 0.0
+    },
+    {
+      "id": "joint_point5_peak10",
+      "point": 0.05,
+      "peak": 0.1
+    },
+    {
+      "id": "joint_point5_peak25",
+      "point": 0.05,
+      "peak": 0.25
+    },
+    {
+      "id": "joint_point5_peak50",
+      "point": 0.05,
+      "peak": 0.5
+    },
+    {
+      "id": "joint_point10_peak0",
+      "point": 0.1,
+      "peak": 0.0
+    },
+    {
+      "id": "joint_point10_peak10",
+      "point": 0.1,
+      "peak": 0.1
+    },
+    {
+      "id": "joint_point10_peak25",
+      "point": 0.1,
+      "peak": 0.25
+    },
+    {
+      "id": "joint_point10_peak50",
+      "point": 0.1,
+      "peak": 0.5
+    },
+    {
+      "id": "joint_point25_peak0",
+      "point": 0.25,
+      "peak": 0.0
+    },
+    {
+      "id": "joint_point25_peak10",
+      "point": 0.25,
+      "peak": 0.1
+    },
+    {
+      "id": "joint_point25_peak25",
+      "point": 0.25,
+      "peak": 0.25
+    },
+    {
+      "id": "joint_point25_peak50",
+      "point": 0.25,
+      "peak": 0.5
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "training": "Reuse R22 native pointwise HGB absolute-loss7leaves60iterations trained target dates<14 DEV and<22 final, plus R18 zero-intercept Ridge1000 peak head under same cutoffs. No new backbone loading.",
+  "method": "Pointwise correction applied first, then R21 DEV-selected sparse daily-peak correction preserving corrected daily mean. Components selected from their own DEV records, not TEST scores.",
+  "motivation": "R22 DEV7 strengths.05/.1 improved curve/hit2/hit5 but worsened peaks; R20/21 DEV peak correction had complementary peak gains and point-tail tradeoffs. Joint candidate hypothesis from development evidence.",
+  "selection": "Per known H separately: earlyDEV24 origins14..17 orDEV7 origin14 select minimum8metriccost guard-eligible nonprior, else minimum-cost diagnostic. LaterDEV24 origins18..21 orDEV7 origin15 plus aggregates confirm common strength0/.25/.5/1 with unchanged strict R20 guard and .0001pp curve/peak improvement. One-SE shrink, otherwise0. Exactly one diagnostic at fixed.25 or positive strength frozen before TEST, never TEST rank selection.",
+  "component_peak_configs": {
+    "1": {
+      "id": "localpeak_top32_s50_prior",
+      "strength": 0.5,
+      "gate": true,
+      "location": "prior",
+      "support": 32
+    },
+    "7": {
+      "id": "localpeak_top16_s50_near_history",
+      "strength": 0.5,
+      "gate": true,
+      "location": "near_history",
+      "support": 16
+    }
+  },
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "resource_policy": {
+    "admission_physical_gib": 2.125,
+    "admission_commit_gib": 6,
+    "job_commit_hard_cap_bytes": 536870912,
+    "runtime_physical_floor_gib": 1.5,
+    "runtime_commit_floor_gib": 2
+  },
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round21/code/localized_peak_experiment.py": "a5261252ff3bfb49afb074e3a38307eb2e0fd4332c66a3f074a151108162c047",
+    "round21/results/dev_summary.json": "05cb37bf4ea5b9557ce0a1c8b9fe13ceffaee7445e063201d1496e5a6aa6c07b",
+    "round21/results/selection.json": "347cbe5e83d2fae00a3997f0295262e7a40cb20e9a870330a76717eca91ea673",
+    "round22/results/dev_summary.json": "dc572dc10b4f85026878322afd8f374e3c6f9d65da9aa169c60d133d3af2d791",
+    "round22/results/selection.json": "be71791a76023b3c4862485eab917cc6e942963860087aba8989883c88804922",
+    "round22/results/dev_predictions.npz": "557dd5af6a99a0c725d1f6f2d54dfe7c6bdb71279feed1a4fa6bdcbb8ba2c8ec",
+    "round22/results/test_predictions.npz": "9b5f9f05327fa9406e22de9fbc76b7eb932ffba499a1151d585a8b6f7a7073ed",
+    "round18/models/dev_heads.pkl": "c1bf9fba8fff7b1f41b44b4e1485b9ab0400e598662199043116680119884a78",
+    "round18/models/final_heads.pkl": "5e57d9552309acdf57d36992f5b3b97b62272eb368dc1855713d30f7186eae26",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/results/tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+    "round9/results/selected_intervals_test.npz": "b86c3120a876293f6bfb8fa61a92ef239de8c51866fc9d23aff2300d578aa4d1"
+  }
+}

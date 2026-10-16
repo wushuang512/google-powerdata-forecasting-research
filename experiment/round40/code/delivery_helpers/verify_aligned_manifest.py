@@ -1,0 +1,3 @@
+from pathlib import Path
+import sys,json,datetime
+T=Path(sys.argv[1]);p=T/'交付文件清单.json';m=json.loads(p.read_text(encoding='utf-8'));expected={r['path']:r['bytes'] for r in m['all_files']};actual={str(x.relative_to(T)):x.stat().st_size for x in T.rglob('*') if x.is_file() and x!=p};assert actual==expected,'Full inventory mismatch';assert m['files']==len(actual) and m['bytes']==sum(actual.values());m['inventory_verified']=True;m['inventory_verified_utc']=datetime.datetime.now(datetime.timezone.utc).isoformat();p.write_text(json.dumps(m,ensure_ascii=False,indent=2),encoding='utf-8');print(json.dumps(dict(all_passed=True,inventory_count=len(actual),inventory_bytes=sum(actual.values()),root=str(T),manifest_itself_excluded=True)))

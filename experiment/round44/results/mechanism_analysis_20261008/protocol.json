@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-08T06:04:10.556901+00:00",
+  "retrospective": true,
+  "test_previously_seen": true,
+  "independent_confirmation": false,
+  "purpose": "Mechanism attribution, not candidate selection; all registered diagnostics reported even when negative.",
+  "frozen_selection_sha256": "e7c1429c22fac5452e90e331c92070258018d9bad4cf4570660f52b4e29519cc",
+  "input_prediction_sha256": "6b6b37c4f74b301e77c04e8b052de8fdb38a4d0ef6010714273f0a4383ee6534",
+  "canonical_evaluation_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+  "foundation_inference": false,
+  "deployed_models_unchanged": true,
+  "fitting_only_dev_origins": true,
+  "fixed_ablations": [
+    "source A only",
+    "source B only",
+    "uniform members",
+    "one segment, DEV refit A/B with original mix",
+    "7 daily segments, DEV refit A/B with original mix (H7 only)",
+    "each nonzero member removed and existing weights renormalized; no refitting"
+  ],
+  "limitations": "Structural refits hold original mix fixed; original mix was selected for half-day segments. Drops do not refit remaining weights. Neither is an independently validated replacement. DEV fitted errors are resubstitution, not out-of-fold validation.",
+  "diagnostic_only": [
+    "signed residual correlations",
+    "triangle-inequality cancellation",
+    "MSE level/shape decomposition",
+    "PDU/origin/horizon contributions"
+  ]
+}

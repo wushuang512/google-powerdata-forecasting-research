@@ -1,0 +1,125 @@
+from pathlib import Path
+import csv
+import datetime
+import hashlib
+import json
+import sys
+sys.dont_write_bytecode=True
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.font_manager import FontProperties
+
+T=Path(sys.argv[1]); B=T/'experiment'; Q=B/'round44/results'; A=Q/'mechanism_analysis_20261008'
+def read(p): return json.loads(p.read_text(encoding='utf-8'))
+def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def save(p,v): p.write_text(json.dumps(v,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8')
+s=read(A/'analysis.json'); cfg=read(Q/'selection.json')['configs']; c=read(Q/'hdsf_comparison.json'); protocol=read(A/'protocol.json')
+d=np.load(B/'results/data.npz'); z=np.load(Q/'predictions.npz'); checks=[]
+def check(name,passed):
+    checks.append(dict(name=name,passed=bool(passed))); assert passed,name
+check('original_selection_still_frozen',sha(Q/'selection.json')==protocol['frozen_selection_sha256']==(Q/'selection.sha256').read_text())
+check('original_predictions_unchanged',sha(Q/'predictions.npz')==protocol['input_prediction_sha256'])
+check('canonical_evaluator_unchanged',sha(B/'round29/code/aligned_metrics.py')==protocol['canonical_evaluation_sha256'])
+ablations=list(csv.DictReader((A/'fixed_ablations.csv').open(encoding='utf-8-sig')))
+for H in (1,7):
+    task='24h' if H==1 else '7d'; v=cfg[task]; names=v['methods']; oo=list(range(22,31)) if H==1 else [22,23,24]
+    y=np.stack([d['y'][:,o:o+H].reshape(57,-1) for o in oo],axis=1)
+    valid=np.stack([d['valid'][:,o:o+H].reshape(57,-1) for o in oo],axis=1)
+    bank=np.stack([z[f'{m}_H{H}'] for m in names],axis=-1)
+    aw=np.pad(np.asarray(v['component_a'][str(v['segments'][0])]),((0,0),(0,1)))
+    bw=np.asarray(v['component_b'][str(v['segments'][0])]); w=(1-v['mix'])*aw+v['mix']*bw
+    check(f'H{H} simplex',np.all(w>=0) and np.allclose(w.sum(1),1,atol=1e-12))
+    for row in [r for r in ablations if int(r['horizon_days'])==H]:
+        label=row['case']
+        if label=='HDSF frozen': ww=w
+        elif label=='A foundation-only source weights': ww=aw
+        elif label=='B local-included source weights': ww=bw
+        elif label=='All members uniform': ww=np.full((1,len(names)),1/len(names))
+        elif label.startswith('DEV-refit '):
+            n=int(label.split()[1]); ww=np.asarray(read(A/f'global_or_daily_weights_H{H}_segments{n}.json')['weights'])
+        else:
+            member=label.split(';')[0][5:]; k=names.index(member); ww=w.copy();ww[:,k]=0.;zero=ww.sum(-1)<1e-12;ww[zero]=1.;ww[zero,k]=0.;ww/=ww.sum(-1)[:,None]
+        ids=np.arange(H*96)*len(ww)//(H*96)
+        # Independently rebuild with an explicit member sum rather than the analyzer's einsum.
+        p=sum(bank[...,k]*ww[ids,k][None,None,:] for k in range(len(names)))
+        den=(abs(y)*valid).sum((1,2)); wape=float(np.mean(100*(abs(p-y)*valid).sum((1,2))/den))
+        yy=y.reshape(57,-1,96).mean(-1);pp=p.reshape(57,-1,96).mean(-1);ok=valid.reshape(57,-1,96).all(-1)
+        daily=float(np.mean(100*(abs(pp-yy)*ok).sum(1)/(abs(yy)*ok).sum(1)))
+        check(f'H{H} {label} macroWAPE',abs(wape-float(row['test_wape']))<2e-11)
+        check(f'H{H} {label} complete-dayWAPE',abs(daily-float(row['test_daily_wape']))<2e-11)
+    finding=s['findings'][str(H)]
+    pr=next(r for r in c['unique_rows'] if r['horizon_days']==H and r['status']=='当前综合推荐')
+    prior=np.load(B/pr['source']['path'])[pr['source']['array']]
+    check(f'H{H} prior_archive_hash',sha(B/pr['source']['path'])==pr['source']['sha256'])
+    p=z[f'hdsf_H{H}']; den=(abs(y)*valid).sum((1,2));old=100*(abs(prior-y)*valid).sum((1,2))/den;new=100*(abs(p-y)*valid).sum((1,2))/den
+    check(f'H{H} domain_improvement_count',int((new<old-1e-12).sum())==finding['improved_pdu_vs_prior'])
+    check(f'H{H} domain_gain_contribution',abs(sum(g['contribution_to_57_macro_pp'] for g in finding['groups'].values())-float((old-new).mean()))<1e-12)
+    ids=np.arange(H*96)*len(w)//(H*96)
+    signed=(bank-y[...,None])*w[ids][None,None,:,:]
+    reference=float(np.mean(100*(abs(signed).sum(-1)*valid).sum((1,2))/den))
+    check(f'H{H} Jensen_reference_reconstructed',abs(reference-finding['convex_abs_error_reference_wape'])<1e-12)
+    check(f'H{H} Jensen_nonnegative',np.all((abs(signed).sum(-1)-abs(p-y))[valid]>-2e-12))
+    for label,pp in [('prior',prior),('hdsf',p)]:
+        e=(pp-y).reshape(57,-1,96)[valid.reshape(57,-1,96).all(-1)];mu=e.mean(-1)
+        raw=float(np.mean(e**2));terms=float(np.mean(mu**2)+np.mean((e-mu[:,None])**2))
+        check(f'H{H} {label} exactMSEdecomposition',abs(raw-terms)<1e-14 and abs(raw-finding[label+'_mse_decomposition']['mse'])<1e-14)
+verification=dict(all_passed=all(x['passed'] for x in checks),check_count=len(checks),checks=checks,
+    retrospective=True,independent_confirmation=False,verified_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+save(A/'verification.json',verification)
+
+font=FontProperties(fname=r'C:\Windows\Fonts\msyh.ttc')
+plt.rcParams['axes.unicode_minus']=False
+fig=plt.figure(figsize=(13,11));gs=fig.add_gridspec(2,1,height_ratios=[2,8],hspace=.48)
+labels={'chronos2_long':'Chronos-2\n最长28天','tirex2':'TiRex-2','timesfm25':'TimesFM2.5',
+        'toto2_joint':'Toto2.0\n同组调用','toto2_single':'Toto2.0\n逐域',
+        'timesfm30':'TimesFM3\n57域·14天','timesfm30_long':'TimesFM3\n57域·21天',
+        'timesfm30_uni':'TimesFM3\n逐域·21天','patchtstfm_long':'PatchTST-FM\nr2·21天','local24':'本地24h\n残差与滞后','local7':'历史水平\n日内形状平滑'}
+for n,(task,H) in enumerate([('24h',1),('7d',7)]):
+    v=cfg[task];a=np.pad(np.asarray(v['component_a'][str(v['segments'][0])]),((0,0),(0,1)));b=np.asarray(v['component_b'][str(v['segments'][0])]);w=100*((1-v['mix'])*a+v['mix']*b)
+    ax=fig.add_subplot(gs[n]);im=ax.imshow(w,cmap='Blues',vmin=0,vmax=100,aspect='auto')
+    ax.set_xticks(range(len(v['methods'])),[labels[m] for m in v['methods']],fontproperties=font,fontsize=10)
+    ax.set_yticks(range(len(w)),[f'第{i//2+1}天·'+('前半天' if i%2==0 else '后半天') for i in range(len(w))],fontproperties=font,fontsize=10)
+    ax.set_title(('24小时' if H==1 else '7天')+'：开发期冻结后，所有57个PDU共享同一组分段权重',fontproperties=font,fontsize=13,pad=12)
+    for i in range(len(w)):
+        for j in range(len(v['methods'])):
+            ax.text(j,i,'—' if w[i,j]<.00001 else f'{w[i,j]:.1f}',ha='center',va='center',color='white' if w[i,j]>60 else 'black',fontsize=10)
+    colorbar=fig.colorbar(im,ax=ax,shrink=.9,pad=.015);colorbar.set_label('权重（%）',fontproperties=font)
+fig.subplots_adjust(left=.16,right=.96,top=.95,bottom=.06)
+figure=A/'开发期冻结权重.png';fig.savefig(figure,dpi=160);plt.close(fig)
+
+f1=s['findings']['1'];f7=s['findings']['7']
+def case(H,label):return next(r for r in s['ablations'] if r['horizon_days']==H and r['case']==label)
+def f(v):return f'{v:.6f}'
+def pct(a,b):return 100*(b/a-1)
+g1=c['delta_vs_current']['1']['metrics'];g7=c['delta_vs_current']['7']['metrics']
+report=[]
+report.append('**HDSF半日单纯形融合：优势原因、固定消融与误差分解**\n\n2026年10月8日。所有分析来自本地真实缓存及冻结选择；不重跑基础模型，不按测试成绩改权重，不修改9.28统一评价或已交付Word。\n')
+report.append('核心判断：24小时改善有分时专家选择和有限误差抵消的证据；7天日均改善主要来自每日平均水平误差更稳。它并未在所有域、所有起报或所有指标上领先。本次诊断不是新的独立确认实验。\n')
+report.append('|统一评价指标|原推荐|HDSF|变化（HDSF减原推荐）|\n|---|---:|---:|---:|')
+for label,g,k in [('24小时曲线WAPE%',g1,'wape'),('24小时日均WAPE%',g1,'daily_wape'),('7天曲线WAPE%',g7,'wape'),('7天日均WAPE%',g7,'daily_wape'),('24小时峰值MAPE%',g1,'peak_mape'),('7天峰值MAPE%',g7,'peak_mape')]:
+    report.append(f"|{label}|{f(g[k]['current'])}|{f(g[k]['hdsf'])}|{g[k]['difference_hdsf_minus_current']:+.6f}个百分点|")
+report.append('\n原24小时推荐为Chronos-2、TiRex-2、TimesFM3、Ridge及微调TinyTimeMixer稀疏峰值10%方案（R32）；原7天推荐为Moirai2同cell14天10%加原TimesFM3/Ridge/HGB/TinyTimeMixer90%，并作全域预测日均协调（R36）。HDSF的24小时曲线相对改善约1.634%；7天曲线仅0.180%；7天日均约1.859%。7天曲线仍比R40的2.694096%略差。\n')
+report.append('**1. 实际有效结构是按半天选择专家，而不是所有模型平均加入。**\n\n每段48个15分钟点；24小时2段，7天14段。源代码先拟合纯基础模型A和包含本地模型B的两套非负、和为1的权重，再按冻结mix组合。最终仍可写成逐段单纯形权重：`预测=Σ权重×成员预测`。同一段的权重跨57域、跨起报共享，不是每个PDU分别拟合，更不是预测时查看未来真值再挑专家。\n\n24小时前半天：Chronos-2最长28天历史81.09%，Toto2.0同组18.91%。后半天：TimesFM3的57域14天调用48.04%、逐域最长21天调用49.56%、Chronos-2约1.13%、local24约1.26%。9个候选中TiRex-2、TimesFM2.5、Toto逐域及TimesFM3联合长历史在本轮24小时最终有效权重均为0；候选池人数不能等同于实际贡献。权重图及完整CSV保留。\n')
+report.append(f'对原R32的24小时曲线总改善{g1["wape"]["current"]-g1["wape"]["hdsf"]:.6f}个百分点中，前半天贡献0.005228，后半天贡献0.033558，后半天占约86.52%。这证明改善主要发生的位置；不能把这个比例直接当作TimesFM3某个成员的独立因果贡献。\n')
+report.append('**2. 用同一成员缓存做对照，分时权重确实有作用，但“12小时”不是已证明的最优粒度。**\n\n结构对照只在原开发期拟合简单权重，使用源实现、同一输入、原A/B mix，测试只评分；不据此重选部署。开发拟合分数是回代误差，不是新的留出验证。\n\n|固定诊断方式|24小时曲线WAPE%|7天曲线WAPE%|7天日均WAPE%|\n|---|---:|---:|---:|')
+for label,key in [('原冻结HDSF','HDSF frozen'),('全部成员等权平均','All members uniform'),('整段仅一组权重（开发重拟合）','DEV-refit 1 segments, original mix fixed')]:
+    x=case(1,key);y=case(7,key);report.append(f'|{label}|{f(x["test_wape"])}|{f(y["test_wape"])}|{f(y["test_daily_wape"])}|')
+x=case(7,'DEV-refit 7 segments, original mix fixed');report.append(f'|7天改为每天一组权重（开发重拟合）|—|{f(x["test_wape"])}|{f(x["test_daily_wape"])}|')
+report.append('\n24小时半日分段优于等权和整天共享；7天的整段共享也明显较差。但7天按天分段曲线2.699051%略优于半日2.701623%，日均1.876200%和峰值2.045791%却差于半日的1.868830%及1.946503%。因此时段适配有支持，“半日使所有指标都最优”没有支持。原mix针对半日开发选择，结构对照固定mix也限制了严格因果解释。\n')
+report.append('**3. 模型误差能部分抵消，但并不是低相关、互相独立的一批专家。**\n\n设成员误差为e，固定段内有`|Σw×e|≤Σw×|e|`。使用实际权重计算，24小时成员绝对误差的加权诊断参照为2.367305%，组合后为2.335113%，差0.032192个百分点；7天参照2.795796%，组合后2.701623%，差0.094172个百分点。这个参照使用未来真值，只是三角不等式的误差分解，不是可部署预测，不应加入模型排名或称为可实现精度上限；更不能把差值除以对旧模型的改善，冒充独立贡献比例。\n\n活跃专家中存在一正一负误差的有效点约占24小时19.54%、7天20.66%。不过24小时前半天Chronos-2与Toto误差相关约0.934，后半天两种TimesFM3约0.956。误差抵消是真实、有限的，也解释了为何并未大幅改善：多数困难点仍是共同误差。相关性是原始有符号残差相关，未按域去均值，属于描述性诊断。\n')
+report.append('**4. 7天日均优势主要来自水平误差下降，并非日内形状全面提升。**\n\n完整有效日上，把96点误差分成“日均误差+零均值形状误差”，平方误差有精确恒等式：`日内MSE=日均误差平方+形状误差MSE`。\n\n|7天误差组成（1187个完整有效的PDU-起报-目标日记录）|原R36|HDSF|相对变化|\n|---|---:|---:|---:|')
+for label,key in [('日均水平MSE','level_mse'),('去日均后的形状MSE','shape_mse'),('完整有效日总体MSE','mse')]:
+    a=f7['prior_mse_decomposition'][key];b=f7['hdsf_mse_decomposition'][key];report.append(f'|{label}|{a:.9f}|{b:.9f}|{pct(a,b):+.3f}%|')
+report.append('\n7天日均RMSE从0.017032降到0.016482，日均误差标准差降低4.41%；形状MSE反而增加1.14%。日均改善是每天平均水平更稳，不能外推成每个时刻的波峰波谷都更准确。全局绝对偏差从0.165592%增至0.406211%，说明平均水平的偏低倾向加重，但逐日误差离散程度下降，最终日均MAE/RMSE仍更好。曲线MAE/WAPE、完整日MSE分解采用的有效集合不同，文中没有将二者混算。\n\n7天平均有效权重约：逐域TimesFM3 33.51%、历史水平与日内形状平滑29.01%、Toto同组15.51%、TimesFM3联合长历史11.54%、PatchTST-FM 10.43%。local7以3/5天半衰期估计历史日均水平、10天半衰期估计日内形状，历史最多24天，并向未来7天重复一个平滑日型；它是稳定锚，不使用未来CPU，不负责识别不可预见的新突变。前14天完整有效日的日均变异系数中位数约2.33%，为历史平滑可用提供了数据依据，但不代表所有域都稳定。\n')
+report.append('**5. 单模型较差也可能有互补价值；本地24小时模型却不是主要改善来源。**\n\n单独local7的曲线WAPE3.106821%、日均2.331811%，都较差。固定删除local7并把剩余权重重新归一后，曲线变为2.731997%、日均1.910905%；删除PatchTST-FM后，分别为2.711203%和1.884065%。这些诊断支持稳定锚及补充成员的互补作用，不能用单成员排行榜决定它们无用。删除实验没有重新优化其余权重，因此差值不是严格的Shapley贡献，也不证明该成员不可替代。\n\n24小时local24平均有效权重仅0.63%；删除并归一后曲线2.335344%，与完整2.335113%只差0.000231个百分点；仅用源A也达到2.335354%。所以24小时主要来自基础专家组合，不能归因为四种子LightGBM训练或D1残差处理。该D1处理使用训练前缀均值的源问题仍保留、披露，没有因测试结果改写。\n')
+report.append('**6. 非负约束与共享权重符合小样本需求，但“约束防止所有过拟合”不成立。**\n\n所有权重非负且和为1，使每点预测处于各成员输出的凸包内，不可用正负大系数外推。最终24小时有效权重最多16个自由度，7天最多56个（固定成员池下），跨57域共享，参数量远小于逐域逐半日的独立门控。这种限制是合理的正则化方向。零权重是在单纯形约束下优化绝对误差产生的实际结果；源算法没有额外的L1权重稀疏惩罚，不能把L1误差损失与L1参数正则混为一谈。\n\n融合权重是在开发期优化绝对误差，等价于固定有效集合上优化项目池化WAPE；最终对外评分仍是逐PDU计算WAPE，再57域等权平均，两种目标不完全一致。HDSF没有使用完整ClusterData CPU/内存，也没有能量守恒、物理kW或新增梯度微调；精度进步不能归因于这些机制。\n')
+report.append('**7. 曲线更好而峰值、部分域更差，是可以解释的实际取舍。**\n\n旧流程的开发筛选同时考虑峰值、分组、偏差等约束，HDSF源筛选主要聚焦曲线绝对误差。因此相同的最终评价方法，并不意味着训练与选择目标相同。HDSF沿着更重视整体曲线的取舍方向获得优势，不能解释成在相同多目标限制下严格支配旧方法。\n\n24小时峰值MAPE从1.867076%升至2.053383%。峰值低估的PDU-起报-日记录比例由87.72%升至90.64%，有符号峰值误差由−1.704%至−1.915%。非负平均会压低时刻不对齐的尖峰，绝对曲线误差目标也没有独立奖励准确日最大值；R32原方案又有稀疏峰值修正。这与实际退步一致，但未对“尖峰时刻错位”另做控制干预，仍不能声称已独立证明全部峰值损失的来源。\n\n对原推荐，24小时39/57个PDU改善、18个退步；9个起报仅5个改善。7天29/57个PDU改善、28个退步；3个起报仅1个改善。7天日均误差改善602/1187条完整日记录，超过一半但远非全部；重复目标日期不能作为1187个独立实验。\n\ncell-a五域曲线分别退步0.019801和0.049742个百分点；其余52域分别改善0.044419和0.010129个百分点。按57域等权分解，24小时五域贡献−0.001737、其余52域贡献+0.040523，合计+0.038786；7天分别−0.004363与+0.009241，合计仅+0.004878。总体分数优势是多数域改善抵消局部退步，不是所有场站一起提升。\n')
+report.append('**8. 因果与泛化证据的边界。**\n\n24小时探索性日期配对bootstrap的95%改善区间为[−0.016550,+0.093224]个百分点，7天为[−0.056384,+0.072188]，均跨0。7天只有2个开发起报、3个测试起报，窗口高度重叠；开发的留一日起报并没有让整段目标日期完全隔离。24小时nested LOO各折mix为0、0.075、1、0.05，提示小样本选择存在不稳定性。\n\n当前复现的成员预测独立生成、融合冻结在测试前，但源方案明确标注historical_test_informed_design；原项目方案设计与本地多轮研究都接触过同一May2019测试期。独立重跑不能将这个月份变成未见确认数据。HDSF与旧方法的历史无效值预处理也存在差异（有效真值和评分掩码完全一致，最大无效上下文差约0.005167）；本次同一缓存内部的结构对照控制了成员输入，但跨旧新方案的改善不能全部归因于融合机制。\n\n合理的下一步是冻结HDSF并用独立月份或完全隔离的滚动确认窗口验证，再比较同一成员池、相同上下文和预处理下的共享/按天/半日权重，以及DEV选择的日均水平与峰值分离修正。新消融中偶然更低的测试曲线不自动替换已冻结方案。需要准确CPU/资源到PDU的映射才能重新研究物理协变量，目前HDSF优势不构成“算电融合已经成功”的证据。\n')
+report.append('复查文件：`analysis.json`、`verification.json`、`frozen_weights.csv`、`fixed_ablations.csv`、`per_pdu_comparison.csv`、`per_origin_comparison.csv`、`halfday_gain_contributions.csv`、`active_member_error_pairs.csv`均位于`experiment/round44/results/mechanism_analysis_20261008`。原源码固定于commit `648777507ebc57e7498ce61f4ae2236ab179e6a8`，机制实现为本地`power_forecast/attainment_fusion.py`及`attainment_members.py`。\n')
+report.append('!['+'开发期冻结权重'+']('+figure.as_posix()+')\n')
+report_path=T/'HDSF半日单纯形融合_优势原因与消融分析.md'
+report_path.write_text('\n'.join(report),encoding='utf-8')
+save(A/'report_provenance.json',dict(report=str(report_path),report_sha256=sha(report_path),figure=str(figure),figure_sha256=sha(figure),analysis_sha256=sha(A/'analysis.json'),verification_sha256=sha(A/'verification.json'),source_commit=read(B/'round44/docs/protocol.json')['commit']))
+print(json.dumps({'all_passed':True,'checks':len(checks),'report':str(report_path),'figure':str(figure)},ensure_ascii=True))

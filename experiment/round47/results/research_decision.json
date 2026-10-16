@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-10-12T06:27:20.149603+00:00",
+  "recommendation": "原HDSF仍为正式推荐；新增方法和旧轮次消融保留为探索候选。",
+  "training_runs": 5,
+  "real_optimizer_updates": 800,
+  "selected_routes": {
+    "1": {
+      "route": "patchtst_curve_direct",
+      "level_alpha": 1.0,
+      "shape_alpha": 0.0,
+      "adopt": false,
+      "late_gains": {
+        "days": [
+          19,
+          21
+        ],
+        "gains_pp": [
+          -0.05551550804543881,
+          0.041381845156953714
+        ],
+        "mean_gain_pp": -0.007066831444242548,
+        "paired_date_SE_pp": 0.048448676601196256
+      }
+    },
+    "7": {
+      "route": "r46_neural_only",
+      "level_alpha": 0.0,
+      "shape_alpha": 0.5,
+      "adopt": false,
+      "late_gains": {
+        "days": [
+          19,
+          20,
+          21,
+          22
+        ],
+        "gains_pp": [
+          -0.00037030412587748965,
+          0.0027292700840915026,
+          0.0011254557050719865,
+          -0.0013715528727608537
+        ],
+        "mean_gain_pp": 0.0005282171976312864,
+        "paired_date_SE_pp": 0.0008952557610781105
+      }
+    }
+  },
+  "previous_round_fixed_ablation": {
+    "1": {
+      "neural_only_curve_gain_pp": -0.0021024327302039403,
+      "local_only_curve_gain_pp": -1.1365472380120423e-05,
+      "combined_curve_gain_pp": -0.0021135801433485035,
+      "neural_only_daily_gain_pp": 5.57439425494799e-05,
+      "local_only_daily_gain_pp": -5.890198587699125e-05,
+      "combined_daily_gain_pp": -2.845791131633746e-06,
+      "curve_interaction_pp": 2.1805923555717754e-07
+    },
+    "7": {
+      "neural_only_curve_gain_pp": 0.006186280145832335,
+      "local_only_curve_gain_pp": -0.003992164496218642,
+      "combined_curve_gain_pp": 0.001598636465014014,
+      "neural_only_daily_gain_pp": 0.0059943155554569305,
+      "local_only_daily_gain_pp": -0.007088166217015246,
+      "combined_daily_gain_pp": -0.001685389994624753,
+      "curve_interaction_pp": -0.0005954791845996787
+    }
+  },
+  "source_HDSF_mean_member_weights": {
+    "1": {
+      "chronos2_long": 0.4110827866004624,
+      "tirex2": 0.0,
+      "timesfm25": 0.0,
+      "toto2_joint": 0.09456583767984485,
+      "toto2_single": 0.0,
+      "timesfm30": 0.24022441980374615,
+      "timesfm30_long": 0.0,
+      "timesfm30_uni": 0.24781933798076664,
+      "local24": 0.006307617935180076
+    },
+    "7": {
+      "timesfm30_long": 0.11540730766188298,
+      "toto2_joint": 0.15511401587364387,
+      "timesfm30_uni": 0.33513997758393976,
+      "patchtstfm_long": 0.1042665287612511,
+      "local7": 0.29007217011928227
+    }
+  },
+  "interpretation": "微调神经成员与重拟合本地成员有不同作用。绝对误差非线性，单独替换收益不可简单相加；旧HDSF中零权重模型的单模型改善不会自动改变组合。只调零均值形状可保持预测日均，但不能保证曲线改善。",
+  "exploratory_intervals": {
+    "1": {
+      "curve_gain_pp": 0.005491169532405138,
+      "exploratory_date_bootstrap_95_percent_pp": [
+        -0.008431981919895774,
+        0.019480970291161352
+      ],
+      "used_for_selection": false,
+      "serial_dependence_and_historical_search_not_corrected": true,
+      "independent_confirmation": false
+    },
+    "7": {
+      "curve_gain_pp": 0.0002821442823210951,
+      "exploratory_date_bootstrap_95_percent_pp": [
+        -0.0005427178422387209,
+        0.0013480599435820796
+      ],
+      "used_for_selection": false,
+      "serial_dependence_and_historical_search_not_corrected": true,
+      "independent_confirmation": false
+    }
+  },
+  "original_metric_unchanged": true,
+  "selection_unchanged_after_TEST": true,
+  "dataset": "OriginalGooglePowerData2019 only",
+  "independent_confirmation": false,
+  "overfitting_absence_certified": false,
+  "new_Word": false
+}

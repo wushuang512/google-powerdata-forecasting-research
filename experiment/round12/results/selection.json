@@ -1,0 +1,91 @@
+{
+  "frozen_utc": "2026-10-03T08:35:38.656391+00:00",
+  "candidate": "winsor01",
+  "chosen": {
+    "alpha": 0,
+    "wape": 2.3869264985775787,
+    "paired_cell_se": 0.0,
+    "paired_day_se": 0.0,
+    "selection_se": 0.0,
+    "daily_gain_pp": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "weights": [
+    {
+      "alpha": 0,
+      "wape": 2.3869264985775787,
+      "paired_cell_se": 0.0,
+      "paired_day_se": 0.0,
+      "selection_se": 0.0,
+      "daily_gain_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.388076677268799,
+      "paired_cell_se": 0.0008898732036331991,
+      "paired_day_se": 0.0011602133868604141,
+      "selection_se": 0.0011602133868604141,
+      "daily_gain_pp": [
+        0.0003704954614217068,
+        -0.004362618261296623,
+        0.0007134281806959761,
+        -0.0013703532008655119
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.389873387157929,
+      "paired_cell_se": 0.0022234889703067755,
+      "paired_day_se": 0.002908426200479634,
+      "selection_se": 0.002908426200479634,
+      "daily_gain_pp": [
+        0.0008273799905946116,
+        -0.011020300315516967,
+        0.0017260662322096559,
+        -0.003446578405234503
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.393052251188705,
+      "paired_cell_se": 0.00445271963478911,
+      "paired_day_se": 0.005811047927260952,
+      "selection_se": 0.005811047927260952,
+      "daily_gain_pp": [
+        0.001291730291334836,
+        -0.02231762307978753,
+        0.00321982147394504,
+        -0.006963371786811812
+      ]
+    },
+    {
+      "alpha": 1,
+      "wape": 2.400161897491061,
+      "paired_cell_se": 0.008919589395902741,
+      "paired_day_se": 0.01169163459326555,
+      "selection_se": 0.01169163459326555,
+      "daily_gain_pp": [
+        0.0016200992590704741,
+        -0.04606867653175188,
+        0.0052200369010456955,
+        -0.014284390481374013
+      ]
+    }
+  ],
+  "protocol_sha256": "c096227cbb7c49c5b77988cd11af1ff09f2f44965825f9bd3d9018b3d6faf4b5",
+  "dev_predictions_sha256": "0222102208c3ce8eebd5960b01033efdd4342365cd4a47cff6ede42c3f964afd",
+  "dev_summary_sha256": "11a71cedd94cc6ada51f3bc3805682cd0c732790eb191c30af86ee87a3c49132",
+  "empirical80_halfwidth_relative_to_past_mean": 0.04111245708539831,
+  "independent_confirmation": false,
+  "development_reused": true,
+  "test_reused": true
+}

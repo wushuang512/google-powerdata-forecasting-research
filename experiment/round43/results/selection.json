@@ -1,0 +1,360 @@
+{
+  "created_utc": "2026-10-07T10:01:33.914142+00:00",
+  "family": {
+    "id": "factor1_r4_level",
+    "rank": 1,
+    "rate": 4,
+    "context_days": 7,
+    "variant": "base",
+    "scope": "frozen",
+    "mode": "level"
+  },
+  "selected": null,
+  "diagnostic": {
+    "alpha": 0.05,
+    "total": "global_daily",
+    "key": "a0.05_global_daily",
+    "eligible": false,
+    "late_worst_curve_ratio": 1.0012054659505316,
+    "late_mean_curve_ratio": 0.9998173935480568
+  },
+  "one_shared_configuration_both_horizons": true,
+  "no_test_used": true,
+  "protocol_sha256": "5526b4388fcc2ceab0c7eb8bd75ccee0c92f8935bc6acbbc7d9e87f619ab60d6",
+  "native_dev_sha256": "2e672df1df7d14f838a6708881fd224dc7b90117aa0fde5c75767f7fc88be969",
+  "dev_predictions_sha256": "c4cbe3f9237fd3602d97dc44a3f28fb6956b4d1369e491d884f2b2818e4c9275",
+  "family_ranking": [
+    {
+      "family": {
+        "id": "factor1_r4_level",
+        "rank": 1,
+        "rate": 4,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 0.9901918004808525,
+      "early_mean_curve_ratio": 0.9875281016710774
+    },
+    {
+      "family": {
+        "id": "factor1_r1_level",
+        "rank": 1,
+        "rate": 1,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 0.9910120051618656,
+      "early_mean_curve_ratio": 0.9898182242315555
+    },
+    {
+      "family": {
+        "id": "factor1_r4_daily_increment",
+        "rank": 1,
+        "rate": 4,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 0.9930514049505305,
+      "early_mean_curve_ratio": 0.9847638035057316
+    },
+    {
+      "family": {
+        "id": "factor1_r12_level",
+        "rank": 1,
+        "rate": 12,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 0.9973425515070585,
+      "early_mean_curve_ratio": 0.995720252377001
+    },
+    {
+      "family": {
+        "id": "factor3_r12_daily_increment",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.0047944813496714,
+      "early_mean_curve_ratio": 0.9908061055433017
+    },
+    {
+      "family": {
+        "id": "factor3_r4_daily_increment",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.0057684649792697,
+      "early_mean_curve_ratio": 0.9974449073406514
+    },
+    {
+      "family": {
+        "id": "factor6_r12_daily_increment",
+        "rank": 6,
+        "rate": 12,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.023774987344838,
+      "early_mean_curve_ratio": 0.995853348929552
+    },
+    {
+      "family": {
+        "id": "factor3_r12_level",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 1.0257638503727344,
+      "early_mean_curve_ratio": 1.0243978266117018
+    },
+    {
+      "family": {
+        "id": "factor1_r12_daily_increment",
+        "rank": 1,
+        "rate": 12,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.0274344734920413,
+      "early_mean_curve_ratio": 0.9956391781596403
+    },
+    {
+      "family": {
+        "id": "factor3_r4_level",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 1.0317087107968756,
+      "early_mean_curve_ratio": 1.0269540818753464
+    },
+    {
+      "family": {
+        "id": "factor6_r4_daily_increment",
+        "rank": 6,
+        "rate": 4,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.0419675558035746,
+      "early_mean_curve_ratio": 1.006649473945001
+    },
+    {
+      "family": {
+        "id": "factor3_r1_daily_increment",
+        "rank": 3,
+        "rate": 1,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.0463181785537448,
+      "early_mean_curve_ratio": 1.0163551713824939
+    },
+    {
+      "family": {
+        "id": "factor6_r12_level",
+        "rank": 6,
+        "rate": 12,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 1.0507330597099205,
+      "early_mean_curve_ratio": 1.0448742390436925
+    },
+    {
+      "family": {
+        "id": "factor6_r4_level",
+        "rank": 6,
+        "rate": 4,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 1.0516347968109794,
+      "early_mean_curve_ratio": 1.0486682894308161
+    },
+    {
+      "family": {
+        "id": "factor3_r1_level",
+        "rank": 3,
+        "rate": 1,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 1.0689516653511606,
+      "early_mean_curve_ratio": 1.0629834019432605
+    },
+    {
+      "family": {
+        "id": "factor1_r1_daily_increment",
+        "rank": 1,
+        "rate": 1,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.0733245163371516,
+      "early_mean_curve_ratio": 1.0283565327970239
+    },
+    {
+      "family": {
+        "id": "factor6_r1_level",
+        "rank": 6,
+        "rate": 1,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "level"
+      },
+      "early_worst_curve_ratio": 1.0859557317600956,
+      "early_mean_curve_ratio": 1.075797293357526
+    },
+    {
+      "family": {
+        "id": "factor6_r1_daily_increment",
+        "rank": 6,
+        "rate": 1,
+        "context_days": 7,
+        "variant": "base",
+        "scope": "frozen",
+        "mode": "daily_increment"
+      },
+      "early_worst_curve_ratio": 1.119482079920059,
+      "early_mean_curve_ratio": 1.0459488209522638
+    }
+  ],
+  "weight_ranking": [
+    {
+      "alpha": 0,
+      "total": "global_daily",
+      "key": "a0_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0,
+      "late_mean_curve_ratio": 1.0
+    },
+    {
+      "alpha": 0,
+      "total": "none",
+      "key": "a0_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.000000000000018,
+      "late_mean_curve_ratio": 1.0000000000000093
+    },
+    {
+      "alpha": 0.05,
+      "total": "global_daily",
+      "key": "a0.05_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0012054659505316,
+      "late_mean_curve_ratio": 0.9998173935480568
+    },
+    {
+      "alpha": 0.05,
+      "total": "none",
+      "key": "a0.05_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0024559942988207,
+      "late_mean_curve_ratio": 0.9989936862611484
+    },
+    {
+      "alpha": 0.1,
+      "total": "global_daily",
+      "key": "a0.1_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0032873565713605,
+      "late_mean_curve_ratio": 1.0001461512056375
+    },
+    {
+      "alpha": 0.1,
+      "total": "none",
+      "key": "a0.1_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.006045383302296,
+      "late_mean_curve_ratio": 0.9986869105217372
+    },
+    {
+      "alpha": 0.25,
+      "total": "global_daily",
+      "key": "a0.25_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0139466360179437,
+      "late_mean_curve_ratio": 1.003709322512826
+    },
+    {
+      "alpha": 0.25,
+      "total": "none",
+      "key": "a0.25_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0226569326643626,
+      "late_mean_curve_ratio": 1.0013764570902755
+    },
+    {
+      "alpha": 0.5,
+      "total": "global_daily",
+      "key": "a0.5_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.044766564239992,
+      "late_mean_curve_ratio": 1.0173839660553932
+    },
+    {
+      "alpha": 0.5,
+      "total": "none",
+      "key": "a0.5_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0646982332771813,
+      "late_mean_curve_ratio": 1.015375259794294
+    },
+    {
+      "alpha": 1,
+      "total": "global_daily",
+      "key": "a1_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.1416658531210062,
+      "late_mean_curve_ratio": 1.0676962446470806
+    },
+    {
+      "alpha": 1,
+      "total": "none",
+      "key": "a1_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.1819582270426605,
+      "late_mean_curve_ratio": 1.070749490233966
+    }
+  ]
+}

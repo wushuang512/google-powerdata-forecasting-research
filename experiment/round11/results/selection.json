@@ -1,0 +1,92 @@
+{
+  "frozen_utc": "2026-10-03T08:01:04.542980+00:00",
+  "candidate": "l1_leaves7",
+  "chosen": {
+    "alpha": 0,
+    "wape": 2.3869265001147206,
+    "paired_cell_se": 0.0,
+    "paired_day_se": 0.0,
+    "selection_se": 0.0,
+    "daily_gain_pp": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "weights": [
+    {
+      "alpha": 0,
+      "wape": 2.3869265001147206,
+      "paired_cell_se": 0.0,
+      "paired_day_se": 0.0,
+      "selection_se": 0.0,
+      "daily_gain_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.3900634276312123,
+      "paired_cell_se": 0.002435436420488037,
+      "paired_day_se": 0.0027481801685702266,
+      "selection_se": 0.0027481801685702266,
+      "daily_gain_pp": [
+        -0.0018117449007304192,
+        -0.010210483350093854,
+        -0.0035646302254178468,
+        0.0030804776649702432
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.3956017050162433,
+      "paired_cell_se": 0.005900870010229476,
+      "paired_day_se": 0.006952532861173062,
+      "selection_se": 0.006952532861173062,
+      "daily_gain_pp": [
+        -0.005537221389022911,
+        -0.026372849136286715,
+        -0.010002038306346795,
+        0.007301044137134014
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.4069246250870755,
+      "paired_cell_se": 0.011588966842647538,
+      "paired_day_se": 0.014248973185603009,
+      "selection_se": 0.014248973185603009,
+      "daily_gain_pp": [
+        -0.014373955613807377,
+        -0.05584586265242267,
+        -0.02296610537629107,
+        0.013332089004015413
+      ]
+    },
+    {
+      "alpha": 1,
+      "wape": 2.43780520570199,
+      "paired_cell_se": 0.02211669456704471,
+      "paired_day_se": 0.02975788105766992,
+      "selection_se": 0.02975788105766992,
+      "daily_gain_pp": [
+        -0.04114521619016323,
+        -0.12428863264494916,
+        -0.05835705546219105,
+        0.020442404983430428
+      ]
+    }
+  ],
+  "protocol_sha256": "1809764e59ea2dfaf6f121123031added8cc2a49edfc806be22ba2f04140f192",
+  "dev_predictions_sha256": "13182e2d8ef25cdc9251ac00f4b09dd2a2cce4db8d4a866f73c44779d67c41a2",
+  "dev_summary_sha256": "c6174bd4fab4d915adf3d5bd7f2ce9cd4e6a5e6258b49d682cb3ccefa99c128e",
+  "selected_dev_model_sha256": "e87d856f2d0695d35121bdb5b9a16163f0f9802fb62baacb09187cfc7d40c217",
+  "empirical80_halfwidth_relative_to_past_mean": 0.0411124518327418,
+  "independent_confirmation": false,
+  "development_reused": true,
+  "test_reused": true
+}

@@ -1,0 +1,171 @@
+{
+  "created_utc": "2026-10-06T06:49:59.466501+00:00",
+  "script_sha256": "0a5ae206b8d9af740fc9d22e6ada12ab272be0b0c280cb8a122a79d2b8c9898c",
+  "metrics_script_sha256": "a65889669dd48780d39d3d746224102e499ad656ab47b8f59318e0f2e71a43cb",
+  "reference_document": "${PROJECT_ROOT}\\参考材料\\9.28算力中心需求预测实验.docx",
+  "reference_document_sha256": "d66bd7282c9b21000140d7fb9a4c01622fcd0f67463d19333c5705d3998b1736",
+  "configs": [
+    {
+      "id": "prior",
+      "strength": 0.0,
+      "gate": false,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s10_gate0_prior",
+      "strength": 0.1,
+      "gate": false,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s10_gate0_near_history",
+      "strength": 0.1,
+      "gate": false,
+      "location": "near_history"
+    },
+    {
+      "id": "learnedpeak_s10_gate1_prior",
+      "strength": 0.1,
+      "gate": true,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s10_gate1_near_history",
+      "strength": 0.1,
+      "gate": true,
+      "location": "near_history"
+    },
+    {
+      "id": "learnedpeak_s25_gate0_prior",
+      "strength": 0.25,
+      "gate": false,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s25_gate0_near_history",
+      "strength": 0.25,
+      "gate": false,
+      "location": "near_history"
+    },
+    {
+      "id": "learnedpeak_s25_gate1_prior",
+      "strength": 0.25,
+      "gate": true,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s25_gate1_near_history",
+      "strength": 0.25,
+      "gate": true,
+      "location": "near_history"
+    },
+    {
+      "id": "learnedpeak_s50_gate0_prior",
+      "strength": 0.5,
+      "gate": false,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s50_gate0_near_history",
+      "strength": 0.5,
+      "gate": false,
+      "location": "near_history"
+    },
+    {
+      "id": "learnedpeak_s50_gate1_prior",
+      "strength": 0.5,
+      "gate": true,
+      "location": "prior"
+    },
+    {
+      "id": "learnedpeak_s50_gate1_near_history",
+      "strength": 0.5,
+      "gate": true,
+      "location": "near_history"
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "core": [
+    "wape",
+    "mae",
+    "rmse",
+    "daily_wape",
+    "p95_ape",
+    "peak_mape",
+    "hit2_percent",
+    "hit5_percent"
+  ],
+  "base24": "R8b unchanged unless DEV supports this candidate",
+  "base7": "R19 global-total Ridge1000 alpha25 current research scheme",
+  "method": "Native TimesFM3 learned daily-peak head transferred conservatively to current base, with sum-preserving bounded daily projection and optional near-history peak location.",
+  "training": "Reuse R18 zero-intercept Ridge1000 head trained only target dates<14 DEV and<22 final; no new network training. Peak head was trained on native7 residuals. For H1 use its h0 prediction around native21day96 reference, not an unreported trained96 head.",
+  "projection": "Target peak correction capped at1% observed7day mean then strengths.1/.25/.5. Preserve full96 mean and[0,1], optional peak index nearest historical last-day max among forecast points within0.3%historical mean of current forecast max and8 slots of original argmax. No future truth or validity masks.",
+  "family_selection": "For each known H separately use early DEV24 origins14..17 or DEV7 origin14; prefer guard-eligible nonprior minimum normalized8metric cost with peak30%extra weight. If none, freeze minimum-cost rejected diagnostic. Families do not read TEST.",
+  "strength_selection": "DEV24 later18..21; DEV7 origin15 and aggregate14/15. Strengths0/.25/.5/1. Require no WAPE/MAE/RMSE/daily/P95 or hit2/hit5 regression beyond floating tolerance; peak+.001pp, groupWAPE+.001pp, absolutebias+.005pp and timing+15min guards. At least.0001pp aggregate curve or peak improvement. Prefer lowestcost then shrink within paired target-date1SE. If none0. Each horizon branch frozen once before TEST.",
+  "diagnostic": "Only one family per horizon; diagnostic alpha equals selected if positive else.25, fixed before TEST. All configurations retained on DEV, no TEST family rank search.",
+  "intervals": "Existing R8b80% intervals recentered at frozen H1 candidate without changing width. H7 empirical absolute-error80th percentile per PDU fitted on both completed DEV windows, then used for final TEST and June replay. Same DEV used for selection; overlap and small sample mean exploratory coverage, no guarantee. Interval width/Winkler also reported. No TEST width adjustment.",
+  "development24": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "development7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "code/common.py": "6569f5e40ea884081fedf64b335dd7e3b790d19a0c4d4baa2b8285e5cb014a91",
+    "round18/code/horizon_routed_experiment.py": "1430e621d99c60a0353c26b680939f1b2fea78827b2ad53e4c6ab01753a893e7",
+    "round19/code/structured_projection_experiment.py": "ece0d94d0933f969de3cabed9f71f0b4079629140d6a173ddc1c3dd575eb1da9",
+    "round18/models/dev_heads.pkl": "c1bf9fba8fff7b1f41b44b4e1485b9ab0400e598662199043116680119884a78",
+    "round18/models/final_heads.pkl": "5e57d9552309acdf57d36992f5b3b97b62272eb368dc1855713d30f7186eae26",
+    "round18/results/dev_predictions.npz": "b064e00c885f4ef9a6b524c5b6231a7ea168d002a503ef4f530af6b759f39b27",
+    "round18/results/test_predictions.npz": "49b491ce59af299e6a2a81ce8dc8213a2ca9d16dd8d0f9e5d6124e43e7023e95",
+    "round19/results/dev_predictions.npz": "5ff9b2e23fa3cdea47e7db572f39e026b52ae8ec0e1ac1a9c401d2da587a09e4",
+    "round19/results/test_predictions.npz": "387f1a2dad08eee1de70e21a1620b482838751e800f2a0f8bc71485da31ac4de",
+    "round19/results/deployment7_origin31.npz": "4b5444c2b8a68e390a9afdc62c0dc7481fbc4c84f404790b26ebf87ff9c20792",
+    "round18/results/deployment7_origin31.npz": "853805621149b8d32a3c82507699065f319fbcd84e156f5db87cf5f547dfaa30",
+    "round11/results/dev_predictions.npz": "13182e2d8ef25cdc9251ac00f4b09dd2a2cce4db8d4a866f73c44779d67c41a2",
+    "round8b/results/test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round8b/results/selected_deployment_origin31_1day.csv": "d4c52c132bb9516aed6dcafb38a760fc61be84a3f29424176451abed13600389",
+    "round9/results/selected_intervals_test.npz": "b86c3120a876293f6bfb8fa61a92ef239de8c51866fc9d23aff2300d578aa4d1",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/results/tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+    "model_comparison_20261005/results/task_revision/summary.json": "e2fc1e243fa0dd17957bc676a32073569e5e19498da6b97445f0a691f1d5e1fa"
+  },
+  "resource_policy": {
+    "admission_physical_gib": 3,
+    "admission_commit_gib": 6,
+    "runtime_physical_gib": 1.5,
+    "runtime_commit_gib": 2
+  }
+}

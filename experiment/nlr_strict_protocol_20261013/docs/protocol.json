@@ -1,0 +1,114 @@
+{
+  "version": 2,
+  "strict_user_protocol_rerun": true,
+  "created_utc": "2026-10-13T12:19:21.305804+00:00",
+  "target": "facility_power_kw",
+  "target_definition": "sum of five separately aggregated 15min interval means; any unavailable component => missing; derived subtotal, not direct facility meter",
+  "timezone": "UTC",
+  "timezone_verified": false,
+  "source_clock_is_naive": true,
+  "start": "2015-01-01",
+  "end": "2026-01-01",
+  "frequency_minutes": 15,
+  "closed": "left",
+  "label": "left",
+  "history_days": 14,
+  "history_points": 1344,
+  "covariate_ffill_limit": 4,
+  "target_fill": false,
+  "past_target_fill": false,
+  "power_range_kw": [
+    0,
+    20000
+  ],
+  "temperature_range_c": [
+    -70,
+    60
+  ],
+  "humidity_range_percent": [
+    0,
+    100
+  ],
+  "physical_bounds_are_fixed_broad_screen_not_rated_capacity": true,
+  "split_fractions": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "minimum_validation_days": 8,
+  "minimum_test_days": 9,
+  "split_interpretation": "trim only leading/trailing incomplete target days; continuous whole calendar days split in order, retain internal missing dates",
+  "aggregation": "finite sample mean per component after duplicate timestamp mean; no minimum15-minute-record coverage imposed",
+  "origin_time": "00:00 each source-clock day, previous interval starts t-15min",
+  "label_eligibility": "all H labels inside split and finite; same cohort for every model; historical label unfilled and all historical covariates finite after limited forward fill",
+  "future_inputs": "known calendar only; no actual future component loads or weather",
+  "mape_threshold": 1e-08,
+  "mape_aggregation": "point MAPE per origin then equal origin mean; excluded counts and pooled supplement reported",
+  "model_selection": "validation-origin mean MAPE; HDSF purged forward validation CV MAPE, in-sample score separately labelled",
+  "test_policy": "all tasks frozen before first test inference; rolling history updates only, no online refits; daily and fixed-calendar every7day subset",
+  "all_candidates_registered_before_validation": true,
+  "recompute_all_forecasts_in_new_folder": true,
+  "source_raw_files_reused_by_verified_sha_only": true,
+  "models": [
+    "LightGBM historical power weather calendar",
+    "TimesFM3 original weights history14d",
+    "Toto2 original weights history14d",
+    "Moirai2 original weights history14d",
+    "HDSF four-expert halfday target simplex"
+  ],
+  "baseline_models": [
+    "previous day",
+    "previous week",
+    "previous3day mean"
+  ],
+  "foundation_target_gradient_training": false,
+  "historical_candidate_count": 6,
+  "overall_selection": "common purged forward-validation origin-mean MAPE for all fourteen predeclared methods, including HDSF; never TEST ranking",
+  "independent_confirmation": false,
+  "previous_test_exposure_explicitly_acknowledged": true,
+  "baseline_for_relative_gains": {
+    "1": "previous day",
+    "7": "previous3day mean"
+  },
+  "hdsf_cv_folds": 3,
+  "hdsf_alpha_grid": [
+    0,
+    0.5,
+    1
+  ],
+  "hdsf_segment_points": 48,
+  "lightgbm_candidates": [
+    {
+      "num_leaves": 15,
+      "reg_lambda": 10,
+      "n_estimators": 200
+    },
+    {
+      "num_leaves": 31,
+      "reg_lambda": 20,
+      "n_estimators": 200
+    }
+  ],
+  "hdsf_fit_objective": "WAPE/L1 halfday simplex as original; model selection remains origin mean MAPE",
+  "code_sha256": {
+    "complete_tables.py": "e6e3dd9ac3b6d851f59de0666255102c16d49f8c35b66678256ba8ea666e9d89",
+    "core.py": "9aac22b59feb23bacf4963717ddcadaf0a6cbb939b42b85feb40cd8c4fb4e6b7",
+    "evaluate.py": "455d16f85245172c4e6780edcd102fd943698dc61ec251470782228362b2da97",
+    "foundation.py": "7b04c4b64bbc79d022b203ec58405e0894539c5d205bc6238b822ca4f96c44c5",
+    "historical_assemble.py": "12b43800a7980840f96385cceaefa19831b67cc589f0b2ad0501ff433560cc5c",
+    "historical_foundation.py": "780ecd3756e2945c018edc7387819c54cc8ed343d8ab8fba2b485a572d87c87f",
+    "models.py": "03c296442420f4bebea419294d6373731627af22938a0c850cb644cd78d29bd4",
+    "prepare.py": "4c0ff145719e14275b8e654119643cbc0051fd0e21fd4778efbcdeaec9372b09",
+    "register_historical.py": "b4b4d9e6f588cfbe20405462ae5df76e7cdfc7e1a3528574560b282eb92c2b63",
+    "run_strict.py": "7b1150abc9e7eae195cb2abb3e59ce80100d330074ba2e5108ae44bd6bfd4233",
+    "statistical.py": "f37238fb574b764776a04b539d06adb422e5571b92e21291bac9c39da29d1fc4",
+    "verify_raw_stream.py": "7bd86108e24d1af397dc5f29660d8c94508206d1587ed6794b13e6d2f6787b83"
+  },
+  "previous_test_exposure": true,
+  "independent_external_facilities": 1,
+  "reference_sources": [
+    "https://data.nlr.gov/submissions/300",
+    "https://otexts.com/fpp3/tscv.html",
+    "https://otexts.com/fpp3/accuracy.html"
+  ]
+}

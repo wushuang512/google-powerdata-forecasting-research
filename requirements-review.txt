@@ -1,0 +1,2 @@
+# scripts/review_results.py uses only the Python standard library.
+# No pip dependencies are required for reviewing the published scores.

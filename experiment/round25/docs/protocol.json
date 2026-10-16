@@ -1,0 +1,124 @@
+{
+  "created_utc": "2026-10-06T07:34:02.042628+00:00",
+  "script_sha256": "ec1ff45c15b0a242e3f1367960a8e338224d4c7bbbaafe43f0554ea27534a7f6",
+  "metrics_script_sha256": "0cf7c46bb4b8dbeeb6e8e1e75d9c14070048e7dba200c3733d2e2d1801fa994a",
+  "configs": [
+    {
+      "id": "prior",
+      "mean_gain": 1.0,
+      "shape_gain": 1.0,
+      "smooth": 1
+    },
+    {
+      "id": "mean50_shape0_smooth1",
+      "mean_gain": 0.5,
+      "shape_gain": 0.0,
+      "smooth": 1
+    },
+    {
+      "id": "mean50_shape50_smooth1",
+      "mean_gain": 0.5,
+      "shape_gain": 0.5,
+      "smooth": 1
+    },
+    {
+      "id": "mean50_shape50_smooth3",
+      "mean_gain": 0.5,
+      "shape_gain": 0.5,
+      "smooth": 3
+    },
+    {
+      "id": "mean50_shape100_smooth1",
+      "mean_gain": 0.5,
+      "shape_gain": 1.0,
+      "smooth": 1
+    },
+    {
+      "id": "mean50_shape100_smooth3",
+      "mean_gain": 0.5,
+      "shape_gain": 1.0,
+      "smooth": 3
+    },
+    {
+      "id": "mean100_shape0_smooth1",
+      "mean_gain": 1.0,
+      "shape_gain": 0.0,
+      "smooth": 1
+    },
+    {
+      "id": "mean100_shape50_smooth1",
+      "mean_gain": 1.0,
+      "shape_gain": 0.5,
+      "smooth": 1
+    },
+    {
+      "id": "mean100_shape50_smooth3",
+      "mean_gain": 1.0,
+      "shape_gain": 0.5,
+      "smooth": 3
+    },
+    {
+      "id": "mean100_shape100_smooth3",
+      "mean_gain": 1.0,
+      "shape_gain": 1.0,
+      "smooth": 3
+    },
+    {
+      "id": "mean150_shape0_smooth1",
+      "mean_gain": 1.5,
+      "shape_gain": 0.0,
+      "smooth": 1
+    },
+    {
+      "id": "mean150_shape50_smooth1",
+      "mean_gain": 1.5,
+      "shape_gain": 0.5,
+      "smooth": 1
+    },
+    {
+      "id": "mean150_shape50_smooth3",
+      "mean_gain": 1.5,
+      "shape_gain": 0.5,
+      "smooth": 3
+    },
+    {
+      "id": "mean150_shape100_smooth1",
+      "mean_gain": 1.5,
+      "shape_gain": 1.0,
+      "smooth": 1
+    },
+    {
+      "id": "mean150_shape100_smooth3",
+      "mean_gain": 1.5,
+      "shape_gain": 1.0,
+      "smooth": 3
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "base": "R24 DEV frozen selected7. H1 unchanged R8b, no duplicate H1 search.",
+  "method": "Decompose R24 minus R19 prediction into full96 daily-level and zero-mean intraday shape; mean gains.5/1/1.5, shape0/.5/1, shape smoothing1/3 with perday recentering. Clip0..1 and percell forecast-total preservation, a5 unchanged.",
+  "selection": "EarlyDEV7 origin14 select strict R20 guard-eligible minimum8metriccost nonprior or minimumcost rejected diagnostic. Later origin15 plus aggregate14/15 choose0/.25/.5/1 with same no-core-regression guards and .0001pp curve/peak gain; oneSE shrink. Exactly one fixed diagnostic.25 or chosen positive before TEST. No TEST reranking.",
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round24/code/volatility_gate_experiment.py": "a7e9587bd5884e06ea8cf20e011849d782b787888b4e268b653c008782aa4818",
+    "round24/results/selection.json": "802e587efc516b1a7a465827b8783875b1c802e79312f7bbf042da5e69bf09e5",
+    "round24/results/dev_predictions.npz": "00329c5fe3be38f1f12d96c693d38416e17748c4c36c28dc947fa37641cfdfbe",
+    "round24/results/test_predictions.npz": "e1041b0c6e251ce10acc259f037fb8d8071c4d957fb80343cb5ce718a573c638",
+    "round24/results/independent_verification.json": "fdf0df8c7f357960317ea508b866e808287c932e7bf94c2aac2cbdf931c0c708",
+    "round24/results/exports/verification.json": "c639817bd6c1bc38c0b1cc3299e4f9564995f702256096c93f5a20f628b9285d"
+  },
+  "resource_policy": {
+    "admission_physical_gib": 2.125,
+    "admission_commit_gib": 6,
+    "job_commit_hard_cap_bytes": 536870912,
+    "runtime_physical_floor_gib": 1.5,
+    "runtime_commit_floor_gib": 2
+  }
+}

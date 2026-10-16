@@ -1,0 +1,125 @@
+{
+  "selection": {
+    "frozen_utc": "2026-10-05T08:38:59.410530+00:00",
+    "candidate": {
+      "id": "history_peak1.0",
+      "mean": 0.0,
+      "peak": 1.0,
+      "alpha": 100,
+      "peak_kind": "history",
+      "shape": 0.0
+    },
+    "chosen_alpha": 0.0,
+    "all_metric_dev_eligible": false,
+    "protocol_sha256": "67bc8d78a86ecbcaabf43a39a802de97008ed6acae7464d8e43c55e0a06ff3bb",
+    "dev_predictions_sha256": "b8a734c40f55667646125dd7e721bea9b4875e4eeb87a68f1eab00dae01e7af6",
+    "dev_summary_sha256": "d468ce5aa664fa14d7135dbd1b17a1c237bdae4758cfa10e7ba071fbb104fcef",
+    "independent_confirmation": false
+  },
+  "scores24": {
+    "prior": {
+      "wape": 2.374127711928938,
+      "mae": 0.01673005076180579,
+      "rmse": 0.02365229189675178,
+      "daily_wape": 1.4838931345769932,
+      "peak_mape": 2.0002019860901386,
+      "p95_ape": 6.899308522995328,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "absolute_bias_percent": 0.1706665636412238,
+      "cella5_wape": 1.769677630986991,
+      "other52_wape": 2.43224791201951
+    },
+    "candidate": {
+      "wape": 2.814204824695979,
+      "mae": 0.01982598917162158,
+      "rmse": 0.027360320652385625,
+      "daily_wape": 1.483903061943687,
+      "peak_mape": 1.068242856335437,
+      "p95_ape": 8.259203335752876,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "absolute_bias_percent": 0.170660408869065,
+      "cella5_wape": 2.0689209059009364,
+      "other52_wape": 2.885866739964733
+    },
+    "selected": {
+      "wape": 2.374127711928938,
+      "mae": 0.01673005076180579,
+      "rmse": 0.02365229189675178,
+      "daily_wape": 1.4838931345769932,
+      "peak_mape": 2.0002019860901386,
+      "p95_ape": 6.899308522995328,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "absolute_bias_percent": 0.1706665636412238,
+      "cella5_wape": 1.769677630986991,
+      "other52_wape": 2.43224791201951
+    }
+  },
+  "scores7": {
+    "prior": {
+      "wape": 2.7797074655345204,
+      "mae": 0.01940535446053212,
+      "rmse": 0.026432197802436132,
+      "daily_wape": 2.00147685008163,
+      "peak_mape": 2.027968858260533,
+      "p95_ape": 7.729685953987539,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "absolute_bias_percent": 0.16556795246690897,
+      "cella5_wape": 1.833521033983984,
+      "other52_wape": 2.870686930106687
+    },
+    "candidate": {
+      "wape": 3.4818536064268693,
+      "mae": 0.024213777897722777,
+      "rmse": 0.03287613211589656,
+      "daily_wape": 2.0014270968606764,
+      "peak_mape": 1.3767845293048717,
+      "p95_ape": 10.03411498331567,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "absolute_bias_percent": 0.16554789341129766,
+      "cella5_wape": 2.0105724933164963,
+      "other52_wape": 3.623322944225943
+    },
+    "selected": {
+      "wape": 2.7797074655345204,
+      "mae": 0.01940535446053212,
+      "rmse": 0.026432197802436132,
+      "daily_wape": 2.00147685008163,
+      "peak_mape": 2.027968858260533,
+      "p95_ape": 7.729685953987539,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "absolute_bias_percent": 0.16556795246690897,
+      "cella5_wape": 1.833521033983984,
+      "other52_wape": 2.870686930106687
+    }
+  },
+  "test_best_control_per_metric24": {
+    "wape": 2.3738093600147177,
+    "mae": 0.016729654083689063,
+    "rmse": 0.02345770810344211,
+    "daily_wape": 1.4837943607492887,
+    "peak_mape": 1.068242856335437,
+    "p95_ape": 6.819027870694339,
+    "peak_time_mae_minutes": 285.1169590643275,
+    "absolute_bias_percent": 0.11039864517095577,
+    "cella5_wape": 1.7557499183646303,
+    "other52_wape": 2.4321803901680275
+  },
+  "test_best_control_per_metric7": {
+    "wape": 2.7797074655345204,
+    "mae": 0.01940535446053212,
+    "rmse": 0.026432197802436132,
+    "daily_wape": 2.00147685008163,
+    "peak_mape": 1.3620893821085749,
+    "p95_ape": 7.729685953987539,
+    "peak_time_mae_minutes": 281.7418546365915,
+    "absolute_bias_percent": 0.01091574855255023,
+    "cella5_wape": 1.833521033983984,
+    "other52_wape": 2.870686930106687
+  },
+  "all_metric_test_candidate_dominance": false,
+  "test_worst_ratio": 15.165968015324149,
+  "no_post_test_selection": true,
+  "independent_confirmation": false,
+  "overlapping_windows": true,
+  "fitted_final_label_cutoff": 22
+}

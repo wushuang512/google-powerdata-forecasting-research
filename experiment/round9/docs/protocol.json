@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-10-01T06:39:38.482602+00:00",
+  "registry": {
+    "control_ridge10000": {
+      "kind": "ridge",
+      "group": "control",
+      "alpha": 10000
+    },
+    "control_ridge100000": {
+      "kind": "ridge",
+      "group": "control",
+      "alpha": 100000
+    },
+    "control_ridge1000000": {
+      "kind": "ridge",
+      "group": "control",
+      "alpha": 1000000
+    },
+    "history_ridge10000": {
+      "kind": "ridge",
+      "group": "history",
+      "alpha": 10000
+    },
+    "history_ridge100000": {
+      "kind": "ridge",
+      "group": "history",
+      "alpha": 100000
+    },
+    "history_ridge1000000": {
+      "kind": "ridge",
+      "group": "history",
+      "alpha": 1000000
+    },
+    "forecast_ridge10000": {
+      "kind": "ridge",
+      "group": "forecast",
+      "alpha": 10000
+    },
+    "forecast_ridge100000": {
+      "kind": "ridge",
+      "group": "forecast",
+      "alpha": 100000
+    },
+    "forecast_ridge1000000": {
+      "kind": "ridge",
+      "group": "forecast",
+      "alpha": 1000000
+    },
+    "monotone_alpha10": {
+      "kind": "monotone",
+      "alpha": 10
+    },
+    "monotone_alpha100": {
+      "kind": "monotone",
+      "alpha": 100
+    },
+    "monotone_alpha1000": {
+      "kind": "monotone",
+      "alpha": 1000
+    },
+    "physical_control_alpha10": {
+      "kind": "physical_control",
+      "alpha": 10
+    },
+    "physical_control_alpha100": {
+      "kind": "physical_control",
+      "alpha": 100
+    },
+    "physical_control_alpha1000": {
+      "kind": "physical_control",
+      "alpha": 1000
+    },
+    "fusion_cpu": {
+      "kind": "fusion",
+      "cfg": {
+        "width": 16,
+        "use_cpu": true,
+        "cross": true,
+        "freq": true,
+        "sparse": true
+      }
+    },
+    "fusion_control": {
+      "kind": "fusion",
+      "cfg": {
+        "width": 16,
+        "use_cpu": false,
+        "cross": true,
+        "freq": true,
+        "sparse": true
+      }
+    },
+    "fusion_no_cross": {
+      "kind": "fusion",
+      "cfg": {
+        "width": 16,
+        "use_cpu": true,
+        "cross": false,
+        "freq": true,
+        "sparse": true
+      }
+    },
+    "fusion_no_frequency": {
+      "kind": "fusion",
+      "cfg": {
+        "width": 16,
+        "use_cpu": true,
+        "cross": true,
+        "freq": false,
+        "sparse": true
+      }
+    }
+  },
+  "seeds": [
+    20261001,
+    20261002
+  ],
+  "neural_checkpoints": [
+    4,
+    10,
+    20
+  ],
+  "blend_weights": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1
+  ],
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "development_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "final_training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "prerequisite": "All 12085 official cell-a Parquet files projected and audited; never train from the pilot as though complete",
+  "forecasting": "Only completed JOB CPU/memory records in past bins. Future workload is forecast by frozen TimesFM3, never actual future CPU. Capacity is a historical scheduler-available feature.",
+  "selection": "First four development dates choose family/checkpoint, two fixed neural seeds averaged. Last four dates choose blend by paired day one-standard-error preferring lower new weight. One cell has real CPU; cell-based SE would always reject a single-cell correction, so day units are declared before this experiment.",
+  "scope": "Ridge candidates change cell-a PDUs only; all other domains exactly equal frozen round8b prior. Neural candidates may change all 57 domains. Report both 57-domain and 5-domain scores with matched controls.",
+  "initialization": "Fusion encoder initializes from corresponding round5 seed and fitting cutoff. Power residual output reinitialized to zero around existing calibrated ensemble. Extra resource embedding initializes at zero.",
+  "constraints": "Power quantiles in [0,1], CPU NCU quantiles >=0 and ordered. No CPU<=Power or CPU<=scheduler-capacity constraint.",
+  "independent_confirmation": false,
+  "limitations": "Same May2019 test repeatedly inspected in past rounds; freezing this selection prevents new test-driven changes but cannot restore independence. Full export coverage does not imply complete physical telemetry.",
+  "clarified_at_utc": "2026-10-01T06:57:52.447993+00:00",
+  "final_attribution": "Always final-fit all three Ridge feature groups at the early-development best Ridge alpha and all four neural ablations at one common epoch. If overall winner is neural, its epoch is common; otherwise choose full-CPU neural epoch on early development. Retain matched tests without using test ranks to change selection.",
+  "monotone_branch_added_utc": "2026-10-01T07:24:03.900211+00:00",
+  "monotone_branch": "Two per-PDU coefficients on history-only forecast CPU and memory changes, constrained >=0, Ridge penalties 10/100/1000. Matched intercept-only control at each penalty. Corrections around frozen ensemble; positivity means conditional monotonicity, not complete power conservation. All six fit on final training and report without test-based reselection.",
+  "registry_count": 19
+}

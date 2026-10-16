@@ -1,0 +1,119 @@
+{
+  "created_utc": "2026-10-12T12:12:50.719256+00:00",
+  "version": 2,
+  "user_request": "科学泛化验证，保持统一评价指标",
+  "source_scope": "NLR facility/IT separately; SeaGuang daily energy only; GoogleCluster same-source ablation only",
+  "fixed_google_current": "R48_ROBUST_HDSF_USER_ADOPTED",
+  "source_bindings": {
+    "experiment\\round48\\deployment\\selected_configuration.json": "6430e122de964c6762da5e18b28b175bc323beb83558d05015fbf92ee3082fc8",
+    "experiment\\round48\\results\\predictions.npz": "252e043913fc94b1c4332c1ae1d9b40abc24b7f2bcf66ef6966fd91d3dc2cec5",
+    "experiment\\round44\\results\\selection.json": "e7c1429c22fac5452e90e331c92070258018d9bad4cf4570660f52b4e29519cc",
+    "experiment\\round44\\results\\local_cut22.joblib": "5dab62aa2ba089d1722225a142b62dfc231e2905a414177aa920d548c29b7046",
+    "experiment\\round47\\models\\patchtst_curve_cut22.pt": "a15a35eac82aa45016c415c5b301310dd42a9851623ef4252ce795c183f21a28",
+    "experiment\\round46\\code\\hdsf_foundation_adapters.py": "3a2d4d6e4d4bdaa2a9b1b9005a76f5106cb9b2ddf8cc88e038e565a6136368c1",
+    "experiment\\round44\\results\\shared_weights.json": "217813e2f39748136781a08ec1ce22357b450d01e6a2ca277236be26c906cd14",
+    "experiment\\round44\\results\\official_models_downloads.json": "498d609eabee496100d9d95cc3852eef08fe1f0d3d04311708a26939d05fc4bb",
+    "experiment\\round46\\models\\timesfm3_tail_s40_cut22.pt": "dbcba53de48b1a38883ccba076765e95f2d439be52d6bdd11b90a6d7b89f902c",
+    "experiment\\round46\\models\\toto2_tail_s40_cut22.pt": "d9e1570b0079235137d5ec7fff229818aaadcb488dd269fa247e533e7b63b6a7",
+    "experiment\\round46\\models\\patchtst_tail_s40_cut22.pt": "9176bf3e8dd735783e0cf0fccf949f476a1a9c0368679a703d75bcbe8a8b35ed"
+  },
+  "code_sha256": {
+    "core.py": "4c686a4a0ede9a72dec9b2ccdc257e4df54224e9ae7b76787bf6d7e822ec6945",
+    "evaluate.py": "be6a3fca2a8e113bfb3399ac3228e829bd9ceec3fe92398d6828831c4c904385",
+    "foundation_stage.py": "88fb5ef92a1ea143de57fac051c8c9ca75111fa9319000d90c839bdb6990f854",
+    "local_models.py": "c0ee2cb6fe1e6e1630747b48ec9cd6fc549533c20129e2424205a01b0c0c9d38",
+    "prepare.py": "c77c2f7dff5d31a087f4d1a1ebadb277838df97a6eb77d7e32765f108bcba812",
+    "run_pipeline.py": "48838bc546923a0a31d9008370c5566d06ab23411024c68ee33cb0df14467a3e",
+    "supplementary.py": "e91951df9683a8584de948de3330d8f1af44c24b87ffc55d19369b85a0a829a0",
+    "verify_and_report.py": "c3eb9ea045306c41d70cb69b04f95815ffd2b12ac3f52c8d80bda691ffc7c1cb"
+  },
+  "prepared_sha256": {
+    "nlr_15min.npz": "f469c5a9e873cfd06a55d95e2f3fe2e0972a1ddca81ec25bfa96b92d2f0476a2",
+    "sea_daily.npz": "683c9388d6a671977bdc8fccf93bf0619779caae752bec03fcf40a359c481d13"
+  },
+  "nlr_origins": {
+    "dev": [
+      2640,
+      2699,
+      2713,
+      2729,
+      2743,
+      2760,
+      2774,
+      2790,
+      2804,
+      2821,
+      2835,
+      2852,
+      2866,
+      2927
+    ],
+    "test": [
+      2974,
+      2988,
+      3034,
+      3048,
+      3065,
+      3109,
+      3126,
+      3140,
+      3156,
+      3170,
+      3187,
+      3201,
+      3279,
+      3293,
+      3309,
+      3323
+    ],
+    "confirm": [
+      3340,
+      3354,
+      3371,
+      3385,
+      3399,
+      3413,
+      3430,
+      3444,
+      3460,
+      3474,
+      3491,
+      3505,
+      3566
+    ]
+  },
+  "origin_rule": "1st/15th of every month; each target past28day coverage>=95%, latest inputbin valid. Fixed candidate dates, quality-only exclusions logged. A representative calendar backtest, not all days.",
+  "nlr_train": "2016-06-12 to2022-12-31",
+  "nlr_dev": "2023 fixed origins",
+  "nlr_test": "2024 fixed origins",
+  "nlr_confirmation": "2025 Jan-Aug fixed origins; no 2024 retuning",
+  "horizons": [
+    1,
+    7
+  ],
+  "history": "Chronos28days; TimesFM long/Patch21days; other14days; all known history only",
+  "adapter": "Per-target training-only scale; source clock; no fictitious PDU or production channel. Single-target joint modes collapse to univariate. Nonnegative output, no artificial kW upper cap.",
+  "current_transfer": "Google model weights and halfday simplex unchanged; missing production/static/other-series features follow missing tree paths. Group shrink inactive when fewer than3 comparable facilities.",
+  "refit": "NLR local24 same source64 feature layout with unavailable columns NA, fourseed350tree15leaf plus train-only lag blend; Ridge strong control. Neural originalweights unchanged. Halfday simplex fit on early2023 origins; alpha against global-simplex selected on late2023 only; freeze before TEST.",
+  "simplex_candidates": [
+    0,
+    0.25,
+    0.5,
+    1
+  ],
+  "simplex_training_segment_points": 48,
+  "metrics": "Unchanged per-series macro WAPE, complete96 daily mean, MAE/RMSE/P95APE/hit2/hit5/absolute bias/peak amplitude/time/underestimate; 80%empirical intervals. Sea daily granularity peak fields unavailable.",
+  "zero_APE": "NA with counts; no zero denominator concealment",
+  "intervals": "Point transfer fixed; residual interval calibration uses target DEV and is explicitly target-calibrated, not zero-shot uncertainty",
+  "uncertainty": "Paired origin-month bootstrap 2000replications, both origins and all horizon points within month kept together; at most12 testmonth clusters, no IIDpoint significance. Confirmation separate.",
+  "cluster": "Fixed LightGBM known-history power vs power+CPU/memory inputs, train14/dev<=22/final22; same originalorigins; fulla5 andall57 conditional residual results; no independentconfirmation.",
+  "source_foundation_training_data_overlap_unknown": true,
+  "no_test_parameter_selection": true,
+  "resource_policy": "One isolated model process at a time; use existingGPU except TiRex nativeCPU; emergency check between calls only, no 3GiB startup gate; no other applications closed.",
+  "license": "Original licenses retained; TimesFM3 noncommercial research only",
+  "pretest_revision": {
+    "reason": "Fix path/payload keyword collision in cache writer; correct descriptive source feature count64; no storedDEV orTEST output, no scoring occurred",
+    "previous_sha256": "069ab3ea26e71b1ab3e50060c082e788eff4417721fd035ccfb514ce9744a9b8",
+    "scientific_parameters_unchanged": true
+  }
+}

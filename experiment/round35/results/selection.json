@@ -1,0 +1,306 @@
+{
+  "created_utc": "2026-10-07T02:22:26.562276+00:00",
+  "horizons": {
+    "1": {
+      "selected": null,
+      "diagnostic": {
+        "config": {
+          "id": "uni7_mix25",
+          "family": "uni7",
+          "mode": "mix25"
+        },
+        "eligible": false,
+        "primary_cost": 0.9836285258144841,
+        "peak_close_to_best": false,
+        "secondary_small": true
+      },
+      "retain_prior": true,
+      "ranking": [
+        {
+          "config": {
+            "id": "uni7_mix25",
+            "family": "uni7",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9836285258144841,
+          "peak_close_to_best": false,
+          "secondary_small": true
+        },
+        {
+          "config": {
+            "id": "cell14_mix25",
+            "family": "cell14",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.994556677342692,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_shape25",
+            "family": "uni7",
+            "mode": "shape25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9986753752398868,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_mix25",
+            "family": "uni14",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9991959890003433,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_shape25",
+            "family": "uni14",
+            "mode": "shape25"
+          },
+          "eligible": false,
+          "primary_cost": 1.0009041456369023,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "cell14_shape25",
+            "family": "cell14",
+            "mode": "shape25"
+          },
+          "eligible": false,
+          "primary_cost": 1.001429160665519,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_raw",
+            "family": "uni7",
+            "mode": "raw"
+          },
+          "eligible": false,
+          "primary_cost": 1.020619698075134,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_historic_peak",
+            "family": "uni7",
+            "mode": "historic_peak"
+          },
+          "eligible": false,
+          "primary_cost": 1.025953122342967,
+          "peak_close_to_best": true,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_raw",
+            "family": "uni14",
+            "mode": "raw"
+          },
+          "eligible": false,
+          "primary_cost": 1.0516727198162938,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_historic_peak",
+            "family": "uni14",
+            "mode": "historic_peak"
+          },
+          "eligible": false,
+          "primary_cost": 1.0570493709341564,
+          "peak_close_to_best": true,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "cell14_raw",
+            "family": "cell14",
+            "mode": "raw"
+          },
+          "eligible": false,
+          "primary_cost": 1.0630561760561605,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "cell14_historic_peak",
+            "family": "cell14",
+            "mode": "historic_peak"
+          },
+          "eligible": false,
+          "primary_cost": 1.063646512450037,
+          "peak_close_to_best": true,
+          "secondary_small": false
+        }
+      ]
+    },
+    "7": {
+      "selected": null,
+      "diagnostic": {
+        "config": {
+          "id": "cell14_mix25",
+          "family": "cell14",
+          "mode": "mix25"
+        },
+        "eligible": false,
+        "primary_cost": 0.9848881962643308,
+        "peak_close_to_best": false,
+        "secondary_small": false
+      },
+      "retain_prior": true,
+      "ranking": [
+        {
+          "config": {
+            "id": "cell14_mix25",
+            "family": "cell14",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9848881962643308,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_mix25",
+            "family": "uni7",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9935584944441116,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_shape25",
+            "family": "uni14",
+            "mode": "shape25"
+          },
+          "eligible": false,
+          "primary_cost": 0.998877614476435,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_shape25",
+            "family": "uni7",
+            "mode": "shape25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9994215577951436,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "cell14_shape25",
+            "family": "cell14",
+            "mode": "shape25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9998023699286163,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_mix25",
+            "family": "uni14",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 1.0040280795318204,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "cell14_raw",
+            "family": "cell14",
+            "mode": "raw"
+          },
+          "eligible": false,
+          "primary_cost": 1.078972018733265,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "cell14_historic_peak",
+            "family": "cell14",
+            "mode": "historic_peak"
+          },
+          "eligible": false,
+          "primary_cost": 1.0800207586819024,
+          "peak_close_to_best": true,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_raw",
+            "family": "uni7",
+            "mode": "raw"
+          },
+          "eligible": false,
+          "primary_cost": 1.1142411012832028,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni7_historic_peak",
+            "family": "uni7",
+            "mode": "historic_peak"
+          },
+          "eligible": false,
+          "primary_cost": 1.1180525923000506,
+          "peak_close_to_best": true,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_raw",
+            "family": "uni14",
+            "mode": "raw"
+          },
+          "eligible": false,
+          "primary_cost": 1.1312253152998388,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        {
+          "config": {
+            "id": "uni14_historic_peak",
+            "family": "uni14",
+            "mode": "historic_peak"
+          },
+          "eligible": false,
+          "primary_cost": 1.132331254942752,
+          "peak_close_to_best": true,
+          "secondary_small": false
+        }
+      ]
+    }
+  },
+  "protocol_sha256": "b7495753b1ae49812373471b1b3891037586d45980e9284c067cba0bcec6eb61",
+  "dev_predictions_sha256": "65cd69352199827743c150ae67591ce85a5ff109ff03829739fb8e60bce94de6",
+  "no_test_used": true
+}

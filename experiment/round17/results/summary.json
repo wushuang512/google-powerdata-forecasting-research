@@ -1,0 +1,127 @@
+{
+  "selection": {
+    "frozen_utc": "2026-10-05T09:42:00.941610+00:00",
+    "candidate": {
+      "id": "prior",
+      "ridge": 1000,
+      "mean": 0.0,
+      "shape": 0.0,
+      "peak": 0.0,
+      "gate": false
+    },
+    "chosen_alpha": 0.0,
+    "all_metric_dev_eligible": false,
+    "protocol_sha256": "990241a5e803935ae3148f91644f466cb1d6634b5d060ec295ca113307562f83",
+    "dev_predictions_sha256": "3652f98b92e27df2305f765b3b7a057740c6cb4ec6acdd472c828b96bfad3fae",
+    "dev_summary_sha256": "2c6554bbd60fb06f6cc7f173d42b0fe61f069a836a75ca6e45c9f61286e10944",
+    "train7_sha256": "b2e2fe65bc24f5ae1552ea443e69cfc9fa716f168a383771ea207b9ab392d625",
+    "dev_heads_sha256": "d3a5d3ed1a516309de252fd76eb49f99fd107493983db13a8ee70e87a67d69ca",
+    "independent_confirmation": false
+  },
+  "scores24": {
+    "prior": {
+      "wape": 2.374127711928938,
+      "mae": 0.01673005076180579,
+      "rmse": 0.02365229189675178,
+      "daily_wape": 1.4838931345769932,
+      "peak_mape": 2.0002019860901386,
+      "p95_ape": 6.899308522995328,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "absolute_bias_percent": 0.1706665636412238,
+      "cella5_wape": 1.769677630986991,
+      "other52_wape": 2.43224791201951
+    },
+    "candidate": {
+      "wape": 2.374127711928938,
+      "mae": 0.01673005076180579,
+      "rmse": 0.02365229189675178,
+      "daily_wape": 1.4838931345769932,
+      "peak_mape": 2.0002019860901386,
+      "p95_ape": 6.899308522995328,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "absolute_bias_percent": 0.1706665636412238,
+      "cella5_wape": 1.769677630986991,
+      "other52_wape": 2.43224791201951
+    },
+    "selected": {
+      "wape": 2.374127711928938,
+      "mae": 0.01673005076180579,
+      "rmse": 0.02365229189675178,
+      "daily_wape": 1.4838931345769932,
+      "peak_mape": 2.0002019860901386,
+      "p95_ape": 6.899308522995328,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "absolute_bias_percent": 0.1706665636412238,
+      "cella5_wape": 1.769677630986991,
+      "other52_wape": 2.43224791201951
+    }
+  },
+  "scores7": {
+    "prior": {
+      "wape": 2.7797074655345204,
+      "mae": 0.01940535446053212,
+      "rmse": 0.026432197802436132,
+      "daily_wape": 2.00147685008163,
+      "peak_mape": 2.027968858260533,
+      "p95_ape": 7.729685953987539,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "absolute_bias_percent": 0.16556795246690897,
+      "cella5_wape": 1.833521033983984,
+      "other52_wape": 2.870686930106687
+    },
+    "candidate": {
+      "wape": 2.7797074655345204,
+      "mae": 0.01940535446053212,
+      "rmse": 0.026432197802436132,
+      "daily_wape": 2.00147685008163,
+      "peak_mape": 2.027968858260533,
+      "p95_ape": 7.729685953987539,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "absolute_bias_percent": 0.16556795246690897,
+      "cella5_wape": 1.833521033983984,
+      "other52_wape": 2.870686930106687
+    },
+    "selected": {
+      "wape": 2.7797074655345204,
+      "mae": 0.01940535446053212,
+      "rmse": 0.026432197802436132,
+      "daily_wape": 2.00147685008163,
+      "peak_mape": 2.027968858260533,
+      "p95_ape": 7.729685953987539,
+      "peak_time_mae_minutes": 317.4937343358396,
+      "absolute_bias_percent": 0.16556795246690897,
+      "cella5_wape": 1.833521033983984,
+      "other52_wape": 2.870686930106687
+    }
+  },
+  "test_best_control_per_metric24": {
+    "wape": 2.3738093600147177,
+    "mae": 0.016729654083689063,
+    "rmse": 0.02345770810344211,
+    "daily_wape": 1.4837943607492887,
+    "peak_mape": 1.068242856335437,
+    "p95_ape": 6.819027870694339,
+    "peak_time_mae_minutes": 285.1169590643275,
+    "absolute_bias_percent": 0.11039864517095577,
+    "cella5_wape": 1.7557499183646303,
+    "other52_wape": 2.4321803901680275
+  },
+  "test_best_control_per_metric7": {
+    "wape": 2.7797074655345204,
+    "mae": 0.01940535446053212,
+    "rmse": 0.026432197802436132,
+    "daily_wape": 2.00147685008163,
+    "peak_mape": 1.3620893821085749,
+    "p95_ape": 7.729685953987539,
+    "peak_time_mae_minutes": 281.7418546365915,
+    "absolute_bias_percent": 0.01091574855255023,
+    "cella5_wape": 1.833521033983984,
+    "other52_wape": 2.870686930106687
+  },
+  "test_worst_ratio": 15.167805640615235,
+  "all_metric_test_candidate_dominance": false,
+  "no_post_test_selection": true,
+  "independent_confirmation": false,
+  "overlapping_windows": true,
+  "fitted_final_label_cutoff": 22
+}

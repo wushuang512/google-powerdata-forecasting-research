@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-01T01:33:27.770819+00:00",
+  "chosen_config": "ridge_resource_1000000",
+  "config": {
+    "kind": "ridge",
+    "resource": true,
+    "alpha": 1000000
+  },
+  "chosen": {
+    "alpha": 0,
+    "wape": 2.387413261769499,
+    "paired_cell_se": 0.0
+  },
+  "validation": [
+    {
+      "alpha": 0,
+      "wape": 2.387413261769499,
+      "paired_cell_se": 0.0
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.3857214740077324,
+      "paired_cell_se": 0.002338150456334368
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.383768784274633,
+      "paired_cell_se": 0.005983564573125868
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.381834551600179,
+      "paired_cell_se": 0.012233187988420593
+    },
+    {
+      "alpha": 1,
+      "wape": 2.3829686716641048,
+      "paired_cell_se": 0.02567044519919634
+    }
+  ],
+  "protocol_sha256": "e3b5cb59aaf0944f5fac379e5c342ce024f4dd43e1205f486d974895990576fc"
+}

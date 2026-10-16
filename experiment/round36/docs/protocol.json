@@ -1,0 +1,306 @@
+{
+  "created_utc": "2026-10-07T02:26:43.068167+00:00",
+  "families": {
+    "1": "uni7",
+    "7": "cell14"
+  },
+  "configs": [
+    {
+      "id": "a0.1_none_peak0",
+      "alpha": 0.1,
+      "total": "none",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.1_none_peak0.25",
+      "alpha": 0.1,
+      "total": "none",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.1_none_peak0.5",
+      "alpha": 0.1,
+      "total": "none",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.1_none_peak1",
+      "alpha": 0.1,
+      "total": "none",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.1_global_daily_peak0",
+      "alpha": 0.1,
+      "total": "global_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.1_global_daily_peak0.25",
+      "alpha": 0.1,
+      "total": "global_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.1_global_daily_peak0.5",
+      "alpha": 0.1,
+      "total": "global_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.1_global_daily_peak1",
+      "alpha": 0.1,
+      "total": "global_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.1_cell_daily_peak0",
+      "alpha": 0.1,
+      "total": "cell_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.1_cell_daily_peak0.25",
+      "alpha": 0.1,
+      "total": "cell_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.1_cell_daily_peak0.5",
+      "alpha": 0.1,
+      "total": "cell_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.1_cell_daily_peak1",
+      "alpha": 0.1,
+      "total": "cell_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.25_none_peak0",
+      "alpha": 0.25,
+      "total": "none",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.25_none_peak0.25",
+      "alpha": 0.25,
+      "total": "none",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.25_none_peak0.5",
+      "alpha": 0.25,
+      "total": "none",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.25_none_peak1",
+      "alpha": 0.25,
+      "total": "none",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.25_global_daily_peak0",
+      "alpha": 0.25,
+      "total": "global_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.25_global_daily_peak0.25",
+      "alpha": 0.25,
+      "total": "global_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.25_global_daily_peak0.5",
+      "alpha": 0.25,
+      "total": "global_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.25_global_daily_peak1",
+      "alpha": 0.25,
+      "total": "global_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.25_cell_daily_peak0",
+      "alpha": 0.25,
+      "total": "cell_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.25_cell_daily_peak0.25",
+      "alpha": 0.25,
+      "total": "cell_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.25_cell_daily_peak0.5",
+      "alpha": 0.25,
+      "total": "cell_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.25_cell_daily_peak1",
+      "alpha": 0.25,
+      "total": "cell_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.5_none_peak0",
+      "alpha": 0.5,
+      "total": "none",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.5_none_peak0.25",
+      "alpha": 0.5,
+      "total": "none",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.5_none_peak0.5",
+      "alpha": 0.5,
+      "total": "none",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.5_none_peak1",
+      "alpha": 0.5,
+      "total": "none",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.5_global_daily_peak0",
+      "alpha": 0.5,
+      "total": "global_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.5_global_daily_peak0.25",
+      "alpha": 0.5,
+      "total": "global_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.5_global_daily_peak0.5",
+      "alpha": 0.5,
+      "total": "global_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.5_global_daily_peak1",
+      "alpha": 0.5,
+      "total": "global_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.5_cell_daily_peak0",
+      "alpha": 0.5,
+      "total": "cell_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.5_cell_daily_peak0.25",
+      "alpha": 0.5,
+      "total": "cell_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.5_cell_daily_peak0.5",
+      "alpha": 0.5,
+      "total": "cell_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.5_cell_daily_peak1",
+      "alpha": 0.5,
+      "total": "cell_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.75_none_peak0",
+      "alpha": 0.75,
+      "total": "none",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.75_none_peak0.25",
+      "alpha": 0.75,
+      "total": "none",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.75_none_peak0.5",
+      "alpha": 0.75,
+      "total": "none",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.75_none_peak1",
+      "alpha": 0.75,
+      "total": "none",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.75_global_daily_peak0",
+      "alpha": 0.75,
+      "total": "global_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.75_global_daily_peak0.25",
+      "alpha": 0.75,
+      "total": "global_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.75_global_daily_peak0.5",
+      "alpha": 0.75,
+      "total": "global_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.75_global_daily_peak1",
+      "alpha": 0.75,
+      "total": "global_daily",
+      "peak_beta": 1
+    },
+    {
+      "id": "a0.75_cell_daily_peak0",
+      "alpha": 0.75,
+      "total": "cell_daily",
+      "peak_beta": 0
+    },
+    {
+      "id": "a0.75_cell_daily_peak0.25",
+      "alpha": 0.75,
+      "total": "cell_daily",
+      "peak_beta": 0.25
+    },
+    {
+      "id": "a0.75_cell_daily_peak0.5",
+      "alpha": 0.75,
+      "total": "cell_daily",
+      "peak_beta": 0.5
+    },
+    {
+      "id": "a0.75_cell_daily_peak1",
+      "alpha": 0.75,
+      "total": "cell_daily",
+      "peak_beta": 1
+    }
+  ],
+  "reason": "R35 DEV curve improved materially but peak-vs-best-baseline gate did not implement latest user curve-priority tolerance. R36 registered before reading R35 TEST scores; inspectonly DEV andretainoriginalR35 freeze. New total constraints coordinate normalized forecast means, notphysical conservation.",
+  "primary": "24h and7d WAPE nonworse current,7d daily nonworse; curve improvement>=.001pp; peak<=current+.1pp; original tiny secondary tolerances. Select eligible lowest normalized primary cost.",
+  "weights": "Official frozen Moirai2 plus previous frozenforecasts, onlyregistered alpha and historical-peak beta, no gradient training.",
+  "native_dev_sha256": "6f886d6fe5bb2c18aa27a4ed930b8cb8326116fc9ddf6c6dec7a6e97699141ea",
+  "metric_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+  "prior_test_already_seen_many_times": true,
+  "new_moirai_test_scores_read_before_this_protocol": false,
+  "independent_confirmation": false,
+  "substantial_goal_relative_percent": 5
+}

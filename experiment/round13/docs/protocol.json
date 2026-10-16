@@ -1,0 +1,141 @@
+{
+  "created_utc": "2026-10-04T01:24:04.793007+00:00",
+  "method": "low-capacity convex residual retraining with recency weights and smooth absolute loss",
+  "configs": {
+    "recent_ridge_h3": {
+      "half_life": 3,
+      "loss": "l2"
+    },
+    "recent_ridge_h7": {
+      "half_life": 7,
+      "loss": "l2"
+    },
+    "smoothL1_h3_p05": {
+      "half_life": 3,
+      "loss": "smooth_absolute",
+      "penalty_factor": 0.5
+    },
+    "smoothL1_h3_p2": {
+      "half_life": 3,
+      "loss": "smooth_absolute",
+      "penalty_factor": 2
+    },
+    "smoothL1_h7_p05": {
+      "half_life": 7,
+      "loss": "smooth_absolute",
+      "penalty_factor": 0.5
+    },
+    "smoothL1_h7_p2": {
+      "half_life": 7,
+      "loss": "smooth_absolute",
+      "penalty_factor": 2
+    }
+  },
+  "fixed_parameters": {
+    "ridge_alpha": 100000,
+    "epsilon_fraction_past7mean": 0.005,
+    "max_iterations": 80,
+    "objective_relative_tolerance": 1e-08,
+    "delta_cap_fraction_past7mean": 0.01,
+    "recency_total_weight_renormalized": true,
+    "cpu_threads": 2
+  },
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "family_selection_origins": [
+    14,
+    15,
+    16,
+    17
+  ],
+  "weight_selection_origins": [
+    18,
+    19,
+    20,
+    21
+  ],
+  "final_training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "feature_source": "unmodified AST-extracted 30 historical features from round5/calibration.py",
+  "target": "observed normalized power minus original three-backbone anchor",
+  "original_sample_weight": "1/max(mean observed power strictly before origin,0.05)",
+  "recency_weight": "2**(-(latest training origin-origin)/half_life), renormalized to original sum of weights",
+  "scaling": "unweighted training-only StandardScaler-compatible mean/std; zero or numerically constant features have scale 1",
+  "ridge_loss": "0.5 sum(w*(y-Xb-intercept)**2)+0.5*100000*sum(b**2)",
+  "robust_loss": "sum(w*sqrt((y-Xb-intercept)**2+(.005*past7mean)**2))+0.5*lambda*sum(b**2)",
+  "robust_lambda": "100000/max(median(abs(training residual of matching recency ridge)),1e-4)*penalty_factor",
+  "optimizer": "IRLS initialized from matching ridge; objective must decrease and converge within 80 iterations; no test-dependent stopping",
+  "correction": "clip(best+alpha*clip(0.5*(clip(anchor+new_residual,0,1)-old_clipped_calibration), +/-.01*past7mean),0,1)",
+  "alphas": [
+    0,
+    0.1,
+    0.25,
+    0.5,
+    1
+  ],
+  "selection": "early4 select converged family by all57 macro WAPE; late4 one-SE with max paired date and cell SE, favor zero/smaller; freeze before TEST",
+  "model_dimensions": 31,
+  "intercept_unpenalized": true,
+  "large_gain_rule": ">=5% relative WAPE reduction and positive paired-date bootstrap lower bound; exploratory only",
+  "foundation_weights_changed": false,
+  "model_downloads": 0,
+  "development_reused": true,
+  "test_reused": true,
+  "independent_confirmation": false,
+  "script_sha256": "dbe4d2d8a4a8dba89398880849d67629600ae5342d0998e8d79496a6f2de43fc",
+  "input_fingerprints": {
+    "results\\data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "code\\common.py": "6569f5e40ea884081fedf64b335dd7e3b790d19a0c4d4baa2b8285e5cb014a91",
+    "round5\\code\\calibration.py": "b951063c6d47e1ba07c52e6ea46a8c8565a22f4ada8455b807aaa5ed617bd1e0",
+    "round11\\results\\dev_predictions.npz": "13182e2d8ef25cdc9251ac00f4b09dd2a2cce4db8d4a866f73c44779d67c41a2",
+    "round8b\\results\\selection.json": "f713ae2932f05c17419c12f06770f3ed12ba3f9b18701ec35369581e286e66ad",
+    "round8b\\results\\test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round8b\\results\\selected_deployment_origin31_1day.csv": "d4c52c132bb9516aed6dcafb38a760fc61be84a3f29424176451abed13600389",
+    "round5\\results\\calibration_dev.npz": "4f560eafeaf660299ccb07a3738c99985c007b0b14c528703ead5f354edb08c8",
+    "round5\\results\\test_candidates.npz": "207de26568973609ac1e095e9207557088bf6d1e8b8fee2b4e4965ca5bb87589",
+    "round4\\results\\deployment_origin31_1day.npz": "933b64a9e16becbb8e9dacc313310baf0c0be0c95788ac59ec8fec0b50c1da02",
+    "round5\\results\\selected_deployment_origin31_1day.csv": "424f9d0bbc3b26d979a2a37e76f4642d6b789a88821e986b6c3a63e6029e4f69",
+    "round3\\results\\chronos_train.npz": "16e68de6dc5ede413a92cdbd95fc952b4ed1d90f7beef0d26672e0447a69e225",
+    "round3\\results\\tirex_train.npz": "e4714f440ab339b19d966491ef8901ab3f5dc0c5bb810c3d20f633e26ed59f5c",
+    "round3\\results\\tf3_train.npz": "e35828d79c40b34a58f659bf5b1b88bdeb9a1b1bab0af67b45369ed9bf9ee5b6",
+    "round3\\results\\chronos_dev.npz": "6fe9f89e78a27295a623efe04608843838053ad94a9b0d39f1878d4bd721ffb7",
+    "round3\\results\\tirex_dev.npz": "016b70218bbff4c06fa881a410e310af7f6db4f89ececed75b18f44f95354fc4",
+    "round3\\results\\tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3\\results\\chronos_test.npz": "67950b374eac052f0012734142364bb27878d6120311b4dd6a6f8c4a92ee499b",
+    "round3\\results\\tirex_test.npz": "31aec1d4dec23c7983f853cd34b39a2760aef54360a9360ec53a3891ca9be2c6",
+    "round3\\results\\tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64"
+  }
+}

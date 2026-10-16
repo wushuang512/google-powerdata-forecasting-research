@@ -1,0 +1,49 @@
+{
+  "frozen_at": "2026-10-01T08:00:19.508439+00:00",
+  "config": "global_penalty0.1_s100",
+  "chosen": {
+    "alpha": 0.5,
+    "wape": 2.386830561604212,
+    "paired_cell_se": 5.399276390431238e-05,
+    "paired_day_se": 4.4783366166680454e-05,
+    "conservative_se": 5.399276390431238e-05
+  },
+  "validation": [
+    {
+      "alpha": 0,
+      "wape": 2.3869265001147206,
+      "paired_cell_se": 0.0,
+      "paired_day_se": 0.0,
+      "conservative_se": 0.0
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.386907235008342,
+      "paired_cell_se": 1.0786839136300337e-05,
+      "paired_day_se": 8.988845346015023e-06,
+      "conservative_se": 1.0786839136300337e-05
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.3868783822781285,
+      "paired_cell_se": 2.6974192174906982e-05,
+      "paired_day_se": 2.2473203196084653e-05,
+      "conservative_se": 2.6974192174906982e-05
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.386830561604212,
+      "paired_cell_se": 5.399276390431238e-05,
+      "paired_day_se": 4.4783366166680454e-05,
+      "conservative_se": 5.399276390431238e-05
+    },
+    {
+      "alpha": 1,
+      "wape": 2.386735259256733,
+      "paired_cell_se": 0.00010807664597710144,
+      "paired_day_se": 8.92905159466951e-05,
+      "conservative_se": 0.00010807664597710144
+    }
+  ],
+  "protocol_sha256": "40020bdf6f6db505f2320a2e86ad7c0b8c8e32889ef20773e61e0de3e174b67d"
+}

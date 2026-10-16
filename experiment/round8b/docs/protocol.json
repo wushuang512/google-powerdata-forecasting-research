@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-01T06:06:12.357723+00:00",
+  "registry": {
+    "best_head_lr3e5_teacher005": {
+      "scope": "head",
+      "lr": 3e-05,
+      "teacher": 0.05
+    },
+    "best_tail_lr1e6_teacher01": {
+      "scope": "tail",
+      "lr": 1e-06,
+      "teacher": 0.1
+    }
+  },
+  "checkpoints": [
+    100,
+    300,
+    600
+  ],
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "development_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "objective": "Optimize actual best calibrated three-model ensemble with only TimesFM component adapted. Calibration is fixed for a split; teacher shift uses supervised training data only.",
+  "selection": "Early4 choose member, late4 one-standard-error choose alpha0/.1/.25/.5/1. Freeze before new test score.",
+  "independent_confirmation": false,
+  "cpu_input": false,
+  "license": "TimesFM Non-Commercial v1.0, research only"
+}

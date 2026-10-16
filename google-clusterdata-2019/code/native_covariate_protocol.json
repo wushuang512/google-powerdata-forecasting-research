@@ -1,0 +1,42 @@
+{
+  "version": "round10-native-covariates-v1",
+  "registered_before_inference": true,
+  "seed": 20261001,
+  "candidates": {
+    "timesfm_usage": {"backbone": "timesfm", "usage": true, "resources": false},
+    "timesfm_usage_resource": {"backbone": "timesfm", "usage": true, "resources": true},
+    "chronos_usage": {"backbone": "chronos", "usage": true, "resources": false},
+    "chronos_usage_resource": {"backbone": "chronos", "usage": true, "resources": true}
+  },
+  "matched_controls": {
+    "timesfm_control": {"backbone": "timesfm", "usage": false, "resources": false},
+    "chronos_control": {"backbone": "chronos", "usage": false, "resources": false}
+  },
+  "training": "Frozen existing foundation weights. No gradient update or new local power fitting.",
+  "context_points": 1344,
+  "horizon_points": 96,
+  "development_origins": [14, 15, 16, 17, 18, 19, 20, 21],
+  "early_development_origins": [14, 15, 16, 17],
+  "late_development_origins": [18, 19, 20, 21],
+  "test_origins": [22, 23, 24, 25, 26, 27, 28, 29, 30],
+  "deployment_origin": 31,
+  "scope": "One cell-a query containing five PDU power targets. Only these five PDU forecasts may change. Other 52 domains remain exactly the frozen round8b prior.",
+  "inputs": "Past 14 completed days only. Targets are causally filled normalized power. Existing production-power proxies retain their history quality mask and >=20% history-availability filter. Each of five PDUs supplies historical completed-job CPU NCU and normalized memory; resource variant adds active fraction and mean scheduler-available CPU capacity per mapped machine for each PDU. Up to 5 target + 5 production + 10 usage + 10 resource = 30 variates.",
+  "complete_usage_schema": ["completed_job_cpu_NCU", "completed_job_memory_normalized", "job_window_equivalent", "job_window_count", "sample_rate_duration_sum", "duration_seconds_sum"],
+  "source_scope": "All 12085 cell-a Parquet files' selected columns audited complete. Neither other seven cells' full task usage nor all original fields are read.",
+  "resource_columns": ["active_fraction", "mean_cpu_capacity_NCU"],
+  "missing": "Complete task usage exists for five cell-a domains only. No missing CPU outside a is represented as a physical zero or fed to the foundation models. Historical incomplete slots become NaN; reject an all-missing usage channel. Model-native past interpolation/masking has no access beyond the forecast origin.",
+  "units": "CPU is NCU, memory is normalized scheduler units, power is normalized power utilization. No conversion to kW, no CPU<=power or CPU<=scheduler-capacity hard bound. Usage column three is job-window equivalent count, not CPU variance.",
+  "prediction": "Clip(prior + alpha*(native_covariate_power - same-backbone matched_control_power), 0, 1) on five cell-a domains only. Raw foundation forecasts are also retained.",
+  "selection": "First four development dates select one of four candidates by five-domain controlled-delta WAPE at alpha=1, with fixed registry order breaking exact ties. Last four dates select alpha from [0,0.25,0.5,1] by paired-date one-standard-error rule, preferring the smallest alpha within best WAPE + paired-date SE. Five-domain score is primary, 57-domain score auxiliary. Alpha zero preserves round8b.",
+  "alpha_grid": [0, 0.25, 0.5, 1],
+  "metric_definition": "WAPE is the arithmetic mean of per-PDU masked absolute-error / masked absolute-target ratios, multiplied by 100, matching prior rounds. Report daily WAPE and peak MAPE as well.",
+  "test": "Score test labels only after selection JSON and SHA256 are frozen. Whole-month arrays can be loaded, but future target values are never used to construct origin features or select parameters. All four registered candidates and both matched controls may be retained and scored for attribution, but never reselect using test ranks. Existing May2019 test was repeatedly viewed: exploratory evidence, not independent confirmation.",
+  "intervals": "Selected predictor only: pooled development absolute residual / each origin's preceding-seven-day mean, empirical 0.8 quantile. Deployment interval recentered on selected prediction and clipped to [0,1]. Development calibration coverage is descriptive and does not establish independent 80% coverage.",
+  "cache": "Per backbone/config/origin compressed prediction plus metadata. Reject reuse if protocol, script, local weights, source hashes, input schema/digest or output digest differ. Recompute both matched controls and compare against existing dev/test same-structure caches at atol 2e-6, rtol 1e-6; refuse scoring if mismatch.",
+  "checks": ["future-input perturbation invariance", "matched-control cache regression", "selection hash", "finite bounded selected power", "other 52 identical prior", "CPU missing outside a", "forecast origin31 means June1 with no future truth", "interval order"],
+  "resources": {"cpu_threads": 2, "minimum_available_physical_gib_before_load": 2.5, "minimum_available_commit_gib_before_load": 6, "minimum_available_cuda_gib_before_load": 2.5, "minimum_available_physical_gib_between_predictions": 1.25, "minimum_available_commit_gib_between_predictions": 2, "sequential_backbones": true, "new_downloads": false},
+  "license": "Official Google trace CC BY 4.0. TimesFM3 local weights Non-Commercial v1.0: this experiment is noncommercial research.",
+  "independent_confirmation": false,
+  "large_improvement_promised": false
+}

@@ -1,0 +1,9 @@
+{
+  "all_passed": true,
+  "created_utc": "2026-10-12T09:47:33.176894+00:00",
+  "user_instruction": "这个候选不是在几个主要评价指标上超过了推荐吗，就把它作为新推荐吧",
+  "configuration": "${PROJECT_ROOT}\\experiment\\round48\\deployment\\selected_configuration.json",
+  "configuration_sha256": "6430e122de964c6762da5e18b28b175bc323beb83558d05015fbf92ee3082fc8",
+  "original_frozen_selection_sha256": "2a91d5870b2eee6e968bf252140efd942dd7a35426b89eaa20aa463fcde2fecf",
+  "previous_R47_configuration_unchanged_sha256": "9d0f7b4e58b6af28b9f238ad6f9ff937e407cb205ca7094f16d2f9942474243a"
+}

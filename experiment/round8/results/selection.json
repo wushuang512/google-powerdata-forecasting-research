@@ -1,0 +1,37 @@
+{
+  "frozen_at": "2026-10-01T05:59:58.507314+00:00",
+  "config": "lr1e4_anchor50_s25",
+  "chosen": {
+    "alpha": 0,
+    "wape": 2.387413261769499,
+    "paired_cell_se": 0.0
+  },
+  "validation": [
+    {
+      "alpha": 0,
+      "wape": 2.387413261769499,
+      "paired_cell_se": 0.0
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.3878700224548695,
+      "paired_cell_se": 0.000612769650581467
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.3886496006373816,
+      "paired_cell_se": 0.0015350038436460864
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.390284618335297,
+      "paired_cell_se": 0.0031093239010382976
+    },
+    {
+      "alpha": 1,
+      "wape": 2.3945570394710307,
+      "paired_cell_se": 0.006351139520859343
+    }
+  ],
+  "protocol_sha256": "c5ce5e93a9417edcbf1b2954f3b9067030fe03dea1323587544a24537bb4f487"
+}

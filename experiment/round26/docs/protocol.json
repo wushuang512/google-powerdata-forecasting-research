@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-06T07:42:09.149920+00:00",
+  "script_sha256": "da7de3c8b4a1a47f7d3cfcb8059b6f867a9af59f85f8afce2791060caa999fe3",
+  "metrics_script_sha256": "0cf7c46bb4b8dbeeb6e8e1e75d9c14070048e7dba200c3733d2e2d1801fa994a",
+  "method": "R19 recommended curve plus fixed25% of the DEV-frozen R25 joint correction. No TEST sweep of interpolation weights.",
+  "fixed_strength": 0.25,
+  "choice_reason": "Conservative trust-region hypothesis to limit cumulative point/peak/level adjustments after several adaptive stages with only two overlapping DEV origins. Quarter strength is a prespecified engineering choice, not a proven optimal weight. No strength grid is scored on TEST.",
+  "user_preference": "2026-10-06 human explicitly accepts multiple improvements with very small remaining gaps as recommended best; not strict first in every metric. This prospective tolerance policy does not rewrite prior frozen trials.",
+  "tolerances": {
+    "wape_pp": 0.005,
+    "daily_wape_pp": 0.005,
+    "peak_mape_pp": 0.005,
+    "p95_ape_pp": 0.01,
+    "mae_relative": 0.002,
+    "rmse_relative": 0.002,
+    "hit2_percent_pp": 0.05,
+    "hit5_percent_pp": 0.05,
+    "group_wape_pp": 0.005,
+    "absolute_bias_pp": 0.005,
+    "peak_time_minutes": 5,
+    "daily_mae_relative": 0.005,
+    "daily_rmse_relative": 0.005
+  },
+  "selection": "Binary DEV admission only: both origins14/15 and aggregate must pass registered small-tradeoff limits versus R19; aggregate at least two of four distinct categories curve/daily/peak/point-distribution improve over.0001pp or hit+.005pp. If passed use fixed.25, else0. Diagnostic always fixed.25 frozen before TEST. No candidate or strength reordering after TEST.",
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round25/code/level_shape_experiment.py": "ec1ff45c15b0a242e3f1367960a8e338224d4c7bbbaafe43f0554ea27534a7f6",
+    "round25/results/dev_predictions.npz": "c1a3e410437e7bf2c16676d006a10e1791907662951de47e7148ce3c92776238",
+    "round25/results/test_predictions.npz": "89713d6b514eb73afcd76ca026affc2f6a7c327f3a50cb4e935f3fe70239a641",
+    "round25/results/selection.json": "6830017f641b46e6ac27eab1465365c3b7fc3e19f30b24eca4bf5ffd598b3761",
+    "round24/results/dev_predictions.npz": "00329c5fe3be38f1f12d96c693d38416e17748c4c36c28dc947fa37641cfdfbe",
+    "round24/results/test_predictions.npz": "e1041b0c6e251ce10acc259f037fb8d8071c4d957fb80343cb5ce718a573c638",
+    "round19/results/test_predictions.npz": "387f1a2dad08eee1de70e21a1620b482838751e800f2a0f8bc71485da31ac4de",
+    "round9/results/selected_intervals_test.npz": "b86c3120a876293f6bfb8fa61a92ef239de8c51866fc9d23aff2300d578aa4d1"
+  },
+  "resource_policy": {
+    "admission_physical_gib": 2.125,
+    "admission_commit_gib": 6,
+    "job_commit_hard_cap_bytes": 536870912,
+    "runtime_physical_floor_gib": 1.5,
+    "runtime_commit_floor_gib": 2
+  }
+}

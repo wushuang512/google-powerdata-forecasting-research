@@ -1,0 +1,233 @@
+{
+  "created_utc": "2026-10-07T09:51:31.124783+00:00",
+  "family": {
+    "id": "factor1_r1_base",
+    "rank": 1,
+    "rate": 1,
+    "context_days": 14,
+    "variant": "base",
+    "scope": "frozen"
+  },
+  "selected": null,
+  "diagnostic": {
+    "alpha": 0.1,
+    "total": "none",
+    "key": "a0.1_none",
+    "eligible": false,
+    "late_worst_curve_ratio": 0.9988990594277185,
+    "late_mean_curve_ratio": 0.9977696367246909
+  },
+  "one_shared_configuration_both_horizons": true,
+  "no_test_used": true,
+  "protocol_sha256": "f11bd57eecd5faad93987983e0d9cf687822c6ef428f052ece13b14043a435a5",
+  "native_dev_sha256": "a41241bbb88f529cce611b8d1163018892f3d82f855f78c1e6831d883c3f33c0",
+  "dev_predictions_sha256": "a7be3ccc84149e2439032fd192a0111baf934839785973f10d05a7d91794b658",
+  "family_ranking": [
+    {
+      "family": {
+        "id": "factor1_r1_base",
+        "rank": 1,
+        "rate": 1,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 0.9873551653917993,
+      "early_mean_curve_ratio": 0.9867856460535266
+    },
+    {
+      "family": {
+        "id": "factor1_r4_base",
+        "rank": 1,
+        "rate": 4,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 0.9913117250364432,
+      "early_mean_curve_ratio": 0.9908839599692494
+    },
+    {
+      "family": {
+        "id": "factor1_r12_base",
+        "rank": 1,
+        "rate": 12,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 0.9995506646881331,
+      "early_mean_curve_ratio": 0.9942910977972674
+    },
+    {
+      "family": {
+        "id": "factor3_r12_base",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0183615496228997,
+      "early_mean_curve_ratio": 1.013899242164996
+    },
+    {
+      "family": {
+        "id": "factor3_r4_base",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0318087397718605,
+      "early_mean_curve_ratio": 1.0262280285686658
+    },
+    {
+      "family": {
+        "id": "factor6_r12_base",
+        "rank": 6,
+        "rate": 12,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.038651028631604,
+      "early_mean_curve_ratio": 1.036067201228886
+    },
+    {
+      "family": {
+        "id": "factor6_r4_base",
+        "rank": 6,
+        "rate": 4,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0569226736335156,
+      "early_mean_curve_ratio": 1.0516922441811936
+    },
+    {
+      "family": {
+        "id": "factor3_r1_base",
+        "rank": 3,
+        "rate": 1,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0750229160971352,
+      "early_mean_curve_ratio": 1.0649772396116632
+    },
+    {
+      "family": {
+        "id": "factor6_r1_base",
+        "rank": 6,
+        "rate": 1,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0934516048672822,
+      "early_mean_curve_ratio": 1.0774823669440936
+    }
+  ],
+  "weight_ranking": [
+    {
+      "alpha": 0.1,
+      "total": "none",
+      "key": "a0.1_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 0.9988990594277185,
+      "late_mean_curve_ratio": 0.9977696367246909
+    },
+    {
+      "alpha": 0.25,
+      "total": "none",
+      "key": "a0.25_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 0.9991525547814014,
+      "late_mean_curve_ratio": 0.9961169858137341
+    },
+    {
+      "alpha": 0.05,
+      "total": "none",
+      "key": "a0.05_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 0.9993353588752847,
+      "late_mean_curve_ratio": 0.998776293096176
+    },
+    {
+      "alpha": 0,
+      "total": "global_daily",
+      "key": "a0_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0,
+      "late_mean_curve_ratio": 1.0
+    },
+    {
+      "alpha": 0,
+      "total": "none",
+      "key": "a0_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.000000000000018,
+      "late_mean_curve_ratio": 1.0000000000000093
+    },
+    {
+      "alpha": 0.05,
+      "total": "global_daily",
+      "key": "a0.05_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0000087402497135,
+      "late_mean_curve_ratio": 0.9996653452461073
+    },
+    {
+      "alpha": 0.1,
+      "total": "global_daily",
+      "key": "a0.1_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0001907606388893,
+      "late_mean_curve_ratio": 0.9994738698210648
+    },
+    {
+      "alpha": 0.25,
+      "total": "global_daily",
+      "key": "a0.25_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0018485952096918,
+      "late_mean_curve_ratio": 0.9997760505567387
+    },
+    {
+      "alpha": 0.5,
+      "total": "none",
+      "key": "a0.5_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0050119629779535,
+      "late_mean_curve_ratio": 0.9980338538557054
+    },
+    {
+      "alpha": 0.5,
+      "total": "global_daily",
+      "key": "a0.5_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0086113284967713,
+      "late_mean_curve_ratio": 1.003336018190199
+    },
+    {
+      "alpha": 1,
+      "total": "none",
+      "key": "a1_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0359514266939005,
+      "late_mean_curve_ratio": 1.0191630317425844
+    },
+    {
+      "alpha": 1,
+      "total": "global_daily",
+      "key": "a1_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0368421127089256,
+      "late_mean_curve_ratio": 1.021777559393332
+    }
+  ]
+}

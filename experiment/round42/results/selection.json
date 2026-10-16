@@ -1,0 +1,242 @@
+{
+  "created_utc": "2026-10-07T09:54:42.282306+00:00",
+  "family": {
+    "scope": "last_head",
+    "last_layers": 2,
+    "lr": 3e-05,
+    "anchor": 0.25,
+    "variant": "last2_head",
+    "rank": 3,
+    "rate": 12,
+    "context_days": 14,
+    "id": "factor3_r12_last2_head"
+  },
+  "selected": null,
+  "diagnostic": {
+    "alpha": 0.05,
+    "total": "global_daily",
+    "key": "a0.05_global_daily",
+    "eligible": false,
+    "late_worst_curve_ratio": 1.0011422201614346,
+    "late_mean_curve_ratio": 1.0002252074140967
+  },
+  "one_shared_configuration_both_horizons": true,
+  "no_test_used": true,
+  "protocol_sha256": "dc7656fda6d6ce258695846646ce8f040cfff4480689cd055b99d0221c67b422",
+  "native_dev_sha256": "fdd74e127b6070e58107fbeb37fe019c348e718100db0f6a2881cc036f727353",
+  "dev_predictions_sha256": "514b48d65520f8a1b1e7ed4b2d411ad1bb8d8cb152fd78ef17f46008fad5bdc0",
+  "family_ranking": [
+    {
+      "family": {
+        "scope": "last_head",
+        "last_layers": 2,
+        "lr": 3e-05,
+        "anchor": 0.25,
+        "variant": "last2_head",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 14,
+        "id": "factor3_r12_last2_head"
+      },
+      "early_worst_curve_ratio": 1.011802549063742,
+      "early_mean_curve_ratio": 1.0098025438296545
+    },
+    {
+      "family": {
+        "scope": "full",
+        "last_layers": 6,
+        "lr": 1e-05,
+        "anchor": 1,
+        "variant": "full",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 14,
+        "id": "factor3_r12_full"
+      },
+      "early_worst_curve_ratio": 1.015655469512721,
+      "early_mean_curve_ratio": 1.0120565969368545
+    },
+    {
+      "family": {
+        "scope": "last_head",
+        "last_layers": 1,
+        "lr": 1e-05,
+        "anchor": 1,
+        "variant": "last1_head",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 14,
+        "id": "factor3_r12_last1_head"
+      },
+      "early_worst_curve_ratio": 1.0163354801451467,
+      "early_mean_curve_ratio": 1.0126989737489138
+    },
+    {
+      "family": {
+        "id": "factor3_r12_base",
+        "rank": 3,
+        "rate": 12,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0183615496228997,
+      "early_mean_curve_ratio": 1.013899242164996
+    },
+    {
+      "family": {
+        "scope": "last_head",
+        "last_layers": 2,
+        "lr": 3e-05,
+        "anchor": 0.25,
+        "variant": "last2_head",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 14,
+        "id": "factor3_r4_last2_head"
+      },
+      "early_worst_curve_ratio": 1.0265471562856807,
+      "early_mean_curve_ratio": 1.0214089469046101
+    },
+    {
+      "family": {
+        "scope": "full",
+        "last_layers": 6,
+        "lr": 1e-05,
+        "anchor": 1,
+        "variant": "full",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 14,
+        "id": "factor3_r4_full"
+      },
+      "early_worst_curve_ratio": 1.0302237633827422,
+      "early_mean_curve_ratio": 1.0247727926872812
+    },
+    {
+      "family": {
+        "scope": "last_head",
+        "last_layers": 1,
+        "lr": 1e-05,
+        "anchor": 1,
+        "variant": "last1_head",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 14,
+        "id": "factor3_r4_last1_head"
+      },
+      "early_worst_curve_ratio": 1.0307159600414002,
+      "early_mean_curve_ratio": 1.0249679492323698
+    },
+    {
+      "family": {
+        "id": "factor3_r4_base",
+        "rank": 3,
+        "rate": 4,
+        "context_days": 14,
+        "variant": "base",
+        "scope": "frozen"
+      },
+      "early_worst_curve_ratio": 1.0318087397718605,
+      "early_mean_curve_ratio": 1.0262280285686658
+    }
+  ],
+  "weight_ranking": [
+    {
+      "alpha": 0,
+      "total": "global_daily",
+      "key": "a0_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0,
+      "late_mean_curve_ratio": 1.0
+    },
+    {
+      "alpha": 0,
+      "total": "none",
+      "key": "a0_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.000000000000018,
+      "late_mean_curve_ratio": 1.0000000000000093
+    },
+    {
+      "alpha": 0.05,
+      "total": "global_daily",
+      "key": "a0.05_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0011422201614346,
+      "late_mean_curve_ratio": 1.0002252074140967
+    },
+    {
+      "alpha": 0.1,
+      "total": "global_daily",
+      "key": "a0.1_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0032038618016204,
+      "late_mean_curve_ratio": 1.0018484959633405
+    },
+    {
+      "alpha": 0.05,
+      "total": "none",
+      "key": "a0.05_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0060949651858935,
+      "late_mean_curve_ratio": 1.001861464090502
+    },
+    {
+      "alpha": 0.1,
+      "total": "none",
+      "key": "a0.1_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0131932480898458,
+      "late_mean_curve_ratio": 1.0052172409200757
+    },
+    {
+      "alpha": 0.25,
+      "total": "global_daily",
+      "key": "a0.25_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.015229311009048,
+      "late_mean_curve_ratio": 1.0149658028794586
+    },
+    {
+      "alpha": 0.25,
+      "total": "none",
+      "key": "a0.25_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0398904438963983,
+      "late_mean_curve_ratio": 1.024201801932788
+    },
+    {
+      "alpha": 0.5,
+      "total": "global_daily",
+      "key": "a0.5_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0702707920187304,
+      "late_mean_curve_ratio": 1.060003013626167
+    },
+    {
+      "alpha": 0.5,
+      "total": "none",
+      "key": "a0.5_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.0996198318756676,
+      "late_mean_curve_ratio": 1.0813804995852014
+    },
+    {
+      "alpha": 1,
+      "total": "global_daily",
+      "key": "a1_global_daily",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.2593150121198011,
+      "late_mean_curve_ratio": 1.210994724067386
+    },
+    {
+      "alpha": 1,
+      "total": "none",
+      "key": "a1_none",
+      "eligible": false,
+      "late_worst_curve_ratio": 1.2632166303606251,
+      "late_mean_curve_ratio": 1.261933015809066
+    }
+  ]
+}

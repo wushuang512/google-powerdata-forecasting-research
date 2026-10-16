@@ -1,0 +1,92 @@
+{
+  "frozen_utc": "2026-10-04T01:24:06.776797+00:00",
+  "candidate": "smoothL1_h3_p2",
+  "chosen": {
+    "alpha": 0,
+    "wape": 2.3869265001147206,
+    "paired_cell_se": 0.0,
+    "paired_day_se": 0.0,
+    "selection_se": 0.0,
+    "daily_gain_pp": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "weights": [
+    {
+      "alpha": 0,
+      "wape": 2.3869265001147206,
+      "paired_cell_se": 0.0,
+      "paired_day_se": 0.0,
+      "selection_se": 0.0,
+      "daily_gain_pp": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.387570613844933,
+      "paired_cell_se": 0.0012079422100626492,
+      "paired_day_se": 0.004077275312994337,
+      "selection_se": 0.004077275312994337,
+      "daily_gain_pp": [
+        0.010906571585801614,
+        -0.007763302741389096,
+        -0.004577484613142501,
+        -0.0004947024823511979
+      ]
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.3891031751184086,
+      "paired_cell_se": 0.0029530767650501276,
+      "paired_day_se": 0.010190130638800973,
+      "selection_se": 0.010190130638800973,
+      "daily_gain_pp": [
+        0.026560677056834518,
+        -0.020202290718809208,
+        -0.01194926598369996,
+        -0.0015032796536781317
+      ]
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.3931430017216555,
+      "paired_cell_se": 0.005686103313625082,
+      "paired_day_se": 0.020384751291732287,
+      "selection_se": 0.020384751291732287,
+      "daily_gain_pp": [
+        0.050971429573234105,
+        -0.04287161507343226,
+        -0.025483425161281752,
+        -0.004280149783415338
+      ]
+    },
+    {
+      "alpha": 1,
+      "wape": 2.407089022263493,
+      "paired_cell_se": 0.010615884031662139,
+      "paired_day_se": 0.04059336264007882,
+      "selection_se": 0.04059336264007882,
+      "daily_gain_pp": [
+        0.09250498043441595,
+        -0.0953448493144883,
+        -0.057560989090388814,
+        -0.013930200341601704
+      ]
+    }
+  ],
+  "protocol_sha256": "23cfa53f8ed0358ab620d8b309bdf63a5eda9e5246cde9c44bea803fbea0fbcc",
+  "dev_predictions_sha256": "876c1d08aa8820f29e005dc7f4c9eb99df35e005560453ea2b53a19fe4ffe1c1",
+  "dev_summary_sha256": "c32b2def5b658cc04712b9952bc0f9a4f7f9a6da47fea33497a6c5b2999cb939",
+  "selected_dev_model_sha256": "fa8d6ec8fa7473448291926075446bdabec8606cc81aa08d9b5e51038328039c",
+  "empirical80_halfwidth_relative_to_past_mean": 0.0411124518327418,
+  "independent_confirmation": false,
+  "development_reused": true,
+  "test_reused": true
+}

@@ -1,0 +1,747 @@
+{
+  "created_at": "2026-10-01T16:27:29.265379+08:00",
+  "assessment": "Practical plateau for current power/proxy inputs, not an identified irreducible forecasting limit",
+  "independent_confirmation": false,
+  "stage_scores": [
+    {
+      "stage": "原等权组合",
+      "wape": 2.4164518683035925
+    },
+    {
+      "stage": "固定基础三模型",
+      "wape": 2.38476931374022
+    },
+    {
+      "stage": "第五轮残差组合",
+      "wape": 2.3741796532432278
+    },
+    {
+      "stage": "第八轮组件微调",
+      "wape": 2.374127711928938
+    },
+    {
+      "stage": "最新权重微调对照",
+      "wape": 2.3744401820033576
+    }
+  ],
+  "baseline": {
+    "wape": 3.199450324772723,
+    "mae": 0.02256746474964293,
+    "p95_ape": 9.62724750948339,
+    "daily_wape": 1.786164865601407,
+    "peak_mape": 1.068242856335437,
+    "peak_time_mae_minutes": 344.56140350877195,
+    "valid_points": 49243
+  },
+  "current": {
+    "wape": 2.374127711928938,
+    "mae": 0.01673005076180579,
+    "p95_ape": 6.899308522995328,
+    "daily_wape": 1.4838931345769932,
+    "peak_mape": 2.0002019860901386,
+    "peak_time_mae_minutes": 285.55555555555554,
+    "valid_points": 49243
+  },
+  "current_cell_a": {
+    "wape": 1.769677630986991,
+    "mae": 0.012755443579726689,
+    "p95_ape": 5.187511226152775,
+    "daily_wape": 0.6027863682767238,
+    "peak_mape": 1.2842589432559741,
+    "peak_time_mae_minutes": 245.33333333333331,
+    "valid_points": 4320
+  },
+  "power_domains": 57,
+  "total_days": 31,
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "development_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "valid_test_points": 49243,
+  "recent_component_gain_pp": 5.1941314289649654e-05,
+  "recent_component_ci": [
+    -0.00031433423478633815,
+    0.00033137845185957706
+  ],
+  "latest_gate_gain_pp": -0.0003124700744193802,
+  "top10_domain_error_share": 0.2440349182831028,
+  "top3_day_error_share": 0.3851537645968172,
+  "cells": [
+    {
+      "cell": "f",
+      "domains": 10,
+      "wape": 3.078240567213969,
+      "mae": 0.021045425090734964,
+      "p95_ape": 8.076846987333866,
+      "daily_wape": 1.9467667601189906,
+      "peak_mape": 3.4325944107846373,
+      "peak_time_mae_minutes": 383.1666666666667,
+      "valid_points": 8640,
+      "contribution_pp": 0.5400422047743804
+    },
+    {
+      "cell": "h",
+      "domains": 12,
+      "wape": 2.100499076338433,
+      "mae": 0.013365986196785008,
+      "p95_ape": 6.493272837499046,
+      "daily_wape": 1.4809984570506358,
+      "peak_mape": 0.849731717264963,
+      "peak_time_mae_minutes": 142.08333333333331,
+      "valid_points": 10366,
+      "contribution_pp": 0.44221033186072267
+    },
+    {
+      "cell": "e",
+      "domains": 6,
+      "wape": 3.1755586276897483,
+      "mae": 0.023218092816920666,
+      "p95_ape": 9.000211653748348,
+      "daily_wape": 2.450436490081647,
+      "peak_mape": 1.5256958871992239,
+      "peak_time_mae_minutes": 79.16666666666667,
+      "valid_points": 5184,
+      "contribution_pp": 0.3342693292304998
+    },
+    {
+      "cell": "c",
+      "domains": 6,
+      "wape": 2.490397856638969,
+      "mae": 0.018570123021591074,
+      "p95_ape": 6.552999177060394,
+      "daily_wape": 1.5030429579446147,
+      "peak_mape": 2.816280067098896,
+      "peak_time_mae_minutes": 308.05555555555554,
+      "valid_points": 5182,
+      "contribution_pp": 0.26214714280410195
+    },
+    {
+      "cell": "d",
+      "domains": 6,
+      "wape": 2.0352050026856605,
+      "mae": 0.01426477771517583,
+      "p95_ape": 5.4131274135410195,
+      "daily_wape": 0.8945846824539622,
+      "peak_mape": 2.564139490069674,
+      "peak_time_mae_minutes": 232.22222222222223,
+      "valid_points": 5183,
+      "contribution_pp": 0.21423210554585898
+    },
+    {
+      "cell": "g",
+      "domains": 5,
+      "wape": 2.385771458500936,
+      "mae": 0.01845491015060138,
+      "p95_ape": 9.947753766601666,
+      "daily_wape": 1.553361940679053,
+      "peak_mape": 1.6267882457060598,
+      "peak_time_mae_minutes": 478.0,
+      "valid_points": 4320,
+      "contribution_pp": 0.2092781981141172
+    },
+    {
+      "cell": "a",
+      "domains": 5,
+      "wape": 1.769677630986991,
+      "mae": 0.012755443579726689,
+      "p95_ape": 5.187511226152775,
+      "daily_wape": 0.6027863682767238,
+      "peak_mape": 1.2842589432559741,
+      "peak_time_mae_minutes": 245.33333333333331,
+      "valid_points": 4320,
+      "contribution_pp": 0.15523487991113954
+    },
+    {
+      "cell": "b",
+      "domains": 5,
+      "wape": 1.7019746981894712,
+      "mae": 0.012895751441592732,
+      "p95_ape": 4.4010595808558195,
+      "daily_wape": 1.0413819587477153,
+      "peak_mape": 2.1744209588847725,
+      "peak_time_mae_minutes": 634.0,
+      "valid_points": 4320,
+      "contribution_pp": 0.14929602615697118
+    },
+    {
+      "cell": "i",
+      "domains": 1,
+      "wape": 2.016877350498836,
+      "mae": 0.01454377882984076,
+      "p95_ape": 5.551391090473272,
+      "daily_wape": 1.0275840018216331,
+      "peak_mape": 1.2284008584784225,
+      "peak_time_mae_minutes": 170.0,
+      "valid_points": 864,
+      "contribution_pp": 0.035383813166646245
+    },
+    {
+      "cell": "j",
+      "domains": 1,
+      "wape": 1.8259197807765009,
+      "mae": 0.011368161057338576,
+      "p95_ape": 5.163188729078158,
+      "daily_wape": 1.238639461870635,
+      "peak_mape": 1.3963542281927461,
+      "peak_time_mae_minutes": 66.66666666666667,
+      "valid_points": 864,
+      "contribution_pp": 0.03203368036450001
+    }
+  ],
+  "days": [
+    {
+      "date": "2019-05-23",
+      "wape": 2.6986945848893806,
+      "mae": 0.01904706239276544,
+      "p95_ape": 9.732854208231089,
+      "daily_wape": 1.925269261483962,
+      "peak_mape": 2.3107119468969683,
+      "peak_time_mae_minutes": 263.9473684210526,
+      "valid_points": 5471,
+      "contribution_pp": 0.30270112067261024
+    },
+    {
+      "date": "2019-05-24",
+      "wape": 1.754305934725035,
+      "mae": 0.012417578052075582,
+      "p95_ape": 5.522062245006282,
+      "daily_wape": 1.0131827243037173,
+      "peak_mape": 1.4172535085798685,
+      "peak_time_mae_minutes": 262.36842105263156,
+      "valid_points": 5470,
+      "contribution_pp": 0.19736588643454636
+    },
+    {
+      "date": "2019-05-25",
+      "wape": 2.3255613688160057,
+      "mae": 0.016354141937632176,
+      "p95_ape": 6.650230471292443,
+      "daily_wape": 1.7252210803117976,
+      "peak_mape": 2.082490262182999,
+      "peak_time_mae_minutes": 437.3684210526316,
+      "valid_points": 5472,
+      "contribution_pp": 0.2572957917152152
+    },
+    {
+      "date": "2019-05-26",
+      "wape": 2.331213920972053,
+      "mae": 0.016028789002562653,
+      "p95_ape": 6.20241624236736,
+      "daily_wape": 1.6746421888777814,
+      "peak_mape": 1.5614714261362879,
+      "peak_time_mae_minutes": 200.0,
+      "valid_points": 5472,
+      "contribution_pp": 0.25457156122213476
+    },
+    {
+      "date": "2019-05-27",
+      "wape": 2.26866614190361,
+      "mae": 0.015881816952654122,
+      "p95_ape": 6.837066738704594,
+      "daily_wape": 1.3194698989594333,
+      "peak_mape": 2.1183196948952245,
+      "peak_time_mae_minutes": 319.47368421052636,
+      "valid_points": 5471,
+      "contribution_pp": 0.24751167174007055
+    },
+    {
+      "date": "2019-05-28",
+      "wape": 2.256782180315026,
+      "mae": 0.015922183207120057,
+      "p95_ape": 6.253973950443302,
+      "daily_wape": 1.138677580115423,
+      "peak_mape": 1.9608481214139617,
+      "peak_time_mae_minutes": 192.89473684210526,
+      "valid_points": 5472,
+      "contribution_pp": 0.24762554540322884
+    },
+    {
+      "date": "2019-05-29",
+      "wape": 2.307413085008861,
+      "mae": 0.016442629510998782,
+      "p95_ape": 7.457978775058719,
+      "daily_wape": 1.3947314570860117,
+      "peak_mape": 1.5465286823655968,
+      "peak_time_mae_minutes": 301.57894736842104,
+      "valid_points": 5472,
+      "contribution_pp": 0.25535302953068373
+    },
+    {
+      "date": "2019-05-30",
+      "wape": 2.337612323248461,
+      "mae": 0.01672128962104957,
+      "p95_ape": 6.091595955563033,
+      "daily_wape": 0.9624058236751479,
+      "peak_mape": 2.0698427934754573,
+      "peak_time_mae_minutes": 324.2105263157895,
+      "valid_points": 5471,
+      "contribution_pp": 0.26208837640405336
+    },
+    {
+      "date": "2019-05-31",
+      "wape": 3.0871813407300333,
+      "mae": 0.021753656799141794,
+      "p95_ape": 11.086083524053647,
+      "daily_wape": 2.1805233069698478,
+      "peak_mape": 2.9343514388648835,
+      "peak_time_mae_minutes": 268.1578947368421,
+      "valid_points": 5472,
+      "contribution_pp": 0.3496147288063949
+    }
+  ],
+  "domains": [
+    {
+      "domain": "celle_pdu30",
+      "cell": "e",
+      "wape": 3.726925448058737,
+      "contribution_pp": 0.0653846569834866
+    },
+    {
+      "domain": "cellf_pdu25",
+      "cell": "f",
+      "wape": 3.632480341253586,
+      "contribution_pp": 0.06372772528515062
+    },
+    {
+      "domain": "cellf_pdu18",
+      "cell": "f",
+      "wape": 3.4521900261995393,
+      "contribution_pp": 0.06056473730174631
+    },
+    {
+      "domain": "celle_pdu26",
+      "cell": "e",
+      "wape": 3.4157962441764163,
+      "contribution_pp": 0.059926249897831865
+    },
+    {
+      "domain": "celle_pdu31",
+      "cell": "e",
+      "wape": 3.2525867085640843,
+      "contribution_pp": 0.0570629247116506
+    },
+    {
+      "domain": "cellf_pdu16",
+      "cell": "f",
+      "wape": 3.185541690480187,
+      "contribution_pp": 0.0558866963242138
+    },
+    {
+      "domain": "cellc_pdu42",
+      "cell": "c",
+      "wape": 3.1640607501036815,
+      "contribution_pp": 0.055509837721117214
+    },
+    {
+      "domain": "cellf_pdu19",
+      "cell": "f",
+      "wape": 3.1638458312705002,
+      "contribution_pp": 0.05550606721527193
+    },
+    {
+      "domain": "cellf_pdu24",
+      "cell": "f",
+      "wape": 3.062350736484211,
+      "contribution_pp": 0.05372545151726685
+    },
+    {
+      "domain": "cellf_pdu22",
+      "cell": "f",
+      "wape": 2.9683157673400724,
+      "contribution_pp": 0.0520757152164925
+    },
+    {
+      "domain": "celle_pdu27",
+      "cell": "e",
+      "wape": 2.960517932166262,
+      "contribution_pp": 0.051938911090636176
+    },
+    {
+      "domain": "cellf_pdu17",
+      "cell": "f",
+      "wape": 2.958055170382081,
+      "contribution_pp": 0.05189570474354529
+    },
+    {
+      "domain": "cellh_pdu46",
+      "cell": "h",
+      "wape": 2.944865615228967,
+      "contribution_pp": 0.05166430903910468
+    },
+    {
+      "domain": "celle_pdu29",
+      "cell": "e",
+      "wape": 2.905474652478098,
+      "contribution_pp": 0.05097323951715962
+    },
+    {
+      "domain": "cellf_pdu21",
+      "cell": "f",
+      "wape": 2.8125894689516047,
+      "contribution_pp": 0.049343674893887794
+    },
+    {
+      "domain": "cellc_pdu41",
+      "cell": "c",
+      "wape": 2.800845479269507,
+      "contribution_pp": 0.04913763998718434
+    },
+    {
+      "domain": "cellh_pdu47",
+      "cell": "h",
+      "wape": 2.7982786069285934,
+      "contribution_pp": 0.04909260713909814
+    },
+    {
+      "domain": "celle_pdu28",
+      "cell": "e",
+      "wape": 2.792050780694893,
+      "contribution_pp": 0.04898334702973496
+    },
+    {
+      "domain": "cellf_pdu20",
+      "cell": "f",
+      "wape": 2.787785186737287,
+      "contribution_pp": 0.04890851204802258
+    },
+    {
+      "domain": "cellf_pdu23",
+      "cell": "f",
+      "wape": 2.759251453040618,
+      "contribution_pp": 0.04840792022878277
+    },
+    {
+      "domain": "cellc_pdu43",
+      "cell": "c",
+      "wape": 2.667676106804415,
+      "contribution_pp": 0.04680133520709501
+    },
+    {
+      "domain": "cellg_pdu5",
+      "cell": "g",
+      "wape": 2.58704402080061,
+      "contribution_pp": 0.04538673720702824
+    },
+    {
+      "domain": "cellg_pdu3",
+      "cell": "g",
+      "wape": 2.556469014524391,
+      "contribution_pp": 0.04485033358814721
+    },
+    {
+      "domain": "cellc_pdu40",
+      "cell": "c",
+      "wape": 2.5170285226494378,
+      "contribution_pp": 0.044158395134200654
+    },
+    {
+      "domain": "cellg_pdu2",
+      "cell": "g",
+      "wape": 2.313540884798882,
+      "contribution_pp": 0.04058843657541898
+    },
+    {
+      "domain": "cellh_pdu44",
+      "cell": "h",
+      "wape": 2.2889466158652354,
+      "contribution_pp": 0.040156958173074304
+    },
+    {
+      "domain": "cellh_pdu53",
+      "cell": "h",
+      "wape": 2.2799258016507467,
+      "contribution_pp": 0.0399986982745745
+    },
+    {
+      "domain": "cellg_pdu1",
+      "cell": "g",
+      "wape": 2.2578247979445063,
+      "contribution_pp": 0.03961096136744748
+    },
+    {
+      "domain": "cellh_pdu50",
+      "cell": "h",
+      "wape": 2.2201246449954786,
+      "contribution_pp": 0.03894955517535927
+    },
+    {
+      "domain": "cellg_pdu4",
+      "cell": "g",
+      "wape": 2.213978574436291,
+      "contribution_pp": 0.03884172937607528
+    },
+    {
+      "domain": "celld_pdu34",
+      "cell": "d",
+      "wape": 2.1529945272224835,
+      "contribution_pp": 0.037771833810920766
+    },
+    {
+      "domain": "cellh_pdu55",
+      "cell": "h",
+      "wape": 2.134705631823213,
+      "contribution_pp": 0.03745097599689848
+    },
+    {
+      "domain": "celld_pdu32",
+      "cell": "d",
+      "wape": 2.0657384995377854,
+      "contribution_pp": 0.036241026307680446
+    },
+    {
+      "domain": "celld_pdu33",
+      "cell": "d",
+      "wape": 2.033091982415624,
+      "contribution_pp": 0.03566828039325656
+    },
+    {
+      "domain": "celld_pdu37",
+      "cell": "d",
+      "wape": 2.030911266660746,
+      "contribution_pp": 0.035630022222118356
+    },
+    {
+      "domain": "celld_pdu36",
+      "cell": "d",
+      "wape": 2.017070039541306,
+      "contribution_pp": 0.03538719367616326
+    },
+    {
+      "domain": "celli_mvpp1",
+      "cell": "i",
+      "wape": 2.016877350498836,
+      "contribution_pp": 0.035383813166646245
+    },
+    {
+      "domain": "cellc_pdu38",
+      "cell": "c",
+      "wape": 1.9439850340699696,
+      "contribution_pp": 0.03410500059771876
+    },
+    {
+      "domain": "cella_pdu10",
+      "cell": "a",
+      "wape": 1.9393608718440876,
+      "contribution_pp": 0.03402387494463312
+    },
+    {
+      "domain": "cellh_pdu54",
+      "cell": "h",
+      "wape": 1.9234227527080296,
+      "contribution_pp": 0.03374425881943911
+    },
+    {
+      "domain": "cella_pdu9",
+      "cell": "a",
+      "wape": 1.9223305404206519,
+      "contribution_pp": 0.03372509720036231
+    },
+    {
+      "domain": "cellh_pdu45",
+      "cell": "h",
+      "wape": 1.9166756558242803,
+      "contribution_pp": 0.033625888698671585
+    },
+    {
+      "domain": "celld_pdu35",
+      "cell": "d",
+      "wape": 1.9114237007360158,
+      "contribution_pp": 0.03353374913571957
+    },
+    {
+      "domain": "cellb_pdu12",
+      "cell": "b",
+      "wape": 1.894688590966838,
+      "contribution_pp": 0.03324015071871646
+    },
+    {
+      "domain": "cellc_pdu39",
+      "cell": "c",
+      "wape": 1.848791246936802,
+      "contribution_pp": 0.032434934156786
+    },
+    {
+      "domain": "cella_pdu6",
+      "cell": "a",
+      "wape": 1.8312932889973823,
+      "contribution_pp": 0.032127952438550565
+    },
+    {
+      "domain": "cellj_mvpp2",
+      "cell": "j",
+      "wape": 1.8259197807765009,
+      "contribution_pp": 0.03203368036450001
+    },
+    {
+      "domain": "cellb_pdu15",
+      "cell": "b",
+      "wape": 1.806188325501916,
+      "contribution_pp": 0.031687514482489756
+    },
+    {
+      "domain": "cellh_pdu52",
+      "cell": "h",
+      "wape": 1.798277170201714,
+      "contribution_pp": 0.0315487222842406
+    },
+    {
+      "domain": "cellh_pdu48",
+      "cell": "h",
+      "wape": 1.7917069173740985,
+      "contribution_pp": 0.03143345469077365
+    },
+    {
+      "domain": "cellb_pdu13",
+      "cell": "b",
+      "wape": 1.7795814168694275,
+      "contribution_pp": 0.031220726611744343
+    },
+    {
+      "domain": "cellh_pdu51",
+      "cell": "h",
+      "wape": 1.7057139777471073,
+      "contribution_pp": 0.029924806627142236
+    },
+    {
+      "domain": "cella_pdu7",
+      "cell": "a",
+      "wape": 1.663398034955909,
+      "contribution_pp": 0.02918242166589314
+    },
+    {
+      "domain": "cellb_pdu14",
+      "cell": "b",
+      "wape": 1.586436162923539,
+      "contribution_pp": 0.027832213384623487
+    },
+    {
+      "domain": "cella_pdu8",
+      "cell": "a",
+      "wape": 1.4920054187169238,
+      "contribution_pp": 0.02617553366170042
+    },
+    {
+      "domain": "cellb_pdu11",
+      "cell": "b",
+      "wape": 1.4429789946856366,
+      "contribution_pp": 0.02531542095939713
+    },
+    {
+      "domain": "cellh_pdu49",
+      "cell": "h",
+      "wape": 1.4033455257137297,
+      "contribution_pp": 0.02462009694234614
+    }
+  ],
+  "expert_error_correlation": {
+    "names": [
+      "chronos",
+      "tirex",
+      "timesfm"
+    ],
+    "matrix": [
+      [
+        0.9999999999999998,
+        0.9055081422850656,
+        0.9510483039002289
+      ],
+      [
+        0.9055081422850655,
+        1.0,
+        0.9327695439180564
+      ],
+      [
+        0.951048303900229,
+        0.9327695439180564,
+        1.0
+      ]
+    ]
+  },
+  "normalized_daily_bias_lag1": {
+    "development": 0.08317888746616889,
+    "test": -0.21175213693445616,
+    "note": "Centered per PDU; few date pairs; descriptive, not proof of learnable signal"
+  },
+  "hindsight_perfect_daily_offset": {
+    "score": {
+      "wape": 1.931495225625314,
+      "mae": 0.013620290663942443,
+      "p95_ape": 5.759730241104786,
+      "daily_wape": 0.4346530695541368,
+      "peak_mape": 1.8331593877013743,
+      "peak_time_mae_minutes": 285.55555555555554,
+      "valid_points": 49243
+    },
+    "diagnostic_only": true,
+    "uses_future_truth": true,
+    "deployable": false
+  },
+  "hindsight_per_point_expert": {
+    "score": {
+      "wape": 1.8871017177201226,
+      "mae": 0.013293313025423824,
+      "p95_ape": 6.122474778591899,
+      "daily_wape": 1.2397114985258384,
+      "peak_mape": 1.7838265315169899,
+      "peak_time_mae_minutes": 250.43859649122805,
+      "valid_points": 49243
+    },
+    "diagnostic_only": true,
+    "uses_future_truth": true,
+    "deployable": false
+  },
+  "complete_cpu_source_progress": {
+    "cell": "a",
+    "completed": 8575,
+    "expected": 12085,
+    "planned": 12085,
+    "all_projected_files_complete": false,
+    "network_bytes_total": 64348738759,
+    "elapsed_seconds": 7377.6597626,
+    "rows_total": 5375271651,
+    "job_rows_total": 5005037056
+  },
+  "complete_cpu_experiment_started": false,
+  "data_npz_sha256": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+  "conclusion": "Stop broad repeated foundation tuning on the same May test; finish predeclared complete CPU matched experiment. Explore a causal low-capacity bias filter only if development residuals show persistence.",
+  "a_only_correction_bound": {
+    "a_domains": 5,
+    "a_contribution_pp": 0.15523487991113957,
+    "all57_best_possible_wape_if_a_perfect": 2.2188928320177985,
+    "maximum_global_relative_reduction_percent": 6.5386069641979745,
+    "if_a_error_reduced_20_percent_global_gain_pp": 0.031046975982227915,
+    "condition": "Only cell-a predictions may change, all other52 exact prior. Optimistic mathematical bound, not an achievable forecast."
+  },
+  "decision": {
+    "broad_existing_input_tuning": "Stop widening similar-model searches on reused May dates",
+    "complete_cpu_experiment": "Continue registered matched experiment; added information has not yet been tested",
+    "extra_bias_filter": "Not started: development centered lag correlation only 0.083; weak persistence provides no compelling basis for expanded online-filter tuning",
+    "independent_breakthrough": "Cannot be established without unseen dates or sites; no independent data added"
+  }
+}

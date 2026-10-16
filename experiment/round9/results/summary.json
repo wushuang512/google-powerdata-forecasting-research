@@ -1,0 +1,419 @@
+{
+  "scores": {
+    "control_ridge100000": {
+      "all57": {
+        "wape": 2.3759551943493302,
+        "mae": 0.01674313811041858,
+        "p95_ape": 6.900176604154532,
+        "daily_wape": 1.4844587257471744,
+        "peak_mape": 1.991475892595006,
+        "peak_time_mae_minutes": 285.9356725146199,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7905109305794578,
+        "mae": 0.01290462420651834,
+        "p95_ape": 5.170443674287618,
+        "daily_wape": 0.6092341076167896,
+        "peak_mape": 1.1847814774114633,
+        "peak_time_mae_minutes": 249.66666666666669,
+        "valid_points": 4320
+      }
+    },
+    "forecast_ridge100000": {
+      "all57": {
+        "wape": 2.3762905053778582,
+        "mae": 0.016745654152075004,
+        "p95_ape": 6.905737128377594,
+        "daily_wape": 1.481149800244321,
+        "peak_mape": 1.9848523465955996,
+        "peak_time_mae_minutes": 285.2923976608187,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.794333476304682,
+        "mae": 0.012933304169316302,
+        "p95_ape": 5.140803819491143,
+        "daily_wape": 0.571512356884266,
+        "peak_mape": 1.1092730530182318,
+        "peak_time_mae_minutes": 242.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "fusion_control_e10": {
+      "all57": {
+        "wape": 2.3740675087287535,
+        "mae": 0.016729606543724174,
+        "p95_ape": 6.899571442476809,
+        "daily_wape": 1.4837729956363612,
+        "peak_mape": 1.9993611143983692,
+        "peak_time_mae_minutes": 285.58479532163744,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7696877368480952,
+        "mae": 0.012755512460992657,
+        "p95_ape": 5.1881301412121354,
+        "daily_wape": 0.6028550116112563,
+        "peak_mape": 1.283744074513458,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "fusion_cpu_e10": {
+      "all57": {
+        "wape": 2.374076877410196,
+        "mae": 0.016729654083689063,
+        "p95_ape": 6.900434200959961,
+        "daily_wape": 1.4837943688295632,
+        "peak_mape": 1.9993148981570865,
+        "peak_time_mae_minutes": 285.43859649122805,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7698003447287518,
+        "mae": 0.012756316857095116,
+        "p95_ape": 5.1884659131505515,
+        "daily_wape": 0.6031656065136991,
+        "peak_mape": 1.2826357903465269,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "fusion_no_cross_e10": {
+      "all57": {
+        "wape": 2.3740061254152662,
+        "mae": 0.016729155758220624,
+        "p95_ape": 6.8998851625139315,
+        "daily_wape": 1.4836844742073116,
+        "peak_mape": 1.9988624367020857,
+        "peak_time_mae_minutes": 285.43859649122805,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7697077089667275,
+        "mae": 0.012755652669881594,
+        "p95_ape": 5.188383601728878,
+        "daily_wape": 0.6029372295218056,
+        "peak_mape": 1.2834758104171007,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "fusion_no_frequency_e10": {
+      "all57": {
+        "wape": 2.374088644139228,
+        "mae": 0.016729743690386597,
+        "p95_ape": 6.900153427061288,
+        "daily_wape": 1.4838120499600371,
+        "peak_mape": 1.9993805950263188,
+        "peak_time_mae_minutes": 285.43859649122805,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7697622432184055,
+        "mae": 0.012756042510160692,
+        "p95_ape": 5.188603252177627,
+        "daily_wape": 0.6031773030960149,
+        "peak_mape": 1.2824927091767588,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "history_ridge100000": {
+      "all57": {
+        "wape": 2.3765308435904116,
+        "mae": 0.01674735655267253,
+        "p95_ape": 6.905737128377594,
+        "daily_wape": 1.4826751734228691,
+        "peak_mape": 1.9845935121203264,
+        "peak_time_mae_minutes": 285.2631578947369,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7970733319277883,
+        "mae": 0.012952709565757035,
+        "p95_ape": 5.145388048907459,
+        "daily_wape": 0.5889016111197112,
+        "peak_mape": 1.1063223400001163,
+        "peak_time_mae_minutes": 242.0,
+        "valid_points": 4320
+      }
+    },
+    "monotone_alpha10": {
+      "all57": {
+        "wape": 2.37529501664549,
+        "mae": 0.016738556365702126,
+        "p95_ape": 6.897403392857034,
+        "daily_wape": 1.484418338815409,
+        "peak_mape": 2.009996607065884,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7829849047556852,
+        "mae": 0.012852397619696032,
+        "p95_ape": 5.126769270127345,
+        "daily_wape": 0.6087736965946677,
+        "peak_mape": 1.3959176223794676,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "monotone_alpha100": {
+      "all57": {
+        "wape": 2.3752933674807326,
+        "mae": 0.016738544819767078,
+        "p95_ape": 6.897403392857034,
+        "daily_wape": 1.4844103968899445,
+        "peak_mape": 2.009985222920463,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7829661042774532,
+        "mae": 0.012852266009399814,
+        "p95_ape": 5.126769270127345,
+        "daily_wape": 0.6086831586443704,
+        "peak_mape": 1.3957878431216706,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "monotone_alpha1000": {
+      "all57": {
+        "wape": 2.3752931880196937,
+        "mae": 0.016738543563348755,
+        "p95_ape": 6.897403392857034,
+        "daily_wape": 1.4844095324641309,
+        "peak_mape": 2.0099839840029983,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7829640584216098,
+        "mae": 0.012852251687685124,
+        "p95_ape": 5.126769270127345,
+        "daily_wape": 0.6086733041900938,
+        "peak_mape": 1.3957737194625761,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "physical_control_alpha10": {
+      "all57": {
+        "wape": 2.3752931679017846,
+        "mae": 0.016738543422502007,
+        "p95_ape": 6.897403392857034,
+        "daily_wape": 1.4844094355580921,
+        "peak_mape": 2.0099838451168446,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7829638290774408,
+        "mae": 0.012852250082195201,
+        "p95_ape": 5.126769270127345,
+        "daily_wape": 0.608672199461251,
+        "peak_mape": 1.3957721361604203,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "physical_control_alpha100": {
+      "all57": {
+        "wape": 2.3752931679017846,
+        "mae": 0.016738543422502007,
+        "p95_ape": 6.897403392857034,
+        "daily_wape": 1.4844094355580921,
+        "peak_mape": 2.0099838451168446,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7829638290774408,
+        "mae": 0.012852250082195201,
+        "p95_ape": 5.126769270127345,
+        "daily_wape": 0.608672199461251,
+        "peak_mape": 1.3957721361604203,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "physical_control_alpha1000": {
+      "all57": {
+        "wape": 2.3752931679017846,
+        "mae": 0.016738543422502007,
+        "p95_ape": 6.897403392857034,
+        "daily_wape": 1.4844094355580921,
+        "peak_mape": 2.0099838451168446,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.7829638290774408,
+        "mae": 0.012852250082195201,
+        "p95_ape": 5.126769270127345,
+        "daily_wape": 0.608672199461251,
+        "peak_mape": 1.3957721361604203,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "prior": {
+      "all57": {
+        "wape": 2.374127711928938,
+        "mae": 0.01673005076180579,
+        "p95_ape": 6.899308522995328,
+        "daily_wape": 1.4838931345769932,
+        "peak_mape": 2.0002019860901386,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.769677630986991,
+        "mae": 0.012755443579726689,
+        "p95_ape": 5.187511226152775,
+        "daily_wape": 0.6027863682767238,
+        "peak_mape": 1.2842589432559741,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    },
+    "selected": {
+      "all57": {
+        "wape": 2.374127711928938,
+        "mae": 0.01673005076180579,
+        "p95_ape": 6.899308522995328,
+        "daily_wape": 1.4838931345769932,
+        "peak_mape": 2.0002019860901386,
+        "peak_time_mae_minutes": 285.55555555555554,
+        "valid_points": 49243
+      },
+      "cell_a_5": {
+        "wape": 1.769677630986991,
+        "mae": 0.012755443579726689,
+        "p95_ape": 5.187511226152775,
+        "daily_wape": 0.6027863682767238,
+        "peak_mape": 1.2842589432559741,
+        "peak_time_mae_minutes": 245.33333333333331,
+        "valid_points": 4320
+      }
+    }
+  },
+  "selection": {
+    "frozen_at": "2026-10-01T10:05:49.809800+00:00",
+    "config": "history_ridge100000",
+    "chosen": {
+      "alpha": 0,
+      "wape": 2.3869265001147206,
+      "paired_day_se": 0.0
+    },
+    "validation": [
+      {
+        "alpha": 0,
+        "wape": 2.3869265001147206,
+        "paired_day_se": 0.0
+      },
+      {
+        "alpha": 0.1,
+        "wape": 2.3870549500959686,
+        "paired_day_se": 0.00038446561132105596
+      },
+      {
+        "alpha": 0.25,
+        "wape": 2.38729865228867,
+        "paired_day_se": 0.0009680818740437207
+      },
+      {
+        "alpha": 0.5,
+        "wape": 2.3878678705718883,
+        "paired_day_se": 0.0019452481231410253
+      },
+      {
+        "alpha": 1,
+        "wape": 2.3893830860704415,
+        "paired_day_se": 0.00394855457749596
+      }
+    ],
+    "attribution": {
+      "ridge_alpha": 100000,
+      "neural_epoch": 10
+    },
+    "protocol_sha256": "52dd23ddadda0bf5381ab4ca015abd1132745851d8b022cf489c61e8e001db6e"
+  },
+  "final_matched_ridge_alpha": 100000,
+  "final_matched_neural_epoch": 10,
+  "comparison_vs_previous": {
+    "difference_pp": 0.0,
+    "relative_reduction_percent": 0.0,
+    "domains_won": 0,
+    "days_won": 0,
+    "cells_won": 0,
+    "day_block_95": [
+      0.0,
+      0.0
+    ],
+    "day_and_cell_95": [
+      0.0,
+      0.0
+    ],
+    "bootstrap_replicates": 5000
+  },
+  "uncertainty": {
+    "nominal": 0.8,
+    "method": "Development residual quantile of error divided by past7-day power mean; no test fitting",
+    "relative_halfwidth": 0.04111071696265389,
+    "test_coverage": 0.827813090185407,
+    "mean_width": 0.05741243128914915
+  },
+  "cpu_scores": {
+    "last_day": {
+      "wape": 6.619511344146102,
+      "mae": 53.601025962055736,
+      "p95_ape": 21.987934714231265,
+      "daily_wape": 1.3793210113050924,
+      "peak_mape": 2.269668168515853,
+      "peak_time_mae_minutes": 193.33333333333334,
+      "valid_points": 4320
+    },
+    "foundation": {
+      "wape": 5.371016853510054,
+      "mae": 43.55959359634122,
+      "p95_ape": 15.15730499849216,
+      "daily_wape": 1.6989410101725777,
+      "peak_mape": 3.8484039031762034,
+      "peak_time_mae_minutes": 172.0,
+      "valid_points": 4320
+    },
+    "fusion": {
+      "wape": 6.438990057214225,
+      "mae": 52.215347435857026,
+      "p95_ape": 21.679256927143328,
+      "daily_wape": 1.5656615491524648,
+      "peak_mape": 2.10934422087575,
+      "peak_time_mae_minutes": 187.33333333333334,
+      "valid_points": 4320
+    }
+  },
+  "cpu_raw_nominal80_coverage": 0.6979166666666666,
+  "checks": {
+    "causal_cpu_resource_features_o14": true,
+    "causal_fusion_features_o14": true,
+    "causal_cpu_resource_features_o22": true,
+    "causal_fusion_features_o22": true,
+    "causal_cpu_resource_features_o30": true,
+    "causal_fusion_features_o30": true,
+    "selection_hash": true,
+    "power_finite_bounds": true,
+    "cpu_quantiles_nonnegative_ordered": true,
+    "ridge_and_monotone_other52_exact_prior": true,
+    "physical_slopes_nonnegative": true
+  },
+  "all_passed": true,
+  "complete_cell_a_projection": true,
+  "complete_all_eight_cells": false,
+  "actual_cpu_used": true,
+  "independent_confirmation": false,
+  "large_improvement": false
+}

@@ -1,0 +1,16 @@
+{
+  "hdsf": {
+    "url": "https://github.com/daifeizhai/PowerData_Prediction",
+    "commit": "648777507ebc57e7498ce61f4ae2236ab179e6a8",
+    "path": "experiment/round44/reference/PowerData_Prediction"
+  },
+  "uni2ts": {
+    "url": "https://github.com/SalesforceAIResearch/uni2ts",
+    "commit": "cfd46d4510ed8896f263116f32928eede05b0a75",
+    "path": "experiment/round35/code/official_uni2ts"
+  },
+  "granite_tsfm": {
+    "url": "https://github.com/ibm-granite/granite-tsfm",
+    "commit": "3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa"
+  }
+}

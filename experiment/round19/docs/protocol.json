@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-05T11:38:29.266787+00:00",
+  "script_sha256": "ece0d94d0933f969de3cabed9f71f0b4079629140d6a173ddc1c3dd575eb1da9",
+  "configs": [
+    {
+      "id": "prior",
+      "neutrality": "none",
+      "peak": false
+    },
+    {
+      "id": "none_peak0",
+      "neutrality": "none",
+      "peak": false
+    },
+    {
+      "id": "none_peak1",
+      "neutrality": "none",
+      "peak": true
+    },
+    {
+      "id": "global_peak0",
+      "neutrality": "global",
+      "peak": false
+    },
+    {
+      "id": "global_peak1",
+      "neutrality": "global",
+      "peak": true
+    },
+    {
+      "id": "cell_peak0",
+      "neutrality": "cell",
+      "peak": false
+    },
+    {
+      "id": "cell_peak1",
+      "neutrality": "cell",
+      "peak": true
+    },
+    {
+      "id": "pdu_peak0",
+      "neutrality": "pdu",
+      "peak": false
+    },
+    {
+      "id": "pdu_peak1",
+      "neutrality": "pdu",
+      "peak": true
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "base_family": "R18 DEV-frozen zero-intercept Ridge alpha1000 mean plus first3 Fourier harmonics; no refit and no new model downloads.",
+  "motivation": "R18 native7 residual improved curve/daily but had bias and peak tradeoffs. This new registered exploration tests sum-neutral forecasts and prior daily-max preservation. Same month has been repeatedly examined; no independent confirmation.",
+  "projection": "Closest additive-shift box projection preserves prior sum of normalized predictions per global/cell/PDU group over each7day window; optional caps and pins preserve each unmasked prior daily max. These are forecast consistency constraints, not physical energy conservation. No future truth or future validity mask used.",
+  "family_selection": "First DEV origin14 fixed.25. Prefer nonprior with primary WAPE/daily within+.001pp, RMSE/P95<=1.005prior, peak<=1.02prior, abs_bias<=prior+.01pp and a5<=prior+.01pp. Choose most metric-best-control leads then minimum equally normalized primary loss. If none use minimum-loss diagnostic.",
+  "weight_selection": "Same single family on DEV origin15 and aggregate14/15, strengths0/.1/.25/.5/1. Apply all guards at both origins; aggregate at least3 descriptive bests and at least one primary improvement .001pp. Among eligible maximize leads and minimize primary; smaller weight within paired-date1SE among same-leading-count choices. Otherwise0. Overlapping DEV dates are stability evidence only.",
+  "criterion_change": "Focus changed prospectively from R18 requirement to retain baseline lead count to the user objective multiple metric bests with explicit bias/a5 guards. R18 frozen selection remains unchanged.",
+  "diagnostic": "One nonprior family and strength frozen before TEST; diagnostic strength is chosen positive strength else.25. No TEST rank reselection.",
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round18/code/horizon_routed_experiment.py": "1430e621d99c60a0353c26b680939f1b2fea78827b2ad53e4c6ab01753a893e7",
+    "round18/docs/protocol.json": "a83634ff228f036bdcb8e74ba19f9541721658df1408c8443e74e42ec93be789",
+    "round18/results/selection.json": "a693063b7b03ccdf56f8f2b432c69f734e4c4e2f20d61f0f79f976e750edbf90",
+    "round18/results/dev_predictions.npz": "b064e00c885f4ef9a6b524c5b6231a7ea168d002a503ef4f530af6b759f39b27",
+    "round18/results/test_predictions.npz": "49b491ce59af299e6a2a81ce8dc8213a2ca9d16dd8d0f9e5d6124e43e7023e95",
+    "round18/results/deployment7_origin31.npz": "853805621149b8d32a3c82507699065f319fbcd84e156f5db87cf5f547dfaa30",
+    "round18/results/independent_verification.json": "c73df0c88154793d1f276682b3ac397bd1188fad9d55e0d5c25020ad425e401e",
+    "round17/code/multihorizon_residual_experiment.py": "cfe2bc8f273aeb3be14a6841afbf8e8c0f3c59d37f8d85e953ebbbc61ac7dac7",
+    "round16/code/joint_local_experiment.py": "c632f67ecb16b6aebf9f0d5d178e66f3456f97e39887423de5e132ad31bca4bf",
+    "model_comparison_20261005/results/task_revision/summary.json": "e2fc1e243fa0dd17957bc676a32073569e5e19498da6b97445f0a691f1d5e1fa",
+    "round15/results/test_predictions.npz": "5fffcabf82b678670787d72a84e1c59ea46001cdd5ceb2a7fad2f5e0a9406921",
+    "round16/results/test_predictions.npz": "2bde1214c110015cf3818f632d48fe4cd43fd3c4ee65051b31b99feeca13a3e8"
+  },
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "new_downloads": false,
+  "resource_policy": {
+    "admission_physical_gib": 3,
+    "admission_commit_gib": 6,
+    "runtime_physical_gib": 1.5,
+    "runtime_commit_gib": 2
+  }
+}

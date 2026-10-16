@@ -1,0 +1,187 @@
+{
+  "created_utc": "2026-10-07T08:14:23.564504+00:00",
+  "model": "Native15min Moirai2 boundedlowrankquantile adaptationandorigin-conditionedseasonaldeviationforecast",
+  "rates": [
+    1
+  ],
+  "families": [
+    {
+      "id": "level_uni_base",
+      "rate": 1,
+      "mode": "level",
+      "group": "uni",
+      "context_days": 7,
+      "variant": "base"
+    },
+    {
+      "id": "level_uni_level_rank4_anchor1",
+      "rate": 1,
+      "mode": "level",
+      "group": "uni",
+      "context_days": 7,
+      "variant": "level_rank4_anchor1"
+    },
+    {
+      "id": "level_uni_level_rank8_anchor0_25",
+      "rate": 1,
+      "mode": "level",
+      "group": "uni",
+      "context_days": 7,
+      "variant": "level_rank8_anchor0_25"
+    },
+    {
+      "id": "level_cell_base",
+      "rate": 1,
+      "mode": "level",
+      "group": "cell",
+      "context_days": 14,
+      "variant": "base"
+    },
+    {
+      "id": "level_cell_level_rank4_anchor1",
+      "rate": 1,
+      "mode": "level",
+      "group": "cell",
+      "context_days": 14,
+      "variant": "level_rank4_anchor1"
+    },
+    {
+      "id": "level_cell_level_rank8_anchor0_25",
+      "rate": 1,
+      "mode": "level",
+      "group": "cell",
+      "context_days": 14,
+      "variant": "level_rank8_anchor0_25"
+    },
+    {
+      "id": "seasonal_uni_base",
+      "rate": 1,
+      "mode": "seasonal",
+      "group": "uni",
+      "context_days": 7,
+      "variant": "base"
+    },
+    {
+      "id": "seasonal_uni_seasonal_rank4_anchor1",
+      "rate": 1,
+      "mode": "seasonal",
+      "group": "uni",
+      "context_days": 7,
+      "variant": "seasonal_rank4_anchor1"
+    },
+    {
+      "id": "seasonal_uni_seasonal_rank8_anchor0_25",
+      "rate": 1,
+      "mode": "seasonal",
+      "group": "uni",
+      "context_days": 7,
+      "variant": "seasonal_rank8_anchor0_25"
+    },
+    {
+      "id": "seasonal_cell_base",
+      "rate": 1,
+      "mode": "seasonal",
+      "group": "cell",
+      "context_days": 14,
+      "variant": "base"
+    },
+    {
+      "id": "seasonal_cell_seasonal_rank4_anchor1",
+      "rate": 1,
+      "mode": "seasonal",
+      "group": "cell",
+      "context_days": 14,
+      "variant": "seasonal_rank4_anchor1"
+    },
+    {
+      "id": "seasonal_cell_seasonal_rank8_anchor0_25",
+      "rate": 1,
+      "mode": "seasonal",
+      "group": "cell",
+      "context_days": 14,
+      "variant": "seasonal_rank8_anchor0_25"
+    }
+  ],
+  "adapters": [
+    {
+      "id": "level_rank4_anchor1",
+      "mode": "level",
+      "rank": 4,
+      "teacher_lambda": 1,
+      "lr": 0.0005
+    },
+    {
+      "id": "level_rank8_anchor0_25",
+      "mode": "level",
+      "rank": 8,
+      "teacher_lambda": 0.25,
+      "lr": 0.001
+    },
+    {
+      "id": "seasonal_rank4_anchor1",
+      "mode": "seasonal",
+      "rank": 4,
+      "teacher_lambda": 1,
+      "lr": 0.0005
+    },
+    {
+      "id": "seasonal_rank8_anchor0_25",
+      "mode": "seasonal",
+      "rank": 8,
+      "teacher_lambda": 0.25,
+      "lr": 0.001
+    }
+  ],
+  "originalweights_frozen": true,
+  "head_delta_bound_normalized_std": 0.5,
+  "train_epochs": 4,
+  "batch_size": 64,
+  "weight_decay": 0.001,
+  "gradient_clip": 1,
+  "seed": 20261007,
+  "train_dev_label_end_exclusive": 1344,
+  "train_final_label_end_exclusive": 2112,
+  "training_context_days": 7,
+  "training_origin_stride15min": 48,
+  "training_target_max_coarsepoints": 64,
+  "training_labels": "Only targetbins endingbeforecut. Eachwindow normalizedwithobservedpastonly. inversePDU targetbin occurrence weights. Uniandcell features share outputadapter byresolution.",
+  "selection": "Stage1 firsttwo 24hDEVorigins14/16 orfirst7dDEVorigin14 choose onefamily usingquartercoarse correctioncurvecost. Stage2 onlylasttwo24hDEV18/20 orlast7dDEV15 choose alpha0/.1/.25/.5/1,none/globaldaily coordination. Preferloweralpha within.001cost ofminimumeligible. FullDEVcurve nonworse; freeze once thenTESTonecandidate/H.7dDEVwindows overlap, partition doesnot makeindependentvalidation.",
+  "primary": "CurveWAPE mustimprove>=.001pp onlateDEV;7ddaily nonworse. Secondarymicrotolerances preregisteredin eligible();peak<=prior+.1pp;a5<=prior+.01pp;dailyhit5loss<=.5pp. TESTfail means retainprevious, noalternateTESTpicked.",
+  "dev1": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test1": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "goal": "Beat everyprevious measuredcurve WAPE andseek>=5% relative leadingmargin; aspiration notguarantee. No claim ofindependentconfirmation aftermanyMayTESTviews.",
+  "future": "Onlyhistoricalpower/mask. Knowntraininglabels onlyforloss, never neuralinput. No futureCPU orfuturevalidity usedininference.",
+  "license": "Moirai originalweightsCC BY-NC4,sourceApache2. researchonly",
+  "source_weights_sha256": "fb5652a3db8ea572606221b7cb1e77bb8962b168e4d4cc752cf31ceb04074669",
+  "metric_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+  "previous_comparison_sha256": "a97a74b65d50f8aa390c69eadaae900dfec1dac629e42af2e246e286c01cfa17",
+  "independent_confirmation": false,
+  "representation": "level orseasonal: subtract lastthreefullypast96point daysmeanprofile fromallhistoricalinputandtraininglabels; forecastdeviation andadd same knownoriginprofile, nofuturetruth. Full15min information retained.",
+  "reason": "R37 early/lateDEV didnot supportcoarse modelreplacement. This continuation registered before readingR37 newTESTscores. Coarse results retained, noTEST-basedfamilyselection.",
+  "train_norm": "Pastactualpowermean regardlessofrepresentation, notnearzero residualmean; scalercontextpast-only",
+  "round37_test_scores_read_before_protocol": false
+}

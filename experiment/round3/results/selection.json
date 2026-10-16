@@ -1,0 +1,152 @@
+{
+  "frozen_at": "2026-09-30T13:52:33.253736+08:00",
+  "pool": [
+    "old_equal_mix",
+    "chronos_mirror",
+    "tirex_coarse4",
+    "residual_ridge100000",
+    "online_w1_a0.25_shape0",
+    "tf3_uni_context2016",
+    "hier_chronos_factor_a0.5"
+  ],
+  "weights": [
+    0.17170258243678665,
+    0.012285884657590798,
+    3.1937167576069288e-18,
+    0.39969919291274286,
+    0.10135183313443413,
+    0.3149605068584455,
+    0.0
+  ],
+  "weight_map": {
+    "old_equal_mix": 0.17170258243678665,
+    "chronos_mirror": 0.012285884657590798,
+    "tirex_coarse4": 3.1937167576069288e-18,
+    "residual_ridge100000": 0.39969919291274286,
+    "online_w1_a0.25_shape0": 0.10135183313443413,
+    "tf3_uni_context2016": 0.3149605068584455,
+    "hier_chronos_factor_a0.5": 0.0
+  },
+  "needed": [
+    "chronos_mirror",
+    "tirex_coarse4",
+    "residual_ridge100000",
+    "online_w1_a0.25_shape0",
+    "tf3_uni_context2016",
+    "hier_chronos_factor_a0.5",
+    "chronos_native",
+    "tirex_native"
+  ],
+  "chosen": {
+    "chronos": "chronos_mirror",
+    "tirex": "tirex_coarse4",
+    "residual": "residual_ridge100000",
+    "online": "online_w1_a0.25_shape0",
+    "timesfm3": "tf3_uni_context2016",
+    "hierarchy": "hier_chronos_factor_a0.5"
+  },
+  "rule": {
+    "tag": "min0_reg0.03",
+    "minimum": 0,
+    "reg": 0.03,
+    "wape": 2.5298488350162893,
+    "paired_cell_se_vs_best": 0.0
+  },
+  "cv_grid": [
+    {
+      "tag": "min1_reg0",
+      "minimum": 1,
+      "reg": 0,
+      "wape": 2.578196256015728,
+      "paired_cell_se_vs_best": 0.025321800076514245
+    },
+    {
+      "tag": "min0_reg0.03",
+      "minimum": 0,
+      "reg": 0.03,
+      "wape": 2.5298488350162893,
+      "paired_cell_se_vs_best": 0.0
+    },
+    {
+      "tag": "min0_reg0.15",
+      "minimum": 0,
+      "reg": 0.15,
+      "wape": 2.5598468545078137,
+      "paired_cell_se_vs_best": 0.01581878335637852
+    },
+    {
+      "tag": "min0_reg0.5",
+      "minimum": 0,
+      "reg": 0.5,
+      "wape": 2.5712691247060224,
+      "paired_cell_se_vs_best": 0.021928129976731634
+    },
+    {
+      "tag": "min0.5_reg0.03",
+      "minimum": 0.5,
+      "reg": 0.03,
+      "wape": 2.540701119812427,
+      "paired_cell_se_vs_best": 0.005117168798805213
+    },
+    {
+      "tag": "min0.5_reg0.15",
+      "minimum": 0.5,
+      "reg": 0.15,
+      "wape": 2.5598468545078137,
+      "paired_cell_se_vs_best": 0.01581878335637852
+    },
+    {
+      "tag": "min0.5_reg0.5",
+      "minimum": 0.5,
+      "reg": 0.5,
+      "wape": 2.5712691247060224,
+      "paired_cell_se_vs_best": 0.021928129976731634
+    },
+    {
+      "tag": "min0.75_reg0.03",
+      "minimum": 0.75,
+      "reg": 0.03,
+      "wape": 2.5562273418091124,
+      "paired_cell_se_vs_best": 0.012104408443484281
+    },
+    {
+      "tag": "min0.75_reg0.15",
+      "minimum": 0.75,
+      "reg": 0.15,
+      "wape": 2.5598468545078137,
+      "paired_cell_se_vs_best": 0.01581878335637852
+    },
+    {
+      "tag": "min0.75_reg0.5",
+      "minimum": 0.75,
+      "reg": 0.5,
+      "wape": 2.5712691247060224,
+      "paired_cell_se_vs_best": 0.021928129976731634
+    }
+  ],
+  "development_score": {
+    "wape": 2.5224148934166237,
+    "mae": 0.017346584190848,
+    "p95_ape": 7.4034818659676205,
+    "daily_wape": 1.6427850459987214,
+    "peak_mape": 2.65481532426567,
+    "peak_time_mae_minutes": 275.0986842105263,
+    "valid_points": 43769
+  },
+  "old_development_score": {
+    "wape": 2.6136581983756817,
+    "mae": 0.01798361322826536,
+    "p95_ape": 7.623138706659596,
+    "daily_wape": 1.7733998502233008,
+    "peak_mape": 2.786150757792852,
+    "peak_time_mae_minutes": 275.5921052631579,
+    "valid_points": 43769
+  },
+  "test_used_for_this_selection": false,
+  "already_seen_month": true,
+  "family_selection_days": "May15-18",
+  "weight_cv": "fit May15-18 on nine cells; evaluate May19-22 on held-out cell; paired one-standard-error rule",
+  "final_weight_fit": "May15-22 all cells",
+  "online_errors": "Only actual outcomes already observed before forecast origin",
+  "restriction": "No independent generalization claim from this previously examined month"
+}

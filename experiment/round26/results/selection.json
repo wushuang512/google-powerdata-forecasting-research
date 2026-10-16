@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-10-06T07:42:26.891093+00:00",
+  "horizons": {
+    "1": {
+      "chosen_alpha": 0.0,
+      "development_supported": false
+    },
+    "7": {
+      "candidate": {
+        "id": "fixed_quarter_joint"
+      },
+      "chosen_alpha": 0.25,
+      "diagnostic_alpha": 0.25,
+      "development_supported": true
+    }
+  },
+  "protocol_sha256": "e8be72032516e55b5cf8c7c06c359849e7fd62feac703b10aeaf7121f2418144",
+  "dev_summary_sha256": "6f250466cd1b3d546b8214733aa6b47e808f49b590674fc6ff4359d14273e9dc",
+  "dev_predictions_sha256": "104b5f762d7c5e49d4045f747f0d83a241d8bd47bda26ead9360a7584d868f04",
+  "interval_radius_sha256": "41b959157a166c1662e100705f4de98ce61405ce8554102f384b19f37df599d6",
+  "independent_confirmation": false
+}

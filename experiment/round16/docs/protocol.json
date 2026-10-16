@@ -1,0 +1,180 @@
+{
+  "created_utc": "2026-10-05T08:42:50.251966+00:00",
+  "model_name": "TimesFM3 Chronos2 TiRex2 with causal daily-mean/peak heads and bounded curve projection",
+  "script_sha256": "c632f67ecb16b6aebf9f0d5d178e66f3456f97e39887423de5e132ad31bca4bf",
+  "configs": [
+    {
+      "id": "prior",
+      "mean": 0.0,
+      "peak": 0.0,
+      "alpha": 100,
+      "peak_kind": "history",
+      "shape": 0.0
+    },
+    {
+      "id": "history_peak0.25",
+      "mean": 0.0,
+      "peak": 0.25,
+      "alpha": 100,
+      "peak_kind": "history",
+      "shape": 0.0
+    },
+    {
+      "id": "history_peak0.5",
+      "mean": 0.0,
+      "peak": 0.5,
+      "alpha": 100,
+      "peak_kind": "history",
+      "shape": 0.0
+    },
+    {
+      "id": "history_peak1.0",
+      "mean": 0.0,
+      "peak": 1.0,
+      "alpha": 100,
+      "peak_kind": "history",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_a10_mean0.25_peak0.25",
+      "mean": 0.25,
+      "peak": 0.25,
+      "alpha": 10,
+      "peak_kind": "learned",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_a10_mean0.25_peak0.5",
+      "mean": 0.25,
+      "peak": 0.5,
+      "alpha": 10,
+      "peak_kind": "learned",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_a10_mean0.5_peak0.5",
+      "mean": 0.5,
+      "peak": 0.5,
+      "alpha": 10,
+      "peak_kind": "learned",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_a100_mean0.25_peak0.25",
+      "mean": 0.25,
+      "peak": 0.25,
+      "alpha": 100,
+      "peak_kind": "learned",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_a100_mean0.25_peak0.5",
+      "mean": 0.25,
+      "peak": 0.5,
+      "alpha": 100,
+      "peak_kind": "learned",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_a100_mean0.5_peak0.5",
+      "mean": 0.5,
+      "peak": 0.5,
+      "alpha": 100,
+      "peak_kind": "learned",
+      "shape": 0.0
+    },
+    {
+      "id": "learned_history_shape25",
+      "mean": 0.25,
+      "peak": 0.5,
+      "alpha": 100,
+      "peak_kind": "learned",
+      "shape": 0.25
+    },
+    {
+      "id": "history_peak_shape25",
+      "mean": 0.0,
+      "peak": 0.5,
+      "alpha": 100,
+      "peak_kind": "history",
+      "shape": 0.25
+    }
+  ],
+  "metrics": [
+    "wape",
+    "mae",
+    "rmse",
+    "daily_wape",
+    "peak_mape",
+    "p95_ape",
+    "peak_time_mae_minutes",
+    "absolute_bias_percent",
+    "cella5_wape",
+    "other52_wape"
+  ],
+  "training_cutoff_dev": 14,
+  "training_cutoff_final": 22,
+  "training_origins": "7..cutoff-1, only target days < cutoff; weight duplicate target dates inversely",
+  "development24": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "development7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "selection": "First four DEV24 dates choose one family by minimax ratio against each metric best retained control; later four DEV24 and both overlapping DEV7 windows choose common shrinkage 0/.25/.5/1. Adopt only if every registered metric at both horizons is <= best control. Freeze selection before TEST score. No post-test changes.",
+  "base24": "Canonical original round8b development prior (trained labels before May15) and frozen final test prior",
+  "base7": "Original zero-shot TimesFM3 21day context, same pretraining weights; reuse independently checked round15 DEV672 cache; identical origins and original base weights. This backbone was identified from already viewed TEST, so no independent confirmation claim.",
+  "targets": "One-day and seven-day curve; daily means derived from same curves",
+  "projection": "Minimal squared change to each daily curve with one causally chosen maximum pinned at target peak, other points projected by a shared offset into [0,target_peak]; bisection enforces feasible full96 daily mean. It may alter peak timing after capping, which is evaluated. Shape consistency, not energy conservation.",
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "overlapping_seven_windows": true,
+  "new_downloads": false,
+  "resource_policy": {
+    "admission_physical_gib": 3,
+    "admission_commit_gib": 6,
+    "runtime_physical_gib": 1.5,
+    "runtime_commit_gib": 2
+  },
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round11/results/dev_predictions.npz": "13182e2d8ef25cdc9251ac00f4b09dd2a2cce4db8d4a866f73c44779d67c41a2",
+    "round8b/results/selection.json": "f713ae2932f05c17419c12f06770f3ed12ba3f9b18701ec35369581e286e66ad",
+    "round8b/results/test_predictions.npz": "c270f48c25fe543570d7837fe42a1442d08e10fb9ee41af6342f20f316422bb0",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/results/tf3_train.npz": "e35828d79c40b34a58f659bf5b1b88bdeb9a1b1bab0af67b45369ed9bf9ee5b6",
+    "round2/results/development_selected.npz": "936b8b8458815a93c5d0042c8e2ebc8f47aa646533552cdc7d4a69585ac8d4e1",
+    "results/dev7.npz": "a4a74809a3a85a4df020e2b42bdbedad63e348da97880a6a92b9544375d66f12",
+    "seven_day_completion_20261005/results/test7_predictions.npz": "bbb1f9bb9824d85358a9daff5929ff883adfa5ebc6d952a8f6fb9593b18a398e",
+    "model_comparison_20261005/results/task_revision/summary.json": "e2fc1e243fa0dd17957bc676a32073569e5e19498da6b97445f0a691f1d5e1fa",
+    "models/timesfm3-base/config.json": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+    "models/timesfm3-base/model.safetensors": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+    "round15/results/tf3_dev7.npz": "4a4ee003a0346a5c8327f744ba21f72ba1f31a47b85797d3ec9f843202ed74ca",
+    "round15/results/tf3_dev7_verification.json": "80e34b11f1e21460292544c64d26ec1dceaf940fd669b1f484915d9e74b1079f",
+    "round15/docs/protocol.json": "67bc8d78a86ecbcaabf43a39a802de97008ed6acae7464d8e43c55e0a06ff3bb"
+  }
+}

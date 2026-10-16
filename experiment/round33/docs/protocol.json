@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-10-07T01:22:58.956441+00:00",
+  "models": [
+    "perPDU asymmetric10/90",
+    "perPDU symmetricabs80",
+    "cell pooled scaled symmetricabs80"
+  ],
+  "selection": "DEV leave-one-origin-out coverage within3pp of80 first, then minimum pooledWinkler80. If none satisfy choose smallestcoverage distance thenWinkler. No TEST calibration choice.",
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "point_models_frozen": "R32 selected24 andR31 selected7 unchanged",
+  "scope": "Additional interval calibration only; no point parameter revision. TEST already repeatedly viewed,7DEV overlap, no independent guarantee."
+}

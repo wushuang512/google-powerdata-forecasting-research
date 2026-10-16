@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-10-07T01:52:50.662616+00:00",
+  "model": "Salesforce Moirai2.0 R small official frozen11.4M",
+  "families": [
+    "uni7",
+    "uni14",
+    "cell14"
+  ],
+  "configs": [
+    {
+      "id": "uni7_raw",
+      "family": "uni7",
+      "mode": "raw"
+    },
+    {
+      "id": "uni7_mix25",
+      "family": "uni7",
+      "mode": "mix25"
+    },
+    {
+      "id": "uni7_shape25",
+      "family": "uni7",
+      "mode": "shape25"
+    },
+    {
+      "id": "uni7_historic_peak",
+      "family": "uni7",
+      "mode": "historic_peak"
+    },
+    {
+      "id": "uni14_raw",
+      "family": "uni14",
+      "mode": "raw"
+    },
+    {
+      "id": "uni14_mix25",
+      "family": "uni14",
+      "mode": "mix25"
+    },
+    {
+      "id": "uni14_shape25",
+      "family": "uni14",
+      "mode": "shape25"
+    },
+    {
+      "id": "uni14_historic_peak",
+      "family": "uni14",
+      "mode": "historic_peak"
+    },
+    {
+      "id": "cell14_raw",
+      "family": "cell14",
+      "mode": "raw"
+    },
+    {
+      "id": "cell14_mix25",
+      "family": "cell14",
+      "mode": "mix25"
+    },
+    {
+      "id": "cell14_shape25",
+      "family": "cell14",
+      "mode": "shape25"
+    },
+    {
+      "id": "cell14_historic_peak",
+      "family": "cell14",
+      "mode": "historic_peak"
+    }
+  ],
+  "primary": "WAPE24, WAPE7 anddailyWAPE7, curve leadership priority; substantial milestone>=5% relative current curve reduction, notguaranteed",
+  "selection": "DEV first only. Primary nonworse current and oneimproves>=.001pp, peak<=bestDEV historicalbaseline+.15pp, secondary microbounds. Pickminimum normalizedprimarycost. None=current; onlyone DEV-selected orDEV-bestdiagnostic source/recipe tested perhorizon.",
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "native": "officialMoiraiModule+mathematicalForecastmethods; onlytrainer/GluonTS services skipped withAST adapter, smokeequality beforeDEV; quantilemedian, native96 or672 recursive branches, onlyselfgeneratedfuturevalues",
+  "future": "no realfuturepower/CPU/valid flags. Historical sourcevalid masks allowed.",
+  "scope": "same monthTEST repeatedlyviewed, exploratory, noindependentconfirmation; newbackbone corpusoverlap notexcluded",
+  "license": "CC BY-NC4.0 weights;Apache2 code; researchonly",
+  "metric_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da"
+}

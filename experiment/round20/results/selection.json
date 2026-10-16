@@ -1,0 +1,32 @@
+{
+  "frozen_utc": "2026-10-06T06:50:26.071052+00:00",
+  "horizons": {
+    "1": {
+      "candidate": {
+        "id": "learnedpeak_s50_gate1_prior",
+        "strength": 0.5,
+        "gate": true,
+        "location": "prior"
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.25,
+      "development_supported": false
+    },
+    "7": {
+      "candidate": {
+        "id": "learnedpeak_s50_gate1_near_history",
+        "strength": 0.5,
+        "gate": true,
+        "location": "near_history"
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.25,
+      "development_supported": false
+    }
+  },
+  "protocol_sha256": "aa05a4d379965067708399d097b881f02e81b04e598649bce4cb8fb326acec2c",
+  "dev_summary_sha256": "582af615b6106332d4190aed4c835e98fc8b815f2d3ff6fda39b236a9e9d32a4",
+  "dev_predictions_sha256": "5f707d5ea247e1e59d611d518446eeae6fb22b6463a11c4c9072ef3b76bf562e",
+  "interval_radius_sha256": "c20047869d1f9d811c0e521c753a65619fa49861eff32e2263088ff2bd370749",
+  "independent_confirmation": false
+}

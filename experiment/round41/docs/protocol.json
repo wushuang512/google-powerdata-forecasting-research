@@ -1,0 +1,139 @@
+{
+  "created_utc": "2026-10-07T09:50:55.452998+00:00",
+  "model": "Salesforce Moirai2 trained common power factors with one shared architecture and correction policy for 24hour and 7day curves",
+  "data": "Existing May2019 PowerData57; no new download; no actualfuture workinput",
+  "dev1": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test1": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "selection": "One family jointly selected using first2 DEV24h and first DEV7d worst normalized curve cost atalpha.25; same alpha0/.05/.1/.25/.5/1 and same daily coordination chosen on last2 DEV24h and last DEV7d. Both lateDEV curves improve .001pp;7daily nonworse; allDEV curves nonworse; secondary exact eligible code. Lowerweight within .001cost. Ifnoeligible keep prior, score oneDEV frozen diagnostic forboth. Never select separate TESTwinning configurations.",
+  "same_scheme_both_horizons": true,
+  "primary": "Both curve WAPE; all9.28metrics included. Peak within.1pp, secondary microtolerances sameprevious. No Testselected alternative.",
+  "prior24": "round32",
+  "prior7": "round36",
+  "factor_basis": "SVD only training power andvalidmask beforecut14/22; mean/std from validtraining, stdfloor.01; rank1/3/6; deterministic sign; not causal physical energy balance. Orthogonalprojection changes only selected factors, othercomponents inherited from priorcurve.",
+  "input_boundary": "Only completed history. Learned PCA fit uses training period; never DEV or TESTfuturelabels. At TEST fit22, DEV fit14. Native signed factor outputs not clipped; finalpower bounded0..1; coarse outputs reconstructed to15minutes beforeallmetrics.",
+  "metric_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+  "original_weights_sha256": "fb5652a3db8ea572606221b7cb1e77bb8962b168e4d4cc752cf31ceb04074669",
+  "source_adapter_sha256": "025ee0b2aed5caf719a3890f3088a37f212e0eb08f1e3e263653fc9fd6b54d65",
+  "script_sha256": "63fe6de05683187921e9c559ee68089d30b05846a1fdddc9a8bb38d48c0256bc",
+  "previous_comparison_sha256": "7393a2d054f6c55e12506b928b8b033b93d1a0a9b453c4eb70d0ae9d53f6c59b",
+  "previous_test_min_wape": {
+    "1": 2.367483112706865,
+    "7": 2.694095946387253
+  },
+  "goal": "Shared configuration lower than everyprior measuredcurve score and>=5% relative improvement aspiration; not guaranteed. Already viewed MayTEST means exploratory, no independent statistical confirmation.",
+  "independent_confirmation": false,
+  "licence": "Moirai weightsCC BY-NC4.0; codeApache2; noncommercial research only",
+  "failure_policy": "Retain frozen selection; preserve negativeresults and failures; exactcache signature mismatches stop, no silent reuse",
+  "interval_policy": "Inherited fixed earlierDEV residual10/90 empirical80% policy; no TEST interval parameter search",
+  "round": 41,
+  "families": [
+    {
+      "id": "factor1_r1_base",
+      "rank": 1,
+      "rate": 1,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor1_r4_base",
+      "rank": 1,
+      "rate": 4,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor1_r12_base",
+      "rank": 1,
+      "rate": 12,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor3_r1_base",
+      "rank": 3,
+      "rate": 1,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor3_r4_base",
+      "rank": 3,
+      "rate": 4,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor3_r12_base",
+      "rank": 3,
+      "rate": 12,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor6_r1_base",
+      "rank": 6,
+      "rate": 1,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor6_r4_base",
+      "rank": 6,
+      "rate": 4,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    },
+    {
+      "id": "factor6_r12_base",
+      "rank": 6,
+      "rate": 12,
+      "context_days": 14,
+      "variant": "base",
+      "scope": "frozen"
+    }
+  ],
+  "train_steps": 0,
+  "training": "R42 custom differentiable officialmodule training. 7day historywindows stride12hours, only labels beforecut14/22, next64 coarse steps. 80fixed optimizerupdates batch2windows seed20261007 AdamW decay.01 clip1. Projected Power macro normalizedL1 plus.25latent quantilepinball +originalteacher MSEanchor +.1crossing. Originalteacherfrozen. Final same trainingrecipe restarts originalweights atcut22 afterDEVfreeze.",
+  "train_context_days": 7,
+  "forecast_context_days": 14,
+  "train_label_cut_dev": 1344,
+  "train_label_cut_final": 2112,
+  "minimum_scale": 0.01,
+  "source_urls": [
+    "https://huggingface.co/Salesforce/moirai-2.0-R-small",
+    "https://arxiv.org/abs/2511.11698",
+    "https://github.com/SalesforceAIResearch/uni2ts"
+  ]
+}

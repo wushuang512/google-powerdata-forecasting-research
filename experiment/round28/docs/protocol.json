@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-10-06T08:35:19.228208+00:00",
+  "script_sha256": "29536b441fd06ed330210e28d8ad06ad8d82bbfe92dba5c1da407a451cb0f7e4",
+  "metrics_script_sha256": "0cf7c46bb4b8dbeeb6e8e1e75d9c14070048e7dba200c3733d2e2d1801fa994a",
+  "models": [
+    {
+      "id": "lgb_regression_l1_leaf15",
+      "loss": "regression_l1",
+      "leaves": 15,
+      "iterations": 80
+    }
+  ],
+  "configs": [
+    {
+      "id": "level_shape0_cap25",
+      "model": "lgb_regression_l1_leaf15",
+      "shape_gain": 0.0,
+      "cap": 0.0025
+    },
+    {
+      "id": "level_shape0_cap50",
+      "model": "lgb_regression_l1_leaf15",
+      "shape_gain": 0.0,
+      "cap": 0.005
+    },
+    {
+      "id": "level_shape25_cap25",
+      "model": "lgb_regression_l1_leaf15",
+      "shape_gain": 0.25,
+      "cap": 0.0025
+    },
+    {
+      "id": "level_shape25_cap50",
+      "model": "lgb_regression_l1_leaf15",
+      "shape_gain": 0.25,
+      "cap": 0.005
+    }
+  ],
+  "alphas": [
+    0.0,
+    0.025,
+    0.05,
+    0.1,
+    0.25
+  ],
+  "probe_alpha": 0.1,
+  "tolerances": {
+    "wape_pp": 0.005,
+    "daily_wape_pp": 0.005,
+    "peak_mape_pp": 0.005,
+    "p95_ape_pp": 0.01,
+    "mae_relative": 0.002,
+    "rmse_relative": 0.002,
+    "hit_pp": 0.05,
+    "group_wape_pp": 0.005,
+    "bias_pp": 0.005,
+    "peak_time_minutes": 5,
+    "daily_error_relative": 0.005
+  },
+  "base": "R26 recommended 1day R8b and7day balanced prior",
+  "training": "DEV labels index<14; final<22. Audited native672 training, fixed stride6 rotated by origin/horizon, inverse repeated-target date weights. Reuse the LightGBM L1 15leaf model fixed by R27 DEV for both horizons; no new fitting or neural reload. Residual learning from native forecasts; application to stronger prior remains a transfer hypothesis.",
+  "candidate": "Robust LightGBM residual decomposed to daily level plus0or25%zero-mean shape. Cap each raw residual to0.25or0.5%of historical7day mean. Fixed normalization uses only pre-origin history. Preserve a5 and each cell forecast total, clip0..1. These normalized forecasts are not physical energy conservation.",
+  "selection": "For H1 early origins14..17; H7 early14: rank4 configs by fixed10% probe cost subject to minor-tradeoff guard, or best rejected as diagnostic. Confirm weights0/.025/.05/.1/.25 on late H1 origins18..21 or H7 origin15, plus early and aggregate guards, aggregate>=2 distinct improved categories, require late cost<1. Apply paired-date oneSE shrink among eligible. Freeze before scoring exactly one diagnostic or selected candidate. Never TEST rerank; if none alpha0 keepsR26. Recommendation replacement additionally requires selected TEST within registered minor-tradeoff limits; if this exploratory diagnostic fails, withhold replacement without changing the frozen experimental alpha or searching TEST alternatives.",
+  "prefix_controls": {
+    "dev_max_abs_difference": 2.384185791015625e-07,
+    "test_first_three_max_abs_difference": 1.7881393432617188e-07,
+    "sampled_controls_only": true,
+    "deployment_ref_first96_of_saved_native672": true
+  },
+  "independent_confirmation": false,
+  "test_seen_before": true,
+  "source_hashes": {
+    "results/data.npz": "852732f91590a64baafc3f240dc2367876dd01acab6fe73df99d1f87ee5797f1",
+    "round17/results/native_train7.npz": "b2e2fe65bc24f5ae1552ea443e69cfc9fa716f168a383771ea207b9ab392d625",
+    "round17/results/native_train7_verification.json": "c9bebf3af8e3252705edd5af5830423ba19199ba6c96a3bf751aca4dc0318901",
+    "round22/code/point_residual_experiment.py": "8c662fa4a293010bb08426df42f807b6612b494bc940147fa493f79290b2e70a",
+    "round26/results/dev_predictions.npz": "104b5f762d7c5e49d4045f747f0d83a241d8bd47bda26ead9360a7584d868f04",
+    "round26/results/test_predictions.npz": "5d42afc3f68bb476f57f23b548473793458cbc3215b7889cd8fbb40cff37f488",
+    "round26/results/selection.json": "75f4d82dd44b0adbfb7fc78581f738b3f966808e97b44f740cf274a6ef88c700",
+    "round26/results/exports/deployment_origin31.npz": "c0629c6dd29c441ce1fef99246e642710c501ac2d2ad4590098a592732fb1c53",
+    "round26/results/exports/selected_1day_curve.csv": "8f1c620495c30c0ff6c43a4c594c98ed5c98d68763c8aedbe789e1e9018a7477",
+    "round18/results/dev_predictions.npz": "b064e00c885f4ef9a6b524c5b6231a7ea168d002a503ef4f530af6b759f39b27",
+    "round18/results/test_predictions.npz": "49b491ce59af299e6a2a81ce8dc8213a2ca9d16dd8d0f9e5d6124e43e7023e95",
+    "round18/results/deployment7_origin31.npz": "853805621149b8d32a3c82507699065f319fbcd84e156f5db87cf5f547dfaa30",
+    "round3/results/tf3_dev.npz": "c8eb76c02d2f5ed867fa0d17195962ed42a204cf54accdd55b9ff58df5b1e655",
+    "round3/results/tf3_test.npz": "5a823a5ac0d2f22040b897bc4eb65f36a34f19ce3a7ee846525b99482d13ed64",
+    "round27/results/selection.json": "d9ea9c29b7cc2c0876967d6389a753574f73cdf1fdac90d4e0e9ca6b2335eb4d",
+    "round27/models/dev_heads.pkl": "1c3d4360c03653d27b9b70c27d780e00d4d0a60ab330eaaa821a7e1d6c0871a2",
+    "round27/models/final_heads.pkl": "996a203ebdd002e83bdbdfaca8d40558f7543cdf59f663b1be42dd9ec2896844"
+  },
+  "resource_policy": {
+    "admission_physical_gib": 2.125,
+    "admission_commit_gib": 6,
+    "job_commit_hard_cap_bytes": 536870912,
+    "runtime_physical_floor_gib": 1.5,
+    "runtime_commit_floor_gib": 2
+  }
+}

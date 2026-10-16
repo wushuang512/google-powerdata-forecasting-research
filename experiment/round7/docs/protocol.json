@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-01T01:38:24.464757+00:00",
+  "registry": {
+    "ridge_control_10000": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 10000
+    },
+    "ridge_control_100000": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 100000
+    },
+    "ridge_control_1000000": {
+      "kind": "ridge",
+      "resource": false,
+      "alpha": 1000000
+    },
+    "ridge_resource_10000": {
+      "kind": "ridge",
+      "resource": true,
+      "alpha": 10000
+    },
+    "ridge_resource_100000": {
+      "kind": "ridge",
+      "resource": true,
+      "alpha": 100000
+    },
+    "ridge_resource_1000000": {
+      "kind": "ridge",
+      "resource": true,
+      "alpha": 1000000
+    }
+  },
+  "training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "development_origins": [
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "final_training_origins": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "test_origins": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "selection": "First four development days choose config, latter four alpha using paired-cell one-SE preferring alpha0. Freeze hash before test scoring.",
+  "resource_groups": "control = complete machine event features; resource = same features plus partial task-window CPU/memory sample in cell a",
+  "partial_sample": "Smallest official JSON shard selected by compressed size, not labels; only JOB records. Unknown inclusion probabilities and nonrepresentative coverage. Mean of observed windows, no claim of population workload.",
+  "forecast_inputs": "Only completed records and past days; no future resource or workload values",
+  "independent_confirmation": false
+}

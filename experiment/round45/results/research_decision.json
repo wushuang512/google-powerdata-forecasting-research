@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-10-12T03:42:38.127918+00:00",
+  "recommendation": "Keep originalHDSF as user-requested research reference; no global deployment replacement thisround.",
+  "main_trials": "3localfamilies,20primary realseedfits plus2uncached auditfits;64geometry bank/horizon combinations;70DEV rows.",
+  "development_gate": {
+    "1": false,
+    "7": true
+  },
+  "TEST_confirmed_main_curve_improvement": {
+    "1": false,
+    "7": false
+  },
+  "why_no_upgrade": "H1 DEV candidate fails forwardvalidation andTESTcurve; H7 passesDEV butTESTcurve,dailymean,peak worsen.",
+  "fixed_weight_ablation": "Direct7 localmember substitution marginally lowers24hTESTWAPE, but is a retrospective fixed diagnostic, not a newTESTselected recommendation.",
+  "D1_fix_impact_pp": 1.1365472380120423e-05,
+  "signed_bias_percent": {
+    "1": {
+      "original": -0.2710682751273365,
+      "candidate": -0.35790970806432326
+    },
+    "7": {
+      "original": -0.4062111202779266,
+      "candidate": -0.6362789907246336
+    }
+  },
+  "candidate_effective_member_weights": {
+    "1": {
+      "mean": {
+        "chronos2_long": 0.4019689227888678,
+        "tirex2": 0.0,
+        "timesfm25": 0.0,
+        "toto2_joint": 0.09803107721113184,
+        "toto2_single": 0.0,
+        "timesfm30": 0.17811145479929377,
+        "timesfm30_long": 0.0,
+        "timesfm30_uni": 0.22023820666330887,
+        "regularized": 0.10165033853739737
+      },
+      "new_local_weight_per_lead_day": [
+        0.10165033853739729
+      ],
+      "note": "Retrospective weight diagnostic, not permission to retune using TEST."
+    },
+    "7": {
+      "mean": {
+        "timesfm30_long": 0.06401654615794382,
+        "toto2_joint": 0.07489969425698224,
+        "timesfm30_uni": 0.3741377358398117,
+        "patchtstfm_long": 0.06267591693848018,
+        "local7": 0.2434124142582635,
+        "regularized": 0.18085769254851883
+      },
+      "new_local_weight_per_lead_day": [
+        0.17747862057366923,
+        0.1265120892082862,
+        0.0,
+        0.0,
+        0.0,
+        0.35535714598987783,
+        0.6066559920677989
+      ],
+      "note": "Retrospective weight diagnostic, not permission to retune using TEST."
+    }
+  },
+  "selection_rewritten": false,
+  "TEST_reranking": false,
+  "independent_confirmation": false,
+  "common_modeling_issue_audit": "No new futuretarget leakage found by checks; D1 definition issue confirmed, sparseoverlapping DEV andhistoricallyexposedTEST remain.",
+  "retrospective_diagnostics_used_for_selection": false,
+  "existing_main_word_unchanged": true,
+  "new_word_created": false
+}

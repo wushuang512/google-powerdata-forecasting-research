@@ -1,0 +1,67 @@
+horizon_days,method,kind,nominal_percent,coverage_percent,mean_width_normalized,winkler80,below_percent,above_percent,valid_points,model
+1,24小时当前综合推荐经验80%区间,本轮实测 非原生基础模型分位数,80,82.78130901854071,0.05741243128914914,0.08581813329596184,8.478362406839551,8.740328574619744,49243,
+1,Chronos-2零样本原生80%区间,保存原生分位数,80,75.74680665272221,0.05028666062968772,0.07960520097868995,9.270353146640131,14.982840200637654,49243,
+7,7天当前综合推荐经验80%区间,本轮实测 非原生基础模型分位数,80,81.89500617917878,0.06701449121636845,0.09534335106897701,7.655219230300604,10.449774590520617,114902,
+7,第19轮七天曲线推荐方案 开发残差经验80%区间,本轮实测 既有曲线推荐方案,80,81.96463072879497,0.06713681597515726,0.09537013816438958,7.630850637934936,10.40451863327009,114902,
+7,Chronos-2零样本原生80%区间,保存原生分位数,80,78.8924474769804,0.06656978067536323,0.09665784140430675,10.35055960731754,10.756992915702076,114902,
+7,TiRex-2 9.28原文原生80%区间,历史引用 原区间数组未保存 不作为本轮实測排序,80,56.6,,,,,,
+7,第27轮LightGBM开发冻结研究替代经验80%区间,本轮实测 开发冻结研究替代,80,81.62608135628624,0.06652669238153228,0.0953194377523604,7.8197072287688645,10.554211414944909,114902,
+7,第28轮LightGBM开发冻结研究替代经验80%区间,本轮实测 开发冻结研究替代,80,81.87672973490453,0.06698357401871101,0.09536461684430028,7.683939357017285,10.439330908078189,114902,
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,75.8686513819223,0.06209610944870602,0.09893030894290866,,,,TTM512-720-r2
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,64.20775965605473,0.0658332911110918,0.12551413862251293,,,,TTM512-720-r2
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,79.37981032837155,0.06071915535576017,0.09151055852772684,,,,TTM1024-720-r2
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,77.13616821291187,0.06775584990513615,0.100181074360951,,,,TTM1024-720-r2
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,64.39290863676057,0.08727685098044485,0.16368337346486678,,,,JointFactorFourier rank2 ridge10
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,37.57462881411986,0.08960882339643426,0.2673382597738844,,,,JointFactorFourier rank2 ridge10
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,56.846658408301685,0.07226720999602544,0.16478038860910135,,,,JointFactorFourier rank2 ridge100
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,42.63111172999599,0.07867026835486748,0.2349463510607722,,,,JointFactorFourier rank2 ridge100
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,63.596856405986635,0.08320391656648284,0.1638820754101087,,,,JointFactorFourier rank4 ridge10
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,39.35614697742424,0.0854444294485166,0.26631784452642454,,,,JointFactorFourier rank4 ridge10
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,62.55305322583921,0.07325092915788853,0.14917497419381998,,,,JointFactorFourier rank4 ridge100
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,47.86600755426363,0.07920201030306832,0.21814016500912134,,,,JointFactorFourier rank4 ridge100
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,76.88199337976971,0.0613933946364013,0.09442944393838786,,,,TTM512 multitask head
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,60.715218185932365,0.06749445998170316,0.14226089120618665,,,,TTM512 multitask head
+1,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,75.9336352374957,0.06062804616924255,0.09631841862583225,,,,TTM512 multitask all
+7,,DEV-only per-PDU residual empirical interval; overlapping DEV no coverage guarantee,80,65.9492437033298,0.06588407149661361,0.1255332505124467,,,,TTM512 multitask all
+1,R31 开发冻结TinyTimeMixer指导重建经验80%区间,"DEV-only residual10/90 quantiles, no independent coverage guarantee",80,74.60146619824137,0.05184568090188621,0.08971243241317306,,,,
+7,R31 开发冻结TinyTimeMixer指导重建经验80%区间,"DEV-only residual10/90 quantiles, no independent coverage guarantee",80,78.90463177316322,0.0655740266930909,0.09746652056149592,,,,
+1,R32 开发冻结TinyTimeMixer指导重建经验80%区间,"DEV-only residual10/90 quantiles, no independent coverage guarantee",80,74.61974290762139,0.0518553768862408,0.0897133071578188,,,,
+7,R32 开发冻结TinyTimeMixer指导重建经验80%区间,"DEV-only residual10/90 quantiles, no independent coverage guarantee",80,78.90463177316322,0.0655740266930909,0.09746652056149592,,,,
+1,R33 当前1天推荐 开发交叉核查选择80%经验区间,DEV leave-one-origin-out; no independent temporal guarantee,80,77.81207481266374,0.05152223570890356,0.08752273228310418,,,,
+7,R33 当前7天推荐 开发交叉核查选择80%经验区间,DEV leave-one-origin-out; no independent temporal guarantee,80,78.90463177316322,0.0655740266930909,0.09746652056149592,,,,
+1,R34 历史日最大值和历史不确定性 加完整日均保持峰值曲线重建 开发残差10/90经验区间,"Same fixed DEV-only residual10/90 protocol as earlier new architectures; no interval parameter search or TEST selection. Exploratory, not independent coverage.",80,74.46946774160794,0.052004219188266476,0.09003846443511009,,,,
+7,R34 历史日最大值和历史不确定性 加完整日均保持峰值曲线重建 开发残差10/90经验区间,"Same fixed DEV-only residual10/90 protocol as earlier new architectures; no interval parameter search or TEST selection. Exploratory, not independent coverage.",80,78.94031435484152,0.06586189139541856,0.09801371586472345,,,,
+1,R35 Salesforce Moirai 2.0 R small 单变量7天25%＋（Chronos-2＋TiRex-2＋TimesFM3＋Ridge＋TinyTimeMixer）75% 开发残差10/90经验区间,"Same fixed DEV-only residual10/90 protocol as earlier new architectures; no interval parameter search or TEST selection. Exploratory, not independent coverage.",80,74.36386897630119,0.05112039329095473,0.08949541335313638,,,,
+7,R35 Salesforce Moirai 2.0 R small 同cell14天25%＋（TimesFM3＋Ridge1000＋HGB＋TinyTimeMixer）75% 开发残差10/90经验区间,"Same fixed DEV-only residual10/90 protocol as earlier new architectures; no interval parameter search or TEST selection. Exploratory, not independent coverage.",80,78.0804511670815,0.06487968571043053,0.09813845754766928,,,,
+1,R36 Salesforce Moirai 2.0 R small 单变量7天50%＋（Chronos-2＋TiRex-2＋TimesFM3＋Ridge＋TinyTimeMixer）50% 历史峰值25%日均保持重建 开发残差10/90经验区间,"Same fixed DEV-only residual10/90 protocol as earlier new architectures; no interval parameter search or TEST selection. Exploratory, not independent coverage.",80,73.94350466056089,0.051114039187349074,0.09029551571458191,,,,
+7,R36 Salesforce Moirai 2.0 R small 同cell14天10%＋（TimesFM3＋Ridge1000＋HGB＋TinyTimeMixer）90% 全57预测日均协调 开发残差10/90经验区间,"Same fixed DEV-only residual10/90 protocol as earlier new architectures; no interval parameter search or TEST selection. Exploratory, not independent coverage.",80,78.87417103270613,0.06531037176164427,0.09706503638847136,,,,
+1,R37 多分辨率Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,74.8553093840749,0.051990305078604845,0.08956213988020656,,,,
+7,R37 多分辨率Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,78.7558092983586,0.06516810806385741,0.0970306343424385,,,,
+1,R38 原生季节变化量Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,74.61771216213472,0.05153977636402884,0.0893823867545968,,,,
+7,R38 原生季节变化量Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,78.70794242049747,0.06509813088607756,0.09743676332998218,,,,
+1,R39 训练期相关域联合Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,75.17210567999513,0.051984563715623835,0.08871480046985537,,,,
+7,R39 训练期相关域联合Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,78.78365911820508,0.06509680760190385,0.09698112458804745,,,,
+1,R40 真实CPU内存辅助Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,75.25130475397518,0.052425120055424615,0.0891084390528545,,,,
+7,R40 真实CPU内存辅助Moirai 2.0 R small 开发残差10/90经验80%区间,"Fixed earlierDEV residual quantilepolicy; noTEST intervalsearch, explorationonly",80,79.06737915789107,0.0655333857708379,0.09652900646720723,,,,
+1,R41 Moirai2 共同因子 开发残差10/90经验80%区间,,80,74.5994354527547,0.051817307294897676,0.08968502790362716,,,,
+7,R41 Moirai2 共同因子 开发残差10/90经验80%区间,,80,78.23188456249673,0.06502516861380388,0.09847779674396533,,,,
+1,R42 Moirai2 共同因子注意力训练 开发残差10/90经验80%区间,,80,74.71518794549479,0.052063944814647566,0.08972947828514877,,,,
+7,R42 Moirai2 共同因子注意力训练 开发残差10/90经验80%区间,,80,78.74536561591617,0.0653826133260557,0.09707267853370273,,,,
+1,R43 Moirai2 每日变化量匹配对照 开发残差10/90经验80%区间,,80,74.61161992567472,0.05180319967061703,0.08970032899184237,,,,
+7,R43 Moirai2 每日变化量匹配对照 开发残差10/90经验80%区间,,80,78.66094584950653,0.06524555745890757,0.09761269631725951,,,,
+1,Amazon Chronos-2（最多28天历史，CPU） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,74.92841622159496,0.052941286309167966,0.09267588395867456,12.809942529902726,12.261641248502325,49243,
+1,NX-AI TiRex-2（14天历史，CPU） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,75.39548768352863,0.053492224272967084,0.09284202220559713,11.498080945515099,13.106431370956278,49243,
+1,Google TimesFM2.5 200M（14天历史，CPU） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,78.61218853441099,0.057955243543915916,0.09301948589411321,9.209430782040087,12.178380683548932,49243,
+1,Datadog Toto2.0 313M（同cell及设备类型联合，14天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,73.39723412464716,0.052920561816805996,0.09760152660691175,14.365493572690536,12.237272302662307,49243,
+1,Datadog Toto2.0 313M（单域，14天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,73.66326178340069,0.05381999003861983,0.09743101973589668,13.75423918120342,12.582499035395895,49243,
+1,Google TimesFM3.0（57域联合，14天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,76.9266697804764,0.054181595735233797,0.08914868477074177,9.315029547346832,13.758300672176757,49243,
+1,Google TimesFM3.0（57域联合，最多21天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,77.72881424771033,0.05333733679873984,0.08694726291915399,10.253233962187519,12.017951790102147,49243,
+1,Google TimesFM3.0（单域，最多21天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,76.59362752066284,0.0532935609853398,0.0879086174692948,11.258452978088256,12.147919501248909,49243,
+1,四种子LightGBM残差与加权滞后回归各50%（开发D14／测试D22） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,64.81530369798753,0.060271179987001156,0.11679840018123387,4.5813618179233595,30.603334484089107,49243,
+1,HDSF半日单纯形融合（原项目D14/D22固定训练） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,75.56810104989542,0.05075011468240803,0.08770006408147132,11.816907986921999,12.614990963182585,49243,
+7,Google TimesFM3.0（57域联合，最多21天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,79.09522897773755,0.06647756834176824,0.09887270073855707,7.244434387565056,13.660336634697396,114902,
+7,Datadog Toto2.0 313M（同cell及设备类型联合，14天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,73.8185584237002,0.06828838071859089,0.11238545198304407,12.090303040852204,14.091138535447598,114902,
+7,Google TimesFM3.0（单域，最多21天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,79.76971680214444,0.06625658496950786,0.09744305736870215,7.593427442516232,12.636855755339333,114902,
+7,IBM Granite PatchTST-FM-r2 385M（最多21天，CPU） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,76.76628779307583,0.06880030207639992,0.10393819553821261,7.44634558145202,15.78736662547214,114902,
+7,历史水平与日内形状平滑（水平半衰期3／5天，形状10天） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,73.12927538249987,0.06758714062333909,0.11293873034345348,6.63086804407234,20.23985657342779,114902,
+7,HDSF半日单纯形融合（原项目D14/D22固定训练） 开发残差10/90经验80%区间,附加经验校准，非HDSF原生分位数,80,76.00912081599972,0.06300772553216605,0.10119804346495076,7.695253346329915,16.295625837670364,114902,

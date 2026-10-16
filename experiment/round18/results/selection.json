@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-10-05T11:09:56.838958+00:00",
+  "candidate": {
+    "id": "zero_centered_a1000_shape1_agree0",
+    "kind": "zero_centered",
+    "ridge": 1000,
+    "shape": 1.0,
+    "gate": false
+  },
+  "chosen_alpha": 0.0,
+  "diagnostic_alpha": 0.25,
+  "development_supported": false,
+  "protocol_sha256": "a83634ff228f036bdcb8e74ba19f9541721658df1408c8443e74e42ec93be789",
+  "dev_summary_sha256": "bfe0c737613170bfa4ca50a852a8e3bc2c9e421eccb7182898d59a78bd9d9246",
+  "dev_predictions_sha256": "b064e00c885f4ef9a6b524c5b6231a7ea168d002a503ef4f530af6b759f39b27",
+  "dev_heads_sha256": "c1bf9fba8fff7b1f41b44b4e1485b9ab0400e598662199043116680119884a78",
+  "independent_confirmation": false
+}

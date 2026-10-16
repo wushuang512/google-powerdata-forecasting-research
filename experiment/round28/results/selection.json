@@ -1,0 +1,32 @@
+{
+  "frozen_utc": "2026-10-06T08:35:29.207162+00:00",
+  "horizons": {
+    "1": {
+      "candidate": {
+        "id": "level_shape0_cap25",
+        "model": "lgb_regression_l1_leaf15",
+        "shape_gain": 0.0,
+        "cap": 0.0025
+      },
+      "chosen_alpha": 0.0,
+      "diagnostic_alpha": 0.1,
+      "development_supported": false
+    },
+    "7": {
+      "candidate": {
+        "id": "level_shape25_cap50",
+        "model": "lgb_regression_l1_leaf15",
+        "shape_gain": 0.25,
+        "cap": 0.005
+      },
+      "chosen_alpha": 0.1,
+      "diagnostic_alpha": 0.1,
+      "development_supported": true
+    }
+  },
+  "protocol_sha256": "3580c95a0a21e8cf567d98166c7fcac5ea6fd7aa9344e48a1630e3aed8a08ca1",
+  "dev_summary_sha256": "3641458bcb5858af37741957cf10cc4c9884d6bf131c3948086c740bd1fd48dd",
+  "dev_predictions_sha256": "d09b9a121e7ecb62dc03379207824fb4b90aa9f9c0f13c772ea18273bba775f4",
+  "dev_heads_sha256": "1c3d4360c03653d27b9b70c27d780e00d4d0a60ab330eaaa821a7e1d6c0871a2",
+  "independent_confirmation": false
+}

@@ -1,0 +1,341 @@
+{
+  "created_utc": "2026-10-07T08:37:45.920096+00:00",
+  "protocol_sha256": "796762b48a451bd8d14dd6078e8ed3863f41a47898cf2986b81cda7610cb685c",
+  "native_dev_sha256": "32c3555701ead7b3187052278a1f7532f0e82694781b1b2bbe3e83080cd784ce",
+  "dev_predictions_sha256": "4d0b9372c8aa587330704aff5e042dcc2b35eb4ef281340e5fd2b2101caabc58",
+  "no_test_used": true,
+  "horizons": {
+    "1": {
+      "family": {
+        "id": "corr8_native15min",
+        "rate": 1,
+        "group": "corr",
+        "context_days": 14,
+        "variant": "base"
+      },
+      "selected": null,
+      "diagnostic": {
+        "alpha": 0.1,
+        "total": "none",
+        "key": "a0.1_none",
+        "eligible": false,
+        "primary_cost": 1.004506356236919,
+        "primary_nonworse": false,
+        "secondary_small": false,
+        "peak_close": true,
+        "full_dev_nonworse": false
+      },
+      "retain_prior": true,
+      "family_ranking": [
+        {
+          "family": {
+            "id": "corr8_native15min",
+            "rate": 1,
+            "group": "corr",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9962365436123007
+        },
+        {
+          "family": {
+            "id": "corr8_3hour",
+            "rate": 12,
+            "group": "corr",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9975062881601243
+        },
+        {
+          "family": {
+            "id": "global57_3hour",
+            "rate": 12,
+            "group": "global",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 1.0070890499036504
+        }
+      ],
+      "weight_ranking": [
+        {
+          "alpha": 0,
+          "total": "global_daily",
+          "key": "a0_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0,
+          "total": "none",
+          "key": "a0_none",
+          "eligible": false,
+          "primary_cost": 1.000000000000018,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.1,
+          "total": "none",
+          "key": "a0.1_none",
+          "eligible": false,
+          "primary_cost": 1.004506356236919,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.1,
+          "total": "global_daily",
+          "key": "a0.1_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0061371094950455,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.25,
+          "total": "none",
+          "key": "a0.25_none",
+          "eligible": false,
+          "primary_cost": 1.0259893332392245,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.25,
+          "total": "global_daily",
+          "key": "a0.25_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0275749334904858,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.5,
+          "total": "global_daily",
+          "key": "a0.5_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0881516513130463,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.5,
+          "total": "none",
+          "key": "a0.5_none",
+          "eligible": false,
+          "primary_cost": 1.0914999976165107,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "global_daily",
+          "key": "a1_global_daily",
+          "eligible": false,
+          "primary_cost": 1.2622568020684672,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "none",
+          "key": "a1_none",
+          "eligible": false,
+          "primary_cost": 1.2824492007628092,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        }
+      ]
+    },
+    "7": {
+      "family": {
+        "id": "corr8_native15min",
+        "rate": 1,
+        "group": "corr",
+        "context_days": 14,
+        "variant": "base"
+      },
+      "selected": null,
+      "diagnostic": {
+        "alpha": 0.1,
+        "total": "none",
+        "key": "a0.1_none",
+        "eligible": false,
+        "primary_cost": 0.9952438324968982,
+        "primary_nonworse": true,
+        "secondary_small": false,
+        "peak_close": true,
+        "full_dev_nonworse": true
+      },
+      "retain_prior": true,
+      "family_ranking": [
+        {
+          "family": {
+            "id": "corr8_native15min",
+            "rate": 1,
+            "group": "corr",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 0.9975334738937889
+        },
+        {
+          "family": {
+            "id": "corr8_3hour",
+            "rate": 12,
+            "group": "corr",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 1.0049509476702208
+        },
+        {
+          "family": {
+            "id": "global57_3hour",
+            "rate": 12,
+            "group": "global",
+            "context_days": 14,
+            "variant": "base"
+          },
+          "early_cost": 1.0184593539415319
+        }
+      ],
+      "weight_ranking": [
+        {
+          "alpha": 0.1,
+          "total": "none",
+          "key": "a0.1_none",
+          "eligible": false,
+          "primary_cost": 0.9952438324968982,
+          "primary_nonworse": true,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.25,
+          "total": "global_daily",
+          "key": "a0.25_global_daily",
+          "eligible": false,
+          "primary_cost": 0.9961044048620216,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.1,
+          "total": "global_daily",
+          "key": "a0.1_global_daily",
+          "eligible": false,
+          "primary_cost": 0.9961860144877266,
+          "primary_nonworse": true,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.25,
+          "total": "none",
+          "key": "a0.25_none",
+          "eligible": false,
+          "primary_cost": 0.9967282199427159,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0,
+          "total": "global_daily",
+          "key": "a0_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0,
+          "total": "none",
+          "key": "a0_none",
+          "eligible": false,
+          "primary_cost": 1.0000000000000029,
+          "primary_nonworse": false,
+          "secondary_small": true,
+          "peak_close": true,
+          "full_dev_nonworse": true
+        },
+        {
+          "alpha": 0.5,
+          "total": "global_daily",
+          "key": "a0.5_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0100908579346084,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 0.5,
+          "total": "none",
+          "key": "a0.5_none",
+          "eligible": false,
+          "primary_cost": 1.0231980883632898,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "global_daily",
+          "key": "a1_global_daily",
+          "eligible": false,
+          "primary_cost": 1.0825997766396163,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": false,
+          "full_dev_nonworse": false
+        },
+        {
+          "alpha": 1,
+          "total": "none",
+          "key": "a1_none",
+          "eligible": false,
+          "primary_cost": 1.1467438300904425,
+          "primary_nonworse": false,
+          "secondary_small": false,
+          "peak_close": true,
+          "full_dev_nonworse": false
+        }
+      ]
+    }
+  }
+}

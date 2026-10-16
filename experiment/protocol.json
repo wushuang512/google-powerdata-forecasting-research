@@ -1,0 +1,14 @@
+{
+  "created_before_model_selection": true,
+  "primary_metric": "mean of 57 per-domain WAPE percentages",
+  "development_origins_end_of_day": [14,16,18,20],
+  "test_origins_end_of_day": [22,23,24,25,26,27,28,29,30],
+  "development_train_cutoff_day": 14,
+  "final_train_cutoff_day": 22,
+  "test_weights_frozen": true,
+  "seven_day_dev_origins": [14,15],
+  "seven_day_test_origins": [22,23,24],
+  "candidates": ["last day", "last week", "mean 3/7 days", "smoothed level-adjusted history", "Ridge shared residual regression", "LightGBM historical load features", "LightGBM plus past production utilization", "small PatchTST-style model trained from scratch", "Chronos-2 zero shot", "Chronos-2 domain adaptation", "validation-selected convex ensemble"],
+  "secondary_metrics": ["MAE", "P95 APE", "daily mean WAPE", "daily peak MAPE", "peak-time MAE", "80 percent interval empirical coverage"],
+  "rules": ["No measured future covariates", "No backward filling", "No fitting transformations on test", "No selection using test results", "Past test observations can become context at later forecast origins, weights remain frozen", "Earlier report has already examined this month; current test is temporal holdout but not a genuinely new unseen dataset", "Historical report 2.416 percent is reference-only unless predictions and preprocessing can be reproduced", "Report all attempted configurations and failures"]
+}

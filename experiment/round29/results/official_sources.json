@@ -1,0 +1,67 @@
+{
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/ibm-granite/granite-tsfm/3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa/tsfm_public/models/tinytimemixer/modeling_tinytimemixer.py",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\code\\ttm_official\\modeling_tinytimemixer.py",
+      "bytes": 177260,
+      "sha256": "6c4cbcaa417ea09f643ee83918524e7bca6ac369b6b3500a5073c7ccc868dc14"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ibm-granite/granite-tsfm/3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa/tsfm_public/models/tinytimemixer/configuration_tinytimemixer.py",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\code\\ttm_official\\configuration_tinytimemixer.py",
+      "bytes": 21785,
+      "sha256": "7af726377d99ee08a03c50d2615b222f8b52bc47f5069146b79b2ecb91408558"
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/bcfc4a497430a228afcbaf378f18f316642ece2a/config.json",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\models\\512-720-r2\\config.json",
+      "branch": "512-720-r2",
+      "revision": "bcfc4a497430a228afcbaf378f18f316642ece2a",
+      "bytes": 1651,
+      "sha256": "2b3f031ae0c7a33fb32621feea6381ae63c9c26d170621c3a765fc9d483835c2"
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/bcfc4a497430a228afcbaf378f18f316642ece2a/model.safetensors",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\models\\512-720-r2\\model.safetensors",
+      "branch": "512-720-r2",
+      "revision": "bcfc4a497430a228afcbaf378f18f316642ece2a",
+      "bytes": 5799000,
+      "sha256": "db3c51b1321c8f87cd0cfb10a48f896741a314349519e1a14714160bbabe574b"
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/bcfc4a497430a228afcbaf378f18f316642ece2a/generation_config.json",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\models\\512-720-r2\\generation_config.json",
+      "branch": "512-720-r2",
+      "revision": "bcfc4a497430a228afcbaf378f18f316642ece2a",
+      "bytes": 69,
+      "sha256": "ddcaccb39673f986431d6b9ea2064011e4d04784d7daf9d3aa9db93940bca960"
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/3a31783dd34f7d051e3e0ff2379435f4c0604cad/config.json",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\models\\1024-720-r2\\config.json",
+      "branch": "1024-720-r2",
+      "revision": "3a31783dd34f7d051e3e0ff2379435f4c0604cad",
+      "bytes": 1654,
+      "sha256": "29f71faf43ffebd2d96ea6ebde1590faf84b3b321767b1a2223658727b750276"
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/3a31783dd34f7d051e3e0ff2379435f4c0604cad/model.safetensors",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\models\\1024-720-r2\\model.safetensors",
+      "branch": "1024-720-r2",
+      "revision": "3a31783dd34f7d051e3e0ff2379435f4c0604cad",
+      "bytes": 16993784,
+      "sha256": "4f1d48ba5e95cda1a025b9d4ceb60450da2fe3c9be36edc6871ca9036215c297"
+    },
+    {
+      "url": "https://huggingface.co/ibm-granite/granite-timeseries-ttm-r2/resolve/3a31783dd34f7d051e3e0ff2379435f4c0604cad/generation_config.json",
+      "file": "${PROJECT_ROOT}\\experiment\\round29\\models\\1024-720-r2\\generation_config.json",
+      "branch": "1024-720-r2",
+      "revision": "3a31783dd34f7d051e3e0ff2379435f4c0604cad",
+      "bytes": 69,
+      "sha256": "ddcaccb39673f986431d6b9ea2064011e4d04784d7daf9d3aa9db93940bca960"
+    }
+  ],
+  "code_commit": "3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa",
+  "license": "Apache-2.0",
+  "scope": "IBM official model weights and pinned official inference source; no executable pickle downloaded"
+}

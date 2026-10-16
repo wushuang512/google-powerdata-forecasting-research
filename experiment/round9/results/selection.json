@@ -1,0 +1,41 @@
+{
+  "frozen_at": "2026-10-01T10:05:49.809800+00:00",
+  "config": "history_ridge100000",
+  "chosen": {
+    "alpha": 0,
+    "wape": 2.3869265001147206,
+    "paired_day_se": 0.0
+  },
+  "validation": [
+    {
+      "alpha": 0,
+      "wape": 2.3869265001147206,
+      "paired_day_se": 0.0
+    },
+    {
+      "alpha": 0.1,
+      "wape": 2.3870549500959686,
+      "paired_day_se": 0.00038446561132105596
+    },
+    {
+      "alpha": 0.25,
+      "wape": 2.38729865228867,
+      "paired_day_se": 0.0009680818740437207
+    },
+    {
+      "alpha": 0.5,
+      "wape": 2.3878678705718883,
+      "paired_day_se": 0.0019452481231410253
+    },
+    {
+      "alpha": 1,
+      "wape": 2.3893830860704415,
+      "paired_day_se": 0.00394855457749596
+    }
+  ],
+  "attribution": {
+    "ridge_alpha": 100000,
+    "neural_epoch": 10
+  },
+  "protocol_sha256": "52dd23ddadda0bf5381ab4ca015abd1132745851d8b022cf489c61e8e001db6e"
+}

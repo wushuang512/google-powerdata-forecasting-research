@@ -1,0 +1,491 @@
+{
+  "selection": {
+    "created_utc": "2026-10-07T02:22:26.562276+00:00",
+    "horizons": {
+      "1": {
+        "selected": null,
+        "diagnostic": {
+          "config": {
+            "id": "uni7_mix25",
+            "family": "uni7",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9836285258144841,
+          "peak_close_to_best": false,
+          "secondary_small": true
+        },
+        "retain_prior": true,
+        "ranking": [
+          {
+            "config": {
+              "id": "uni7_mix25",
+              "family": "uni7",
+              "mode": "mix25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9836285258144841,
+            "peak_close_to_best": false,
+            "secondary_small": true
+          },
+          {
+            "config": {
+              "id": "cell14_mix25",
+              "family": "cell14",
+              "mode": "mix25"
+            },
+            "eligible": false,
+            "primary_cost": 0.994556677342692,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_shape25",
+              "family": "uni7",
+              "mode": "shape25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9986753752398868,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_mix25",
+              "family": "uni14",
+              "mode": "mix25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9991959890003433,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_shape25",
+              "family": "uni14",
+              "mode": "shape25"
+            },
+            "eligible": false,
+            "primary_cost": 1.0009041456369023,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "cell14_shape25",
+              "family": "cell14",
+              "mode": "shape25"
+            },
+            "eligible": false,
+            "primary_cost": 1.001429160665519,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_raw",
+              "family": "uni7",
+              "mode": "raw"
+            },
+            "eligible": false,
+            "primary_cost": 1.020619698075134,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_historic_peak",
+              "family": "uni7",
+              "mode": "historic_peak"
+            },
+            "eligible": false,
+            "primary_cost": 1.025953122342967,
+            "peak_close_to_best": true,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_raw",
+              "family": "uni14",
+              "mode": "raw"
+            },
+            "eligible": false,
+            "primary_cost": 1.0516727198162938,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_historic_peak",
+              "family": "uni14",
+              "mode": "historic_peak"
+            },
+            "eligible": false,
+            "primary_cost": 1.0570493709341564,
+            "peak_close_to_best": true,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "cell14_raw",
+              "family": "cell14",
+              "mode": "raw"
+            },
+            "eligible": false,
+            "primary_cost": 1.0630561760561605,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "cell14_historic_peak",
+              "family": "cell14",
+              "mode": "historic_peak"
+            },
+            "eligible": false,
+            "primary_cost": 1.063646512450037,
+            "peak_close_to_best": true,
+            "secondary_small": false
+          }
+        ]
+      },
+      "7": {
+        "selected": null,
+        "diagnostic": {
+          "config": {
+            "id": "cell14_mix25",
+            "family": "cell14",
+            "mode": "mix25"
+          },
+          "eligible": false,
+          "primary_cost": 0.9848881962643308,
+          "peak_close_to_best": false,
+          "secondary_small": false
+        },
+        "retain_prior": true,
+        "ranking": [
+          {
+            "config": {
+              "id": "cell14_mix25",
+              "family": "cell14",
+              "mode": "mix25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9848881962643308,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_mix25",
+              "family": "uni7",
+              "mode": "mix25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9935584944441116,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_shape25",
+              "family": "uni14",
+              "mode": "shape25"
+            },
+            "eligible": false,
+            "primary_cost": 0.998877614476435,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_shape25",
+              "family": "uni7",
+              "mode": "shape25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9994215577951436,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "cell14_shape25",
+              "family": "cell14",
+              "mode": "shape25"
+            },
+            "eligible": false,
+            "primary_cost": 0.9998023699286163,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_mix25",
+              "family": "uni14",
+              "mode": "mix25"
+            },
+            "eligible": false,
+            "primary_cost": 1.0040280795318204,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "cell14_raw",
+              "family": "cell14",
+              "mode": "raw"
+            },
+            "eligible": false,
+            "primary_cost": 1.078972018733265,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "cell14_historic_peak",
+              "family": "cell14",
+              "mode": "historic_peak"
+            },
+            "eligible": false,
+            "primary_cost": 1.0800207586819024,
+            "peak_close_to_best": true,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_raw",
+              "family": "uni7",
+              "mode": "raw"
+            },
+            "eligible": false,
+            "primary_cost": 1.1142411012832028,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni7_historic_peak",
+              "family": "uni7",
+              "mode": "historic_peak"
+            },
+            "eligible": false,
+            "primary_cost": 1.1180525923000506,
+            "peak_close_to_best": true,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_raw",
+              "family": "uni14",
+              "mode": "raw"
+            },
+            "eligible": false,
+            "primary_cost": 1.1312253152998388,
+            "peak_close_to_best": false,
+            "secondary_small": false
+          },
+          {
+            "config": {
+              "id": "uni14_historic_peak",
+              "family": "uni14",
+              "mode": "historic_peak"
+            },
+            "eligible": false,
+            "primary_cost": 1.132331254942752,
+            "peak_close_to_best": true,
+            "secondary_small": false
+          }
+        ]
+      }
+    },
+    "protocol_sha256": "b7495753b1ae49812373471b1b3891037586d45980e9284c067cba0bcec6eb61",
+    "dev_predictions_sha256": "65cd69352199827743c150ae67591ce85a5ff109ff03829739fb8e60bce94de6",
+    "no_test_used": true
+  },
+  "scores": {
+    "1": {
+      "prior": {
+        "wape": 2.3738985911776913,
+        "mae": 0.016728413679069788,
+        "p95_ape": 6.899308522995328,
+        "daily_wape": 1.479826612006653,
+        "peak_mape": 1.86707556661934,
+        "peak_time_mae_minutes": 283.8888888888889,
+        "valid_points": 49243,
+        "daily_wape_valid_slots_supplement": 1.4838382943286,
+        "rmse": 0.02365110593409198,
+        "hit2_percent": 56.38364843734135,
+        "hit5_percent": 88.40241252563817,
+        "absolute_bias_percent": 0.16923989768103703,
+        "daily_mae": 0.010414871652505216,
+        "daily_rmse": 0.014018541319084667,
+        "daily_hit2_percent": 75.19685039370079,
+        "daily_hit5_percent": 98.22834645669292,
+        "valid_daily_targets": 508,
+        "daily_target_mask": "all96valid",
+        "cella5_wape": 1.7704900880347594,
+        "other52_wape": 2.431918639556819,
+        "baseline_wape": 3.199450324772723,
+        "baseline_daily_wape": 1.7830049872715976,
+        "relative_curve_error_reduction_percent": 25.802923933619006,
+        "relative_daily_error_reduction_percent": 17.00378728210269,
+        "improved_pdus": 57,
+        "improved_cells": 10,
+        "improved_origins": 9
+      },
+      "diagnostic": {
+        "wape": 2.378015050033062,
+        "mae": 0.01675544153133979,
+        "p95_ape": 6.884202390574546,
+        "daily_wape": 1.483476753714298,
+        "peak_mape": 2.0074262793622406,
+        "peak_time_mae_minutes": 278.3625730994152,
+        "valid_points": 49243,
+        "daily_wape_valid_slots_supplement": 1.4860852402715043,
+        "rmse": 0.023707092049734292,
+        "hit2_percent": 56.13995897894117,
+        "hit5_percent": 88.58517961943829,
+        "absolute_bias_percent": 0.19547057918041286,
+        "daily_mae": 0.010436851118539653,
+        "daily_rmse": 0.01413144988822981,
+        "daily_hit2_percent": 75.0,
+        "daily_hit5_percent": 98.4251968503937,
+        "valid_daily_targets": 508,
+        "daily_target_mask": "all96valid",
+        "cella5_wape": 1.7613957522659554,
+        "other52_wape": 2.4373053671260525,
+        "baseline_wape": 3.199450324772723,
+        "baseline_daily_wape": 1.7830049872715976,
+        "relative_curve_error_reduction_percent": 25.674262493761724,
+        "relative_daily_error_reduction_percent": 16.79906874605246,
+        "improved_pdus": 57,
+        "improved_cells": 10,
+        "improved_origins": 9
+      },
+      "selected": {
+        "wape": 2.3738985911776913,
+        "mae": 0.016728413679069788,
+        "p95_ape": 6.899308522995328,
+        "daily_wape": 1.479826612006653,
+        "peak_mape": 1.86707556661934,
+        "peak_time_mae_minutes": 283.8888888888889,
+        "valid_points": 49243,
+        "daily_wape_valid_slots_supplement": 1.4838382943286,
+        "rmse": 0.02365110593409198,
+        "hit2_percent": 56.38364843734135,
+        "hit5_percent": 88.40241252563817,
+        "absolute_bias_percent": 0.16923989768103703,
+        "daily_mae": 0.010414871652505216,
+        "daily_rmse": 0.014018541319084667,
+        "daily_hit2_percent": 75.19685039370079,
+        "daily_hit5_percent": 98.22834645669292,
+        "valid_daily_targets": 508,
+        "daily_target_mask": "all96valid",
+        "cella5_wape": 1.7704900880347594,
+        "other52_wape": 2.431918639556819,
+        "baseline_wape": 3.199450324772723,
+        "baseline_daily_wape": 1.7830049872715976,
+        "relative_curve_error_reduction_percent": 25.802923933619006,
+        "relative_daily_error_reduction_percent": 17.00378728210269,
+        "improved_pdus": 57,
+        "improved_cells": 10,
+        "improved_origins": 9
+      }
+    },
+    "7": {
+      "prior": {
+        "wape": 2.7205217272386237,
+        "mae": 0.01900936160097188,
+        "p95_ape": 7.527785534575264,
+        "daily_wape": 1.9222956032018321,
+        "peak_mape": 1.9491784489706971,
+        "peak_time_mae_minutes": 307.18045112781954,
+        "valid_points": 114902,
+        "daily_wape_valid_slots_supplement": 1.91824461990523,
+        "rmse": 0.025837238202569727,
+        "hit2_percent": 49.33943708551635,
+        "hit5_percent": 84.45457868444414,
+        "absolute_bias_percent": 0.1655848364328093,
+        "daily_mae": 0.013355700408226805,
+        "daily_rmse": 0.017145286743337977,
+        "daily_hit2_percent": 60.909856781802866,
+        "daily_hit5_percent": 96.04043807919123,
+        "valid_daily_targets": 1187,
+        "daily_target_mask": "all96valid",
+        "cella5_wape": 1.81538122829152,
+        "other52_wape": 2.807554467521998,
+        "baseline_wape": 3.2119187773783344,
+        "baseline_daily_wape": 2.2624030444639875,
+        "relative_curve_error_reduction_percent": 15.299174238173109,
+        "relative_daily_error_reduction_percent": 15.033017308493513,
+        "improved_pdus": 57,
+        "improved_cells": 10,
+        "improved_origins": 3
+      },
+      "diagnostic": {
+        "wape": 2.698758739335408,
+        "mae": 0.018867062607791106,
+        "p95_ape": 7.492487507963219,
+        "daily_wape": 1.8998234046736544,
+        "peak_mape": 2.0076017796470147,
+        "peak_time_mae_minutes": 311.21553884711784,
+        "valid_points": 114902,
+        "daily_wape_valid_slots_supplement": 1.8959703716620264,
+        "rmse": 0.025682699791128482,
+        "hit2_percent": 49.71540965344381,
+        "hit5_percent": 84.68869123252858,
+        "absolute_bias_percent": 0.1839313479283465,
+        "daily_mae": 0.01321307646380429,
+        "daily_rmse": 0.01695857545767141,
+        "daily_hit2_percent": 62.08930075821398,
+        "daily_hit5_percent": 95.61920808761583,
+        "valid_daily_targets": 1187,
+        "daily_target_mask": "all96valid",
+        "cella5_wape": 1.8461781151070145,
+        "other52_wape": 2.7807376455112163,
+        "baseline_wape": 3.2119187773783344,
+        "baseline_daily_wape": 2.2624030444639875,
+        "relative_curve_error_reduction_percent": 15.97674392195506,
+        "relative_daily_error_reduction_percent": 16.02630621796375,
+        "improved_pdus": 57,
+        "improved_cells": 10,
+        "improved_origins": 3
+      },
+      "selected": {
+        "wape": 2.7205217272386237,
+        "mae": 0.01900936160097188,
+        "p95_ape": 7.527785534575264,
+        "daily_wape": 1.9222956032018321,
+        "peak_mape": 1.9491784489706971,
+        "peak_time_mae_minutes": 307.18045112781954,
+        "valid_points": 114902,
+        "daily_wape_valid_slots_supplement": 1.91824461990523,
+        "rmse": 0.025837238202569727,
+        "hit2_percent": 49.33943708551635,
+        "hit5_percent": 84.45457868444414,
+        "absolute_bias_percent": 0.1655848364328093,
+        "daily_mae": 0.013355700408226805,
+        "daily_rmse": 0.017145286743337977,
+        "daily_hit2_percent": 60.909856781802866,
+        "daily_hit5_percent": 96.04043807919123,
+        "valid_daily_targets": 1187,
+        "daily_target_mask": "all96valid",
+        "cella5_wape": 1.81538122829152,
+        "other52_wape": 2.807554467521998,
+        "baseline_wape": 3.2119187773783344,
+        "baseline_daily_wape": 2.2624030444639875,
+        "relative_curve_error_reduction_percent": 15.299174238173109,
+        "relative_daily_error_reduction_percent": 15.033017308493513,
+        "improved_pdus": 57,
+        "improved_cells": 10,
+        "improved_origins": 3
+      }
+    }
+  },
+  "selection_sha256": "7d5b007891417cb3e20031bb54df13fa8af4995a0a8ba9250de395e1f3f73d6a",
+  "independent_confirmation": false,
+  "no_test_grid": true
+}

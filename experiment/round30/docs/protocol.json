@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-10-07T00:54:27.786343+00:00",
+  "phase": "registered before new training/DEV",
+  "metric_version_sha256": "5b34ab5c5c3e561d1626bb0e45a2f7fac9733661f28ce656c7e5c2ad2e2179da",
+  "source_reference_sha256": "d66bd7282c9b21000140d7fb9a4c01622fcd0f67463d19333c5705d3998b1736",
+  "dev24": [
+    14,
+    16,
+    18,
+    20
+  ],
+  "dev7": [
+    14,
+    15
+  ],
+  "test24": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "test7": [
+    22,
+    23,
+    24
+  ],
+  "training_dev_exclusive_end": 14,
+  "training_final_exclusive_end": 22,
+  "models": [
+    "TTM512 multitask head",
+    "TTM512 multitask all"
+  ],
+  "decoder": "one direct672 output; first96 and seven96-point means derive from same curve",
+  "features": "causal power histories only; factor/standardization fit on first14 days for DEV and22 for final, supervised labels no later than cutoff; no true future CPU",
+  "selection": "min joint cost mean of four normalized DEV error ratios:24curve,24peak,7curve,7daily; choose candidate with cost<=0.98 and no primary ratio above1.02 vs current recommendations; otherwise retain old recommendations. Ties within0.002 choose fewer model parameters. No TEST ranking changes selection.",
+  "primary_metrics": [
+    "wape24",
+    "peak_mape24",
+    "wape7",
+    "daily_wape7"
+  ],
+  "test": "score only after selection.json frozen SHA; all preregistered family scores are descriptive diagnostics; selected best is DEV choice or original controls",
+  "uncertainty": "single repeatedly inspected May2019 month exploratory;7day origins overlap; no independent confirmation or universal gain guarantee",
+  "existing_frozen_selections_unchanged": true,
+  "objective": "smoothL1 relative point error beta.01 +.25 complete96point mean absolute error +.25 peak absolute error; inverse repeated-label-timestamp curve weights; valid target mask; no teacher labels from TEST",
+  "training": "fixed4 epochs batch16,AdamW weightdecay.01; decoder/head lr1e-4 or all1e-5; seed20261007,gradclip1; first14/22 only. Rolling starts512 onward stride24; future labels capped at training cutoff and padded only with invalid mask.",
+  "context_rationale": "512 chosen because initial14days permit supervision at long horizons;1024+672 would exceed initial1344 points. This is feasibility, not selecting by known TEST rank.",
+  "no_test_hyperparameter_selection": true
+}

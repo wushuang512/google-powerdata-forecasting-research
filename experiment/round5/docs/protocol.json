@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-01",
+  "task": "User-proposed RevIN multi-scale time-frequency dual encoder cross-attention sparse MoE joint quantile forecasting plus fine tuning current best ensemble",
+  "data_scope": "Google PowerData 2019, 57 domains, May2019, 15-minute aggregation",
+  "fields": {
+    "P": "measured_power_util, historical only",
+    "W": "production_power_util is a proxy for workload-related power, not CPU/GPU compute utilization",
+    "R": "No dynamic resource-state measurements; masks/availability are quality metadata only",
+    "C": "Known time/calendar and cell ID; no invented weather or future load"
+  },
+  "training_cutoff": 14,
+  "development_targets": "May15-22; first four choose family member, later four choose blend/calibration using conservative one-standard-error rule",
+  "final_training_cutoff": 22,
+  "test_targets": "May23-31",
+  "preexisting_best_wape": 2.38476931374022,
+  "test_labels_previously_examined": true,
+  "independent_confirmation": false,
+  "new_model_configs": "fusion width16/32; no cross-attention; no frequency; dense MoE; checkpoints4/10/20 epochs",
+  "finetune_configs": "TimesFM3 head-only with lr3e-6 or1e-5, last transformer plus head lr3e-7, checkpoints50/150/300; teacher anchor and masked pinball/point loss",
+  "calibration": "Shared strongly regularized residual calibrator trained on earlier causal predictions; no test-based fitting",
+  "inference_policy": "All inputs precede forecast origin; production labels masked when unreliable; capacity [0,1], production-proxy quantiles <= total corresponding quantiles",
+  "primary_objective": "Macro domain WAPE; also peak MAPE, daily WAPE, quantile coverage/width and domain/cell breakdown",
+  "stop_rule": "Fixed registered grid, never iterate on TEST scores within this round; select alpha0 if improvement is within paired-cell one standard error",
+  "claimed_significance": "Only exploratory descriptive confidence intervals; no guarantee of large gain or absence of selection overfitting"
+}

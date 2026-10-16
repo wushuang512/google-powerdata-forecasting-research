@@ -1,0 +1,106 @@
+{
+  "frozen_at": "2026-09-30T06:12:55.263026+00:00",
+  "chosen_on_first4": {
+    "aligned": "full_cov_s50",
+    "tf25": "tf25_c1344_flip1"
+  },
+  "candidates": [
+    {
+      "key": "anchor_a0",
+      "family": "anchor",
+      "model": "anchor",
+      "alpha": 0,
+      "wape": 2.453049758939386,
+      "improvement_pp": 0.0,
+      "paired_cell_se": 0.0
+    },
+    {
+      "key": "full_cov_s50_a0.1",
+      "family": "aligned",
+      "model": "full_cov_s50",
+      "alpha": 0.1,
+      "wape": 2.452294758769982,
+      "improvement_pp": 0.0007550001694039011,
+      "paired_cell_se": 0.005155066091276583
+    },
+    {
+      "key": "full_cov_s50_a0.25",
+      "family": "aligned",
+      "model": "full_cov_s50",
+      "alpha": 0.25,
+      "wape": 2.4530969597536996,
+      "improvement_pp": -4.720081431379931e-05,
+      "paired_cell_se": 0.012890096013850357
+    },
+    {
+      "key": "full_cov_s50_a0.5",
+      "family": "aligned",
+      "model": "full_cov_s50",
+      "alpha": 0.5,
+      "wape": 2.4597675629886218,
+      "improvement_pp": -0.006717804049235541,
+      "paired_cell_se": 0.02564339834728233
+    },
+    {
+      "key": "full_cov_s50_a1",
+      "family": "aligned",
+      "model": "full_cov_s50",
+      "alpha": 1,
+      "wape": 2.4919860835777863,
+      "improvement_pp": -0.03893632463840037,
+      "paired_cell_se": 0.05101238550086422
+    },
+    {
+      "key": "tf25_c1344_flip1_a0.1",
+      "family": "tf25",
+      "model": "tf25_c1344_flip1",
+      "alpha": 0.1,
+      "wape": 2.4607938070572386,
+      "improvement_pp": -0.007744048117852891,
+      "paired_cell_se": 0.007362020453304996
+    },
+    {
+      "key": "tf25_c1344_flip1_a0.25",
+      "family": "tf25",
+      "model": "tf25_c1344_flip1",
+      "alpha": 0.25,
+      "wape": 2.478355245969277,
+      "improvement_pp": -0.025305487029890866,
+      "paired_cell_se": 0.018334622273770865
+    },
+    {
+      "key": "tf25_c1344_flip1_a0.5",
+      "family": "tf25",
+      "model": "tf25_c1344_flip1",
+      "alpha": 0.5,
+      "wape": 2.522690094436888,
+      "improvement_pp": -0.06964033549750218,
+      "paired_cell_se": 0.03680647505138563
+    },
+    {
+      "key": "tf25_c1344_flip1_a1",
+      "family": "tf25",
+      "model": "tf25_c1344_flip1",
+      "alpha": 1,
+      "wape": 2.661269500008497,
+      "improvement_pp": -0.2082197410691112,
+      "paired_cell_se": 0.07004335845968505
+    }
+  ],
+  "selected": {
+    "key": "anchor_a0",
+    "family": "anchor",
+    "model": "anchor",
+    "alpha": 0,
+    "wape": 2.453049758939386,
+    "improvement_pp": 0.0,
+    "paired_cell_se": 0.0
+  },
+  "needed": [
+    "tf25_c1344_flip1"
+  ],
+  "anchor": "R3 secondary fixed .25 Chronos2 uni + .25 TiRex2 uni + .50 TF3 cellprod",
+  "selection_rule": "First four DEV days select family member; last four DEV days choose alpha via paired-cell one-standard-error rule favoring zero/smaller alpha. No TEST labels loaded.",
+  "confirmation": false,
+  "prior_test_already_seen": true
+}

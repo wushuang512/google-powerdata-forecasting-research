@@ -1,0 +1,145 @@
+{
+  "frozen_at": "2026-10-01T01:14:00.057606+00:00",
+  "chosen": {
+    "fusion": "fusion16_e10",
+    "tf3": "tf3_tail_lr3e7_s50",
+    "calibration": "residual_ridge100000"
+  },
+  "candidates": [
+    {
+      "key": "anchor",
+      "family": "anchor",
+      "alpha": 0,
+      "wape": 2.453049758939386,
+      "paired_cell_se": 0,
+      "improvement_pp": 0
+    },
+    {
+      "key": "fusion_a0.1",
+      "family": "fusion",
+      "alpha": 0.1,
+      "wape": 2.4359921963157714,
+      "paired_cell_se": 0.0112004398799102,
+      "improvement_pp": 0.017057562623614235
+    },
+    {
+      "key": "fusion_a0.25",
+      "family": "fusion",
+      "alpha": 0.25,
+      "wape": 2.441888239440596,
+      "paired_cell_se": 0.024736055496597062,
+      "improvement_pp": 0.01116151949879064
+    },
+    {
+      "key": "fusion_a0.5",
+      "family": "fusion",
+      "alpha": 0.5,
+      "wape": 2.515218664311312,
+      "paired_cell_se": 0.043384545986918314,
+      "improvement_pp": -0.06216890537192565
+    },
+    {
+      "key": "fusion_a1",
+      "family": "fusion",
+      "alpha": 1,
+      "wape": 2.844334253232737,
+      "paired_cell_se": 0.07730038746803004,
+      "improvement_pp": -0.3912844942933509
+    },
+    {
+      "key": "tf3_a0.1",
+      "family": "tf3",
+      "alpha": 0.1,
+      "wape": 2.4530082214769178,
+      "paired_cell_se": 9.337300123298076e-06,
+      "improvement_pp": 4.153746246856624e-05
+    },
+    {
+      "key": "tf3_a0.25",
+      "family": "tf3",
+      "alpha": 0.25,
+      "wape": 2.452945915283217,
+      "paired_cell_se": 2.3343250307797882e-05,
+      "improvement_pp": 0.00010384365616957887
+    },
+    {
+      "key": "tf3_a0.5",
+      "family": "tf3",
+      "alpha": 0.5,
+      "wape": 2.4528421365115087,
+      "paired_cell_se": 4.667639775257306e-05,
+      "improvement_pp": 0.0002076224278769297
+    },
+    {
+      "key": "tf3_a1",
+      "family": "tf3",
+      "alpha": 1,
+      "wape": 2.4526346956455805,
+      "paired_cell_se": 9.329871694348246e-05,
+      "improvement_pp": 0.0004150632938053973
+    },
+    {
+      "key": "calibration_a0.1",
+      "family": "calibration",
+      "alpha": 0.1,
+      "wape": 2.431960559388025,
+      "paired_cell_se": 0.004365548217414937,
+      "improvement_pp": 0.0210891995513615
+    },
+    {
+      "key": "calibration_a0.25",
+      "family": "calibration",
+      "alpha": 0.25,
+      "wape": 2.407917576424396,
+      "paired_cell_se": 0.00989945218966328,
+      "improvement_pp": 0.0451321825149899
+    },
+    {
+      "key": "calibration_a0.5",
+      "family": "calibration",
+      "alpha": 0.5,
+      "wape": 2.387413261769499,
+      "paired_cell_se": 0.017942955420110537,
+      "improvement_pp": 0.06563649716988683
+    },
+    {
+      "key": "calibration_a1",
+      "family": "calibration",
+      "alpha": 1,
+      "wape": 2.414495736021119,
+      "paired_cell_se": 0.04169830279541104,
+      "improvement_pp": 0.03855402291826649
+    }
+  ],
+  "selected": {
+    "key": "calibration_a0.5",
+    "family": "calibration",
+    "alpha": 0.5,
+    "wape": 2.387413261769499,
+    "paired_cell_se": 0.017942955420110537,
+    "improvement_pp": 0.06563649716988683
+  },
+  "rule": "First four DEV target days choose family member; later four choose mixture via one-standard-error rule favoring alpha0/smaller alpha. No TEST arrays loaded.",
+  "repeat_seeds": [
+    20261001,
+    20261002
+  ],
+  "fusion_average": "fixed equal two seed average",
+  "tf3_mixture": "Replace only original 50% TimesFM3 component of fixed best ensemble before additional alpha shrinkage",
+  "residual_interval": {
+    "nominal_coverage": 0.8,
+    "calibrated_halfwidth_relative_to_past_mean": 0.04110949237853644,
+    "early4_to_late4_coverage": 0.8243088873657757,
+    "early_halfwidth": 0.042685577795771874,
+    "guaranteed_coverage": false,
+    "dependency": "same month repeated selection; serial and cell correlation"
+  },
+  "independent_confirmation": false,
+  "test_seen_in_prior_rounds": true,
+  "ablation_test_epoch": 10,
+  "fusion_interval": {
+    "widening_relative_to_past_mean": 0.014221873758333555,
+    "nominal": 0.8,
+    "guaranteed_coverage": false
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "selection": {
+    "created_utc": "2026-10-07T01:22:59.022352+00:00",
+    "protocol_sha256": "b511644269f66e4a0058a633f771a90d4be61d1c85f0d3e7bead6964f4e348f1",
+    "horizons": {
+      "1": {
+        "cv": [
+          {
+            "mode": 0,
+            "name": "perPDU asymmetric10/90",
+            "coverage_percent": 71.00429498309421,
+            "winkler80": 0.0895954148662563,
+            "within3pp": false
+          },
+          {
+            "mode": 1,
+            "name": "perPDU symmetricabs80",
+            "coverage_percent": 78.50680800511742,
+            "winkler80": 0.07878369514523592,
+            "within3pp": true
+          },
+          {
+            "mode": 2,
+            "name": "cell pooled scaled symmetricabs80",
+            "coverage_percent": 78.84492369551312,
+            "winkler80": 0.07934456348382268,
+            "within3pp": true
+          }
+        ],
+        "selected": {
+          "mode": 1,
+          "name": "perPDU symmetricabs80",
+          "coverage_percent": 78.50680800511742,
+          "winkler80": 0.07878369514523592,
+          "within3pp": true
+        },
+        "dev_source_sha256": "9324805af91d15590f9e2b2f84ea07847f72d52af3d04dd2d095964699a747fa",
+        "calibrator_sha256": "c71076e98f1cfcd0df2ef6282a85ddd65a2030abe63f868719b5360e2606f608"
+      },
+      "7": {
+        "cv": [
+          {
+            "mode": 0,
+            "name": "perPDU asymmetric10/90",
+            "coverage_percent": 77.88976213478158,
+            "winkler80": 0.08972276171039413,
+            "within3pp": true
+          },
+          {
+            "mode": 1,
+            "name": "perPDU symmetricabs80",
+            "coverage_percent": 79.63393300086165,
+            "winkler80": 0.09419882439786825,
+            "within3pp": true
+          },
+          {
+            "mode": 2,
+            "name": "cell pooled scaled symmetricabs80",
+            "coverage_percent": 79.8676205645056,
+            "winkler80": 0.09569331396984705,
+            "within3pp": true
+          }
+        ],
+        "selected": {
+          "mode": 0,
+          "name": "perPDU asymmetric10/90",
+          "coverage_percent": 77.88976213478158,
+          "winkler80": 0.08972276171039413,
+          "within3pp": true
+        },
+        "dev_source_sha256": "811e00f43655bb60632255e93c548b2c1a77ea1ca567547478d1365cb797d653",
+        "calibrator_sha256": "4af00e5ca676ccbe58949754253b78db2d94758340e7c1fc70cbf27e8981e191"
+      }
+    },
+    "no_test_used": true
+  },
+  "selection_sha256": "bb658599796e3b6c8b5537f4fa9b50a0525dfcdf1232dbb4061702da9620287e",
+  "test": {
+    "1": {
+      "nominal_percent": 80,
+      "coverage_percent": 77.81207481266374,
+      "mean_width_normalized": 0.05152223570890356,
+      "winkler80": 0.08752273228310418
+    },
+    "7": {
+      "nominal_percent": 80,
+      "coverage_percent": 78.90463177316322,
+      "mean_width_normalized": 0.0655740266930909,
+      "winkler80": 0.09746652056149592
+    }
+  },
+  "point_models_unchanged": true,
+  "independent_confirmation": false
+}

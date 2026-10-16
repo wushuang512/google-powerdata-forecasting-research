@@ -1,0 +1,353 @@
+{
+  "scores": {
+    "fusion_seed20261001": {
+      "wape": 2.9644553031971683,
+      "mae": 0.02091385532682052,
+      "p95_ape": 8.616168180233997,
+      "daily_wape": 1.73628367448353,
+      "peak_mape": 1.4619802613057862,
+      "peak_time_mae_minutes": 297.6315789473684,
+      "valid_points": 49243
+    },
+    "fusion_seed20261002": {
+      "wape": 2.9090227693641473,
+      "mae": 0.020502476835042017,
+      "p95_ape": 8.453978559160355,
+      "daily_wape": 1.7140704647093619,
+      "peak_mape": 1.2763734672804692,
+      "peak_time_mae_minutes": 295.5847953216374,
+      "valid_points": 49243
+    },
+    "fusion": {
+      "wape": 2.902930986550899,
+      "mae": 0.020460771125487942,
+      "p95_ape": 8.471665848690414,
+      "daily_wape": 1.665001235606908,
+      "peak_mape": 1.3255658484974275,
+      "peak_time_mae_minutes": 292.36842105263156,
+      "valid_points": 49243
+    },
+    "ablation_fusion32": {
+      "wape": 2.9132400857833343,
+      "mae": 0.020552080554531702,
+      "p95_ape": 8.533910661035643,
+      "daily_wape": 1.7969070426731468,
+      "peak_mape": 1.7177869734134106,
+      "peak_time_mae_minutes": 273.09941520467834,
+      "valid_points": 49243
+    },
+    "ablation_no_cross": {
+      "wape": 2.9702983884945136,
+      "mae": 0.020961011772068487,
+      "p95_ape": 8.51488875274126,
+      "daily_wape": 1.8368027075321562,
+      "peak_mape": 1.7930561134727292,
+      "peak_time_mae_minutes": 280.20467836257313,
+      "valid_points": 49243
+    },
+    "ablation_no_frequency": {
+      "wape": 2.905610197388551,
+      "mae": 0.02048959170366546,
+      "p95_ape": 8.422420863449329,
+      "daily_wape": 1.752731023517374,
+      "peak_mape": 1.7508965448408218,
+      "peak_time_mae_minutes": 280.84795321637426,
+      "valid_points": 49243
+    },
+    "ablation_dense_moe": {
+      "wape": 2.92023108602898,
+      "mae": 0.02061589397545129,
+      "p95_ape": 8.301625821264675,
+      "daily_wape": 1.7783195429439702,
+      "peak_mape": 1.7209695490451076,
+      "peak_time_mae_minutes": 279.97076023391816,
+      "valid_points": 49243
+    },
+    "tf3_finetuned_single": {
+      "wape": 2.4061829904497274,
+      "mae": 0.01695837542840269,
+      "p95_ape": 6.995714551073138,
+      "daily_wape": 1.5397761174661795,
+      "peak_mape": 1.9854423369082836,
+      "peak_time_mae_minutes": 289.3859649122807,
+      "valid_points": 49243
+    },
+    "tf3": {
+      "wape": 2.384738041176187,
+      "mae": 0.016809872886024018,
+      "p95_ape": 6.935043143403757,
+      "daily_wape": 1.5088809206229838,
+      "peak_mape": 2.0684868904507394,
+      "peak_time_mae_minutes": 295.52631578947364,
+      "valid_points": 49243
+    },
+    "calibration": {
+      "wape": 2.385245860380698,
+      "mae": 0.016802825731826503,
+      "p95_ape": 6.911763256621519,
+      "daily_wape": 1.4866304646322726,
+      "peak_mape": 1.9267004208844263,
+      "peak_time_mae_minutes": 283.859649122807,
+      "valid_points": 49243
+    },
+    "anchor": {
+      "wape": 2.38476931374022,
+      "mae": 0.016810095195603097,
+      "p95_ape": 6.934291444820521,
+      "daily_wape": 1.5089365354168154,
+      "peak_mape": 2.068731078231054,
+      "peak_time_mae_minutes": 295.4678362573099,
+      "valid_points": 49243
+    },
+    "selected": {
+      "wape": 2.3741796532432278,
+      "mae": 0.016730435480927352,
+      "p95_ape": 6.902170206350111,
+      "daily_wape": 1.483987837721912,
+      "peak_mape": 2.0020417186502386,
+      "peak_time_mae_minutes": 285.1169590643275,
+      "valid_points": 49243
+    },
+    "old_equal_mix": {
+      "wape": 2.4164518683035925,
+      "mae": 0.017038453199300366,
+      "p95_ape": 7.015695624116007,
+      "daily_wape": 1.523814580862698,
+      "peak_mape": 2.118536787370166,
+      "peak_time_mae_minutes": 311.3157894736842,
+      "valid_points": 49243
+    }
+  },
+  "comparison_vs_previous_best": {
+    "fusion_seed20261001": {
+      "difference_pp": -0.5796859894569487,
+      "relative_reduction_percent": -24.307843367364615,
+      "domains_won": 3,
+      "days_won": 0,
+      "cells_won": 0,
+      "day_block_95": [
+        -0.7006681524316268,
+        -0.3613647742403001
+      ],
+      "day_and_cell_95": [
+        -0.9184220046208789,
+        -0.2109016972886786
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "fusion_seed20261002": {
+      "difference_pp": -0.5242534556239277,
+      "relative_reduction_percent": -21.98340328363669,
+      "domains_won": 4,
+      "days_won": 0,
+      "cells_won": 1,
+      "day_block_95": [
+        -0.6119657669056513,
+        -0.4213075633155823
+      ],
+      "day_and_cell_95": [
+        -0.8402939125063768,
+        -0.22457441862703692
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "fusion": {
+      "difference_pp": -0.518161672810679,
+      "relative_reduction_percent": -21.7279579129608,
+      "domains_won": 4,
+      "days_won": 0,
+      "cells_won": 1,
+      "day_block_95": [
+        -0.6323588042170336,
+        -0.35536913024795413
+      ],
+      "day_and_cell_95": [
+        -0.8502323196354147,
+        -0.18855901527370827
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "ablation_fusion32": {
+      "difference_pp": -0.5284707720431144,
+      "relative_reduction_percent": -22.160247072882385,
+      "domains_won": 5,
+      "days_won": 0,
+      "cells_won": 1,
+      "day_block_95": [
+        -0.6411862825952764,
+        -0.379614404778133
+      ],
+      "day_and_cell_95": [
+        -0.8924412574614403,
+        -0.17436261107791334
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "ablation_no_cross": {
+      "difference_pp": -0.585529074754294,
+      "relative_reduction_percent": -24.5528601605479,
+      "domains_won": 2,
+      "days_won": 0,
+      "cells_won": 0,
+      "day_block_95": [
+        -0.6922188015771658,
+        -0.41701672420721697
+      ],
+      "day_and_cell_95": [
+        -0.8757490043461499,
+        -0.2502482676694817
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "ablation_no_frequency": {
+      "difference_pp": -0.520840883648331,
+      "relative_reduction_percent": -21.84030466374358,
+      "domains_won": 4,
+      "days_won": 0,
+      "cells_won": 1,
+      "day_block_95": [
+        -0.631773550154122,
+        -0.351216159766123
+      ],
+      "day_and_cell_95": [
+        -0.8011580405139079,
+        -0.16535013723388212
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "ablation_dense_moe": {
+      "difference_pp": -0.5354617722887604,
+      "relative_reduction_percent": -22.453399127689792,
+      "domains_won": 5,
+      "days_won": 0,
+      "cells_won": 1,
+      "day_block_95": [
+        -0.644880573238263,
+        -0.4328735428299556
+      ],
+      "day_and_cell_95": [
+        -0.8366103805240735,
+        -0.24546657255281631
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "tf3_finetuned_single": {
+      "difference_pp": -0.021413676709507713,
+      "relative_reduction_percent": -0.8979349317407549,
+      "domains_won": 25,
+      "days_won": 2,
+      "cells_won": 6,
+      "day_block_95": [
+        -0.04450062529649963,
+        0.0039460652113423225
+      ],
+      "day_and_cell_95": [
+        -0.08444442403988411,
+        0.046628321053866446
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "tf3": {
+      "difference_pp": 3.1272564032618735e-05,
+      "relative_reduction_percent": 0.001311345456033713,
+      "domains_won": 38,
+      "days_won": 5,
+      "cells_won": 7,
+      "day_block_95": [
+        -3.01478995243056e-05,
+        6.904259440055366e-05
+      ],
+      "day_and_cell_95": [
+        -7.185981148080641e-05,
+        9.476134329176124e-05
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "calibration": {
+      "difference_pp": -0.00047654664047860966,
+      "relative_reduction_percent": -0.019982924039357263,
+      "domains_won": 24,
+      "days_won": 6,
+      "cells_won": 7,
+      "day_block_95": [
+        -0.02519370644182048,
+        0.019461518211130263
+      ],
+      "day_and_cell_95": [
+        -0.06554462791470998,
+        0.08270309441832792
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "selected": {
+      "difference_pp": 0.010589660496991997,
+      "relative_reduction_percent": 0.4440538728831346,
+      "domains_won": 27,
+      "days_won": 7,
+      "cells_won": 7,
+      "day_block_95": [
+        -0.0005340857890978672,
+        0.02154875387146691
+      ],
+      "day_and_cell_95": [
+        -0.020939844011560002,
+        0.052970590199307936
+      ],
+      "bootstrap_replicates": 5000
+    },
+    "old_equal_mix": {
+      "difference_pp": -0.031682554563372746,
+      "relative_reduction_percent": -1.328537497561243,
+      "domains_won": 25,
+      "days_won": 3,
+      "cells_won": 4,
+      "day_block_95": [
+        -0.06562374616049307,
+        -0.011772621846499095
+      ],
+      "day_and_cell_95": [
+        -0.10682703510769181,
+        0.021058130380710968
+      ],
+      "bootstrap_replicates": 5000
+    }
+  },
+  "selected": {
+    "key": "calibration_a0.5",
+    "family": "calibration",
+    "alpha": 0.5,
+    "wape": 2.387413261769499,
+    "paired_cell_se": 0.017942955420110537,
+    "improvement_pp": 0.06563649716988683
+  },
+  "uncertainty": {
+    "fusion_raw": {
+      "coverage": 0.6323944520033304,
+      "mean_width": 0.04738347977399826,
+      "pinball": 0.007177375945395234,
+      "interval_score": 0.11301742273441731
+    },
+    "fusion_calibrated": {
+      "coverage": 0.7936965660093821,
+      "mean_width": 0.06724478304386139,
+      "pinball": 0.006921407762168984,
+      "interval_score": 0.10533837723762982
+    },
+    "selected_residual_interval": {
+      "coverage": 0.8279146274597404,
+      "mean_width": 0.05741072111825708,
+      "pinball": 0.00564895404163214,
+      "interval_score": 0.08581644384432748
+    }
+  },
+  "production_proxy": {
+    "valid_domains": 54,
+    "valid_points": 40795,
+    "mae": 0.016966747484951143,
+    "macro_wape": 5.645708580563295,
+    "interpretation": "production power proxy; no actual compute-load forecasting accuracy is claimed"
+  },
+  "independent_confirmation": false,
+  "overfitting_guarantee": false,
+  "large_gain_threshold_met": false
+}

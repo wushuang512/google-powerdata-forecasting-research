@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-07T01:46:19.379367+00:00",
+  "code_commit": "cfd46d4510ed8896f263116f32928eede05b0a75",
+  "source_zip_sha256": "4fc9d03d4758fce497721077bf8c6ad031b5206dd4e2ec854b5d04595f22adcc",
+  "model_revision": "30f43ff08c8494f4943ae1521e9d4e94a0fbb389",
+  "sources": [
+    {
+      "url": "https://huggingface.co/Salesforce/moirai-2.0-R-small/resolve/30f43ff08c8494f4943ae1521e9d4e94a0fbb389/config.json",
+      "file": "${PROJECT_ROOT}\\experiment\\round35\\models\\moirai2\\config.json",
+      "bytes": 291,
+      "sha256": "6b74b03c8ec199fabc352c0203465958142ca468183da68549652734836f853d"
+    },
+    {
+      "url": "https://huggingface.co/Salesforce/moirai-2.0-R-small/resolve/30f43ff08c8494f4943ae1521e9d4e94a0fbb389/model.safetensors",
+      "file": "${PROJECT_ROOT}\\experiment\\round35\\models\\moirai2\\model.safetensors",
+      "bytes": 45557824,
+      "sha256": "fb5652a3db8ea572606221b7cb1e77bb8962b168e4d4cc752cf31ceb04074669"
+    },
+    {
+      "url": "https://huggingface.co/Salesforce/moirai-2.0-R-small/resolve/30f43ff08c8494f4943ae1521e9d4e94a0fbb389/README.md",
+      "file": "${PROJECT_ROOT}\\experiment\\round35\\models\\moirai2\\README.md",
+      "bytes": 3170,
+      "sha256": "f6dbd74f440ef637ba986147717c2ddf38979b3fba3c35ed6768939822aec73a"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/SalesforceAIResearch/uni2ts/cfd46d4510ed8896f263116f32928eede05b0a75/LICENSE.txt",
+      "file": "${PROJECT_ROOT}\\experiment\\round35\\code\\official_uni2ts\\LICENSE.txt",
+      "bytes": 11411,
+      "sha256": "f5f58eb4b77c4b1709334b97f1f04772df7e97c7863be1c0d4c639ee1a871cae"
+    }
+  ],
+  "model_license": "CC BY-NC4.0 research",
+  "code_license": "Apache2.0",
+  "no_power_or_clusterdata_redownload": true
+}

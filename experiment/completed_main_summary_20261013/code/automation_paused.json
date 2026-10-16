@@ -1,0 +1,29 @@
+{
+  "id": "automation",
+  "mode": "update",
+  "kind": "heartbeat",
+  "destination": "thread",
+  "name": "汇总已完成主要模型泛化结果",
+  "rrule": "FREQ=MINUTELY;INTERVAL=30",
+  "status": "PAUSED",
+  "targetThreadId": "01a0ebef-465b-7e73-8492-743c6e3a971e",
+  "prompt": "用户最新要求只评估几个主要方案，并汇报已经完成且比较好的方法，加快进度。实体目录 ${PROJECT_ROOT}。不要恢复已取消的 run_development.py 或 run_extended.py，不启动历史模型广泛训练、额外Moirai模式或新测试。137余项已完成开发期结果、模型和负面证据保留；检查 experiment/generalization_extended_20261013/results/scope_reduction_cancellation.json 和新的汇总交付状态。主要使用已审计完成的 generalization_validation_20261012 的测试/确认结果与当前R48推荐指标，新扩展训练只有开发期结果必须单独标识，不能称为已验证泛化提升。汇总HDSF原版、R48 HDSF稳健校正、目标数据权重适配及TimesFM3、Toto2、Moirai2等已完成较好方法，保留必要简单基线，统一原9.28指标和24小时曲线、7天曲线、7天日均任务；海光寺30天日电量不伪造日内曲线，ClusterData仅同源5域CPU消融，不作为独立电负荷泛化数据。制作结果和结论在最前、简洁清晰的Word及全指标CSV，严格区分测试后描述排名和开发冻结选择。所有结果是探索性证据，旧测试曾被查看、不同数据单位不混算。用documents技能实际渲染并查看每页，再核查真实数值/输入文件SHA/推荐配置未改。完成后更新根目录入口及清单，保存实际交付核查；使用当前automationId automation完整配置停用并记录PAUSED。健康等待无新结果保持安静，不新建聊天、不归档、不更新记忆、不关闭其他应用。",
+  "automationId": "automation",
+  "user_authorized": true,
+  "actual_pause_tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Updated automation in the app."
+      },
+      {
+        "type": "text",
+        "text": "{\"automationId\":\"automation\",\"mode\":\"update\",\"status\":\"PAUSED\"}"
+      }
+    ],
+    "isError": false
+  },
+  "completion_verified": true,
+  "current_requested_scope_complete": true,
+  "broad_target_test_complete": false
+}
