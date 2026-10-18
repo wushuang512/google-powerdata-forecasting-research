@@ -4,3 +4,6 @@
 [submodule "uni2ts-reference"]
     path = experiment/round35/code/official_uni2ts
     url = https://github.com/SalesforceAIResearch/uni2ts.git
+[submodule "granite-reference"]
+    path = third_party/granite-tsfm
+    url = https://github.com/ibm-granite/granite-tsfm.git

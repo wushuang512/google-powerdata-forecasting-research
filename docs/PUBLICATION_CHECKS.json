@@ -1,28 +1,21 @@
 {
-  "checked_utc": "2026-10-16T08:58:23.458299+00:00",
-  "scope": "Publication snapshot only; no model training or new scoring performed.",
-  "python_sources_syntax_checked": 357,
+  "release_date": "2026-10-18",
+  "scope": "Publication integrity and explicitly listed reproduction checks; not full cold-start reproduction.",
+  "python_sources_syntax_checked": 333,
   "python_syntax_errors": 0,
-  "aggregate_csv_tables_inspected": 156,
-  "raw_data_and_point_level_exports_included": false,
-  "binary_model_weights_or_environments_included": false,
-  "secret_pattern_hits": 0,
-  "personal_home_path_pattern_hits": 0,
-  "large_numeric_arrays_reviewed": [
-    {
-      "path": "experiment/round45/results/selection.json",
-      "classification": "Deterministic normalized overlap-window basis; no observed target samples."
-    },
-    {
-      "path": "experiment/round46/results/selection.json",
-      "classification": "Same deterministic overlap-window basis and frozen small fusion coefficients."
-    }
-  ],
-  "third_party_reference_commits_verified_available": true,
-  "review_script_executed_successfully": true,
-  "limitations": [
-    "Automated secret-pattern scans are a bounded check, not a universal secrecy guarantee.",
-    "Historical original frozen hashes can differ from sanitized publication copies; provenance records both.",
-    "No dataset, trained neural checkpoint or direct full-pipeline reproduction is supplied."
-  ]
+  "synthetic_formula_tests_passed": 6,
+  "actual_GPU_gradient_interfaces_passed": 3,
+  "Moirai_forward_interface_passed": true,
+  "fresh_Google_4seed_local_model_predictions_equal": true,
+  "fresh_NLR_4_validation_fits_equal": true,
+  "fresh_NLR_preprocessing_equal": true,
+  "upstream_Git_source_files_verified": 143,
+  "upstream_source_hash_line_endings": "LF canonical",
+  "clean_machine_dependency_installation_verified": false,
+  "complete_neural_training_and_full_fourteen_scheme_rerun_verified": false,
+  "point_prediction_reconstruction_uses_existing_member_forecasts": true,
+  "datasets_point_predictions_large_weights_runtimes_excluded": true,
+  "removed_only_public_layout_delivery_scripts": 34,
+  "actual_validation_details": "repro/verification_20261018.json",
+  "automated_secret_scan_limits": "Bounded pattern scan; not a universal secrecy guarantee."
 }

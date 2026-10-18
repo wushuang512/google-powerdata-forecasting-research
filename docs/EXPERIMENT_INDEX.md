@@ -1,64 +1,76 @@
-# 实验与方法索引
+# 复现入口与研究档案索引
 
-源码保留必要研究分支；负面结果及未采用身份不因发布而删除。数据、权重及逐点预测未发布。
+完整流程使用根目录`reproduce.py`，参见[复现指南](REPRODUCTION.md)和[实际验证记录](REPRODUCTION_VALIDATION.md)。
 
-| 目录 | 源码文件数 | 聚合表数量 | 说明 |
-| --- | ---: | ---: | --- |
-| [code](../experiment/code/) | 10 | 0 | 历史结构与微调实验 |
-| [completed_main_summary_20261013](../experiment/completed_main_summary_20261013/) | 3 | 2 | 历史结构与微调实验 |
-| [generalization_extended_20261013](../experiment/generalization_extended_20261013/) | 16 | 0 | 外部验证或已取消的开发扩展；注意结果阶段 |
-| [generalization_review_20261012](../experiment/generalization_review_20261012/) | 2 | 0 | 外部验证或已取消的开发扩展；注意结果阶段 |
-| [generalization_validation_20261012](../experiment/generalization_validation_20261012/) | 10 | 10 | 外部验证或已取消的开发扩展；注意结果阶段 |
-| [model_comparison_20261005](../experiment/model_comparison_20261005/) | 11 | 10 | 历史结构与微调实验 |
-| [nlr_strict_protocol_20261013](../experiment/nlr_strict_protocol_20261013/) | 17 | 3 | 十四方案统一向前验证与严格重跑 |
-| [nlr_user_protocol_20261013](../experiment/nlr_user_protocol_20261013/) | 18 | 4 | 历史结构与微调实验 |
-| [results](../experiment/results/) | 0 | 13 | 历史结构与微调实验 |
-| [round10](../experiment/round10/) | 0 | 2 | 历史结构与微调实验 |
-| [round11](../experiment/round11/) | 0 | 2 | 历史结构与微调实验 |
-| [round12](../experiment/round12/) | 0 | 2 | 历史结构与微调实验 |
-| [round13](../experiment/round13/) | 0 | 2 | 历史结构与微调实验 |
-| [round14](../experiment/round14/) | 0 | 2 | 历史结构与微调实验 |
-| [round15](../experiment/round15/) | 2 | 0 | 历史结构与微调实验 |
-| [round16](../experiment/round16/) | 3 | 0 | 历史结构与微调实验 |
-| [round17](../experiment/round17/) | 5 | 0 | 历史结构与微调实验 |
-| [round18](../experiment/round18/) | 2 | 0 | 历史结构与微调实验 |
-| [round19](../experiment/round19/) | 7 | 0 | 历史结构与微调实验 |
-| [round2](../experiment/round2/) | 12 | 11 | 历史结构与微调实验 |
-| [round20](../experiment/round20/) | 2 | 2 | 历史结构与微调实验 |
-| [round21](../experiment/round21/) | 2 | 2 | 历史结构与微调实验 |
-| [round22](../experiment/round22/) | 2 | 0 | 历史结构与微调实验 |
-| [round23](../experiment/round23/) | 2 | 0 | 历史结构与微调实验 |
-| [round24](../experiment/round24/) | 3 | 0 | 历史结构与微调实验 |
-| [round25](../experiment/round25/) | 2 | 0 | 历史结构与微调实验 |
-| [round26](../experiment/round26/) | 18 | 0 | 历史结构与微调实验 |
-| [round27](../experiment/round27/) | 2 | 0 | 历史结构与微调实验 |
-| [round28](../experiment/round28/) | 10 | 0 | 历史结构与微调实验 |
-| [round29](../experiment/round29/) | 5 | 0 | 历史结构与微调实验 |
-| [round3](../experiment/round3/) | 7 | 20 | 历史结构与微调实验 |
-| [round30](../experiment/round30/) | 5 | 0 | 历史结构与微调实验 |
-| [round31](../experiment/round31/) | 2 | 0 | 历史结构与微调实验 |
-| [round32](../experiment/round32/) | 6 | 0 | 历史结构与微调实验 |
-| [round33](../experiment/round33/) | 2 | 0 | 历史结构与微调实验 |
-| [round34](../experiment/round34/) | 2 | 0 | 历史结构与微调实验 |
-| [round35](../experiment/round35/) | 9 | 0 | 历史结构与微调实验 |
-| [round36](../experiment/round36/) | 2 | 0 | 历史结构与微调实验 |
-| [round37](../experiment/round37/) | 2 | 0 | 历史结构与微调实验 |
-| [round38](../experiment/round38/) | 2 | 0 | 历史结构与微调实验 |
-| [round39](../experiment/round39/) | 2 | 0 | 历史结构与微调实验 |
-| [round4](../experiment/round4/) | 9 | 8 | 历史结构与微调实验 |
-| [round40](../experiment/round40/) | 12 | 1 | 历史结构与微调实验 |
-| [round41](../experiment/round41/) | 1 | 0 | 历史结构与微调实验 |
-| [round42](../experiment/round42/) | 1 | 0 | 历史结构与微调实验 |
-| [round43](../experiment/round43/) | 13 | 0 | 历史结构与微调实验 |
-| [round44](../experiment/round44/) | 17 | 10 | HDSF固定源码复现及消融 |
-| [round45](../experiment/round45/) | 3 | 3 | 历史结构与微调实验 |
-| [round46](../experiment/round46/) | 9 | 5 | 六类基础模型实际微调 |
-| [round47](../experiment/round47/) | 5 | 8 | 日均与零均值形状增量分离 |
-| [round48](../experiment/round48/) | 5 | 2 | 当前采用的稳健校正方案 |
-| [round5](../experiment/round5/) | 14 | 10 | 历史结构与微调实验 |
-| [round6](../experiment/round6/) | 0 | 2 | 历史结构与微调实验 |
-| [round7](../experiment/round7/) | 0 | 2 | 历史结构与微调实验 |
-| [round8](../experiment/round8/) | 0 | 1 | 历史结构与微调实验 |
-| [round8b](../experiment/round8b/) | 0 | 1 | 历史结构与微调实验 |
-| [round8c](../experiment/round8c/) | 0 | 1 | 历史结构与微调实验 |
-| [seven_day_completion_20261005](../experiment/seven_day_completion_20261005/) | 2 | 1 | 历史结构与微调实验 |
+| 当前入口 | 作用 |
+| --- | --- |
+| `repro/support.py` | 独立工作目录、源码和官方输入/权重绑定 |
+| `repro/google.py` | Google预处理、HDSF成员、所选实际梯度训练、R48校正与统一指标 |
+| `repro/legacy.py` | NLR历史迁移比较所必需的Google R5/R8源模型 |
+| `repro/nlr.py` | 不删减候选的原严格十四模型流程 |
+| `repro/pipeline.py` | 串行执行、固定环境预检与输出哈希续跑 |
+| `scripts/check_reproduced_results.py` | 新计算指标与原表逐项比较 |
+| `tests/test_reproduction.py` | 统一评价公式和工作目录隔离测试 |
+
+以下是保留的历史研究源码/协议/聚合结果；早期分支没有统一新启动器。34个仅排版或本机交付脚本已从当前公开快照移除，原研究文件未删除。
+
+| 历史目录 | Python文件数 | 聚合CSV表数 |
+| --- | ---: | ---: |
+| `experiment/code` | 9 | 0 |
+| `experiment/completed_main_summary_20261013` | 1 | 2 |
+| `experiment/generalization_extended_20261013` | 16 | 0 |
+| `experiment/generalization_review_20261012` | 2 | 0 |
+| `experiment/generalization_validation_20261012` | 10 | 10 |
+| `experiment/model_comparison_20261005` | 8 | 10 |
+| `experiment/nlr_strict_protocol_20261013` | 16 | 3 |
+| `experiment/nlr_user_protocol_20261013` | 17 | 4 |
+| `experiment/results` | 0 | 13 |
+| `experiment/round10` | 0 | 2 |
+| `experiment/round11` | 0 | 2 |
+| `experiment/round12` | 0 | 2 |
+| `experiment/round13` | 0 | 2 |
+| `experiment/round14` | 0 | 2 |
+| `experiment/round15` | 2 | 0 |
+| `experiment/round16` | 3 | 0 |
+| `experiment/round17` | 4 | 0 |
+| `experiment/round18` | 2 | 0 |
+| `experiment/round19` | 6 | 0 |
+| `experiment/round2` | 11 | 11 |
+| `experiment/round20` | 2 | 2 |
+| `experiment/round21` | 2 | 2 |
+| `experiment/round22` | 2 | 0 |
+| `experiment/round23` | 2 | 0 |
+| `experiment/round24` | 3 | 0 |
+| `experiment/round25` | 2 | 0 |
+| `experiment/round26` | 16 | 0 |
+| `experiment/round27` | 2 | 0 |
+| `experiment/round28` | 9 | 0 |
+| `experiment/round29` | 5 | 0 |
+| `experiment/round3` | 7 | 20 |
+| `experiment/round30` | 4 | 0 |
+| `experiment/round31` | 2 | 0 |
+| `experiment/round32` | 5 | 0 |
+| `experiment/round33` | 2 | 0 |
+| `experiment/round34` | 2 | 0 |
+| `experiment/round35` | 8 | 0 |
+| `experiment/round36` | 2 | 0 |
+| `experiment/round37` | 2 | 0 |
+| `experiment/round38` | 2 | 0 |
+| `experiment/round39` | 2 | 0 |
+| `experiment/round4` | 8 | 8 |
+| `experiment/round40` | 11 | 1 |
+| `experiment/round41` | 1 | 0 |
+| `experiment/round42` | 1 | 0 |
+| `experiment/round43` | 12 | 0 |
+| `experiment/round44` | 12 | 10 |
+| `experiment/round45` | 3 | 3 |
+| `experiment/round46` | 9 | 5 |
+| `experiment/round47` | 5 | 8 |
+| `experiment/round48` | 4 | 2 |
+| `experiment/round5` | 14 | 10 |
+| `experiment/round6` | 0 | 2 |
+| `experiment/round7` | 0 | 2 |
+| `experiment/round8` | 0 | 1 |
+| `experiment/round8b` | 0 | 1 |
+| `experiment/round8c` | 0 | 1 |
+| `experiment/seven_day_completion_20261005` | 2 | 1 |

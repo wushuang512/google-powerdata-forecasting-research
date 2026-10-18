@@ -1,0 +1,261 @@
+{
+  "google_fresh_official_data_download": true,
+  "frozen_neural_models_retrained_this_check": false,
+  "all_neural_inference_recomputed_this_check": false,
+  "fresh_four_seed_LightGBM_max_prediction_difference": 0.0,
+  "postprocessing_and_metrics_reconstruction": {
+    "1": {
+      "max_point_difference": 3.3306690738754696e-16,
+      "source": "original member forecasts; not a fresh neural forecast experiment",
+      "metric_differences": {
+        "wape": 0.0,
+        "mae": 3.469446951953614e-18,
+        "p95_ape": 0.0,
+        "daily_wape": 2.220446049250313e-16,
+        "peak_mape": 2.220446049250313e-15,
+        "peak_time_mae_minutes": 0.0,
+        "valid_points": 0,
+        "daily_wape_valid_slots_supplement": 2.220446049250313e-16,
+        "rmse": 0.0,
+        "hit2_percent": 0.0,
+        "hit5_percent": 0.0,
+        "absolute_bias_percent": 2.248201624865942e-15,
+        "daily_mae": 0.0,
+        "daily_rmse": 0.0,
+        "daily_hit2_percent": 0.0,
+        "daily_hit5_percent": 0.0,
+        "valid_daily_targets": 0,
+        "cella5_wape": 1.1102230246251565e-15,
+        "other52_wape": -4.440892098500626e-16,
+        "baseline_wape": 0.0,
+        "baseline_daily_wape": 0.0,
+        "relative_curve_error_reduction_percent": 0.0,
+        "relative_daily_error_reduction_percent": -1.0658141036401503e-14,
+        "improved_pdus": 0,
+        "improved_cells": 0,
+        "improved_origins": 0
+      }
+    },
+    "7": {
+      "max_point_difference": 2.220446049250313e-16,
+      "source": "original member forecasts; not a fresh neural forecast experiment",
+      "metric_differences": {
+        "wape": -4.440892098500626e-16,
+        "mae": 0.0,
+        "p95_ape": 0.0,
+        "daily_wape": 2.220446049250313e-16,
+        "peak_mape": 0.0,
+        "peak_time_mae_minutes": 0.0,
+        "valid_points": 0,
+        "daily_wape_valid_slots_supplement": 2.220446049250313e-16,
+        "rmse": 0.0,
+        "hit2_percent": 0.0,
+        "hit5_percent": 0.0,
+        "absolute_bias_percent": 1.1102230246251565e-16,
+        "daily_mae": 0.0,
+        "daily_rmse": 0.0,
+        "daily_hit2_percent": 0.0,
+        "daily_hit5_percent": 0.0,
+        "valid_daily_targets": 0,
+        "cella5_wape": 0.0,
+        "other52_wape": 0.0,
+        "baseline_wape": 0.0,
+        "baseline_daily_wape": 0.0,
+        "relative_curve_error_reduction_percent": 1.0658141036401503e-14,
+        "relative_daily_error_reduction_percent": 0.0,
+        "improved_pdus": 0,
+        "improved_cells": 0,
+        "improved_origins": 0
+      }
+    }
+  },
+  "nlr_fresh_preprocessing": {
+    "y": {
+      "same_shape": true,
+      "same_values": true,
+      "max_abs_difference": 0.0
+    },
+    "it_y": {
+      "same_shape": true,
+      "same_values": true,
+      "max_abs_difference": 0.0
+    },
+    "covariates": {
+      "same_shape": true,
+      "same_values": true,
+      "max_abs_difference": 0.0
+    },
+    "raw_covariates": {
+      "same_shape": true,
+      "same_values": true,
+      "max_abs_difference": 0.0
+    },
+    "dates": {
+      "same_shape": true,
+      "same_values": true,
+      "max_abs_difference": null
+    },
+    "fields": {
+      "same_shape": true,
+      "same_values": true,
+      "max_abs_difference": null
+    }
+  },
+  "nlr_origin_sets_equal": true,
+  "release_date": "2026-10-18",
+  "synthetic_formula_tests_passed": 6,
+  "nlr_fresh_statistical_validation_fits": [
+    {
+      "horizon_days": 1,
+      "candidate": 0,
+      "all_original_validation_metrics_equal": true,
+      "maximum_metric_difference": 0
+    },
+    {
+      "horizon_days": 1,
+      "candidate": 1,
+      "all_original_validation_metrics_equal": true,
+      "maximum_metric_difference": 0
+    },
+    {
+      "horizon_days": 7,
+      "candidate": 0,
+      "all_original_validation_metrics_equal": true,
+      "maximum_metric_difference": 0
+    },
+    {
+      "horizon_days": 7,
+      "candidate": 1,
+      "all_original_validation_metrics_equal": true,
+      "maximum_metric_difference": 0
+    }
+  ],
+  "neural_one_step_checks": [
+    {
+      "family": "timesfm3",
+      "actual_cuda": true,
+      "torch": "2.11.0+cu128",
+      "real_optimizer_steps": 1,
+      "scope": "head and final encoder block",
+      "trainable_tensor_hash_changed": true,
+      "finite_nonzero_gradients": true,
+      "batch_context_points": 672,
+      "forecast_points": 96,
+      "last_label_tick": 1199,
+      "train_cutoff_tick": 2112,
+      "completed_full_training": false,
+      "accuracy_evaluated": false,
+      "official_weight_files_modified": false
+    },
+    {
+      "family": "toto2",
+      "actual_cuda": true,
+      "torch": "2.11.0+cu128",
+      "real_optimizer_steps": 1,
+      "scope": "head and final encoder block",
+      "trainable_tensor_hash_changed": true,
+      "finite_nonzero_gradients": true,
+      "batch_context_points": 672,
+      "forecast_points": 96,
+      "last_label_tick": 1199,
+      "train_cutoff_tick": 2112,
+      "completed_full_training": false,
+      "accuracy_evaluated": false,
+      "official_weight_files_modified": false
+    },
+    {
+      "family": "patchtst",
+      "actual_cuda": true,
+      "torch": "2.11.0+cu128",
+      "real_optimizer_steps": 1,
+      "scope": "head and final encoder block",
+      "trainable_tensor_hash_changed": true,
+      "finite_nonzero_gradients": true,
+      "batch_context_points": 672,
+      "forecast_points": 672,
+      "last_label_tick": 1487,
+      "train_cutoff_tick": 2112,
+      "completed_full_training": false,
+      "accuracy_evaluated": false,
+      "official_weight_files_modified": false
+    }
+  ],
+  "nlr_moirai_forward_interface": {
+    "family": "Moirai2",
+    "source": "pinned uni2ts source and official locked weights",
+    "actual_cuda": true,
+    "input_shape": [
+      1,
+      1344
+    ],
+    "output_shape": [
+      1,
+      96
+    ],
+    "finite": true,
+    "gradient_training": false,
+    "accuracy_evaluated": false,
+    "full_NLR_inference_completed": false
+  },
+  "upstream_source_git_blob_verification": [
+    {
+      "repository": "daifeizhai/PowerData_Prediction",
+      "commit": "648777507ebc57e7498ce61f4ae2236ab179e6a8",
+      "checked_source_files": 42,
+      "all_passed": true
+    },
+    {
+      "repository": "SalesforceAIResearch/uni2ts",
+      "commit": "cfd46d4510ed8896f263116f32928eede05b0a75",
+      "checked_source_files": 95,
+      "all_passed": true
+    },
+    {
+      "repository": "ibm-granite/granite-tsfm",
+      "commit": "3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa",
+      "checked_source_files": 6,
+      "all_passed": true
+    }
+  ],
+  "clean_machine_environment_install_verified": false,
+  "complete_Google_neural_training_and_all_member_inference_rerun_verified": false,
+  "complete_NLR_fourteen_scheme_fresh_rerun_verified": false,
+  "no_datasets_predictions_or_weights_added_to_git": true,
+  "canonical_source_line_endings": "LF; original cached HDSF checkout uses CRLF, explicitly normalized for hash verification only",
+  "computation_code_sha256": {
+    "repro/google.py": "6c2433b1bb89a70008312261a59d401ac4a6cb0843043092206e20abf71a9ed4",
+    "repro/neural_smoke.py": "01c60000a9f227895ac088f59003f0bb9a5bac0c2434acfc2f0fc988ba0a2694",
+    "repro/legacy.py": "a361b323de294545902b5d4d8c8cd29fc82fbfbcd65f6c97424d5c468853e94a",
+    "repro/nlr.py": "db8c0ea0dae8e974ee457b875ad65e4ded97c81ace2284d3cf6a6efd2c331209"
+  },
+  "final_entry_smoke": {
+    "final_portable_entry_passed": true,
+    "new_isolated_work_directory": true,
+    "data_source": "previously freshly downloaded official files, reverified by SHA; not an additional network download",
+    "upstream_windows_CRLF_accepted_by_LF_source_hash": true,
+    "commands": [
+      {
+        "command": "init",
+        "exit_code": 0
+      },
+      {
+        "command": "local-assets",
+        "exit_code": 0
+      },
+      {
+        "command": "google-prepare",
+        "exit_code": 0
+      },
+      {
+        "command": "google-baselines",
+        "exit_code": 0
+      }
+    ],
+    "work_binding": {
+      "mode": "replication_of_published_frozen_parameters_not_new_blind_test",
+      "config_sha256": "86eecbe57e6237bda8745ebcc3a2e878e246f1a41e1b87bf622a123b0daf00b5",
+      "assets_lock_sha256": "8a6243a5434e9307f74e8193b2984e94fbcb210d18836297588e200f601ae23d",
+      "reproduction_code_sha256": "858a4ce192993198c15b59a64dbcc3f6b065bb33eae4158db0009d7c8061f4e6"
+    }
+  }
+}

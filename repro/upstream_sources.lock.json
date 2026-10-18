@@ -1,0 +1,723 @@
+{
+  "experiment/round44/reference/PowerData_Prediction": [
+    {
+      "path": "power_forecast/__init__.py",
+      "sha256": "1a9d5d5759d41dc4ae420bb666ebf8966c50d7da499bd63c6640f2268f19e73a",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/__main__.py",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/attainment_experiment.py",
+      "sha256": "2d0bc3087834926f8bfb293252665af0e41b8e3a757154410b0deafe156361a6",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/attainment_features.py",
+      "sha256": "c293beb42a2d1212e21f3b0c7a4aa2c34686fb41f9c78cefea3f426a4dad14a1",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/attainment_fusion.py",
+      "sha256": "083778a799bf8d1709ddd7b11b7b3a8671ab4fefa2ebf9b0c37f5be78f26a979",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/attainment_local.py",
+      "sha256": "9839938f2192be1cdb37a784537b93907558222078d2973937c40bc02fb142e0",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/attainment_members.py",
+      "sha256": "dae1900dea575bd702c0ddf4f6c9b4b7dee765e55c9ccc20bba7340f305c910a",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/causal_feedback.py",
+      "sha256": "1aa0f8ab8e55e341e3c3eb0f07fdf1b4d9a2a15552b72f40b5dde05269fc1ee9",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/cli.py",
+      "sha256": "4a0fb50c62c77225767a50d20e3f87121cdbfaa6d82f3377751e1e8e76f2f147",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/compact_experiment.py",
+      "sha256": "4a08e50ca545a7d2e659b2256193e169e7bb1cc8bc4f1c08de4868fce2ad1373",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/config.py",
+      "sha256": "b8ea3697a72104071033fc313b611a727aff002c5b6a2b931fab30d4b70e9aaf",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/data.py",
+      "sha256": "3412197d6c09b7eed7669d2378da8c1af08423790bb901ecbc5d23d71ed89e31",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/diagnostics.py",
+      "sha256": "b0898ba3179645101292a7f0b7471f8d088945bc7ae9e3f688d0802b3e1c920f",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/dlinear.py",
+      "sha256": "d46280c7d46529e6dee341d61ef21ba104ea2b3eef93647e503dc8a98d441884",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/evaluation.py",
+      "sha256": "fbf8ea7026c1d32081fb2c690d39a98f399890e935040c68ec625492c244d387",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/experiments.py",
+      "sha256": "83cc28923648951baeb0fcf45125adc22792dad1c59ad631b63e410fdd8c03e6",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/features.py",
+      "sha256": "75ac214e91b90890b97f9863a5cdd900d80a85a792af7c40c43a591f715f1b17",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/foundation.py",
+      "sha256": "c8594eb50b45c2adce98a212bdd86b561745f6e53f8a53f9b4f0be5630510e4d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/hdsf_experiment.py",
+      "sha256": "b4f6cfde9afd48ece8a1145dc170a8eb776a9d8a5d24db64f354d93310d461f6",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/hdsf_patchtst.py",
+      "sha256": "318cab1ef61e7b41efcd6269d1bdaee84105643e7bda3ee88e5f97a7ff1dcc51",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/level_shape_fusion.py",
+      "sha256": "41411849db30627e52ae30b18c27bcf7487b3b435c691d79d9b4fddc935f556e",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/models.py",
+      "sha256": "3f9b30c4140e00c838450dba496c9b48a7b8ab7e602e70bc85c5b810a58fa323",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/multiscale.py",
+      "sha256": "9d482ffda4c28312532910caf0cccf62e66422dbbecbb9a069e8289f2b4ad5b4",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/multiscale_experiment.py",
+      "sha256": "7d809719196c6e1b7a8c31c69030b9c061eae8e3b507d5f2dec96fa557c910c7",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/new_foundation.py",
+      "sha256": "766e891272e3cd33e2bf15f12ec4760ed840d28f47d450dffe01b6dd701620a6",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/normalized_linear.py",
+      "sha256": "78188702170d218da9dc7ef9eee5fc64eee71e1e69efd7ee2d353bef3bf6dc08",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/optimized_fusion.py",
+      "sha256": "ecba1ac457a2d758da286a222731453c1f37033fe8684b02205b560f77478da9",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/pipeline.py",
+      "sha256": "dae4f69e8c1e60481fb1467507c345497d001e05186f2cf1380c642e2ffe73a0",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/prediction_cache.py",
+      "sha256": "a34eac98042848fc75a4b624985ebc7d8f1ec37bc48c0f1b1370132824f23a13",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/research_experiment.py",
+      "sha256": "9daa72ea92c87ce8714831dccd009e600f23674d21c46df9f3a3ddf9b6d10f62",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/residual_boost.py",
+      "sha256": "311ba4b389d3f76c38ddc45697cd48af6e39c7b78cca1356610ff65ee8fa9f51",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/resolution_forecast.py",
+      "sha256": "5182182b91e13cda639ef1cd474bcc5171120f7ef2e5230c978e0c448c1f2ac8",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/resolution_fusion.py",
+      "sha256": "344166271f5dbf8beed9bd1c4c0b17adcbb4bf216f04276e05aa394432129e8a",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/resolution_research.py",
+      "sha256": "14a035d64f46670d4613f2c7e5d5f54866b80c69abfbf7f0bd3d829da993e277",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/robust_stacking.py",
+      "sha256": "b419f6b551a684b70a15c08ffd4b0ce4698201fbaa2308894a21ce5b219ac170",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/shape_hybrid.py",
+      "sha256": "cff4f58d91630dac05aa7ab4ee1da9598fb31fccd8256726550128e0457a7a35",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/short_horizon_fusion.py",
+      "sha256": "0d50cead13b9e0f132bdae1bf464c025aab90def01da28dbef346bd668b9612d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/spatial_shrinkage.py",
+      "sha256": "4b24b20d5f8eb68e7907db21bc4bba1b9bd2401fcbf043b209e118ceef963134",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/structural_linear.py",
+      "sha256": "224a490f5a55ef8e3809e545713bdac13b9a698814883b73d20d4ee3fa628779",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/tiny_mixer.py",
+      "sha256": "c09725c0cb439000e7012380ad77a59982b3875491fa34487f61f9a818d5900d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/usc_experiment.py",
+      "sha256": "96bba8186593e14d56f341d787cc9df27fd0611e8fa0c81549eac934dab6a2cc",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "power_forecast/usc_timesfm.py",
+      "sha256": "41aa271f22c2ba3d4107d397a369e354b292615bc7eca86ca97dd04d07b9d19b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    }
+  ],
+  "experiment/round35/code/official_uni2ts": [
+    {
+      "path": "src/uni2ts/__about__.py",
+      "sha256": "a1d8166297bd67408ef1dfba0667cb0d50dc6e9f387e088963e1a464a8fa0d00",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/__init__.py",
+      "sha256": "54ac65b0e4233eedb21b73ed7265b43a648933da2d5b7d3b78637abfc9a2735b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/callbacks/__init__.py",
+      "sha256": "d361a4c6f9f07854b97d5e4723a587627ba063fe2a12193fa5119ca73b4b8331",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/callbacks/HuggingFaceCheckpoint.py",
+      "sha256": "a97a25147387e01f148391cb7ac68a525b59030c7a0b9f46c1ace63a237ae289",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/__init__.py",
+      "sha256": "d361a4c6f9f07854b97d5e4723a587627ba063fe2a12193fa5119ca73b4b8331",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/core.py",
+      "sha256": "90b18005bd3a43529f9cf3ac7143c161a31456eba679a37b5422d5fab7efc783",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/env.py",
+      "sha256": "c82d572cda6c97041f0b8b11aafa9382ece290c2401dd83911a6628cf7d71a95",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/hydra_util.py",
+      "sha256": "153a834b89bf8a3213047d7ec6ac4b45d120c6c25d3f4c379c49c1e23243fa79",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/sampler.py",
+      "sha256": "31e207de567f52c0223b4e315b3f85932986cb958044fe6c7672e311d6d5c49a",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/torch_util.py",
+      "sha256": "ec52de68b8a265d91b6b8ec8bae5e2a00fefa50f649eb9abd906d04a64985a7d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/common/typing.py",
+      "sha256": "0037d815a496bb6a7220d83a2920f6b569d536cf14237c4b92afc733d34ac696",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/__init__.py",
+      "sha256": "d361a4c6f9f07854b97d5e4723a587627ba063fe2a12193fa5119ca73b4b8331",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/__init__.py",
+      "sha256": "9c7d5fa8a7909a86d142dfd895821455936f932021d54640085818eda5a9d99b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/_base.py",
+      "sha256": "d2d43483ee9a3b2175272e25f9faf98f181d0ab0a40ef878da4111bf05c81b0c",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/__init__.py",
+      "sha256": "1ed83b538ecadfbf00b0997491b13c46527c7e94d4b46c359f0da0049e818111",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/__main__.py",
+      "sha256": "24a31351a6bb41903ad5194fe24261dba8a94b4e8fc7d91891d1c40878167054",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/_base.py",
+      "sha256": "ee50ee98731416255045381268dc471833eeddd45b61e6c6d6c0b31477a90c41",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/buildings_bench.py",
+      "sha256": "110396ba0543385ff4a73a627cc1950f10585823afafd6f64e8a30d208173ba1",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/cloudops_tsf.py",
+      "sha256": "a0436c5aed9e31e8feedc66672564af6c576bc8cc5674691d4e6da93227281bf",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/cmip6.py",
+      "sha256": "bbd1f5fe26a9b50005451d21ed1aea454c858eed152b692bd9f97dc23cbd8ff4",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/era5.py",
+      "sha256": "a78c436ed4bcd900564edbf847c1043477baa23b73c4d4df7388ebbe639aca48",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/gluonts.py",
+      "sha256": "9b25097d00088b94ea1448ffd7dc3b1e91f71270d6ae7a211e1f0014124a0d86",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/largest.py",
+      "sha256": "186e14c4a6596b5fd63f2c44fb2846e6fce77bad4a45d0a474ccf8206ed05c5b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/lib_city.py",
+      "sha256": "97a4ef190ae453e6e3240947111737cc1fe671c2cadda40375665bdb2f852ddc",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/others.py",
+      "sha256": "ad9c08f192b1652a96b0eeb8f75f668c0a072dbdc679fdb307864057267e93c1",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/proenfo.py",
+      "sha256": "9bfc4f00fa2a0a2393b641e4733cab4ff2a0b3c66f3067d31c544221375396d8",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/lotsa_v1/subseasonal.py",
+      "sha256": "74ea96f88911d32941f1080916896cfd262e15a960b93c318ac7b106d5afc145",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/builder/simple.py",
+      "sha256": "11684321654a2be081fcbf28028b8f870f9559d7e9dad611fdbd934720def21d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/dataset.py",
+      "sha256": "422bab25295c9b06e3398e0d4c43715743117288172affedb1c47b3eee5f24fe",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/indexer/__init__.py",
+      "sha256": "887e754728a97a534341f3c11a12fe4a047644bb635598f605112ea9719b09b9",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/indexer/_base.py",
+      "sha256": "cba1917bfc13b0d6030bf3937bf04b81ea19c4cce2a3000a977f1a40af8bce2c",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/indexer/hf_dataset_indexer.py",
+      "sha256": "20d71a0a8aa67b534de1eae71f43efd09dec267ef44b38e3b7d18bdca6cb964d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/data/loader.py",
+      "sha256": "b52ff58501e58064655e30a43128c47c07f7678998a7557e0063a3168757d636",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/__init__.py",
+      "sha256": "726ecaf8ff45342267effc865ea504484a3dff21c9471916c74642a0809ea70b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/_base.py",
+      "sha256": "62ff44fab7a7cefd4393e369ec80f9d38439e0d8257219c1a1381f8b960605ac",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/laplace.py",
+      "sha256": "ea181237b27e9c3233d99a168d2d4dae67f90f89c2849272bdf9036617c93e9f",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/log_normal.py",
+      "sha256": "34253fe29d742b7d4c6780b6d46ff882fd12ce1e7a108daade722b0fda69706d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/mixture.py",
+      "sha256": "2b40ea32442491c37499813aeb4cbc290c3373c0d414eca16c4f31d2a99c7f99",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/negative_binomial.py",
+      "sha256": "4485ba054d9b210b124fbcb1bf09874f2a2143e5b33de1efe3d6506dffad0a6c",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/normal.py",
+      "sha256": "4569c1e1da0c677345a92ed32ec70e03f1989a788260e45b8b7230f91c3384fb",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/pareto.py",
+      "sha256": "776f4778e022a6c74525212ebf9dd756ebde7c93b7111eda2674f76030ca535f",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/distribution/student_t.py",
+      "sha256": "641f054585269b50e80bd4f331f106c8cafe3d48504a87b7e5fa05596dc5c472",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/_hf_dataset.py",
+      "sha256": "8bc4ae4ad78f88c64a1414ff66c23f09200b46f13801aa34b8021d9856431995",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/_lsf_dataset.py",
+      "sha256": "b2361940b967c350ff96f5adf7720113665377589c6098eab51e7b1dbd281f55",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/_pf_dataset.py",
+      "sha256": "a8ef1cfb183f162eb578642d083458d9855a8f3b401c691c7be38a04861c616a",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/data.py",
+      "sha256": "d56d9493c73d584ce9e14d6fab7b098da8e44663ddc736edde9c57d92dbe1aea",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/evaluation.py",
+      "sha256": "6fda8315f64507cc5e40e17393b892b748a0dcbddf3eb51818f0cb79a037ebf4",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/metrics.py",
+      "sha256": "340b52e33badee7770dbf30e02ab9da6aad7d95aa4e08486480c98f96eaac4be",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/eval_util/plot.py",
+      "sha256": "2265368d11d4be36769fd1a9b07ddc8609807ec28629a7951b3663b9088255c5",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/__init__.py",
+      "sha256": "d361a4c6f9f07854b97d5e4723a587627ba063fe2a12193fa5119ca73b4b8331",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/__init__.py",
+      "sha256": "fd861fa39006d726221db32c1e66e57e832ffd40682e429ee2325098dcfb6b71",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/_base.py",
+      "sha256": "1d191b23e9d70dbb14cc5191dbcc800ddbb6d06159e590a019904275f524ae27",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/distribution.py",
+      "sha256": "ff73cd55bd00256cc48b09c548aa0f3d305858d2f8d3bbae6e02d9a3c8ce0401",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/normalized.py",
+      "sha256": "d68ff6ef98dd25208e8ab33eefefce6bbb25e85e6d3a46708175f74f38c3d4a7",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/percentage_error.py",
+      "sha256": "bee27f2de2a203dd97635980dcd2603a0774aacf2fbbc14510e8a39f3000d734",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/point.py",
+      "sha256": "c62d07b297a0bfa8e5df427bba61e0575ea1bcce70d1f7333b1a591946b7cc73",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/loss/packed/quantile.py",
+      "sha256": "a6ccea45ba38edd5985ba8b16e81e4df187656295ea7ae67407a8d3cd3e37328",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/__init__.py",
+      "sha256": "d361a4c6f9f07854b97d5e4723a587627ba063fe2a12193fa5119ca73b4b8331",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai/__init__.py",
+      "sha256": "d9393f33ac04df42f81a8c17a7c9c35a6490ba32c540a3bb82178d65d79d38a8",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai/finetune.py",
+      "sha256": "00c157ff78c61b128f2eb2c0b2b9fe375247d0721574f432f7e9e6e0f71796ad",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai/forecast.py",
+      "sha256": "ed03dca4076b2329b2785d17dbe7ca8ab86d3cac28c2ab6f918c7da1ee642e20",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai/module.py",
+      "sha256": "3effb56da3143c2fe0d71986710982fa0c7571bec677a9f805b34cba02bc0d67",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai/pretrain.py",
+      "sha256": "c6f6465d1658be2e90b264fab3337ab3855ff494859cf465292d17ef0baef10e",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai2/__init__.py",
+      "sha256": "14085b0a64e9fe71d5c269c84553735ad86b848485c8152bd6a1644f3007119d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai2/forecast.py",
+      "sha256": "42135e3b84e7e3d0d592ae3b53543fd20ca007e595251e8ec5d067f58d3a070e",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai2/module.py",
+      "sha256": "22b6c00302980e09416f884d3e212c28792bfd5519c192de0a5432bee7fbc6a8",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai_moe/__init__.py",
+      "sha256": "4e49b1bab1c4f98f548547d16fddd1af7d03990e08fc3c35aec7efcf4e7058cd",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai_moe/forecast.py",
+      "sha256": "2651f164b64b0f03a2bd6f2519e94e17d83609a303a533d7ebe7ac726ff16483",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/model/moirai_moe/module.py",
+      "sha256": "76890cfcc34cde02c86403d8cc2a78b3297bf7c350e5a9ee391bf2d04243850f",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/__init__.py",
+      "sha256": "d361a4c6f9f07854b97d5e4723a587627ba063fe2a12193fa5119ca73b4b8331",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/attention.py",
+      "sha256": "5303826bd8b3b6f2ae297986b698bc4fc954fe3d1b802c190645fa3be664abe7",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/ffn.py",
+      "sha256": "a7695ccb955f47d1a49df89e934cdb4c70328d17c2e9762d32e0c912d894c297",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/norm.py",
+      "sha256": "0c6a2c7ddfe7a6a9d4a8f6e20134710721124cb0dbdd21902e269bf4db93f13d",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/packed_scaler.py",
+      "sha256": "c99e9e37eb9b3dcc88ca96465222e570f261e626fa3127a081261bf26140039f",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/position/__init__.py",
+      "sha256": "4747c8fd8ad217adb4a68d29daa0425c2f4dac6c0e9f34edb54c1297dae5e522",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/position/additive.py",
+      "sha256": "00bec55d9515d2049c5932ea78df2a06885f80cfe3ee94d65e576b2aee9a8fbc",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/position/attn_bias.py",
+      "sha256": "e8f21c6053cc16eea362a55ebd66fe2ba43c40a36b50fa824af041ce2805af49",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/position/attn_projection.py",
+      "sha256": "52911ba9ffb23647f21a072f3b67a3582144f46250d2de1e44c92b6add6f7208",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/transformer.py",
+      "sha256": "ee164f6a83ea7c53161b9114ebe749add4a597a5e0cb936770a3e3888568c041",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/module/ts_embed.py",
+      "sha256": "31dea9bf137058b9ecc27c0641a4a514031df6eb4fc31a2998efe7fea124a23c",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/optim/__init__.py",
+      "sha256": "f860ece80c98362bb61aae9de55a583a504ef1a04fe93c091017df51e6031033",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/optim/lr_scheduler.py",
+      "sha256": "5789c8ba27627613b57fab3fba93f48f03a479655d49b52937b26dbe0c048351",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/__init__.py",
+      "sha256": "340230acdb88d2c12f51fcf2f7b5e8fbbb1457466cff0147177921a11dc27f25",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/_base.py",
+      "sha256": "b28b5918adbe4c9b38eae61fca7b4e8f737836f4063b2c3e7bead7a01ccdb5ce",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/_mixin.py",
+      "sha256": "349d171c3f20371f279c055536fb4fc529690f1f53bd2fb1fc302bbabf07daf5",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/crop.py",
+      "sha256": "7341dbde14c976a7a49da8d6b970b0555f9c0a20849c1c05d448bba982a9bc00",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/feature.py",
+      "sha256": "2ec51b2323f10e219929ede9a16e241994d974c7228ffa51d9c5ee9c6be5649b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/field.py",
+      "sha256": "ef1d401cc6c4096df813967b99f5250be8e98d0e10aa9700be6362de401ee1bc",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/imputation.py",
+      "sha256": "c0e9edca5c01243e6d12c1e059dad7bc1eb2c0c2e2e8862fa1b50809ca25d4d7",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/pad.py",
+      "sha256": "9582354496c0ce13480b0a5401bf8978550dd4c3ce07485c899e519009ccc03b",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/patch.py",
+      "sha256": "ae0237876e247788bd5c8c668de75be589bd0f6284d5191be93de4d25aa203a1",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/resample.py",
+      "sha256": "09ac854364fee1aed10cfbb80e89b82abd8dcbdf4a8512f3110f058a1671891e",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/reshape.py",
+      "sha256": "ef24bf2b8f2734a20ea24b619ad90bf1e52634d6e79a5080729d519e85b0b134",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "src/uni2ts/transform/task.py",
+      "sha256": "e2f90a8e9607cec849b76367dff567d78145c613a0d5660127b804624a43da80",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    }
+  ],
+  "third_party/granite-tsfm": [
+    {
+      "path": "tsfm_public/models/patchtst_fm/__init__.py",
+      "sha256": "ff6c4c4ab2761b40b1581b1f578a67946404d0a6dfdaff9685ac4f52029691d2",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "tsfm_public/models/patchtst_fm/basic.py",
+      "sha256": "0aaf0f91ce7d99d1525feb2acfcd99e8bc83749b5682f41c0619fa5b657d20f3",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "tsfm_public/models/patchtst_fm/configuration_patchtst_fm.py",
+      "sha256": "062d1944f015a04be44286e51d6a6896cd73407d212a2fc891fd72b25116fa8a",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "tsfm_public/models/patchtst_fm/modeling_patchtst_fm.py",
+      "sha256": "9d5e2df972b8470496c67d1e8fe0d7f4c0374d58cb17fb1a1e92a3e02d65f9ba",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "tsfm_public/models/patchtst_fm/normalization.py",
+      "sha256": "2449a6fde71acb1067bc67190fbad8d148e39165ab13c260db2615472985705c",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    },
+    {
+      "path": "tsfm_public/models/patchtst_fm/tools.py",
+      "sha256": "742863e8485607c7d0de0e5063b7cdf1ed61368c108b7ace391e0ef6bb6f56b9",
+      "hash_line_endings": "LF canonical, CRLF accepted"
+    }
+  ]
+}

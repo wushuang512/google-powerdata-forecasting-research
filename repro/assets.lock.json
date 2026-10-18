@@ -1,0 +1,621 @@
+{
+  "version": 1,
+  "contains_measurements": false,
+  "google_data": [
+    {
+      "path": "google-powerdata-2019/raw/cella_pdu10.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cella_pdu10.csv.gz?generation=1708543213689459",
+      "bytes": 46010,
+      "sha256": "2493578ef1a2322c345f22cf477cf34997ba048783c73a50440f29393f01b16d",
+      "md5_base64": "uo6j1F/idy19q15gehai7A=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cella_pdu6.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cella_pdu6.csv.gz?generation=1708543216788998",
+      "bytes": 45392,
+      "sha256": "7c56bcfd1694dadc2abb3d4fd6ba179fb96cf45adea6288b47667e12b1fe734e",
+      "md5_base64": "4ZbitI1R376gFrzk7wgRDA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cella_pdu7.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cella_pdu7.csv.gz?generation=1708543219895187",
+      "bytes": 44063,
+      "sha256": "17c8b11b6bd5d951bcea974e11afe9537d6ada0f59752f4ac80dc08b6cc1180f",
+      "md5_base64": "iWBESzYTmDT/Y8JC7gwfEQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cella_pdu8.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cella_pdu8.csv.gz?generation=1708543222996789",
+      "bytes": 45721,
+      "sha256": "5cc51d4a94eda2cb4e9e26a497e67c5784af4501fb9c7795a5d99d00cc09cf7b",
+      "md5_base64": "qk182bDHTNmLwN9SyqHX0A=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cella_pdu9.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cella_pdu9.csv.gz?generation=1708543226006277",
+      "bytes": 44774,
+      "sha256": "6bcee9928bdee9c85c56f987003c458a380b52952cbabe4eb1fc8eaee0bb4f50",
+      "md5_base64": "9OOPslekWhUq6ur16QDuLQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellb_pdu11.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellb_pdu11.csv.gz?generation=1708543229187007",
+      "bytes": 45906,
+      "sha256": "3e7e3d50e6fe5e1929a595dd226bef06d11ed5d0b959fffe619c611b8f42e58c",
+      "md5_base64": "ieoLSLtjgLIZOWE6i8G4BA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellb_pdu12.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellb_pdu12.csv.gz?generation=1708543232026660",
+      "bytes": 46590,
+      "sha256": "a8f4e6090a0b4b6eab75906f71cf12e21860d50c78dced35627dd1d01f90d879",
+      "md5_base64": "fF4VCEms3CQ2aljTbUl5SA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellb_pdu13.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellb_pdu13.csv.gz?generation=1708543234806014",
+      "bytes": 45996,
+      "sha256": "c2a75ae3361d904c5deb5f6a65499ded7b62428c89a7785f236c20ebb27d47e8",
+      "md5_base64": "twDIHh/IHiz+/NgBzDm/aQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellb_pdu14.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellb_pdu14.csv.gz?generation=1708543237787555",
+      "bytes": 45686,
+      "sha256": "aaa1f2cc51db9ad05514cb61e860f548bd4b9bb4311211754a04d69e25aa7fc4",
+      "md5_base64": "VSuKlKfX6HInYd2gR7EAtg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellb_pdu15.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellb_pdu15.csv.gz?generation=1708543240796752",
+      "bytes": 46844,
+      "sha256": "9561a0f72552264f8c1d7acc6f6081167b64072174cf29cb68bc48da13ec7094",
+      "md5_base64": "jIQq6tLj33aqnFH0HN1+BA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellc_pdu38.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellc_pdu38.csv.gz?generation=1708543243630279",
+      "bytes": 48417,
+      "sha256": "fba41238e7c8a41e97a12c5c47dcfa5069bfda4df8bdafca1e4c422b8bb7ce1a",
+      "md5_base64": "J12tqDw7SBciJQDs2M6DFQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellc_pdu39.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellc_pdu39.csv.gz?generation=1708543246604837",
+      "bytes": 48814,
+      "sha256": "195182218871400ddfae78189e4138c1d1992cb516e7bc23275b7a3d403ab403",
+      "md5_base64": "mGcudmOfDl9l7OJ2lA+uOQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellc_pdu40.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellc_pdu40.csv.gz?generation=1708543249493290",
+      "bytes": 47302,
+      "sha256": "957c040b296c917eaadec3ab533ca4b03ed6e73c2c45990082c3a56725178721",
+      "md5_base64": "NrJgLc+ordBujzG3EvnHZQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellc_pdu41.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellc_pdu41.csv.gz?generation=1708543252412192",
+      "bytes": 45268,
+      "sha256": "3a097916fe277803c5d61b243ecee7b66d4796a51172724eca97d1424a08252b",
+      "md5_base64": "6sRfZ1sJZF1GK+2/EMU3sw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellc_pdu42.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellc_pdu42.csv.gz?generation=1708543255349978",
+      "bytes": 44742,
+      "sha256": "91c989471498f798e36c91a004c8f547371258bb25bbaade94347c5fec04caef",
+      "md5_base64": "SZn39KCrZ8TPD1gtl50jcg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellc_pdu43.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellc_pdu43.csv.gz?generation=1708543258286962",
+      "bytes": 44279,
+      "sha256": "f7c723addbf9019e7c9eb3f497ffc4fb33078f70f042cde33f66ef0928edccf7",
+      "md5_base64": "U+mUPHZ0BQgqQKL1Ol+NCA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celld_pdu32.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celld_pdu32.csv.gz?generation=1708543261207454",
+      "bytes": 47780,
+      "sha256": "4614ddd36c64218f0755ef469d0c5e8cda475d01b7d30d1663d2757934c6748e",
+      "md5_base64": "8Zej2DrV7vjf3GoXWpixrA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celld_pdu33.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celld_pdu33.csv.gz?generation=1708543264053723",
+      "bytes": 47116,
+      "sha256": "27719aea05b1051f58a20e2ca54199873ef480f00176255743af1873f4af66a5",
+      "md5_base64": "AAx/6CHxHde3bRgdkIqqPA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celld_pdu34.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celld_pdu34.csv.gz?generation=1708543266892782",
+      "bytes": 47457,
+      "sha256": "b7d9265ca3bf34a0d66b8e73859964ad3f1cbb698640e252ec6bbb601ae664f0",
+      "md5_base64": "rFU87w+Y5PVy0/FnHGZz1w=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celld_pdu35.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celld_pdu35.csv.gz?generation=1708543269783444",
+      "bytes": 47812,
+      "sha256": "e4c40921f351b0addab341ac2970ef8d34cccddb979f8b3b9ed598c3fffb6d27",
+      "md5_base64": "/Lr11dh6+rQj9yabIH7l+A=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celld_pdu36.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celld_pdu36.csv.gz?generation=1708543272842538",
+      "bytes": 48272,
+      "sha256": "804010422dee70cc19056e1b2c993ca994e7b79933e67dc09c83866f024b0a09",
+      "md5_base64": "KtM7vIuJZB6oqb0iDgyAAA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celld_pdu37.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celld_pdu37.csv.gz?generation=1708543275632167",
+      "bytes": 48484,
+      "sha256": "42a32a0e2087e93372af07db80cd13c909abbf9b9978c3049482c000e50c789e",
+      "md5_base64": "HSGeHy7O9CRZCx/upfz6FA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celle_pdu26.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celle_pdu26.csv.gz?generation=1708543278510230",
+      "bytes": 51663,
+      "sha256": "6eb1fdb032aa1b7617bc796eb1e6ebf960de31f8a98ba9fda689aa3996c899f6",
+      "md5_base64": "r5fKHHuMSgrLnWR9lsD3ow=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celle_pdu27.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celle_pdu27.csv.gz?generation=1708543281308041",
+      "bytes": 50736,
+      "sha256": "bfd662eea7a7248deeae63a876de838332671d7f07c994994b88c5a7839e92d6",
+      "md5_base64": "wKbyAe52eCGCTTORI/DaRQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celle_pdu28.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celle_pdu28.csv.gz?generation=1708543284188702",
+      "bytes": 50906,
+      "sha256": "1caed8b965bb16a98be016e02df1ea53d20f4be7502f3da24d342929f45a4cfa",
+      "md5_base64": "Nq198M7p0RWVRMbDSyk9uA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celle_pdu29.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celle_pdu29.csv.gz?generation=1708543287086079",
+      "bytes": 50791,
+      "sha256": "72bd341f6ce4c4e75f133bba07d75e84b948c68e66fabe4ab61036269f310f13",
+      "md5_base64": "N2IKUUqeyNnF/PWoc4262g=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celle_pdu30.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celle_pdu30.csv.gz?generation=1708543289993305",
+      "bytes": 50952,
+      "sha256": "a847b3001c7e7bca185b13ed391eb3f3306db6a55795e22f172e53538dfe26fa",
+      "md5_base64": "1FW0DWIEPc97b1hk5gSeUg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celle_pdu31.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celle_pdu31.csv.gz?generation=1708543292896138",
+      "bytes": 50156,
+      "sha256": "96597fd820c8e3d989b7d9893af11112aa49986646879591ebf6f5af4a125e0b",
+      "md5_base64": "N0CjCfgex1zEtgbvV9BGNA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu16.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu16.csv.gz?generation=1708543295645104",
+      "bytes": 48661,
+      "sha256": "b33b513febeb44146c419bed3eabbe94f8b0a9e25b57a86e62efd558dd803ed6",
+      "md5_base64": "1aTpYouGwdI2MswSK9uerw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu17.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu17.csv.gz?generation=1708543298532604",
+      "bytes": 48730,
+      "sha256": "62af3015031d0430c1b6ff82f8b5a692fbe7303a15005a3c2bd2a60b1861d28e",
+      "md5_base64": "37o6X1WkXfnymDM+e8uuTQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu18.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu18.csv.gz?generation=1708543301449946",
+      "bytes": 49588,
+      "sha256": "fbe6829ec63866bda8895e4ace05aedf6ad156ba9d0f5d28772f050e83d1e631",
+      "md5_base64": "8u3+nv9TP8aqxwE3EVv0Rg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu19.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu19.csv.gz?generation=1708543304217538",
+      "bytes": 48952,
+      "sha256": "b62803f82dd5c118ada7a01a64f9edadb5c43b4e371af062fd7bd95f4cfab1a6",
+      "md5_base64": "RmYZHsvU1q1I+90Q4OaoYw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu20.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu20.csv.gz?generation=1708543307115462",
+      "bytes": 48121,
+      "sha256": "9451e34a7c91cfa0aea7022dccafbd2e5d7c06b4fa17bbb43e7b2e899e2a1faa",
+      "md5_base64": "IC79G3nJiO8Xd/sNI47tPQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu21.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu21.csv.gz?generation=1708543309831742",
+      "bytes": 45524,
+      "sha256": "92cb9cb5860215ddc9da2122d0bcab76bdcac86e92a986b6f6b121f1d3c9d83b",
+      "md5_base64": "87Sy8I2B1wRxfddRiT2ung=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu22.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu22.csv.gz?generation=1708543312712884",
+      "bytes": 46105,
+      "sha256": "57944b4d22a20f5fe027b868b7a22271bc6c0de3461f922c2c594dd5661ff189",
+      "md5_base64": "rhCAHyldMrvXuyRel1YtRQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu23.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu23.csv.gz?generation=1708543315444141",
+      "bytes": 45917,
+      "sha256": "f0ad526501411bcf809b814eb7f0b9aaf87985b3ed1ecab548387456a09e46c6",
+      "md5_base64": "iELj+zNeumub2H8zTqv1vw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu24.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu24.csv.gz?generation=1708543318440804",
+      "bytes": 45867,
+      "sha256": "b279e8134a95077538a80893874b84889e2f93ebbb0073f177fce81d6fd82da2",
+      "md5_base64": "I3HUo1Utta2TgXZRmUsbFQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellf_pdu25.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellf_pdu25.csv.gz?generation=1708543321321899",
+      "bytes": 46261,
+      "sha256": "67df7ecd1bf2499206cc5ea02be74e31c0a6ff63dfe734e572f54740bc7c3bb0",
+      "md5_base64": "oFGz1y39lmy39yEIBM61wg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellg_pdu1.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellg_pdu1.csv.gz?generation=1708543324180864",
+      "bytes": 46941,
+      "sha256": "a36fdd24b677a0a08f6a88db5c9aab48e22f789311263702babc69135fdaa178",
+      "md5_base64": "TfeQIwmLgLewuF4KIqS0uw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellg_pdu2.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellg_pdu2.csv.gz?generation=1708543327145923",
+      "bytes": 47373,
+      "sha256": "fed7419eb18da4da52c8b4e8c7f419671aa14f35f13f731af7de66cd646b69c5",
+      "md5_base64": "hrW2QzlkBwA6RMd1WaPPZQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellg_pdu3.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellg_pdu3.csv.gz?generation=1708543330014652",
+      "bytes": 47155,
+      "sha256": "9ae1a0d4c65997dd24f3eb4d9efb425e762696a5b3749bd844d19f281d914c2d",
+      "md5_base64": "orjr7pnuE9+ZZWw3rNojWg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellg_pdu4.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellg_pdu4.csv.gz?generation=1708543332810970",
+      "bytes": 46208,
+      "sha256": "ceadc33f6b9acd7cf9ad7245d7256d1b17945714eae20e2b2fbe6034c816894d",
+      "md5_base64": "h6p6RCVgB03ohDxhBJLiyw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellg_pdu5.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellg_pdu5.csv.gz?generation=1708543335834312",
+      "bytes": 47714,
+      "sha256": "f26ce0d1bf51c1469a82109c9be17c39c2458631339b66ed5991a266a01d1005",
+      "md5_base64": "i2gten/gOZ0c7omv+pto1A=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu44.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu44.csv.gz?generation=1708543338976239",
+      "bytes": 48951,
+      "sha256": "64799615d180a73bb095a1ad5034f1e20e5ee616d699f9bc79326e88f03ea4b0",
+      "md5_base64": "RWDpMOk/+THL8mZdXFdOCg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu45.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu45.csv.gz?generation=1708543341842749",
+      "bytes": 49241,
+      "sha256": "6f917495b85ad568c29188ba33c9db2f736a3c603f0622f547df349e4c8a9990",
+      "md5_base64": "Yb/V5ck3S1dh5vJi9uC/DA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu46.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu46.csv.gz?generation=1708543344633430",
+      "bytes": 55323,
+      "sha256": "7cb31e257015910eecded98fdd78374e1f767814202746e28fbed672ea2a6c68",
+      "md5_base64": "dqNWfGoiSnbxviV3kt7I9A=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu47.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu47.csv.gz?generation=1708543347870440",
+      "bytes": 48969,
+      "sha256": "b2f045603dfce9d73294a39ae6836aad07355a89481179ed2210c03d9a40616a",
+      "md5_base64": "Dxlv/JIyKNoqvPdWrMzoMQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu48.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu48.csv.gz?generation=1708543350234124",
+      "bytes": 49246,
+      "sha256": "b2848d9c15ab3b73625ad048257e0c2b7a38391e59c8fe403c41380165a27017",
+      "md5_base64": "UU9O92DsVnU3N6wNpgJy/g=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu49.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu49.csv.gz?generation=1708543353184254",
+      "bytes": 51122,
+      "sha256": "a2af48fd01cff570ecbc062126d33e91cfc1ae46a3498f5bdab17fa003edd959",
+      "md5_base64": "vWpTWcfMUGVhXtxU5tLxgQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu50.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu50.csv.gz?generation=1708543356226093",
+      "bytes": 48268,
+      "sha256": "3c88c8c9a3dcbcb910cc301b3a804a39e48c8d77ede3a443dc54066278fb7ec5",
+      "md5_base64": "7k3rZIQHMFtSaRgFaDCcUw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu51.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu51.csv.gz?generation=1708543359262583",
+      "bytes": 47744,
+      "sha256": "c04489b68165a378bfed048606d46c590c865e08c56531c1295e741de73d31c9",
+      "md5_base64": "2E4PgOxB6lfv2nttuSCp7w=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu52.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu52.csv.gz?generation=1708543362359880",
+      "bytes": 47172,
+      "sha256": "961fbd5d9225bbd5652cbe6e692ead58a7875b63c79db818498df61d3ea460b5",
+      "md5_base64": "cuic27sEWZuUWqwDxH3gyg=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu53.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu53.csv.gz?generation=1708543365243066",
+      "bytes": 48308,
+      "sha256": "d4f5c7801ce1275ca83731db57f1523a439c6161e2a65906377526e3c10f78f4",
+      "md5_base64": "G75yvICg34jS0TruxKGl4Q=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu54.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu54.csv.gz?generation=1708543368139149",
+      "bytes": 51778,
+      "sha256": "03488de47a8bc0753f5d6c8ec898ddf0b798ee8499b5ff7666100febc4799970",
+      "md5_base64": "pukb0WiuFBFHJUp8TKG2Lw=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellh_pdu55.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellh_pdu55.csv.gz?generation=1708543370832886",
+      "bytes": 46843,
+      "sha256": "d15353c1a7c32b2f9c3c46ff19e818c0dea4faba73788f27c563d09e9e0d5667",
+      "md5_base64": "mQAKYELLyFKeRWM4VoUYYQ=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/celli_mvpp1.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/celli_mvpp1.csv.gz?generation=1708543373798297",
+      "bytes": 46957,
+      "sha256": "eefebe4008366e647179eb4e55021f9a67fc63205953c9b48591196f6e36c49c",
+      "md5_base64": "lxdgDp01yt5+2GsHEb3X0Q=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/cellj_mvpp2.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/cellj_mvpp2.csv.gz?generation=1708543376496541",
+      "bytes": 45566,
+      "sha256": "7530fb0d34bf5f07e638fa379abc7e63d83cbf5b0478e011d41c51905669ba22",
+      "md5_base64": "0VwAvWAK7akf/Xu0SUMsLA=="
+    },
+    {
+      "path": "google-powerdata-2019/raw/machine_to_pdu_mapping.csv.gz",
+      "url": "https://storage.googleapis.com/powerdata_2019/machine_to_pdu_mapping.csv.gz?generation=1708543379408517",
+      "bytes": 532199,
+      "sha256": "69b88e5662348030b074fef2008a4f2c16927a68b2d218a8c7c5cf350dc0aa8d",
+      "md5_base64": "iozz3ymxGwyULbxRlyiTkQ=="
+    }
+  ],
+  "nlr_data": [
+    {
+      "path": "nlr-hpc-pue/raw/esif.influx.buildingData.PUE.combined.parquet",
+      "url": "https://data.nlr.gov/system/files/300/1757103411-esif.influx.buildingData.PUE.combined.parquet",
+      "bytes": 109685321,
+      "sha256": "19cd12405dde9144b1a360e8c8418666c399a3d0d15a7f846880d71ab22f9dd4"
+    },
+    {
+      "path": "nlr-hpc-pue/raw/esif.influx.buildingData.outside.combined.parquet",
+      "url": "https://data.nlr.gov/system/files/300/1757105566-esif.influx.buildingData.outside.combined_2.parquet",
+      "bytes": 58865468,
+      "sha256": "97b424993fa77a15117fb2c4659a2c327fc83280f943fab47d9036260289a6a0"
+    }
+  ],
+  "models": [
+    {
+      "model_id": "amazon/chronos-2",
+      "revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+      "location": "experiment/models/chronos2-base",
+      "files": [
+        {
+          "name": "config.json",
+          "bytes": 1067,
+          "sha256": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031",
+          "url": "https://huggingface.co/amazon/chronos-2/resolve/29ec3766d36d6f73f0696f85560a422f50e8498c/config.json"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 10142,
+          "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+          "url": "https://huggingface.co/amazon/chronos-2/resolve/29ec3766d36d6f73f0696f85560a422f50e8498c/LICENSE"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 477930472,
+          "sha256": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+          "url": "https://huggingface.co/amazon/chronos-2/resolve/29ec3766d36d6f73f0696f85560a422f50e8498c/model.safetensors"
+        }
+      ]
+    },
+    {
+      "model_id": "google/timesfm-2.5-200m-pytorch",
+      "revision": "1d952420fba87f3c6dee4f240de0f1a0fbc790e3",
+      "location": "experiment/models/timesfm25-base",
+      "files": [
+        {
+          "name": "config.json",
+          "bytes": 475,
+          "sha256": "cd3315b760d5cc7e278d7afdf41b897031ced888fc6c115bd9b3ac0ea2c47408",
+          "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch/resolve/1d952420fba87f3c6dee4f240de0f1a0fbc790e3/config.json"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 11358,
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch/resolve/1d952420fba87f3c6dee4f240de0f1a0fbc790e3/LICENSE"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 925181104,
+          "sha256": "2f776efe6245e42b24bc4153ffdf61810140210e4bd3b01fb21f7aa779ab6ce8",
+          "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch/resolve/1d952420fba87f3c6dee4f240de0f1a0fbc790e3/model.safetensors"
+        },
+        {
+          "name": "README.md",
+          "bytes": 2496,
+          "sha256": "4c3f16633a3d8b9324904bf004429aced2ee009b84e64effb59a902520cc7f2e",
+          "url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch/resolve/1d952420fba87f3c6dee4f240de0f1a0fbc790e3/README.md"
+        }
+      ]
+    },
+    {
+      "model_id": "google/timesfm-3.0-pytorch",
+      "revision": "43046b85ec22d584a13f8098c2ed39c889e129c2",
+      "location": "experiment/models/timesfm3-base",
+      "files": [
+        {
+          "name": "config.json",
+          "bytes": 1273,
+          "sha256": "ff17bbc07b792c5a904cca265b8468579d736a4fe84981da25eb871b0a125bc6",
+          "url": "https://huggingface.co/google/timesfm-3.0-pytorch/resolve/43046b85ec22d584a13f8098c2ed39c889e129c2/config.json"
+        },
+        {
+          "name": "LICENSE",
+          "bytes": 7270,
+          "sha256": "3e36db7240d23adb6ac6d7d931892dcc5706a14a7d31581f08c35d2f25736dfd",
+          "url": "https://huggingface.co/google/timesfm-3.0-pytorch/resolve/43046b85ec22d584a13f8098c2ed39c889e129c2/LICENSE"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 1322898824,
+          "sha256": "a7592b0a8432baee54483254e5647856911ce69e09d09a9bb65904b2d98f17da",
+          "url": "https://huggingface.co/google/timesfm-3.0-pytorch/resolve/43046b85ec22d584a13f8098c2ed39c889e129c2/model.safetensors"
+        },
+        {
+          "name": "README.md",
+          "bytes": 1436,
+          "sha256": "eb66e35dd67cc44dc711b18bc2b833d8f0fcd48892b7341042a5b4a36fc37228",
+          "url": "https://huggingface.co/google/timesfm-3.0-pytorch/resolve/43046b85ec22d584a13f8098c2ed39c889e129c2/README.md"
+        }
+      ]
+    },
+    {
+      "model_id": "NX-AI/TiRex-2",
+      "revision": "30788a311699acba7e6393ad9700ea7b7cb9bb2d",
+      "location": "experiment/models/tirex2-base",
+      "files": [
+        {
+          "name": "LICENSE",
+          "bytes": 10173,
+          "sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+          "url": "https://huggingface.co/NX-AI/TiRex-2/resolve/30788a311699acba7e6393ad9700ea7b7cb9bb2d/LICENSE"
+        },
+        {
+          "name": "model-config.yaml",
+          "bytes": 1204,
+          "sha256": "cddbe6d0be4919cb7b0cad747fb19a295264e129d1c0790cf62133b4cb5da727",
+          "url": "https://huggingface.co/NX-AI/TiRex-2/resolve/30788a311699acba7e6393ad9700ea7b7cb9bb2d/model-config.yaml"
+        },
+        {
+          "name": "model.ckpt",
+          "bytes": 380613375,
+          "sha256": "184b160ffbe4c01a26beeba14015ff3507c7497e1f3577114187bbc1d19fcac1",
+          "url": "https://huggingface.co/NX-AI/TiRex-2/resolve/30788a311699acba7e6393ad9700ea7b7cb9bb2d/model.ckpt"
+        }
+      ]
+    },
+    {
+      "model_id": "Datadog/Toto-2.0-313m",
+      "revision": "a7bab288f5e95f8606f8306f86659357e1c001ef",
+      "location": "experiment/round44/model-cache/models--Datadog--Toto-2.0-313m/snapshots/a7bab288f5e95f8606f8306f86659357e1c001ef",
+      "files": [
+        {
+          "name": "README.md",
+          "bytes": 7197,
+          "sha256": "8f457beaf36fd6bda363ae8c23ab9c145dcb459ae306ea05ac49873a62ed5f8d",
+          "url": "https://huggingface.co/Datadog/Toto-2.0-313m/resolve/a7bab288f5e95f8606f8306f86659357e1c001ef/README.md"
+        },
+        {
+          "name": "config.json",
+          "bytes": 598,
+          "sha256": "9cd42ebab5167752f4382f9304a26c05a44e20eb13b71eea8810f729fed0ffd7",
+          "url": "https://huggingface.co/Datadog/Toto-2.0-313m/resolve/a7bab288f5e95f8606f8306f86659357e1c001ef/config.json"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 1250763568,
+          "sha256": "5ee6066497963cb904bf1324ab850661c3201bbb3406052459f1f792386aa2f9",
+          "url": "https://huggingface.co/Datadog/Toto-2.0-313m/resolve/a7bab288f5e95f8606f8306f86659357e1c001ef/model.safetensors"
+        }
+      ]
+    },
+    {
+      "model_id": "ibm-granite/granite-timeseries-patchtst-fm-r2",
+      "revision": "b125275f9204d37cbb81fe47b9cf5e08a521e829",
+      "location": "experiment/round44/model-cache/models--ibm-granite--granite-timeseries-patchtst-fm-r2/snapshots/b125275f9204d37cbb81fe47b9cf5e08a521e829",
+      "files": [
+        {
+          "name": "LICENSE",
+          "bytes": 289,
+          "sha256": "3fe50bcae6f8a3c8aac0eb641f2cdf62f066f1967a95bb4303eefd7e123ff0f1",
+          "url": "https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2/resolve/b125275f9204d37cbb81fe47b9cf5e08a521e829/LICENSE"
+        },
+        {
+          "name": "README.md",
+          "bytes": 9049,
+          "sha256": "50df22ffebb8f2e8b1a45b23e754fa7a595a6fb615e59732a8a553c4b4480b9c",
+          "url": "https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2/resolve/b125275f9204d37cbb81fe47b9cf5e08a521e829/README.md"
+        },
+        {
+          "name": "config.json",
+          "bytes": 1843,
+          "sha256": "e66341b9bfa9f61eb38c435ec7d7aec353fad68857ae93182698c387213d662d",
+          "url": "https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2/resolve/b125275f9204d37cbb81fe47b9cf5e08a521e829/config.json"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 1538470688,
+          "sha256": "32f7730abd711fecf5431ff0296e4d5939e876c9e8992168b5e539aa409cae6f",
+          "url": "https://huggingface.co/ibm-granite/granite-timeseries-patchtst-fm-r2/resolve/b125275f9204d37cbb81fe47b9cf5e08a521e829/model.safetensors"
+        }
+      ]
+    },
+    {
+      "model_id": "Salesforce/moirai-2.0-R-small",
+      "revision": "30f43ff08c8494f4943ae1521e9d4e94a0fbb389",
+      "location": "experiment/round35/models/moirai2",
+      "files": [
+        {
+          "name": "config.json",
+          "bytes": 291,
+          "sha256": "6b74b03c8ec199fabc352c0203465958142ca468183da68549652734836f853d",
+          "url": "https://huggingface.co/Salesforce/moirai-2.0-R-small/resolve/30f43ff08c8494f4943ae1521e9d4e94a0fbb389/config.json"
+        },
+        {
+          "name": "model.safetensors",
+          "bytes": 45557824,
+          "sha256": "fb5652a3db8ea572606221b7cb1e77bb8962b168e4d4cc752cf31ceb04074669",
+          "url": "https://huggingface.co/Salesforce/moirai-2.0-R-small/resolve/30f43ff08c8494f4943ae1521e9d4e94a0fbb389/model.safetensors"
+        },
+        {
+          "name": "README.md",
+          "bytes": 3170,
+          "sha256": "f6dbd74f440ef637ba986147717c2ddf38979b3fba3c35ed6768939822aec73a",
+          "url": "https://huggingface.co/Salesforce/moirai-2.0-R-small/resolve/30f43ff08c8494f4943ae1521e9d4e94a0fbb389/README.md"
+        }
+      ]
+    }
+  ]
+}

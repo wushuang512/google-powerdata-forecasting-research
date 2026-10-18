@@ -1,0 +1,176 @@
+{
+  "removed_from_current_public_snapshot_only": true,
+  "original_research_files_retained": true,
+  "removed_layout_and_delivery_scripts": [
+    {
+      "path": "experiment/code/build_report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 19661
+    },
+    {
+      "path": "experiment/completed_main_summary_20261013/code/build_report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 22182
+    },
+    {
+      "path": "experiment/completed_main_summary_20261013/code/report_style.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 32083
+    },
+    {
+      "path": "experiment/model_comparison_20261005/code/deliver_revision.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 13602
+    },
+    {
+      "path": "experiment/model_comparison_20261005/code/report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 18440
+    },
+    {
+      "path": "experiment/model_comparison_20261005/code/report_revision.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 30944
+    },
+    {
+      "path": "experiment/nlr_strict_protocol_20261013/code/build_report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 20912
+    },
+    {
+      "path": "experiment/nlr_user_protocol_20261013/code/build_report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 20639
+    },
+    {
+      "path": "experiment/round17/code/report_round17.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 4704
+    },
+    {
+      "path": "experiment/round19/code/report_round19.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 11516
+    },
+    {
+      "path": "experiment/round2/code/report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 16052
+    },
+    {
+      "path": "experiment/round26/code/report_revision.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 30944
+    },
+    {
+      "path": "experiment/round26/code/report_round26.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 18381
+    },
+    {
+      "path": "experiment/round28/code/report_clear_results.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 16113
+    },
+    {
+      "path": "experiment/round30/code/report_aligned.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 18104
+    },
+    {
+      "path": "experiment/round32/code/report_continued.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 21461
+    },
+    {
+      "path": "experiment/round35/code/report_curves_priority.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 22539
+    },
+    {
+      "path": "experiment/round4/code/report_final.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 15930
+    },
+    {
+      "path": "experiment/round40/code/report_continued_moirai.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 17369
+    },
+    {
+      "path": "experiment/round43/code/report_factor_final.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 17550
+    },
+    {
+      "path": "experiment/round44/code/deliver_hdsf_mechanisms.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 2574
+    },
+    {
+      "path": "experiment/round44/code/distill_integrated_hdsf.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 4510
+    },
+    {
+      "path": "experiment/round44/code/integrate_hdsf_report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 14540
+    },
+    {
+      "path": "experiment/round44/code/report_hdsf.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 20281
+    },
+    {
+      "path": "experiment/round44/code/report_hdsf_data_clear.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 34698
+    },
+    {
+      "path": "experiment/round48/code/build_current_report.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 39045
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_complete.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 30281
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_direct_shared.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 15686
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_extension.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 21077
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_native_covariates.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 28963
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_native_covariates_repair1.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 39997
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_nonlinear.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 10934
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_recency_robust.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 13326
+    },
+    {
+      "path": "google-clusterdata-2019/code/report_robust_fusion.py",
+      "reason": "Word layout/delivery automation, not needed for scientific computation",
+      "bytes": 11412
+    }
+  ]
+}

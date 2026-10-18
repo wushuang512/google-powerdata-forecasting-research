@@ -11,6 +11,7 @@
   },
   "granite_tsfm": {
     "url": "https://github.com/ibm-granite/granite-tsfm",
-    "commit": "3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa"
+    "commit": "3d92535ca4138648b9d1e2f3f1421b5dec4dc3aa",
+    "path": "third_party/granite-tsfm"
   }
 }
